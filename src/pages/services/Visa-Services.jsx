@@ -6,7 +6,10 @@ const VisaServices = () => {
     <div className="services">
       <Container>
         <div className="container">
-          <h1>Visa Services</h1>
+          <div className="container-fluid">
+            <h1>Visa <span>Services</span></h1>
+            <p>Info Visa Services</p>
+          </div>
         </div>
       </Container>
     </div>

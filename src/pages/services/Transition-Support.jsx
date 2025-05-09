@@ -6,7 +6,10 @@ const TransitionSupport = () => {
     <div className="services">
       <Container>
         <div className="container">
-          <h1>Transition Support</h1>
+          <div className="container-fluid">
+            <h1>Transition <span>Support</span></h1>
+            <p>Info Transitional Support</p>
+          </div>
         </div>
       </Container>
     </div>

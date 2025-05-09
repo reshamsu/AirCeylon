@@ -6,7 +6,10 @@ const EPTAcademy = () => {
     <div className="services">
       <Container>
         <div className="container">
-          <h1>EPT Academy</h1>
+          <div className="container-fluid">
+            <h1>EPT <span>Academy</span></h1>
+            <p>Info EPT <span>Academy</span></p>
+          </div>
         </div>
       </Container>
     </div>

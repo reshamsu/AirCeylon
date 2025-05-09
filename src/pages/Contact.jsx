@@ -6,7 +6,12 @@ const Contact = () => {
     <div className="services">
       <Container>
         <div className="container">
-          <h1>Contact Us</h1>
+          <div className="container-fluid">
+            <h1>Contact <span>Us</span></h1>
+            <p>
+              Info Contact <span>Air Ceylon</span> for Travel Assistance
+            </p>
+          </div>
         </div>
       </Container>
     </div>

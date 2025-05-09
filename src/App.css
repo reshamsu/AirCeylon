@@ -113,9 +113,9 @@ header {
   left: 0;
   right: 0;
   box-sizing: border-box;
-  padding: 1.2rem 8%;
+  padding: 1rem 8%;
   background: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3 ease, border-bottom 0.3s ease, padding 0.3s ease;
 }
 
@@ -143,7 +143,7 @@ header nav ul li {
 
 header nav a.nav-link {
   color: var(--text-gold-hover);
-  font-weight: 500;
+  font-weight: 600;
   padding: 0.4rem 0.4rem;
 }
 
@@ -174,7 +174,7 @@ header nav a.nav-link:active {
 .nav-link {
   text-decoration: none;
   color: black;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -182,8 +182,7 @@ header nav a.nav-link:active {
 
 a.nav-link-icon svg {
   margin-left: 0.2rem;
-  font-size: 2.4rem;
-  border-radius: 20px;
+  font-size: 2.6rem;
   color: var(--text-gold-hover);
 }
 
@@ -199,6 +198,7 @@ a.nav-link.icon svg:hover {
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .dropdown {
@@ -229,7 +229,7 @@ a.nav-link.icon svg:hover {
 
 .dropdown .dropdown-menu .dropdown-item {
   color: var(--text-black);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .dropdown span.nav-link.dropdown-toggle svg {
@@ -252,11 +252,16 @@ a.nav-link.icon svg:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-color: #eee;
 }
 
 .hero-section h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 0.8rem;
+}
+
+.hero-section h1 span {
+  color: var(--text-gold-brown);
 }
 
 .hero-section p {
@@ -388,6 +393,16 @@ a.nav-link.icon svg:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ddd;
+}
+
+.services .container-fluid h1 {
+  font-size: 4rem;
+  margin-bottom: 0.8rem;
+}
+
+.services .container-fluid h1 span {
+  color: var(--text-gold-brown);
 }
 
 .about {
@@ -395,6 +410,16 @@ a.nav-link.icon svg:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ddd;
+}
+
+.about .container-fluid h1 {
+  font-size: 4rem;
+  margin-bottom: 0.8rem;
+}
+
+.about .container-fluid h1 span {
+  color: var(--text-gold-brown);
 }
 
 /* Footer Content */

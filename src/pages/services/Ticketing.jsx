@@ -6,7 +6,10 @@ const Ticketing = () => {
     <div className="services">
       <Container>
         <div className="container">
-          <h1>Ticketing</h1>
+          <div className="container-fluid">
+            <h1>Ticketing</h1>
+            <p>Info Tickets</p>
+          </div>
         </div>
       </Container>
     </div>
