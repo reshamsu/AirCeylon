@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/HeroSection";
+import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
@@ -14,68 +14,16 @@ function App() {
   return (
     <Router basename="/">
       <div className="Air-Ceylon">
+        <Navbar />
         <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Navbar />
-                <Home />
-                <Footer />
-              </>
-            }
-          />
-          <Route
-            path="/services"
-            element={
-              <>
-                <Navbar />
-                <Services />
-                <Footer />
-              </>
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <>
-                <Navbar />
-                <Contact />
-                <Footer />
-              </>
-            }
-          />
-          <Route
-            path="/blog"
-            element={
-              <>
-                <Navbar />
-                <Blog />
-                <Footer />
-              </>
-            }
-          />
-          <Route
-            path="/about-us"
-            element={
-              <>
-                <Navbar />
-                <About />
-                <Footer />
-              </>
-            }
-          />
-          <Route
-            path="/checkout"
-            element={
-              <>
-                <Navbar />
-                <Checkout />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

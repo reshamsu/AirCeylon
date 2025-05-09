@@ -3,8 +3,7 @@ import { Container } from "@mui/material";
 
 const HeroSection = () => {
   return (
-    <Container>
-    <div className="airceylon">
+    <Container className="airceylon">
       <div className="hero-section">
         <div className="container-fluid">
           <h1>Discover the World</h1>
@@ -19,9 +18,8 @@ const HeroSection = () => {
           </a>
         </div> */}
       </div>
-    </div>
   </Container>
   )
 }
 
-export default HeroSection
+export default HeroSection;

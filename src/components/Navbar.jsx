@@ -7,7 +7,8 @@ const Navbar = () => {
   return (
     <header>
       <nav className="navbar">
-        <div className="logo">Air Ceylon</div>
+        <Link to="/" className="logo">Air Ceylon</Link>
+        
         <ul className="nav-links">
           <li><Link to="/" className="nav-link">Home</Link></li>
 
@@ -29,8 +30,8 @@ const Navbar = () => {
           <li><Link to="/about" className="nav-link">About</Link></li>
           <li><Link to="/blogs" className="nav-link">Blogs</Link></li>
           <li>
-            <Link to="/checkout" className="nav-link">
-              Checkout <IoBagCheckOutline />
+            <Link to="/checkout" className="nav-link-icon">
+              <IoBagCheckOutline style={{ padding: '8px'}}/>
             </Link>
           </li>
         </ul>

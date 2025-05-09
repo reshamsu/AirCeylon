@@ -1,11 +1,11 @@
 import React from "react";
 import { Container } from "@mui/material";
 
-const Info = () => {
+const Testimonials = () => {
   return (
     <Container className="container">
-      <div>Info</div>
-      <div className="info">
+      <div>Testimonials</div>
+      <div className="testimonials">
         <div className="card">
           <div className="image">
             <img src="" className="card-img-top" alt="" />
@@ -47,4 +47,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default Testimonials;
