@@ -1,8 +1,15 @@
+import { Container } from '@mui/material';
 import React from 'react'
 
 const Notarization = () => {
   return (
-    <h1>Notarization</h1>
+        <div className="services">
+      <Container>
+        <div className="container">
+          <h1>Notarization</h1>
+        </div>
+      </Container>
+    </div>
   )
 }
 

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { IoChevronDownOutline } from "react-icons/io5";
 import { IoBagCheckOutline } from "react-icons/io5";
 
+
 const Navbar = () => {
   return (
     <header>
@@ -27,8 +28,8 @@ const Navbar = () => {
           </li>
 
           <li><Link to="/contact-us" className="nav-link">Contact</Link></li>
-          <li><Link to="/about" className="nav-link">About</Link></li>
-          <li><Link to="/blogs" className="nav-link">Blogs</Link></li>
+          <li><Link to="/about-us" className="nav-link">About</Link></li>
+          <li><Link to="/blog" className="nav-link">Blogs</Link></li>
           <li>
             <Link to="/checkout" className="nav-link-icon">
               <IoBagCheckOutline style={{ padding: '8px'}}/>

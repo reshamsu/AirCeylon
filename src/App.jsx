@@ -29,7 +29,7 @@ function App() {
           <Route path="/services/travels-tours" element={<TravelTours />} />
           <Route path="/services/ticketing" element={<Ticketing />} />
           <Route path="/services/notarization" element={<Notarization />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact-us" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/checkout" element={<Checkout />} />

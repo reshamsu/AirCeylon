@@ -351,7 +351,7 @@ a.nav-link.icon svg:hover {
   color: var(--text-gold-hover);
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
 }
 
 .stats .container-lg .card .card-body p {
@@ -380,6 +380,21 @@ a.nav-link.icon svg:hover {
 
 .stats .card .card-body p {
   color: var(--text-white);
+}
+
+/* Services Content  */
+.services {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Footer Content */

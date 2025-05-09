@@ -88,16 +88,22 @@ const Footer = () => {
               <ul>
                 <h6>Services</h6>
                 <li>
-                  <a href="#">Visa Service</a>
+                  <a href="/services/visa-service">Visa Service</a>
                 </li>
                 <li>
-                  <a href="#">EPT Academy</a>
+                  <a href="/services/ept-academy">EPT Academy</a>
                 </li>
                 <li>
-                  <a href="#">Transition Support</a>
+                  <a href="/services/transition-support">Transition Support</a>
                 </li>
                 <li>
-                  <a href="#">Notarization</a>
+                  <a href="/services/travels-tours">Travels & Tours</a>
+                </li>
+                <li>
+                  <a href="/services/ticketing">Ticketing</a>
+                </li>
+                <li>
+                  <a href="/services/notarization">Notarization</a>
                 </li>
               </ul>
             </div>
