@@ -1,6 +1,8 @@
 import React from "react";
 import { Container } from "@mui/material";
 import { FaCommentDots } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa6";
+import { FaQuoteRight } from "react-icons/fa6";
 
 const Testimonials = () => {
   return (
@@ -8,8 +10,8 @@ const Testimonials = () => {
       <Container className="container">
         <div className="container-fluid">
           <label>Testimonials</label>
-          <FaCommentDots style={{ marginRight: "10px", color: "#1976d2" }} />
-          <h1>What Our Travelers Say</h1>
+        
+          <h1>What Our <span>Travelers Say</span> <FaCommentDots style={{ marginLeft: "6px", fontSize: '3rem',color: 'var(--text-gold-hover)' }} /></h1>
           <h4>
             At Air Ceylon, your journey is our passion. - see what our guests
             have to say.
@@ -18,13 +20,13 @@ const Testimonials = () => {
 
         <div className="container-lg">
           <div className="card">
+            <img src="./assets/profile1.png" alt="" style={{ width: '24%', background: '#fff', borderRadius: '100%' }}></img>
             <div className="image">
               <img src="" className="card-img-top" alt="" />
             </div>
             <div className="card-body">
-              <h4 className="card-title">For Inquries or Consultations</h4>
+              <h4 className="card-title"><FaQuoteLeft />For Inquries or Consultations <FaQuoteRight /></h4>
               <p className="card-text">Call for more info</p>
-              <button>Call Us</button>
             </div>
           </div>
 
@@ -33,11 +35,8 @@ const Testimonials = () => {
               <img src="" className="card-img-top" alt="" />
             </div>
             <div className="card-body">
-              <h4 className="card-title">
-                To Make a visit or For an appointment
-              </h4>
+              <h4 className="card-title"><FaQuoteLeft />For Inquries or Consultations <FaQuoteRight /></h4>
               <p className="card-text">Call for more info</p>
-              <button>Book Now</button>
             </div>
           </div>
 
@@ -46,11 +45,10 @@ const Testimonials = () => {
               <img src="" className="card-img-top" alt="" />
             </div>
             <div className="card-body">
-              <h4 className="card-title">To Begin IELTS Training</h4>
+              <h4 className="card-title"><FaQuoteLeft />For Inquries or Consultations <FaQuoteRight /></h4>
               <p className="card-text">
                 For more info, learn more on EPT Academy
               </p>
-              <button>Register Now</button>
             </div>
           </div>
         </div>

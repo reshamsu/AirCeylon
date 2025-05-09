@@ -1,54 +1,54 @@
 import React from "react";
 import Slider from "react-slick";
 import { Container } from "@mui/material";
-import { IoBed } from "react-icons/io5";
+import { FaLocationDot } from "react-icons/fa6";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const attractions = [
   {
-    img: "/assets/hotels/hotel_destination1.jpg",
-    title: "North Santorini - A Luxury Spa Hotel, Santorini",
+    img: "./assets/east-asia-china.jpg",
+    title: "The Great Wall of China",
     location: "Greece",
     description:
       "Clifftop views, whitewashed beauty, and tranquil luxury — Santorini offers the perfect escape bathed in Aegean sunshine.",
-    info: "Greece, Santorini",
+    info: "China",
   },
   {
-    img: "/assets/hotels/hotel_destination2.jpg",
-    title: "Atlantis The Royal - Palm Jumeirah, Dubai",
-    location: "Dubai, United Arab Emirates",
+    img: "./assets/europe-germany.jpg",
+    title: "Frankfort, Germany",
+    location: "Germany",
     description:
       "Discover ultra-modern indulgence — from sky-high suites to private beaches, Dubai redefines luxury at every turn.",
-    info: "Dubai, United Arab Emirates",
+    info: "Berlin, Germany",
   },
   {
-    img: "/assets/hotels/hotel_destination3.jpg",
-    title: "ITC Ratnadipa, A Luxury Collection Hotel, Colombo",
-    location: "Colombo",
+    img: "./assets/middle-east-maldives.jpg",
+    title: "Male, Maldives",
+    location: "Maldives",
     description:
       "Nestled by the Indian Ocean, Colombo blends colonial elegance with vibrant street life — an emerging gem in South Asia.",
-    info: "Colombo, Sri Lanka",
+    info: "Male, Maldives",
   },
   {
-    img: "/assets/hotels/hotel_destination4.webp",
-    title: "Suite in Paris, Shangri-La Paris",
-    location: "Paris, France",
+    img: "./assets/europe-spain.jpg",
+    title: "Madrid, Spain",
+    location: "Spain",
     description:
       "Wake up to Eiffel Tower views and Parisian grandeur — art, romance, and fine living await in the City of Light.",
-    info: "Paris, France",
+    info: "Esp. Spain",
   },
   {
-    img: "/assets/hotels/hotel_destination5.jpg",
-    title: "InterContinental Toronto Center by IHG, Toronto",
-    location: "Toronto, Canada",
+    img: "./assets/europe-canada.webp",
+    title: "Toronto, Canada",
+    location: "Canada",
     description:
       "Downtown buzz meets lakeside calm — explore Toronto’s diverse neighborhoods, culinary scene, and cultural hotspots.",
     info: "Toronto, Canada",
   },
   {
-    img: "/assets/hotels/hotel_destination6.jpg",
-    title: "Marine Bay Sands Hotel, Singapore",
+    img: "./assets/east-asia-singapore.jpg",
+    title: "Singapore",
     location: "Singapore",
     description:
       "Soar above the skyline with rooftop pools and city gardens — Marina Bay Sands defines the future of urban luxury in Singapore.",
@@ -65,7 +65,7 @@ const Gallery = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 8000,
-    arrows: true, // ✅ Show default left/right arrows
+    arrows: true,
     swipe: true,
     touchMove: true,
     draggable: true,
@@ -82,19 +82,19 @@ const Gallery = () => {
   };
 
   return (
-    <Container id="destinations" style={{ padding: "2rem 0" }}>
-      <div className="gallery-section">
-        <h2 style={{ marginBottom: "1.5rem", fontSize: "2rem" }}>
-          Hotel <span style={{ color: "#1976d2" }}>Destinations</span>
-        </h2>
+    <div className="destinations">
+      <Container id="destinations" style={{ padding: "2rem 0" }}>
+        <div className="container-fluid">
+          <label>Destinations</label>
+          <h1>
+            Places to <span>You can Visit</span>
+          </h1>
+          <h4>Find your next Destination with Air Ceylon</h4>
+        </div>
 
         <Slider {...settings}>
           {attractions.map((item, index) => (
-            <div
-              className="card"
-              key={index}
-              style={{ padding: "0 10px", cursor: "grab" }}
-            >
+            <div className="slide-card" key={index}>
               <div className="image">
                 <img
                   src={item.img}
@@ -115,13 +115,20 @@ const Gallery = () => {
                     display: "block",
                     margin: "10px 0",
                     textDecoration: "none",
-                    color: "#000",
+                    color: "var(--text-gold-hover)",
                   }}
                 >
-                  <IoBed style={{ marginRight: "5px" }} />
+                  <FaLocationDot style={{ marginRight: "5px" }} />
                   {item.title}
                 </a>
-                <p style={{ fontSize: "0.9rem", color: "#444" }}>
+                <p
+                  style={{
+                    fontSize: "0.9rem",
+                    color: "#444",
+                    fontWeight: "500",
+                    marginBottom: ".8rem",
+                  }}
+                >
                   {item.description}
                 </p>
                 <label style={{ fontSize: "0.85rem", color: "#777" }}>
@@ -131,8 +138,8 @@ const Gallery = () => {
             </div>
           ))}
         </Slider>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 

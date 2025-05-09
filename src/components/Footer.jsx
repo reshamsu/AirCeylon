@@ -27,7 +27,7 @@ const Footer = () => {
                   <img
                     src="./assets/Logo.png"
                     alt="Air Ceylon Logo"
-                    style={{ width: "3rem", marginRight: "1rem" }}
+                    style={{ width: "2.8rem", marginRight: "1rem" }}
                   />
                   Air Ceylon
                 </Link>
