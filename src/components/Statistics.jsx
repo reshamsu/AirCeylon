@@ -10,6 +10,7 @@ const Statistics = () => {
     <div className="stats">
       <Container className="container">
         <div className="container-fluid">
+          <label>Our Reviews</label>
           <h1>What we offer</h1>
           <h4>Helping you get the best service from Air Ceylon</h4>
         </div>

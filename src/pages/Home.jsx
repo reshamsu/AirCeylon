@@ -6,16 +6,15 @@ import Info from "../components/Info";
 import Statistics from "../components/Statistics";
 import Testimonials from "../components/Testimonials";
 
-
 const Home = () => {
   return (
     <>
       <HeroSection />
       <Slider />
       <Express />
-      <Info />
       <Statistics />
       <Testimonials />
+      <Info />
     </>
   );
 };

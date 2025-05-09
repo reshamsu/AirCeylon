@@ -20,17 +20,17 @@ const Footer = () => {
           <div className="row">
             <div className="brand">
               <div className="footer-brand" style={{ textAlign: "center" }}>
-                <a
-                  href="/"
-                  style={{
-                    fontSize: "18px",
-                    fontWeight: "700",
-                    color: "var(--text-gold-hover)",
-                  }}
-                >
+                <Link
+                  to="/"
+                  className="logo"
+                  style={{ display: "flex", alignItems: "center", justifyContent: 'center', fontSize: "18px", fontWeight: "700",  color: "var(--text-gold-brown)",}}>
+                  <img
+                    src="./assets/Logo.png"
+                    alt="Air Ceylon Logo"
+                    style={{ width: "3rem", marginRight: "1rem" }}
+                  />
                   Air Ceylon
-                  {/* <img src="" alt="logo" className="logo" /> */}
-                </a>
+                </Link>
                 <p>Lorem ipsum dolor sit amet, consectetur.</p>
 
                 <ul

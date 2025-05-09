@@ -46,7 +46,7 @@
   --text-white-hover: #dddddd;
   --text-black: #111111;
   --text-black-hover: #333333;
-  --text-gold-brown: #a26c2c;
+  --text-gold-brown: #9d7038;
   --text-gold-hover: #c89238;
 }
 
@@ -126,9 +126,10 @@ header nav {
   margin: 0.4rem;
 }
 
-header nav .logo {
-  font-size: 1.2rem;
-  font-weight: 600;
+header nav a.logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-gold-brown)
 }
 
 header nav ul {
@@ -269,6 +270,14 @@ a.nav-link.icon svg:hover {
   margin-bottom: 1rem;
 }
 
+/* Slider Content  */
+.slick-prev:before,
+.slick-next:before {
+  color: var(--text-gold-brown);
+  font-size: 30px;
+  opacity: 0.85;
+}
+
 /* Express Card Content  */
 .express {
   background-color: #eee;
@@ -289,7 +298,7 @@ a.nav-link.icon svg:hover {
 .express .container-lg .card {
   background-color: var(--text-gold-brown);
   margin: 0.8rem;
-  width: 70%;
+  width: 100%;
   padding: 2rem 3%;
   border-radius: 16px;
   display: flex;
@@ -420,6 +429,43 @@ a.nav-link.icon svg:hover {
 
 .about .container-fluid h1 span {
   color: var(--text-gold-brown);
+}
+
+.testimonials {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 3.4rem;
+  text-align: center;
+}
+
+.testimonials .container-fluid label {
+  font-weight: 600;
+  color: var(--text-gold-hover);
+  background: #eee;
+  padding: .8rem 16px;
+  border-radius: 14px;
+}
+
+.testimonials .container-fluid h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-gold-brown);
+}
+
+.testimonials .container-fluid h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-black-hover);
 }
 
 /* Footer Content */

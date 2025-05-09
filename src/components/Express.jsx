@@ -20,7 +20,7 @@ const Express = () => {
           <div className="card">
             <div className="card-body">
               <h3 className="card-title">
-                To Make a visit or For an appointment
+                To Make a visit for an appointment
               </h3>
               <p className="card-text">Call for more info</p>
             </div>
