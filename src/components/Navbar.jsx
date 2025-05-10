@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { IoChevronDownOutline, IoBagCheckOutline } from "react-icons/io5";
+import { HiMenuAlt3 } from "react-icons/hi";
 
 const Navbar = () => {
   const location = useLocation();
@@ -9,19 +10,34 @@ const Navbar = () => {
   return (
     <header>
       <nav className="navbar">
-        <NavLink to="/" className="logo" style={{ display: 'flex', alignItems: 'center' }}>
-          <img src="./assets/Logo.png" alt="Air Ceylon Logo" style={{ width: '2.8rem', marginRight: '.8rem' }} />
+        <NavLink
+          to="/"
+          className="logo"
+          style={{ display: "flex", alignItems: "center" }}
+        >
+          <img
+            src="./assets/Logo.png"
+            alt="Air Ceylon Logo"
+            style={{ width: "2.8rem", marginRight: ".8rem" }}
+          />
           Air Ceylon
         </NavLink>
 
         <ul className="nav-links">
           <li>
-            <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link nav-link-active' : 'nav-link'}>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "nav-link nav-link-active" : "nav-link"
+              }
+            >
               Home
             </NavLink>
           </li>
 
-          <li className={`dropdown ${isServicesRoute ? "nav-link-active" : ""}`}>
+          <li
+            className={`dropdown ${isServicesRoute ? "nav-link-active" : ""}`}
+          >
             <span className="nav-link dropdown-toggle">
               Services <IoChevronDownOutline />
             </span>
@@ -37,7 +53,10 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/services/transition-support" className="dropdown-item">
+                <NavLink
+                  to="/services/transition-support"
+                  className="dropdown-item"
+                >
                   Transition Support
                 </NavLink>
               </li>
@@ -50,26 +69,49 @@ const Navbar = () => {
           </li>
 
           <li>
-            <NavLink to="/contact-us" className={({ isActive }) => isActive ? 'nav-link nav-link-active' : 'nav-link'}>
+            <NavLink
+              to="/contact-us"
+              className={({ isActive }) =>
+                isActive ? "nav-link nav-link-active" : "nav-link"
+              }
+            >
               Contact
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about-us" className={({ isActive }) => isActive ? 'nav-link nav-link-active' : 'nav-link'}>
+            <NavLink
+              to="/about-us"
+              className={({ isActive }) =>
+                isActive ? "nav-link nav-link-active" : "nav-link"
+              }
+            >
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to="/blog" className={({ isActive }) => isActive ? 'nav-link nav-link-active' : 'nav-link'}>
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                isActive ? "nav-link nav-link-active" : "nav-link"
+              }
+            >
               Blogs
             </NavLink>
           </li>
           <li>
-            <NavLink to="/checkout" className={({ isActive }) => isActive ? 'nav-link-icon nav-link-active' : 'nav-link-icon'}>
-              <IoBagCheckOutline style={{ padding: "8px" }} />
+            <NavLink
+              to="/checkout"
+              className={({ isActive }) =>
+                isActive ? "nav-link-icon nav-link-active" : "nav-link-icon"
+              }
+            >
+              <IoBagCheckOutline />
             </NavLink>
           </li>
         </ul>
+        <Link to="/" className="menu">
+          <HiMenuAlt3 />
+        </Link>
       </nav>
     </header>
   );

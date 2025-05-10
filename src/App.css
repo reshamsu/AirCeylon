@@ -101,6 +101,12 @@ header {
   transition: box-shadow 0.3 ease, border-bottom 0.3s ease, padding 0.3s ease;
 }
 
+nav a.menu {
+  font-size: 2rem;
+  color: var(--background-gold);
+  display: none;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -124,13 +130,13 @@ header nav ul li {
   list-style: none;
 }
 
-header nav a.nav-link {
+header nav .nav-link {
   color: var(--text-gold-hover);
   font-weight: 600;
   padding: 0.5rem 1rem;
 }
 
-header nav a.nav-link:hover {
+header nav .nav-link:hover {
   font-weight: 600;
   padding: 0.5rem 1rem;
   background-color: linen;
@@ -138,7 +144,7 @@ header nav a.nav-link:hover {
   border-radius: 10px;
 }
 
-header nav a.nav-link-active {
+header nav .nav-link-active {
   font-weight: 600;
   padding: 0.5rem 1rem;
   background-color: linen;
@@ -154,14 +160,27 @@ header nav span.nav-link.dropdown-toggle-active {
   border-radius: 10px;
 }
 
+svg.nav-link-icon {
+  margin-left: 0.2rem;
+  font-size: 2.8rem;
+  color: var(--text-gold-hover);
+  padding: 0.6rem;
+  background: linen;
+  border-radius: 10px;
+}
+
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-gold-brown);
 }
 
 .nav-links {
   display: flex;
-  gap: .8rem;
+  gap: 0.8rem;
   list-style: none;
   position: relative;
 }
@@ -283,11 +302,8 @@ a.nav-link.icon svg:hover {
   justify-content: space-between;
 }
 
-.welcome .card .container-fluid {
-  padding: 2.4rem 4%;
-  background-color: var(--background-white);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 16px;
+.welcome .container-fluid .introduction img {
+  width: 4.4%;
 }
 
 .welcome .card .container-fluid {
@@ -295,6 +311,10 @@ a.nav-link.icon svg:hover {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  padding: 2.4rem 4%;
+  background-color: var(--background-white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
 }
 
 .welcome .card .container-fluid label {
@@ -319,7 +339,6 @@ a.nav-link.icon svg:hover {
 }
 
 .welcome .card .container-fluid h4 {
-  font-size: 14px;
   font-weight: 600;
   color: var(--text-black-hover);
   margin-bottom: 1.8rem;
@@ -413,6 +432,7 @@ a.nav-link.icon svg:hover {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
 .express .container-fluid label {
@@ -599,7 +619,6 @@ a.nav-link.icon svg:hover {
 
 /* Testimonials Section  */
 .testimonials {
-  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -653,7 +672,7 @@ a.nav-link.icon svg:hover {
   border: 6px solid var(--text-gold-hover);
   margin: 0.8rem;
   width: 70%;
-  height: 44vh;
+  height: 40vh;
   padding: 2rem 3%;
   border-radius: 16px;
   display: flex;
@@ -744,6 +763,14 @@ footer .container .brand svg:hover {
   color: var(--text-gold-hover);
 }
 
+footer .container .brand ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
+  list-style: none;
+  padding: 0px;
+}
+
 footer .container .row .col p {
   margin-bottom: 0.6rem;
   color: #666;
@@ -769,6 +796,11 @@ footer .footer-content .contact {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
+}
+
+footer .footer-content .contact label {
+  display: flex;
+  font-weight: 500;
 }
 
 footer .footer-content .contact svg {
@@ -798,6 +830,11 @@ footer .footer-content .location {
   border-top: 1px solid #ddd;
 }
 
+footer .footer-content .location a {
+  margin-left: 0.5rem;
+  text-decoration: underline;
+}
+
 footer .footer-content .location a:hover {
   text-decoration: underline;
 }
@@ -823,4 +860,164 @@ footer .footer-content .rights svg {
 footer .footer-content .rights a {
   color: var(--text-gold-hover);
   font-weight: 700;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  header {
+    padding: 0.8rem 4%;
+  }
+
+  nav a.menu {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero-section h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .services .container-fluid h1 {
+    font-size: 2.4rem;
+  }
+
+  .welcome .card .container-fluid {
+    padding: 2rem 10%;
+    text-align: center;
+  }
+
+  .welcome .card .container-fluid label {
+    font-size: 14px;
+  }
+
+  .welcome .card .container-fluid .introduction img {
+    width: 14%;
+  }
+
+  .welcome .card .container-fluid h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .destinations .container-fluid {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  .destinations .container-fluid h1 {
+    font-size: 2rem;
+  }
+
+  .slide-card {
+    width: 98%;
+    padding-right: 10px;
+  }
+
+  .stats .container-fluid h1 {
+    font-size: 2.4rem;
+  }
+
+  .stats .container-fluid h4 {
+    font-size: 14px;
+  }
+
+  .stats .container-lg {
+    flex-direction: column;
+  }
+
+  .stats .container-lg .card {
+    padding: 1.6rem 12%;
+    margin: 1rem;
+  }
+
+  .express .container-fluid {
+    margin: 1.4rem;
+  }
+
+  .express .container-lg {
+    flex-direction: column;
+  }
+
+  .express .container-lg .card {
+    width: 90%;
+    margin-bottom: 1.4rem;
+    text-align: center;
+    display: block;
+  }
+
+  .testimonials .container-fluid h1 {
+    font-size: 1.6rem;
+  }
+
+  .testimonials .container-fluid h4 {
+    font-size: 14px;
+  }
+
+  .testimonials .container-lg {
+    flex-direction: column;
+  }
+
+  .testimonials .container-lg .card {
+    width: 90%;
+    height: 0%;
+    padding: 2rem 6%;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  footer .container .brand {
+    margin: 0;
+    padding-top: 0;
+  }
+
+  footer .container .brand ul {
+    margin: 1rem 20%;
+  }
+
+  footer .container .row {
+    flex-direction: column;
+  }
+
+  footer .container .row .col {
+    margin: 1rem 8%;
+  }
+
+  footer .location p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  footer .location p a {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2rem;
+  }
+
+  footer .footer-content .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer-content .contact label {
+    margin: 0.4rem 0;
+  }
+
+  footer .footer-content .contact svg {
+    display: none;
+  }
+
+  footer .footer-content .rights p {
+    font-size: 13px;
+  }
 }

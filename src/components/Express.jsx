@@ -63,7 +63,7 @@ const Express = () => {
   return (
     <div className="express" style={{ padding: "2rem 0" }}>
       <Container>
-        <div className="container-fluid" style={{ marginBottom: "1.5rem" }}>
+        <div className="container-fluid">
           <label style={{ color: "var(--text-gold-hover)" }}>Express</label>
           <h1>
             Express <span style={{ color: "var(--text-gold-hover)" }}>Links</span>

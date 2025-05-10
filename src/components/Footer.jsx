@@ -8,9 +8,8 @@ import {
 } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
-import { MdAddCall } from "react-icons/md";
-import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { RxDividerVertical } from "react-icons/rx";
 
 const Footer = () => {
   return (
@@ -20,18 +19,7 @@ const Footer = () => {
           <div className="row">
             <div className="brand">
               <div className="footer-brand" style={{ textAlign: "center" }}>
-                <Link
-                  to="/"
-                  className="logo"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: "18px",
-                    fontWeight: "700",
-                    color: "var(--text-gold-brown)",
-                  }}
-                >
+                <Link to="/" className="logo">
                   <img
                     src="./assets/Logo.png"
                     alt="Air Ceylon Logo"
@@ -41,16 +29,7 @@ const Footer = () => {
                 </Link>
                 <p>Lorem ipsum dolor sit amet, consectetur.</p>
 
-                <ul
-                  className="socials"
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-evenly",
-                    margin: "1rem",
-                    listStyle: "none",
-                    padding: 0,
-                  }}
-                >
+                <ul>
                   <li>
                     <a href="https://wa.me/14372543077">
                       <IoLogoWhatsapp />
@@ -165,18 +144,17 @@ const Footer = () => {
                   href="https://www.google.com/maps?q=WSPACE+-+252A,+GALLE+ROAD,+COLOMBO+4+(Bambalapitiya),+Western+Province,+Sri+Lanka"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ marginLeft: ".5rem", textDecoration: "underline" }}
                 >
                   View on Google Maps
                 </a>
               </p>
             </div>
             <div className="contact">
-              <label style={{ display: 'flex', marginRight: "2rem", fontWeight: '500' }}>
+              <label>
                 Phone Number: <a href="tel:+14372543077"> +94 123 456 789</a>
               </label>
-              |
-              <label style={{ display: 'flex', marginLeft: "2rem", fontWeight: '500'}}>
+              <RxDividerVertical />
+              <label>
                 Email Address:
                 <a href="mailto:info@airceylon.com">info@airceylon.com</a>
               </label>
