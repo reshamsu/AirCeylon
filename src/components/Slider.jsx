@@ -83,7 +83,7 @@ const Gallery = () => {
 
   return (
     <div className="destinations">
-      <Container id="destinations" style={{ padding: "2rem 0" }}>
+      <Container id="destinations" style={{ padding: "3rem 0" }}>
         <div className="container-fluid">
           <label>Destinations</label>
           <h1>
@@ -113,6 +113,7 @@ const Gallery = () => {
                   style={{
                     fontWeight: "bold",
                     display: "block",
+                    padding: "0",
                     margin: "10px 0",
                     textDecoration: "none",
                     color: "var(--text-gold-hover)",

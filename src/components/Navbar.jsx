@@ -42,7 +42,7 @@ const Navbar = () => {
                   Transition Support
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/services/travels-tours" className="dropdown-item">
                   Travels & Tours
                 </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <Link to="/services/ticketing" className="dropdown-item">
                   Ticketing
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/services/notarization" className="dropdown-item">
                   Notarization

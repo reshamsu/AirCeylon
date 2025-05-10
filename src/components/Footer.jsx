@@ -23,7 +23,15 @@ const Footer = () => {
                 <Link
                   to="/"
                   className="logo"
-                  style={{ display: "flex", alignItems: "center", justifyContent: 'center', fontSize: "18px", fontWeight: "700",  color: "var(--text-gold-brown)",}}>
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: "18px",
+                    fontWeight: "700",
+                    color: "var(--text-gold-brown)",
+                  }}
+                >
                   <img
                     src="./assets/Logo.png"
                     alt="Air Ceylon Logo"
@@ -86,7 +94,7 @@ const Footer = () => {
 
             <div className="col">
               <ul>
-                <h6>Services</h6>
+                <h3>Services</h3>
                 <li>
                   <a href="/services/visa-service">Visa Service</a>
                 </li>
@@ -96,12 +104,12 @@ const Footer = () => {
                 <li>
                   <a href="/services/transition-support">Transition Support</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="/services/travels-tours">Travels & Tours</a>
                 </li>
                 <li>
                   <a href="/services/ticketing">Ticketing</a>
-                </li>
+                </li> */}
                 <li>
                   <a href="/services/notarization">Notarization</a>
                 </li>
@@ -110,7 +118,7 @@ const Footer = () => {
 
             <div className="col">
               <ul>
-                <h6>Visa Service</h6>
+                <h3>Visa Service</h3>
                 <li>
                   <a href="#">Europe</a>
                 </li>
@@ -130,32 +138,54 @@ const Footer = () => {
             </div>
 
             <div className="col">
-              <div className="location">
-                <h6>Location & Contact</h6>
-                <p>
-                  WSPACE - 252A, GALLE ROAD, COLOMBO 4 (Bambalapitiya), Western
-                  Province, Sri Lanka
-                </p>
+              <ul>
+                <h3>EPT Academy</h3>
+                <li>
+                  <a href="#">IELTS</a>
+                </li>
+                <li>
+                  <a href="#">TEFL</a>
+                </li>
+                <li>
+                  <a href="#">ESL</a>
+                </li>
+                <li>
+                  <a href="#">TESOL Coaching</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col">
+            <div className="location">
+              <p>
+                <label>Location:</label> WSPACE - 252A, GALLE ROAD, COLOMBO 4
+                (Bambalapitiya), Western Province, Sri Lanka.
                 <a
                   href="https://www.google.com/maps?q=WSPACE+-+252A,+GALLE+ROAD,+COLOMBO+4+(Bambalapitiya),+Western+Province,+Sri+Lanka"
                   target="_blank"
                   rel="noopener noreferrer"
+                  style={{ marginLeft: ".5rem", textDecoration: "underline" }}
                 >
                   View on Google Maps
                 </a>
-              </div>
-              <div className="contact">
-                <a href="tel:+14372543077">+94 123 456 789 (Call)</a>
-                <a href="mailto:info@airceylon.com">
-                  info@airceylon.com (Email)
-                </a>
-              </div>
+              </p>
+            </div>
+            <div className="contact">
+              <label style={{ display: 'flex', marginRight: "2rem", fontWeight: '500' }}>
+                Phone Number: <a href="tel:+14372543077"> +94 123 456 789</a>
+              </label>
+              |
+              <label style={{ display: 'flex', marginLeft: "2rem", fontWeight: '500'}}>
+                Email Address:
+                <a href="mailto:info@airceylon.com">info@airceylon.com</a>
+              </label>
             </div>
           </div>
 
           <div
             className="rights"
-            style={{ textAlign: "center", marginTop: "1rem" }}
+            style={{ textAlign: "center", marginTop: "1.4rem" }}
           >
             <p>
               Air Ceylon <FaRegCopyright /> 2025. All Rights Reserved. Powered

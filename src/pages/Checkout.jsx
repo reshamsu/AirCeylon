@@ -6,7 +6,11 @@ const Checkout = () => {
     <div className="services">
       <Container>
         <div className="container">
-          <h1>Checkout</h1>
+          <div className="container-fluid">
+            <h1><span>Checkout</span></h1>
+            <p>
+            </p>
+          </div>
         </div>
       </Container>
     </div>

@@ -4,9 +4,25 @@ import { Container } from "@mui/material";
 const HeroSection = () => {
   return (
     <div className="hero-section">
+
+      {/* Hero banner */}
+      <div className="homepage-overlay">
+        <img
+          src="./assets/homepage.jpg"
+          className="homepage darkened"
+          alt="HeroBanner"
+        />
+                <img
+          src="./assets/Logo-AirCeylon.svg"
+          className="watermark"
+          alt="Watermark"
+        />
+      </div>
       <Container className="airceylon">
         <div className="container-fluid">
-          <h1>Discover <span>the World</span></h1>
+          <h1>
+            Discover <span>your World</span>
+          </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
             varius ipsum. Aenean ex.
