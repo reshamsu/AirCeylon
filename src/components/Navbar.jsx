@@ -1,84 +1,73 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { IoChevronDownOutline } from "react-icons/io5";
-import { IoBagCheckOutline } from "react-icons/io5";
+import { NavLink, useLocation } from "react-router-dom";
+import { IoChevronDownOutline, IoBagCheckOutline } from "react-icons/io5";
 
 const Navbar = () => {
+  const location = useLocation();
+  const isServicesRoute = location.pathname.startsWith("/services");
+
   return (
     <header>
       <nav className="navbar">
-        <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center'}}>
-          <img src="./assets/Logo.png" alt="Air Ceylon Logo" style={{ width: '2.8rem', marginRight: '.8rem'}}/>
+        <NavLink to="/" className="logo" style={{ display: 'flex', alignItems: 'center' }}>
+          <img src="./assets/Logo.png" alt="Air Ceylon Logo" style={{ width: '2.8rem', marginRight: '.8rem' }} />
           Air Ceylon
-        </Link>
+        </NavLink>
 
         <ul className="nav-links">
           <li>
-            <Link to="/" className="nav-link">
+            <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link nav-link-active' : 'nav-link'}>
               Home
-            </Link>
+            </NavLink>
           </li>
 
-          <li className="dropdown">
+          <li className={`dropdown ${isServicesRoute ? "nav-link-active" : ""}`}>
             <span className="nav-link dropdown-toggle">
               Services <IoChevronDownOutline />
             </span>
             <ul className="dropdown-menu">
               <li>
-                <Link to="/services/visa-service" className="dropdown-item">
+                <NavLink to="/services/visa-service" className="dropdown-item">
                   Visa Service
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/services/ept-academy" className="dropdown-item">
+                <NavLink to="/services/ept-academy" className="dropdown-item">
                   EPT Academy
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
-                  to="/services/transition-support"
-                  className="dropdown-item"
-                >
+                <NavLink to="/services/transition-support" className="dropdown-item">
                   Transition Support
-                </Link>
-              </li>
-              {/* <li>
-                <Link to="/services/travels-tours" className="dropdown-item">
-                  Travels & Tours
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/services/ticketing" className="dropdown-item">
-                  Ticketing
-                </Link>
-              </li> */}
-              <li>
-                <Link to="/services/notarization" className="dropdown-item">
+                <NavLink to="/services/notarization" className="dropdown-item">
                   Notarization
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </li>
 
           <li>
-            <Link to="/contact-us" className="nav-link">
+            <NavLink to="/contact-us" className={({ isActive }) => isActive ? 'nav-link nav-link-active' : 'nav-link'}>
               Contact
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about-us" className="nav-link">
+            <NavLink to="/about-us" className={({ isActive }) => isActive ? 'nav-link nav-link-active' : 'nav-link'}>
               About
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/blog" className="nav-link">
+            <NavLink to="/blog" className={({ isActive }) => isActive ? 'nav-link nav-link-active' : 'nav-link'}>
               Blogs
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/checkout" className="nav-link-icon">
+            <NavLink to="/checkout" className={({ isActive }) => isActive ? 'nav-link-icon nav-link-active' : 'nav-link-icon'}>
               <IoBagCheckOutline style={{ padding: "8px" }} />
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

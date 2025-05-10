@@ -63,7 +63,7 @@ html {
 .btn.btn-light {
   font-size: 14px;
   font-weight: 600;
-  padding: .8rem 1.6rem;
+  padding: 0.8rem 1.6rem;
   color: var(--text-white);
   background-color: var(--text-gold-hover);
   border-radius: 12px;
@@ -127,19 +127,31 @@ header nav ul li {
 header nav a.nav-link {
   color: var(--text-gold-hover);
   font-weight: 600;
-  padding: 0.4rem 0.4rem;
+  padding: 0.5rem 1rem;
 }
 
 header nav a.nav-link:hover {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background-color: linen;
   color: var(--text-gold-hover);
-  border-bottom: 2px solid var(--text-gold-hover);
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
-header nav a.nav-link:active {
+header nav a.nav-link-active {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background-color: linen;
   color: var(--text-gold-hover);
-  border-bottom: 3px solid var(--text-gold-hover);
-  border-radius: 3px;
+  border-radius: 10px;
+}
+
+header nav span.nav-link.dropdown-toggle-active {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background-color: linen;
+  color: var(--text-gold-hover);
+  border-radius: 10px;
 }
 
 .logo {
@@ -149,7 +161,7 @@ header nav a.nav-link:active {
 
 .nav-links {
   display: flex;
-  gap: 1rem;
+  gap: .8rem;
   list-style: none;
   position: relative;
 }
@@ -158,7 +170,8 @@ header nav a.nav-link:active {
   text-decoration: none;
   color: black;
   font-weight: 600;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+  padding-left: 1rem;
   display: flex;
   align-items: center;
 }
@@ -296,7 +309,7 @@ a.nav-link.icon svg:hover {
 .welcome .card .container-fluid h1 {
   font-size: 40px;
   font-weight: 700;
-  margin-top: .6rem;
+  margin-top: 0.6rem;
   margin-bottom: 2rem;
   color: var(--text-black-hover);
 }
@@ -635,7 +648,7 @@ a.nav-link.icon svg:hover {
 
 .testimonials .container-lg .card {
   /* background-color: blanchedalmond; */
-    background-color: linen;
+  background-color: linen;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 6px solid var(--text-gold-hover);
   margin: 0.8rem;
