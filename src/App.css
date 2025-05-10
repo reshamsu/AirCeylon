@@ -968,7 +968,7 @@ footer .footer-content .rights a {
 
   .testimonials .container-lg .card {
     width: 90%;
-    height: 0%;
+    height: auto;
     padding: 2rem 6%;
   }
 
