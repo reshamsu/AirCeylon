@@ -12,8 +12,8 @@ const Home = () => {
       <HeroSection />
       <Welcome />
       <Slider />
-      <Express />
       <Statistics />
+      <Express />
       <Testimonials />
     </>
   );

@@ -2,6 +2,7 @@
 
 :root {
   --background-white: #ffffff;
+  --background-gold: #b57906;
   --white-background-hover: #eeeeee;
   --text-white: #ffffff;
   --text-white-hover: #dddddd;
@@ -72,7 +73,7 @@ html {
 .btn.btn-light:hover {
   background-color: var(--text-gold-brown);
 }
-
+/* 
 .btn.btn-dark {
   font-size: 14px;
   font-weight: 600;
@@ -84,7 +85,7 @@ html {
 
 .btn.btn-dark:hover {
   background-color: var(--text-black-hover);
-}
+} */
 
 /* Navigation Section  */
 header {
@@ -94,7 +95,7 @@ header {
   right: 0;
   z-index: 1050;
   box-sizing: border-box;
-  padding: 1rem 8%;
+  padding: 1rem 12%;
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3 ease, border-bottom 0.3s ease, padding 0.3s ease;
@@ -255,44 +256,60 @@ a.nav-link.icon svg:hover {
 
 /* Welcome Section  */
 .welcome {
-  min-height: 70vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #eee;
+  background-color: linen;
 }
 
-.welcome .container-fluid {
+.welcome .container-fluid .introduction {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome .card .container-fluid {
+  padding: 2.4rem 4%;
+  background-color: var(--background-white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.welcome .card .container-fluid {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
 }
 
-.welcome .container-fluid label {
+.welcome .card .container-fluid label {
   font-weight: 600;
   color: var(--text-gold-hover);
-  background-color: var(--text-white);
+  background-color: linen;
   padding: 0.6rem 18px;
   border-radius: 14px;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
-.welcome .container-fluid h1 {
+.welcome .card .container-fluid h1 {
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-top: .6rem;
+  margin-bottom: 2rem;
   color: var(--text-black-hover);
 }
 
-.welcome .container-fluid h1 span {
+.welcome .card .container-fluid h1 span {
   color: var(--text-gold-hover);
 }
 
-.welcome .container-fluid h4 {
+.welcome .card .container-fluid h4 {
   font-size: 14px;
   font-weight: 600;
   color: var(--text-black-hover);
+  margin-bottom: 1.8rem;
 }
 
 /* Slider Content  */
@@ -344,9 +361,9 @@ a.nav-link.icon svg:hover {
 }
 
 .destinations .container-fluid label {
-  font-weight: 700;
+  font-weight: 650;
   color: var(--text-gold-hover);
-  background: whitesmoke;
+  background: linen;
   padding: 0.6rem 18px;
   border-radius: 14px;
   margin-bottom: 1rem;
@@ -371,11 +388,11 @@ a.nav-link.icon svg:hover {
 
 /* Express Content  */
 .express {
-  min-height: 60vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--white-background-hover);
+  background-color: linen;
 }
 
 .express .container-fluid {
@@ -388,7 +405,7 @@ a.nav-link.icon svg:hover {
 .express .container-fluid label {
   font-weight: 600;
   color: var(--text-gold-hover);
-  background-color: var(--text-white);
+  background-color: blanchedalmond;
   padding: 0.6rem 18px;
   border-radius: 14px;
   margin-bottom: 1rem;
@@ -440,7 +457,7 @@ a.nav-link.icon svg:hover {
 
 /* Statistics Content  */
 .stats {
-  background-color: var(--text-gold-hover);
+  background-color: var(--background-gold);
   min-height: 70vh;
   display: flex;
   align-items: center;
@@ -587,8 +604,8 @@ a.nav-link.icon svg:hover {
 .testimonials .container-fluid label {
   font-weight: 650;
   color: var(--text-gold-hover);
-  background: #eee;
-  padding: 0.8rem 18px;
+  background-color: linen;
+  padding: 0.6rem 18px;
   border-radius: 14px;
   margin-bottom: 1rem;
 }

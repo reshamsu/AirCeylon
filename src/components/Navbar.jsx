@@ -8,7 +8,7 @@ const Navbar = () => {
     <header>
       <nav className="navbar">
         <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center'}}>
-          <img src="./assets/Logo.png" alt="Air Ceylon Logo" style={{ width: '2.8rem', marginRight: '1rem'}}/>
+          <img src="./assets/Logo.png" alt="Air Ceylon Logo" style={{ width: '2.8rem', marginRight: '.8rem'}}/>
           Air Ceylon
         </Link>
 
