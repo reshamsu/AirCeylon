@@ -218,7 +218,7 @@ header nav .nav-link-active {
 /* SideNav Section  */
 nav.sidenav {
   background-color: var(--background-white);
-    padding: 1.8rem 4%;
+  padding: 1.8rem 4%;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -261,14 +261,13 @@ nav.sidenav ul {
 }
 
 nav.sidenav ul li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
   width: 100%;
 }
 
 nav.sidenav ul li a {
   display: flex;
-  padding: .6rem 1rem;
-  font-size: 0.96rem;
+  padding: 0.6rem 1rem;
   font-weight: 600;
   border-radius: 10px;
   color: var(--text-gold-hover);
@@ -288,7 +287,7 @@ nav.sidenav span {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: .7rem 1.1rem;
+  padding: 0.7rem 1.1rem;
   background-color: whitesmoke;
   border-radius: 10px;
 }
@@ -928,6 +927,18 @@ footer .footer-content .rights a {
 
   .nav-links {
     display: none;
+  }
+
+  .container {
+    padding: 3rem 8%;
+  }
+
+  .hero-section {
+    min-height: 100vh;
+  }
+
+  .homepage-overlay {
+    height: 100vh;
   }
 
   .hero-section .container-fluid {
