@@ -101,7 +101,7 @@ const Express = () => {
         </div>
 
         {openModalIndex !== null && expressOptions[openModalIndex]?.isModal && (
-          <Modal open onClose={handleClose}>
+          <Modal open onClose={handleClose} disableScrollLock>
             <Box sx={modalStyle}>
               <IconButton
                 onClick={handleClose}
@@ -115,7 +115,7 @@ const Express = () => {
               >
                 <CloseIcon />
               </IconButton>
-              <h2 style={{ fontWeight: "700", marginBottom: "1rem" }}>
+              <h2 style={{ fontWeight: "700", marginBottom: "1rem", color: "var(--text-gold-hover)" }}>
                 {expressOptions[openModalIndex].title}
               </h2>
               <p>{expressOptions[openModalIndex].description}</p>

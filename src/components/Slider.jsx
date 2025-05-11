@@ -72,11 +72,17 @@ const Gallery = () => {
     responsive: [
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 2 },
+        settings: {
+          slidesToShow: 2,
+          arrows: true,
+        },
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 1 },
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
       },
     ],
   };
@@ -87,54 +93,65 @@ const Gallery = () => {
         <div className="container-fluid">
           <label>Destinations</label>
           <h1>
-            Places to <span>You can Visit</span>
+            Places <span>You can Visit</span>
           </h1>
           <h4>Find your next Destination with Air Ceylon</h4>
         </div>
 
         <Slider {...settings}>
           {attractions.map((item, index) => (
-            <div className="slide-card" key={index}>
-              <div className="image">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  style={{
-                    width: "100%",
-                    height: "220px",
-                    borderRadius: "8px",
-                    objectFit: "cover",
-                  }}
-                />
-              </div>
-              <div className="card-body" style={{ padding: "0.75rem" }}>
-                <a
-                  href={`/home/learnmore?book=${encodeURIComponent(item.location)}`}
-                  style={{
-                    fontWeight: "bold",
-                    display: "block",
-                    padding: "0",
-                    margin: "10px 0",
-                    textDecoration: "none",
-                    color: "var(--text-gold-hover)",
-                  }}
-                >
-                  <FaLocationDot style={{ marginRight: "5px" }} />
-                  {item.title}
-                </a>
-                <p
-                  style={{
-                    fontSize: "0.9rem",
-                    color: "#444",
-                    fontWeight: "500",
-                    marginBottom: ".8rem",
-                  }}
-                >
-                  {item.description}
-                </p>
-                <label style={{ fontSize: "0.85rem", color: "#777" }}>
-                  {item.info}
-                </label>
+            <div key={index} style={{ padding: "0 10px", boxSizing: "border-box" }}>
+              <div
+                className="slide-card"
+                style={{
+                  borderRadius: "10px",
+                  background: "#fff",
+                  overflow: "hidden",
+                  height: "100%",
+                  margin: "1rem",
+                }}
+              >
+                <div className="image">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    style={{
+                      width: "100%",
+                      height: "220px",
+                      objectFit: "cover",
+                      borderRadius: "12px",
+                    }}
+                  />
+                </div>
+                <div className="card-body" style={{ padding: "1rem" }}>
+                  <a
+                    href={`/home/learnmore?book=${encodeURIComponent(item.location)}`}
+                    style={{
+                      fontWeight: "bold",
+                      display: "flex",
+                      alignItems: "center",
+                      margin: "0.75rem 0",
+                      textDecoration: "none",
+                      color: "var(--text-gold-hover)",
+                      fontSize: "1.05rem",
+                    }}
+                  >
+                    <FaLocationDot style={{ marginRight: "6px" }} />
+                    {item.title}
+                  </a>
+                  <p
+                    style={{
+                      fontSize: "0.9rem",
+                      color: "#444",
+                      fontWeight: "400",
+                      lineHeight: "1.5",
+                      marginBottom: "0.75rem",
+                    }}
+                  >
+                    {item.description}
+                  </p>
+                  <label style={{ fontSize: "0.85rem", color: "#999" }}>{item.info}</label>
+                </div>
               </div>
             </div>
           ))}

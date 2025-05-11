@@ -8,7 +8,7 @@
   --text-white-hover: #dddddd;
   --text-black: #111111;
   --text-black-hover: #333333;
-  --text-gold-brown: #9d7038;
+  --text-gold-brown: #a87c47;
   --text-gold-hover: #c89238;
 }
 
@@ -61,31 +61,24 @@ html {
 
 /* Button Content  */
 .btn.btn-light {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  padding: 0.8rem 1.6rem;
+  padding: 0.7rem 1.6rem;
   color: var(--text-white);
   background-color: var(--text-gold-hover);
+  transition: background-color 0.4s ease, color 0.4s ease;
   border-radius: 12px;
+  box-shadow: none;
   cursor: pointer;
 }
 
 .btn.btn-light:hover {
   background-color: var(--text-gold-brown);
 }
-/* 
-.btn.btn-dark {
-  font-size: 14px;
-  font-weight: 600;
-  padding: .8rem 1.6rem ;
-  color: var(--text-white);
-  background-color: var(--text-black);
-  border-radius: 12px;
-}
 
-.btn.btn-dark:hover {
-  background-color: var(--text-black-hover);
-} */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 /* Navigation Section  */
 header {
@@ -123,7 +116,6 @@ header nav a.logo {
 header nav ul {
   display: flex;
   align-items: center;
-  margin: 0;
 }
 
 header nav ul li {
@@ -132,41 +124,31 @@ header nav ul li {
 
 header nav .nav-link {
   color: var(--text-gold-hover);
+  transition: background-color 0.3s ease, color 0.3s ease;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 11px;
 }
 
 header nav .nav-link:hover {
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  background-color: linen;
+  background-color: whitesmoke;
   color: var(--text-gold-hover);
-  border-radius: 10px;
 }
 
 header nav .nav-link-active {
-  font-weight: 600;
-  padding: 0.5rem 1rem;
   background-color: linen;
   color: var(--text-gold-hover);
-  border-radius: 10px;
+  border-radius: 11px;
 }
 
-header nav span.nav-link.dropdown-toggle-active {
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  background-color: linen;
-  color: var(--text-gold-hover);
-  border-radius: 10px;
-}
-
-svg.nav-link-icon {
-  margin-left: 0.2rem;
-  font-size: 2.8rem;
+.nav-link-icon svg {
+  margin-left: 0.4rem;
+  font-size: 2.6rem;
   color: var(--text-gold-hover);
   padding: 0.6rem;
-  background: linen;
-  border-radius: 10px;
+  background-color: whitesmoke;
+  border-radius: 11px;
 }
 
 .logo {
@@ -178,39 +160,11 @@ svg.nav-link-icon {
   color: var(--text-gold-brown);
 }
 
-.nav-links {
-  display: flex;
-  gap: 0.8rem;
-  list-style: none;
-  position: relative;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  padding: 0.5rem 0;
-  padding-left: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-a.nav-link-icon svg {
-  margin-left: 0.2rem;
-  font-size: 2.6rem;
-  color: var(--text-gold-hover);
-}
-
-a.nav-link.icon svg:hover {
-  color: var(--text-gold-hover);
-  border: 2px solid #eee;
-  background: #eee;
-}
-
 /* Dropdown Section  */
 .nav-link.dropdown-toggle {
   color: var(--text-gold-hover);
   display: flex;
+  padding: 0.4rem 1rem;
   align-items: center;
   cursor: pointer;
   font-weight: 600;
@@ -245,6 +199,7 @@ a.nav-link.icon svg:hover {
 .dropdown .dropdown-menu .dropdown-item {
   color: var(--text-black);
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .dropdown span.nav-link.dropdown-toggle svg {
@@ -254,7 +209,6 @@ a.nav-link.icon svg:hover {
 
 .dropdown .dropdown-menu .dropdown-item:hover {
   color: var(--text-gold-hover);
-  /* background-color: var(--white-background-hover); */
 }
 
 .container {
@@ -341,7 +295,11 @@ a.nav-link.icon svg:hover {
 .welcome .card .container-fluid h4 {
   font-weight: 600;
   color: var(--text-black-hover);
-  margin-bottom: 1.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.welcome .card .container-fluid P {
+  margin: 1rem 0;
 }
 
 /* Slider Content  */
@@ -353,17 +311,10 @@ a.nav-link.icon svg:hover {
 }
 
 .slick-track {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding-bottom: 1rem;
 }
 
-.slick-track {
-  padding-bottom: 3rem;
-}
-
-/* Ensure spacing between slides */
 .slick-slide {
-  padding-right: 18px;
   box-sizing: border-box;
 }
 
@@ -374,7 +325,7 @@ a.nav-link.icon svg:hover {
 }
 
 .slick-dots {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .destinations {
@@ -389,7 +340,7 @@ a.nav-link.icon svg:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .destinations .container-fluid label {
@@ -473,14 +424,17 @@ a.nav-link.icon svg:hover {
   border-radius: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--background-white);
-  justify-content: space-between;
 }
 
-/* .express .container-lg .card:hover {
-  background-color: var(--text-gold-hover);
-  padding: 2.2rem 3%;
-} */
+.express .container-lg .card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.express .container-lg .card .card-body {
+  text-align: center;
+}
 
 .express .container-lg .card .card-body h3 {
   color: var(--text-gold-hover);
@@ -672,7 +626,7 @@ a.nav-link.icon svg:hover {
   border: 6px solid var(--text-gold-hover);
   margin: 0.8rem;
   width: 70%;
-  height: 40vh;
+  height: 44vh;
   padding: 2rem 3%;
   border-radius: 16px;
   display: flex;
@@ -730,8 +684,8 @@ footer .container .col img.logo {
 footer .container .row .col {
   color: var(--text-black);
   align-items: center;
-  width: 100%;
   margin-left: 4rem;
+  width: 100%;
 }
 
 footer .container .col h3 {
@@ -757,6 +711,7 @@ footer .container .brand svg {
   font-size: 1.6rem;
   color: #666;
   text-align: center;
+  transition: color 0.3s ease;
 }
 
 footer .container .brand svg:hover {
@@ -917,11 +872,6 @@ footer .footer-content .rights a {
     font-size: 2rem;
   }
 
-  .slide-card {
-    width: 98%;
-    padding-right: 10px;
-  }
-
   .stats .container-fluid h1 {
     font-size: 2.4rem;
   }
@@ -991,6 +941,7 @@ footer .footer-content .rights a {
 
   footer .container .row .col {
     margin: 1rem 8%;
+    width: unset;
   }
 
   footer .location p {
@@ -1020,4 +971,16 @@ footer .footer-content .rights a {
   footer .footer-content .rights p {
     font-size: 13px;
   }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+}
+
+@media (min-width: 1280px) and (max-width: 1464px) {
 }

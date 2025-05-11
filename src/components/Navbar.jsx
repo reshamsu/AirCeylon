@@ -102,7 +102,7 @@ const Navbar = () => {
             <NavLink
               to="/checkout"
               className={({ isActive }) =>
-                isActive ? "nav-link-icon nav-link-active" : "nav-link-icon"
+                isActive ? "nav-link-icon nav-icon-active" : "nav-link-icon"
               }
             >
               <IoBagCheckOutline />
