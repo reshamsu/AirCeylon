@@ -14,7 +14,7 @@ const Info = () => {
 
             <div className="card-body">
               <h1>
-                Why <span>Air Ceylon</span>
+                Why <span>Air Ceylon?</span>
               </h1>
               <h4 className="card-title">
                 At Air Ceylon, your journey is our passion. - see what our
