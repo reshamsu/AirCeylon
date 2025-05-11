@@ -80,6 +80,15 @@ html {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-gold-brown);
+}
+
 /* Navigation Section  */
 header {
   position: fixed;
@@ -94,10 +103,14 @@ header {
   transition: box-shadow 0.3 ease, border-bottom 0.3s ease, padding 0.3s ease;
 }
 
-nav a.menu {
-  font-size: 2rem;
-  color: var(--background-gold);
+nav button.menu {
+  font-size: 1.8rem;
+  color: var(--text-gold-hover);
   display: none;
+  border-radius: 10px;
+  padding: 6px;
+  align-items: center;
+  background: none;
 }
 
 header nav {
@@ -132,7 +145,7 @@ header nav .nav-link {
 }
 
 header nav .nav-link:hover {
-  background-color: whitesmoke;
+  background-color: linen;
   color: var(--text-gold-hover);
 }
 
@@ -147,17 +160,8 @@ header nav .nav-link-active {
   font-size: 2.6rem;
   color: var(--text-gold-hover);
   padding: 0.6rem;
-  background-color: whitesmoke;
+  background-color: linen;
   border-radius: 11px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--text-gold-brown);
 }
 
 /* Dropdown Section  */
@@ -209,6 +213,98 @@ header nav .nav-link-active {
 
 .dropdown .dropdown-menu .dropdown-item:hover {
   color: var(--text-gold-hover);
+}
+
+/* SideNav Section  */
+nav.sidenav {
+  background-color: var(--background-white);
+    padding: 1.8rem 4%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1050;
+  width: 55%;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+nav.sidenav .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+nav.sidenav .title button {
+  margin-right: 0.6rem;
+  border-radius: 8px;
+  background: none;
+  display: flex;
+}
+
+nav.sidenav .title svg {
+  color: var(--text-gold-hover);
+  /* background-color: linen; */
+  font-size: 2rem;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+nav.sidenav .title h3 {
+  color: var(--text-gold-hover);
+}
+
+nav.sidenav ul {
+  list-style: none;
+}
+
+nav.sidenav ul li {
+  margin-bottom: 0.4rem;
+  width: 100%;
+}
+
+nav.sidenav ul li a {
+  display: flex;
+  padding: .6rem 1rem;
+  font-size: 0.96rem;
+  font-weight: 600;
+  border-radius: 10px;
+  color: var(--text-gold-hover);
+}
+
+nav.sidenav ul li a:hover {
+  background-color: linen;
+  font-weight: 640;
+}
+
+nav.sidenav ul li a:active {
+  background-color: linen;
+  font-weight: 640;
+}
+
+nav.sidenav span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .7rem 1.1rem;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+nav.sidenav span:hover {
+  background-color: linen;
+}
+
+nav.sidenav span a {
+  color: var(--text-gold-hover);
+  font-weight: 600;
+}
+
+nav.sidenav span svg {
+  color: var(--text-gold-hover);
+  font-size: 1.4rem;
 }
 
 .container {
@@ -689,7 +785,7 @@ footer .container .row .col {
 }
 
 footer .container .col h3 {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1rem;
   color: var(--text-black-hover);
 }
 
@@ -738,12 +834,11 @@ footer .container .row .col ul li {
 
 footer .container .row .col ul li a {
   color: var(--text-black-hover);
-  text-decoration: none;
-  font-size: 15px;
 }
 
 footer .container .row .col ul li a:hover {
   font-weight: 600;
+  text-decoration: underline;
   color: var(--text-gold-hover);
 }
 
@@ -823,12 +918,20 @@ footer .footer-content .rights a {
     padding: 0.8rem 4%;
   }
 
-  nav a.menu {
-    display: block;
+  nav button.menu {
+    display: flex;
+  }
+
+  nav a.menu:hover {
+    background-color: linen;
   }
 
   .nav-links {
     display: none;
+  }
+
+  .hero-section .container-fluid {
+    margin: 0 5rem;
   }
 
   .hero-section h1 {

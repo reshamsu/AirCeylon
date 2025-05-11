@@ -167,7 +167,7 @@ const Footer = () => {
           >
             <p>
               Air Ceylon <FaRegCopyright /> 2025. All Rights Reserved. Powered
-              by <a href="https://www.myhive.biz/">myHive</a>
+              by <a href="https://www.myhive.biz/">myhive</a>
             </p>
           </div>
         </div>
