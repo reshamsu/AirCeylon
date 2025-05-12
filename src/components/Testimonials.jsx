@@ -12,13 +12,9 @@ const Testimonials = () => {
           <label>Testimonials</label>
 
           <h1>
-            What Our <span>Travelers Say</span>{" "}
+            Experience with <span>Air Ceylon</span>{" "}
             <FaCommentDots/>
           </h1>
-          <h4>
-            At Air Ceylon, your journey is our passion. - see what our guests
-            have to say.
-          </h4>
         </div>
 
         <div className="container-lg">
@@ -43,7 +39,7 @@ const Testimonials = () => {
                 importantly a reliable & valuable travel solution.
                 <FaQuoteRight />
               </h4>
-              <p className="card-text">myhive Colombo - Sri Lanka (HQ)</p>
+              <p className="card-text">Hive Colombo</p>
             </div>
           </div>
 
@@ -75,7 +71,7 @@ const Testimonials = () => {
                 needs. <FaQuoteRight />
               </h4>
               <p className="card-text">
-                Transition Support to Toronto - Canada.
+                Resident from Toronto - Canada.
               </p>
             </div>
           </div>

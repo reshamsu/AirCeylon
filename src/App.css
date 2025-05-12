@@ -40,7 +40,7 @@ html {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 104vh;
   z-index: -1;
   overflow: hidden;
 }
@@ -324,23 +324,15 @@ nav.sidenav span svg {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* background-color: #eee; */
 }
 
 .hero-section h1 {
   font-size: 3.6rem;
   color: var(--text-white);
-  margin-bottom: 1rem;
 }
 
 .hero-section h1 span {
-  /* color: var(--text-white); */
   color: var(--text-gold-hover);
-}
-
-.hero-section p {
-  font-size: 1.2rem;
-  color: var(--text-white);
 }
 
 /* Welcome Section  */
@@ -352,29 +344,11 @@ nav.sidenav span svg {
   background-color: linen;
 }
 
-.welcome .container-fluid .introduction {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.welcome .container-fluid {
+  text-align: center;
 }
 
-.welcome .container-fluid .introduction img {
-  width: 4.4%;
-}
-
-.welcome .card .container-fluid {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  /* padding: 2.4rem 4%;
-  background-color: var(--background-white);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 16px; */
-}
-
-.welcome .card .container-fluid label {
+.welcome .container-fluid label {
   font-weight: 600;
   color: var(--text-gold-hover);
   background-color: blanchedalmond;
@@ -383,26 +357,20 @@ nav.sidenav span svg {
   margin: 1rem 0;
 }
 
-.welcome .card .container-fluid h1 {
+.welcome .container-fluid h1 {
   font-size: 40px;
   font-weight: 700;
-  margin-top: 0.6rem;
-  margin-bottom: 2rem;
+  margin: 2rem;
   color: var(--text-black-hover);
 }
 
-.welcome .card .container-fluid h1 span {
+.welcome .container-fluid h1 span {
   color: var(--text-gold-hover);
 }
 
-.welcome .card .container-fluid h4 {
-  font-weight: 600;
-  color: var(--text-black-hover);
-  padding-bottom: 0.8rem;
-}
-
-.welcome .card .container-fluid P {
-  margin: 1rem 0;
+.welcome .container-fluid h4 {
+  margin: 2rem 10%;
+  font-weight: 500;
 }
 
 /* Slider Content  */
@@ -443,7 +411,7 @@ nav.sidenav span svg {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .destinations .container-fluid label {
@@ -474,11 +442,26 @@ nav.sidenav span svg {
 
 /* Express Content  */
 .express {
+  position: relative;
+  overflow: hidden;
   min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: linen;
+}
+
+.express::before {
+  content: "";
+  background-image: url("/public/assets/thunderbolt.png");
+  background-size: 320px 320px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: 0;
 }
 
 .express .container-fluid {
@@ -607,6 +590,10 @@ nav.sidenav span svg {
   box-shadow: 0px 8px 8px rgba(255, 255, 255, 0.6);
 }
 
+.stats .container-lg .card-body {
+  text-align: center;
+}
+
 .stats .container-lg h4.card-title {
   display: flex;
   align-items: center;
@@ -616,11 +603,8 @@ nav.sidenav span svg {
   margin-bottom: 0.6rem;
 }
 
-.stats .container-lg .card .card-body p {
-  color: var(--text-black);
-  font-size: 0.9rem;
+.stats .container-lg i.card-text {
   font-weight: 500;
-  text-align: center;
 }
 
 .stats .container-lg .card-body svg {
@@ -628,16 +612,6 @@ nav.sidenav span svg {
   font-weight: 500;
   margin-right: 1.4rem;
   color: var(--text-gold-hover);
-}
-
-.stats .card .card-body h3 {
-  color: var(--text-white);
-  font-weight: 600;
-  margin-bottom: 0.4rem;
-}
-
-.stats .card .card-body p {
-  color: var(--text-white);
 }
 
 /* Services Content  */
@@ -688,8 +662,7 @@ nav.sidenav span svg {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 3.4rem;
-  text-align: center;
+  padding-bottom: 2rem;
 }
 
 .testimonials .container-fluid label {
@@ -716,12 +689,6 @@ nav.sidenav span svg {
   margin-left: 6px;
   font-size: 3rem;
   color: var(--text-gold-hover);
-}
-
-.testimonials .container-fluid h4 {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-black-hover);
 }
 
 .testimonials .container-lg {
@@ -1001,22 +968,21 @@ footer .footer-content .rights a {
     font-size: 2.4rem;
   }
 
-  .welcome .card .container-fluid {
+  .welcome .container-fluid {
     padding: 2rem 10%;
     text-align: center;
   }
 
-  .welcome .card .container-fluid label {
+  .welcome .container-fluid h1 {
+    font-size: 2.4rem;
+  }
+
+  .welcome .container-fluid label {
     font-size: 14px;
   }
 
-  .welcome .card .container-fluid .introduction img {
+  .welcome .container-fluid .introduction img {
     width: 14%;
-  }
-
-  .welcome .card .container-fluid h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
   }
 
   .destinations .container-fluid {
@@ -1072,8 +1038,13 @@ footer .footer-content .rights a {
     display: block;
   }
 
+  .testimonials .container-fluid {
+    margin: 0 1rem;
+  }
+
   .testimonials .container-fluid h1 {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
+    text-align: center;
   }
 
   .testimonials .container-fluid h1 svg {

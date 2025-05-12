@@ -95,7 +95,6 @@ const Gallery = () => {
           <h1>
             Your Next <span>Journey Awaits</span>
           </h1>
-          <h4>Find your next Destination with Air Ceylon</h4>
         </div>
 
         <Slider {...settings}>

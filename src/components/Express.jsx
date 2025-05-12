@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const expressOptions = [
   {
-    title: "For Inquiries or Consultations",
+    title: "For Inquiries / Consultations",
     description:
       "Our dedicated team is here to assist you with travel-related inquiries, visa consultation, and service clarifications. Whether you're planning your first trip or need guidance on our packages, we offer professional advice tailored to your needs.",
     button: "Call Us",
@@ -16,7 +16,7 @@ const expressOptions = [
     isModal: true,
   },
   {
-    title: "To Make a Visit for an Appointment",
+    title: "To Set an Appointment For Visit / Service",
     description:
       "Schedule a one-on-one consultation at your convenience. Meet with our travel experts in person to discuss your travel plans, document assistance, or training options in a personalized setting.",
     button: "Book Now",
@@ -70,7 +70,7 @@ const Express = () => {
           <label style={{ color: "var(--text-gold-hover)" }}>Express</label>
           <h1>
             Express{" "}
-            <span style={{ color: "var(--text-gold-hover)" }}>Lanes</span>
+            <span style={{ color: "var(--text-gold-hover)" }}>Lane</span>
           </h1>
         </div>
 

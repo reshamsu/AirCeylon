@@ -27,7 +27,7 @@ const Footer = () => {
                   />
                   AIR CEYLON
                 </Link>
-                <p>Beyond the Horizon</p>
+                <p>Beyond the Horizon.</p>
 
                 <ul>
                   <li>
@@ -135,7 +135,7 @@ const Footer = () => {
           <div className="col">
             <div className="location">
               <p>
-                <label>Visit Us by Appointment at:</label> WSPACE - 252A, GALLE ROAD, COLOMBO 4
+                <label>Visit us by Appointment:</label> Wspace - 252A, Galle Road, Colombo 4
                 (Bambalapitiya), Western Province, Sri Lanka.
                 <a
                   href="https://www.google.com/maps?q=WSPACE+-+252A,+GALLE+ROAD,+COLOMBO+4+(Bambalapitiya),+Western+Province,+Sri+Lanka"

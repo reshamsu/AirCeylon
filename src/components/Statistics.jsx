@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "@mui/material";
-import { GiWorld } from "react-icons/gi";
-import { BsSuitcaseFill } from "react-icons/bs";
+import { FaHandshake } from "react-icons/fa";
+import { GiDiamondTrophy } from "react-icons/gi";
 import { GiStarsStack } from "react-icons/gi";
-import { BsPersonArmsUp } from "react-icons/bs";
+import { FaMapLocationDot } from "react-icons/fa6";
 
 const Statistics = () => {
   return (
@@ -18,8 +18,13 @@ const Statistics = () => {
         <div className="container-lg">
           <div className="card">
             <div className="card-body">
-              <h4 className="card-title"> <GiWorld /> 45+ Countries</h4>
-              <p className="card-text">"We help travelers explore over 45+ countries across 6 continents."</p>
+              <h4 className="card-title">
+                {" "}
+                <FaHandshake /> Expert Partnerships
+              </h4>
+              <i className="card-text">
+                Trusted global alliance for seamless travel.
+              </i>
             </div>
           </div>
 
@@ -28,8 +33,12 @@ const Statistics = () => {
               <img src="" className="card-img-top" alt="" />
             </div>
             <div className="card-body">
-              <h4 className="card-title"><BsSuitcaseFill /> 12,000+ Trips Booked</h4>
-              <p className="card-text">"12,000+ successful trips organized."</p>
+              <h4 className="card-title">
+                <GiDiamondTrophy /> Exceeding Standards
+              </h4>
+              <i className="card-text">
+                Thousands of trips, flawlessly delivered.
+              </i>
             </div>
           </div>
 
@@ -38,22 +47,26 @@ const Statistics = () => {
               <img src="" className="card-img-top" alt="" />
             </div>
             <div className="card-body">
-              <h4 className="card-title"><GiStarsStack /> Customer Satisfaction</h4>
-              <p className="card-text">
-                "97% customer satisfaction rate across all bookings."
-              </p>
+              <h4 className="card-title">
+                <GiStarsStack /> Effortless Experience
+              </h4>
+              <i className="card-text">
+                Consistently high customer satisfaction.
+              </i>
             </div>
           </div>
 
-                    <div className="card">
+          <div className="card">
             <div className="image">
               <img src="" className="card-img-top" alt="" />
             </div>
             <div className="card-body">
-              <h4 className="card-title"><BsPersonArmsUp /> Happy Travelers</h4>
-              <p className="card-text">
-                "Join a community of 35,000+ happy travelers worldwide."
-              </p>
+              <h4 className="card-title">
+                <FaMapLocationDot /> Exclusive Travel Hub
+              </h4>
+              <i className="card-text">
+                A vibrant community of avid travelers.
+              </i>
             </div>
           </div>
         </div>
