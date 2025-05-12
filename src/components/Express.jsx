@@ -11,7 +11,8 @@ const expressOptions = [
     button: "Call Us",
     phone: "+94 77 123 4567",
     email: "info@airceylon.com",
-    details: "You can reach us by phone or by visiting our Contact page for more.",
+    details:
+      "You can reach us by phone or by visiting our Contact page for more.",
     isModal: true,
   },
   {
@@ -21,7 +22,8 @@ const expressOptions = [
     button: "Book Now",
     phone: "+94 77 123 4567",
     email: "info@airceylon.com",
-    details: "Use our booking form or call to reserve an appointment at your convenience.",
+    details:
+      "Use our booking form or call to reserve an appointment at your convenience.",
     isModal: true,
   },
   {
@@ -29,7 +31,8 @@ const expressOptions = [
     description:
       "Start your journey toward global education and career success with our comprehensive IELTS training programs. Designed by certified instructors, our courses prepare you to achieve your desired band score through expert guidance and structured practice.",
     button: "Register Now",
-    details: "Enroll in our IELTS programs by registering through our online portal or at our office.",
+    details:
+      "Enroll in our IELTS programs by registering through our online portal or at our office.",
     isModal: false,
     direct: "/checkout",
   },
@@ -66,7 +69,8 @@ const Express = () => {
         <div className="container-fluid">
           <label style={{ color: "var(--text-gold-hover)" }}>Express</label>
           <h1>
-            Express <span style={{ color: "var(--text-gold-hover)" }}>Links</span>
+            Express{" "}
+            <span style={{ color: "var(--text-gold-hover)" }}>Lanes</span>
           </h1>
         </div>
 
@@ -74,9 +78,6 @@ const Express = () => {
           {expressOptions.map((item, index) => (
             <div className="card" key={index}>
               <div className="card-body">
-                <h3 className="card-title" style={{ marginBottom: "1rem" }}>
-                  {item.title}
-                </h3>
                 {item.isModal ? (
                   <Button
                     variant="contained"
@@ -95,6 +96,9 @@ const Express = () => {
                     {item.button}
                   </Button>
                 )}
+                <h4 className="card-title">
+                  {item.title}
+                </h4>
               </div>
             </div>
           ))}
@@ -115,7 +119,13 @@ const Express = () => {
               >
                 <CloseIcon />
               </IconButton>
-              <h2 style={{ fontWeight: "700", marginBottom: "1rem", color: "var(--text-gold-hover)" }}>
+              <h2
+                style={{
+                  fontWeight: "700",
+                  marginBottom: "1rem",
+                  color: "var(--text-gold-hover)",
+                }}
+              >
                 {expressOptions[openModalIndex].title}
               </h2>
               <p>{expressOptions[openModalIndex].description}</p>
@@ -123,14 +133,18 @@ const Express = () => {
               {expressOptions[openModalIndex].phone && (
                 <div style={{ margin: "1rem 0" }}>
                   <label>Phone:</label>
-                  <h4 style={{ fontWeight: "600" }}>{expressOptions[openModalIndex].phone}</h4>
+                  <h4 style={{ fontWeight: "600" }}>
+                    {expressOptions[openModalIndex].phone}
+                  </h4>
                 </div>
               )}
 
               {expressOptions[openModalIndex].email && (
                 <div style={{ marginBottom: "1rem" }}>
                   <label>Email Address:</label>
-                  <h4 style={{ fontWeight: "600" }}>{expressOptions[openModalIndex].email}</h4>
+                  <h4 style={{ fontWeight: "600" }}>
+                    {expressOptions[openModalIndex].email}
+                  </h4>
                 </div>
               )}
 

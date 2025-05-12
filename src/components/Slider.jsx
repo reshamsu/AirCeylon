@@ -93,7 +93,7 @@ const Gallery = () => {
         <div className="container-fluid">
           <label>Destinations</label>
           <h1>
-            Places <span>You can Visit</span>
+            Your Next <span>Journey Awaits</span>
           </h1>
           <h4>Find your next Destination with Air Ceylon</h4>
         </div>

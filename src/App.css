@@ -2,7 +2,7 @@
 
 :root {
   --background-white: #ffffff;
-  --background-gold: #b57906;
+  --background-gold: #c67c0ed5;
   --white-background-hover: #eeeeee;
   --text-white: #ffffff;
   --text-white-hover: #dddddd;
@@ -37,7 +37,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 84vh;
+  height: 100vh;
   z-index: -1;
   overflow: hidden;
 }
@@ -51,9 +51,9 @@ html {
 
 .homepage-overlay .watermark {
   position: absolute;
-  bottom: -340px;
-  right: 420px;
-  width: 80%;
+  bottom: -60px;
+  right: 600px;
+  width: 55%;
   opacity: 0.09;
   pointer-events: none;
   z-index: 2;
@@ -61,8 +61,8 @@ html {
 
 /* Button Content  */
 .btn.btn-light {
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 550;
   padding: 0.7rem 1.6rem;
   color: var(--text-white);
   background-color: var(--text-gold-hover);
@@ -70,10 +70,12 @@ html {
   border-radius: 12px;
   box-shadow: none;
   cursor: pointer;
+  width: 100%;
 }
 
 .btn.btn-light:hover {
-  background-color: var(--text-gold-brown);
+  background-color: var(--text-gold-hover);
+  color: var(--text-white);
 }
 
 .card {
@@ -97,7 +99,7 @@ header {
   right: 0;
   z-index: 1050;
   box-sizing: border-box;
-  padding: 1rem 12%;
+  padding: 1rem 10%;
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3 ease, border-bottom 0.3s ease, padding 0.3s ease;
@@ -133,13 +135,13 @@ header nav ul {
 
 header nav ul li {
   list-style: none;
+  margin-right: 0.4rem;
 }
 
 header nav .nav-link {
   color: var(--text-gold-hover);
   transition: background-color 0.3s ease, color 0.3s ease;
   font-weight: 600;
-  margin: 0.2rem;
   padding: 0.6rem 1.4rem;
   border-radius: 11px;
 }
@@ -153,6 +155,7 @@ header nav .nav-link-active {
   background-color: linen;
   color: var(--text-gold-hover);
   border-radius: 11px;
+  font-weight: 650;
 }
 
 .nav-link-icon svg {
@@ -166,12 +169,9 @@ header nav .nav-link-active {
 
 /* Dropdown Section  */
 .nav-link.dropdown-toggle {
-  color: var(--text-gold-hover);
   display: flex;
-  padding: 0.4rem 1rem;
   align-items: center;
   cursor: pointer;
-  font-weight: 600;
 }
 
 .dropdown {
@@ -221,6 +221,8 @@ nav.sidenav {
   padding: 1.8rem 4%;
   min-height: 100vh;
   display: flex;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
   justify-content: space-between;
   flex-direction: column;
   position: fixed;
@@ -312,7 +314,7 @@ nav.sidenav span svg {
 
 /* Homepage Section  */
 .hero-section {
-  min-height: 84vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -320,9 +322,9 @@ nav.sidenav span svg {
 }
 
 .hero-section h1 {
-  font-size: 4rem;
+  font-size: 3.6rem;
   color: var(--text-white);
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .hero-section h1 span {
@@ -337,7 +339,7 @@ nav.sidenav span svg {
 
 /* Welcome Section  */
 .welcome {
-  min-height: 50vh;
+  min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,16 +362,16 @@ nav.sidenav span svg {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 2.4rem 4%;
+  /* padding: 2.4rem 4%;
   background-color: var(--background-white);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 16px;
+  border-radius: 16px; */
 }
 
 .welcome .card .container-fluid label {
   font-weight: 600;
   color: var(--text-gold-hover);
-  background-color: linen;
+  background-color: blanchedalmond;
   padding: 0.6rem 18px;
   border-radius: 14px;
   margin: 1rem 0;
@@ -435,7 +437,7 @@ nav.sidenav span svg {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 .destinations .container-fluid label {
@@ -448,7 +450,7 @@ nav.sidenav span svg {
 }
 
 .destinations .container-fluid h1 {
-  font-size: 40px;
+  font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--text-black-hover);
@@ -491,7 +493,7 @@ nav.sidenav span svg {
 }
 
 .express .container-fluid h1 {
-  font-size: 40px;
+  font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--text-black-hover);
@@ -520,7 +522,7 @@ nav.sidenav span svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--background-white);
+  /* background-color: var(--background-white); */
 }
 
 .express .container-lg .card:hover {
@@ -529,12 +531,13 @@ nav.sidenav span svg {
 
 .express .container-lg .card .card-body {
   text-align: center;
+  width: 100%;
 }
 
-.express .container-lg .card .card-body h3 {
-  color: var(--text-gold-hover);
+.express .container-lg .card .card-body h4 {
+  color: var(--text-black-hover);
   font-weight: 600;
-  margin-bottom: 1rem;
+  padding-top: 1.4rem;
 }
 
 /* Statistics Content  */
@@ -564,14 +567,14 @@ nav.sidenav span svg {
 }
 
 .stats .container-fluid h1 {
-  font-size: 52px;
+  font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--text-white);
 }
 
 .stats .container-fluid h4 {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-white);
 }
@@ -586,6 +589,7 @@ nav.sidenav span svg {
   background-color: var(--background-white);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
   margin: 0.8rem;
+  cursor: pointer;
   padding: 1.6rem 3%;
   border-radius: 16px;
   display: flex;
@@ -692,13 +696,19 @@ nav.sidenav span svg {
 }
 
 .testimonials .container-fluid h1 {
-  font-size: 40px;
+  font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--text-black-hover);
 }
 
 .testimonials .container-fluid h1 span {
+  color: var(--text-gold-hover);
+}
+
+.testimonials .container-fluid h1 svg {
+  margin-left: 6px;
+  font-size: 3rem;
   color: var(--text-gold-hover);
 }
 
@@ -715,19 +725,18 @@ nav.sidenav span svg {
 }
 
 .testimonials .container-lg .card {
-  /* background-color: blanchedalmond; */
   background-color: linen;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* background-color: var(--background-white); */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   border: 6px solid var(--text-gold-hover);
   margin: 0.8rem;
   width: 70%;
-  height: 44vh;
+  height: 33vh;
   padding: 2rem 3%;
   border-radius: 16px;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .testimonials .container-lg .card:hover {
@@ -736,25 +745,25 @@ nav.sidenav span svg {
   transform: translateY(-6px);
 }
 
-.testimonials .container-lg .card h4.card-text {
+.testimonials .container-lg .card p.card-text {
   color: var(--text-gold-hover);
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
 }
 
-.testimonials .container-lg .card p.card-title {
+.testimonials .container-lg .card h4.card-title {
   color: var(--text-black-hover);
   font-size: 0.9rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 
 .testimonials .container-lg .card-body svg {
   font-size: 1.4rem;
   font-weight: 500;
-  margin: 0.2rem;
+  margin: 0 0.2rem;
   color: var(--text-gold-hover);
 }
 
@@ -796,9 +805,9 @@ footer .container .brand {
 
 footer .container .brand p {
   margin: 1.6rem 0;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-black-hover);
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -842,7 +851,7 @@ footer .container .row .col ul li a:hover {
 }
 
 footer .footer-content .contact {
-  margin-top: 1rem;
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -937,8 +946,35 @@ footer .footer-content .rights a {
     min-height: 100vh;
   }
 
-  .homepage-overlay {
-    height: 100vh;
+  .homepage-overlay .homepage {
+    min-height: 100vh;
+  }
+
+  .homepage-overlay .watermark {
+    width: 300px;
+    bottom: 164px;
+    right: 44px;
+  }
+
+  .custom-arrow {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .custom-arrow.left {
+    left: 5px;
+  }
+
+  .custom-arrow.right {
+    right: 5px;
+  }
+
+  .airceylon h1 {
+    font-size: 1.4rem;
+  }
+
+  .airceylon p {
+    font-size: 0.9rem;
   }
 
   .hero-section .container-fluid {
@@ -979,6 +1015,7 @@ footer .footer-content .rights a {
 
   .destinations .container-fluid {
     text-align: center;
+    margin: 0 3rem;
     padding-bottom: 3rem;
   }
 
@@ -986,12 +1023,18 @@ footer .footer-content .rights a {
     font-size: 2rem;
   }
 
+  .stats .container-fluid {
+    margin: 0 2rem;
+  }
+
   .stats .container-fluid h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    text-align: center;
   }
 
   .stats .container-fluid h4 {
     font-size: 14px;
+    text-align: center;
   }
 
   .stats .container-lg {
@@ -1005,6 +1048,12 @@ footer .footer-content .rights a {
 
   .express .container-fluid {
     margin: 1.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .express .container-fluid h1 {
+    font-size: 2.2rem;
   }
 
   .express .container-lg {
@@ -1013,7 +1062,6 @@ footer .footer-content .rights a {
 
   .express .container-lg .card {
     width: 90%;
-    margin-bottom: 1.4rem;
     text-align: center;
     display: block;
   }
@@ -1022,8 +1070,13 @@ footer .footer-content .rights a {
     font-size: 1.6rem;
   }
 
+  .testimonials .container-fluid h1 svg {
+    font-size: 2.4rem;
+  }
+
   .testimonials .container-fluid h4 {
     font-size: 14px;
+    margin: 0 2rem;
   }
 
   .testimonials .container-lg {
@@ -1061,6 +1114,7 @@ footer .footer-content .rights a {
   footer .location p {
     font-size: 13px;
     text-align: center;
+    margin: 1rem;
   }
 
   footer .location p a {
@@ -1084,10 +1138,64 @@ footer .footer-content .rights a {
 
   footer .footer-content .rights p {
     font-size: 13px;
+    margin: 0 2rem;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+
+  header {
+    padding: 1rem 5%;
+  }
+
+  nav button.menu {
+    display: flex;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  /* Side Nav */
+  nav.sidenav {
+    width: 80%;
+  }
+
+  /* Welcome section stacking */
+  .welcome .container-fluid .introduction {
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: center;
+  }
+
+  .welcome .container-fluid .introduction img {
+    width: 18%;
+  }
+
+  /* Express cards stacking */
+  .express .container-lg {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .express .container-lg .card {
+    width: 90%;
+  }
+
+  /* Stats cards stacking */
+  .stats .container-lg {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  /* Testimonials */
+  .testimonials .container-lg .card {
+    width: 90%;
+    height: auto;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {

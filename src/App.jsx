@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import { useMediaQuery } from "react-responsive";
 import Navbar from "./components/Navbar";
-import MobileNav from "./components/MobileNav";
 import Home from "./pages/Home";
 import VisaService from "./pages/services/Visa-Services";
 import EPTAcademy from "./pages/services/EPT-Academy";

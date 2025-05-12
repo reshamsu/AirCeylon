@@ -25,9 +25,9 @@ const Footer = () => {
                     alt="Air Ceylon Logo"
                     style={{ width: "2.8rem", marginRight: ".8rem" }}
                   />
-                  Air Ceylon
+                  AIR CEYLON
                 </Link>
-                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <p>Beyond the Horizon</p>
 
                 <ul>
                   <li>
@@ -37,7 +37,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.facebook.com/your_facebook_username"
+                      href="https://www.facebook.com/share/19h7Uyr39x/?mibextid=wwXIfr "
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -46,7 +46,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.instagram.com/air.ceylon/"
+                      href="https://www.instagram.com/air.ceylon?igsh=MXFiaTdhZ3picmM2dg== "
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -63,7 +63,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:your.email@example.com">
+                    <a href="mailto:info@airceylonint.com">
                       <HiOutlineMail />
                     </a>
                   </li>
@@ -105,13 +105,13 @@ const Footer = () => {
                   <a href="#">Asia</a>
                 </li>
                 <li>
-                  <a href="#">Middle East</a>
+                  <a href="#">Middle-East</a>
                 </li>
                 <li>
                   <a href="#">East Asia</a>
                 </li>
                 <li>
-                  <a href="#">South East Asia</a>
+                  <a href="#">South-East Asia</a>
                 </li>
               </ul>
             </div>
@@ -120,16 +120,13 @@ const Footer = () => {
               <ul>
                 <h3>EPT Academy</h3>
                 <li>
-                  <a href="#">IELTS</a>
+                  <a href="#">Crash Course</a>
                 </li>
                 <li>
-                  <a href="#">TEFL</a>
+                  <a href="#">Essential Course</a>
                 </li>
                 <li>
-                  <a href="#">ESL</a>
-                </li>
-                <li>
-                  <a href="#">TESOL Coaching</a>
+                  <a href="#">Pro Course</a>
                 </li>
               </ul>
             </div>
@@ -138,7 +135,7 @@ const Footer = () => {
           <div className="col">
             <div className="location">
               <p>
-                <label>Location:</label> WSPACE - 252A, GALLE ROAD, COLOMBO 4
+                <label>Visit Us by Appointment at:</label> WSPACE - 252A, GALLE ROAD, COLOMBO 4
                 (Bambalapitiya), Western Province, Sri Lanka.
                 <a
                   href="https://www.google.com/maps?q=WSPACE+-+252A,+GALLE+ROAD,+COLOMBO+4+(Bambalapitiya),+Western+Province,+Sri+Lanka"
@@ -151,12 +148,12 @@ const Footer = () => {
             </div>
             <div className="contact">
               <label>
-                Phone Number: <a href="tel:+14372543077"> +94 123 456 789</a>
+                Phone Number: <a href="tel:+14372543077"> +94 760 301 141</a>
               </label>
               <RxDividerVertical />
               <label>
                 Email Address:
-                <a href="mailto:info@airceylon.com">info@airceylon.com</a>
+                <a href="mailto:info@airceylon.com">info@airceylonint.com</a>
               </label>
             </div>
           </div>
@@ -166,7 +163,7 @@ const Footer = () => {
             style={{ textAlign: "center", marginTop: "1.4rem" }}
           >
             <p>
-              Air Ceylon <FaRegCopyright /> 2025. All Rights Reserved. Powered
+              Air Ceylon International Private Limited <FaRegCopyright /> 2025. All Rights Reserved. Powered
               by <a href="https://www.myhive.biz/">myhive</a>
             </p>
           </div>

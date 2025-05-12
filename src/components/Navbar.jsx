@@ -23,7 +23,7 @@ const Navbar = () => {
               alt="Air Ceylon Logo"
               style={{ width: "2.8rem", marginRight: ".8rem" }}
             />
-            Air Ceylon
+            AIR CEYLON
           </NavLink>
 
           {/* Desktop Nav */}

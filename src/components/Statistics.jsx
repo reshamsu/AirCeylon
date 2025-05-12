@@ -11,8 +11,8 @@ const Statistics = () => {
       <Container className="container">
         <div className="container-fluid">
           <label>Our Expertise</label>
-          <h1>What we offer</h1>
-          <h4>Helping you get the best service from Air Ceylon</h4>
+          <h1>Your Journey, Our Responsibility.</h1>
+          <h4>Navigating Your Experience with Confidence and Ease</h4>
         </div>
 
         <div className="container-lg">
