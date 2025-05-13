@@ -1510,6 +1510,10 @@ footer .footer-content .rights a {
     width: 14%;
   }
 
+  .destinations {
+    min-height: 64vh;
+  }
+
   .destinations .container-fluid {
     text-align: center;
     margin: 0 3rem;
@@ -1535,12 +1539,16 @@ footer .footer-content .rights a {
   }
 
   .stats .container-lg {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .stats .container-lg .card {
-    padding: 1.6rem 12%;
     margin: 1rem;
+    padding: 1.8rem 4%;
+  }
+
+  .stats .container-lg .card-body svg {
+    font-size: 6rem;
   }
 
   .express .container-fluid {
