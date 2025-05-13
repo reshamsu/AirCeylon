@@ -9,8 +9,8 @@ const expressOptions = [
     description:
       "Our dedicated team is here to assist you with travel-related inquiries, visa consultation, and service clarifications. Whether you're planning your first trip or need guidance on our packages, we offer professional advice tailored to your needs.",
     button: "Call Us",
-    phone: "+94 77 123 4567",
-    email: "info@airceylon.com",
+    phone: "+94 760 301 141",
+    email: "info@airceylonint.com",
     details:
       "You can reach us by phone or by visiting our Contact page for more.",
     isModal: true,
@@ -20,8 +20,8 @@ const expressOptions = [
     description:
       "Schedule a one-on-one consultation at your convenience. Meet with our travel experts in person to discuss your travel plans, document assistance, or training options in a personalized setting.",
     button: "Book Now",
-    phone: "+94 77 123 4567",
-    email: "info@airceylon.com",
+    phone: "+94 760 301 141",
+    email: "info@airceylonint.com",
     details:
       "Use our booking form or call to reserve an appointment at your convenience.",
     isModal: true,

@@ -145,7 +145,7 @@ header nav ul li {
 }
 
 header nav .nav-link {
-  color: var(--text-gold-hover);
+  color: var(--text-black-hover);
   transition: background-color 0.3s ease, color 0.3s ease;
   font-weight: 600;
   padding: 0.6rem 1.4rem;
@@ -153,7 +153,7 @@ header nav .nav-link {
 }
 
 header nav .nav-link:hover {
-  background-color: linen;
+  background-color: whitesmoke;
   color: var(--text-gold-hover);
 }
 
@@ -964,17 +964,13 @@ footer .footer-content .rights a {
     text-align: center;
   }
 
-  .services .container-fluid h1 {
-    font-size: 2.4rem;
-  }
-
   .welcome .container-fluid {
     padding: 2rem 10%;
     text-align: center;
   }
 
   .welcome .container-fluid h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .welcome .container-fluid label {
@@ -988,10 +984,14 @@ footer .footer-content .rights a {
   .destinations .container-fluid {
     text-align: center;
     margin: 0 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
 
   .destinations .container-fluid h1 {
+    font-size: 2rem;
+  }
+
+  .services .container-fluid h1 {
     font-size: 2rem;
   }
 
@@ -1015,7 +1015,6 @@ footer .footer-content .rights a {
 
   .stats .container-lg .card {
     padding: 1.6rem 12%;
-    margin: 1rem;
   }
 
   .express .container-fluid {
@@ -1199,20 +1198,12 @@ footer .footer-content .rights a {
     text-align: center;
   }
 
-  .airceylon h1 {
-    font-size: 1.4rem;
-  }
-
-  .airceylon p {
-    font-size: 0.9rem;
-  }
-
   .hero-section .container-fluid {
     margin: 0 5rem;
   }
 
   .hero-section h1 {
-    font-size: 2.4rem;
+    font-size: 3rem;
     text-align: center;
   }
 
@@ -1221,17 +1212,13 @@ footer .footer-content .rights a {
     text-align: center;
   }
 
-  .services .container-fluid h1 {
-    font-size: 2.4rem;
-  }
-
   .welcome .container-fluid {
     padding: 2rem 10%;
     text-align: center;
   }
 
   .welcome .container-fluid h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .welcome .container-fluid label {
@@ -1240,12 +1227,6 @@ footer .footer-content .rights a {
 
   .welcome .container-fluid .introduction img {
     width: 14%;
-  }
-
-  .destinations .container-fluid {
-    text-align: center;
-    margin: 0 3rem;
-    padding-bottom: 3rem;
   }
 
   .destinations .container-fluid h1 {
@@ -1277,6 +1258,10 @@ footer .footer-content .rights a {
 
   .stats .container-lg .card-body svg {
     font-size: 4.5rem;
+  }
+
+  .services .container-fluid h1 {
+    font-size: 2.4rem;
   }
 
   .express .container-fluid {
@@ -1338,7 +1323,7 @@ footer .footer-content .rights a {
   }
 
   footer .container .brand ul {
-    margin: 1rem 24%;
+    margin: 1rem 30%;
   }
 
   footer .container .row {
@@ -1417,6 +1402,20 @@ footer .footer-content .rights a {
     min-height: 100vh;
   }
 
+  .hero-section .container-fluid {
+    margin: 0 5rem;
+  }
+
+  .hero-section h1 {
+    font-size: 3.3rem;
+    text-align: center;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
   .homepage-overlay .homepage {
     min-height: 100vh;
   }
@@ -1425,6 +1424,23 @@ footer .footer-content .rights a {
     width: 80%;
     bottom: auto;
     right: auto;
+  }
+
+  .welcome .container-fluid {
+    padding: 2rem 10%;
+    text-align: center;
+  }
+
+  .welcome .container-fluid h1 {
+    font-size: 2.2rem;
+  }
+
+  .welcome .container-fluid label {
+    font-size: 14px;
+  }
+
+  .welcome .container-fluid .introduction img {
+    width: 14%;
   }
 
   .slider {
@@ -1467,65 +1483,12 @@ footer .footer-content .rights a {
     text-align: center;
   }
 
-  .airceylon h1 {
-    font-size: 1.4rem;
-  }
-
-  .airceylon p {
-    font-size: 0.9rem;
-  }
-
-  .hero-section .container-fluid {
-    margin: 0 5rem;
-  }
-
-  .hero-section h1 {
-    font-size: 2.4rem;
-    text-align: center;
-  }
-
-  .hero-section p {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .services .container-fluid h1 {
-    font-size: 2.4rem;
-  }
-
-  .welcome .container-fluid {
-    padding: 2rem 10%;
-    text-align: center;
-  }
-
-  .welcome .container-fluid h1 {
-    font-size: 2.4rem;
-  }
-
-  .welcome .container-fluid label {
-    font-size: 14px;
-  }
-
-  .welcome .container-fluid .introduction img {
-    width: 14%;
-  }
-
   .destinations {
     min-height: 64vh;
   }
 
-  .destinations .container-fluid {
-    text-align: center;
-    margin: 0 3rem;
-    padding-bottom: 3rem;
-  }
-
   .destinations .container-fluid h1 {
     font-size: 2rem;
-  }
-
-  .stats .container-fluid {
-    margin: 0 2rem;
   }
 
   .stats .container-fluid h1 {
@@ -1549,6 +1512,10 @@ footer .footer-content .rights a {
 
   .stats .container-lg .card-body svg {
     font-size: 6rem;
+  }
+
+  .services .container-fluid h1 {
+    font-size: 2.2rem;
   }
 
   .express .container-fluid {
@@ -1610,7 +1577,7 @@ footer .footer-content .rights a {
   }
 
   footer .container .brand ul {
-    margin: 1rem 24%;
+    margin: 1rem 36%;
   }
 
   footer .container .row {
@@ -1683,12 +1650,16 @@ footer .footer-content .rights a {
     min-height: 100vh;
   }
 
+  .hero-section .container-fluid {
+    padding: 0 4rem;
+  }
+
   .homepage-overlay .homepage {
     min-height: 100vh;
   }
 
   .homepage-overlay .watermark {
-    width: 80%;
+    width: 50%;
     bottom: auto;
     right: auto;
   }
@@ -1733,30 +1704,17 @@ footer .footer-content .rights a {
     text-align: center;
   }
 
-  .airceylon h1 {
-    font-size: 1.4rem;
-  }
-
-  .airceylon p {
-    font-size: 0.9rem;
-  }
-
   .hero-section .container-fluid {
     margin: 0 5rem;
   }
 
   .hero-section h1 {
-    font-size: 2.4rem;
-    text-align: center;
+    font-size: 3.3rem;
   }
 
   .hero-section p {
     font-size: 1rem;
     text-align: center;
-  }
-
-  .services .container-fluid h1 {
-    font-size: 2.4rem;
   }
 
   .welcome .container-fluid {
@@ -1765,7 +1723,7 @@ footer .footer-content .rights a {
   }
 
   .welcome .container-fluid h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .welcome .container-fluid label {
@@ -1776,18 +1734,8 @@ footer .footer-content .rights a {
     width: 14%;
   }
 
-  .destinations .container-fluid {
-    text-align: center;
-    margin: 0 3rem;
-    padding-bottom: 3rem;
-  }
-
   .destinations .container-fluid h1 {
     font-size: 2rem;
-  }
-
-  .stats .container-fluid {
-    margin: 0 2rem;
   }
 
   .stats .container-fluid h1 {
@@ -1813,6 +1761,10 @@ footer .footer-content .rights a {
     font-size: 6rem;
   }
 
+  .services .container-fluid h1 {
+    font-size: 2.2rem;
+  }
+
   .express .container-fluid {
     margin: 1.4rem;
     display: flex;
@@ -1827,10 +1779,6 @@ footer .footer-content .rights a {
     width: 60%;
     text-align: center;
     display: block;
-  }
-
-  .testimonials .container-fluid {
-    margin: 0 1rem;
   }
 
   .testimonials .container-fluid h1 {
@@ -1863,10 +1811,6 @@ footer .footer-content .rights a {
 
   footer .container .brand ul {
     margin: 1rem 10%;
-  }
-
-  footer .container .row {
-    justify-content: space-around;
   }
 
   footer .container .row .col {
@@ -1905,5 +1849,5 @@ footer .footer-content .rights a {
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1464px) {
-}
+/* @media (min-width: 1280px) and (max-width: 1464px) {
+} */
