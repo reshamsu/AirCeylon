@@ -71,72 +71,76 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col">
-              <ul>
-                <h3>Services</h3>
-                <li>
-                  <a href="/services/visa-service">Visa Service</a>
-                </li>
-                <li>
-                  <a href="/services/ept-academy">EPT Academy</a>
-                </li>
-                <li>
-                  <a href="/services/transition-support">Transition Support</a>
-                </li>
-                {/* <li>
+            <div className="row-3">
+              <div className="col">
+                <ul>
+                  <h3>Services</h3>
+                  <li>
+                    <a href="/services/visa-service">Visa Service</a>
+                  </li>
+                  <li>
+                    <a href="/services/ept-academy">EPT Academy</a>
+                  </li>
+                  <li>
+                    <a href="/services/transition-support">
+                      Transition Support
+                    </a>
+                  </li>
+                  {/* <li>
                   <a href="/services/travels-tours">Travels & Tours</a>
                 </li>
                 <li>
                   <a href="/services/ticketing">Ticketing</a>
                 </li> */}
-                <li>
-                  <a href="/services/notarization">Notarization</a>
-                </li>
-              </ul>
-            </div>
+                  <li>
+                    <a href="/services/notarization">Notarization</a>
+                  </li>
+                </ul>
+              </div>
 
-            <div className="col">
-              <ul>
-                <h3>Visa Service</h3>
-                <li>
-                  <a href="#">Europe</a>
-                </li>
-                <li>
-                  <a href="#">Asia</a>
-                </li>
-                <li>
-                  <a href="#">Middle-East</a>
-                </li>
-                <li>
-                  <a href="#">East Asia</a>
-                </li>
-                <li>
-                  <a href="#">South-East Asia</a>
-                </li>
-              </ul>
-            </div>
+              <div className="col">
+                <ul>
+                  <h3>Visa Service</h3>
+                  <li>
+                    <a href="#">Europe</a>
+                  </li>
+                  <li>
+                    <a href="#">Asia</a>
+                  </li>
+                  <li>
+                    <a href="#">Middle-East</a>
+                  </li>
+                  <li>
+                    <a href="#">East Asia</a>
+                  </li>
+                  <li>
+                    <a href="#">South-East Asia</a>
+                  </li>
+                </ul>
+              </div>
 
-            <div className="col">
-              <ul>
-                <h3>EPT Academy</h3>
-                <li>
-                  <a href="#">Crash Course</a>
-                </li>
-                <li>
-                  <a href="#">Essential Course</a>
-                </li>
-                <li>
-                  <a href="#">Pro Course</a>
-                </li>
-              </ul>
+              <div className="col">
+                <ul>
+                  <h3>EPT Academy</h3>
+                  <li>
+                    <a href="#">Crash Course</a>
+                  </li>
+                  <li>
+                    <a href="#">Essential Course</a>
+                  </li>
+                  <li>
+                    <a href="#">Pro Course</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
           <div className="col">
             <div className="location">
               <p>
-                <label>Visit us by Appointment:</label> Wspace - 252A, Galle Road, Colombo 4
-                (Bambalapitiya), Western Province, Sri Lanka.
+                <label>Visit us by Appointment:</label> Wspace - 252A, Galle
+                Road, Colombo 4 (Bambalapitiya), Western Province, Sri Lanka.
                 <a
                   href="https://www.google.com/maps?q=WSPACE+-+252A,+GALLE+ROAD,+COLOMBO+4+(Bambalapitiya),+Western+Province,+Sri+Lanka"
                   target="_blank"
@@ -163,8 +167,9 @@ const Footer = () => {
             style={{ textAlign: "center", marginTop: "1.4rem" }}
           >
             <p>
-              Air Ceylon International Private Limited <FaRegCopyright /> 2025. All Rights Reserved. Powered
-              by <a href="https://www.myhive.biz/">myhive</a>
+              Air Ceylon International Private Limited <FaRegCopyright /> 2025.
+              All Rights Reserved. Powered by{" "}
+              <a href="https://www.myhive.biz/">myhive</a>
             </p>
           </div>
         </div>

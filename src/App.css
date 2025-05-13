@@ -761,8 +761,11 @@ footer .container .col img.logo {
 footer .container .row .col {
   color: var(--text-black);
   align-items: center;
-  margin-left: 4rem;
-  width: 100%;
+  margin: 0 5rem;
+}
+
+footer .container .row-3 {
+  display: flex;
 }
 
 footer .container .col h3 {
@@ -771,9 +774,7 @@ footer .container .col h3 {
 }
 
 footer .container .brand {
-  padding: 0.8rem 0;
-  margin-right: 3rem;
-  width: 100%;
+  width: 20%;
 }
 
 footer .container .brand p {
@@ -798,7 +799,7 @@ footer .container .brand svg:hover {
 footer .container .brand ul {
   display: flex;
   justify-content: space-evenly;
-  margin: 1rem;
+  margin: 1rem 6%;
   list-style: none;
   padding: 0px;
 }
@@ -872,7 +873,6 @@ footer .footer-content .location a:hover {
 
 footer .footer-content .location p label {
   color: var(--text-black-hover);
-  font-size: 15px;
   font-weight: 700;
   margin-right: 0.4rem;
 }
@@ -1073,6 +1073,7 @@ footer .footer-content .rights a {
   footer .container .brand {
     margin: 0;
     padding-top: 0;
+    width: 100%;
   }
 
   footer .container .brand ul {
@@ -1081,11 +1082,15 @@ footer .footer-content .rights a {
 
   footer .container .row {
     flex-direction: column;
+    margin: 0;
+  }
+
+  footer .container .row-3 {
+    display: inline;
   }
 
   footer .container .row .col {
-    margin: 1rem 8%;
-    width: unset;
+    margin: 2rem 10%;
   }
 
   footer .location p {
@@ -1120,65 +1125,776 @@ footer .footer-content .rights a {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  html {
-    font-size: 85%;
-  }
-
   header {
-    padding: 1rem 5%;
+    padding: 0.8rem 4%;
   }
 
   nav button.menu {
     display: flex;
   }
 
-  header nav ul {
+  nav a.menu:hover {
+    background-color: linen;
+  }
+
+  nav.sidenav {
+    width: 40%;
+  }
+
+  .nav-links {
     display: none;
   }
 
-  /* Side Nav */
-  nav.sidenav {
-    width: 80%;
+  .container {
+    padding: 3rem 8%;
   }
 
-  /* Welcome section stacking */
-  .welcome .container-fluid .introduction {
-    flex-direction: column;
-    gap: 1.2rem;
+  .hero-section {
+    min-height: 100vh;
+  }
+
+  .homepage-overlay .homepage {
+    min-height: 100vh;
+  }
+
+  .homepage-overlay .watermark {
+    width: 80%;
+    bottom: auto;
+    right: auto;
+  }
+
+  .slider {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .prev-arrow,
+  .next-arrow {
+    top: 45% !important;
+    transform: translateY(-50%);
+    font-size: 24px !important;
+    padding: 8px !important;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+  }
+
+  .prev-arrow {
+    left: 10px !important;
+  }
+
+  .next-arrow {
+    right: 10px !important;
+  }
+
+  .slider-content {
+    padding: 10px;
+    font-size: 14px;
     text-align: center;
   }
 
-  .welcome .container-fluid .introduction img {
-    width: 18%;
+  .airceylon h1 {
+    font-size: 1.4rem;
   }
 
-  /* Express cards stacking */
+  .airceylon p {
+    font-size: 0.9rem;
+  }
+
+  .hero-section .container-fluid {
+    margin: 0 5rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .services .container-fluid h1 {
+    font-size: 2.4rem;
+  }
+
+  .welcome .container-fluid {
+    padding: 2rem 10%;
+    text-align: center;
+  }
+
+  .welcome .container-fluid h1 {
+    font-size: 2.4rem;
+  }
+
+  .welcome .container-fluid label {
+    font-size: 14px;
+  }
+
+  .welcome .container-fluid .introduction img {
+    width: 14%;
+  }
+
+  .destinations .container-fluid {
+    text-align: center;
+    margin: 0 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .destinations .container-fluid h1 {
+    font-size: 2rem;
+  }
+
+  .stats .container-fluid {
+    margin: 0 2rem;
+  }
+
+  .stats .container-fluid h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .stats .container-fluid h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .stats .container-lg {
+    flex-direction: column;
+  }
+
+  .stats .container-lg .card {
+    padding: 2.4rem 10%;
+    margin: 1rem;
+  }
+
+  .stats .container-lg .card-body svg {
+    font-size: 4.5rem;
+  }
+
+  .express .container-fluid {
+    margin: 1.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .express .container-fluid h1 {
+    font-size: 2.2rem;
+  }
+
   .express .container-lg {
     flex-direction: column;
-    gap: 1.5rem;
   }
 
   .express .container-lg .card {
-    width: 90%;
+    width: 70%;
+    text-align: center;
+    display: block;
   }
 
-  /* Stats cards stacking */
-  .stats .container-lg {
+  .testimonials .container-fluid {
+    margin: 0 1rem;
+  }
+
+  .testimonials .container-fluid h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .testimonials .container-fluid h1 svg {
+    font-size: 2.4rem;
+  }
+
+  .testimonials .container-fluid h4 {
+    font-size: 14px;
+    margin: 0 2rem;
+  }
+
+  .testimonials .container-lg {
     flex-direction: column;
-    gap: 1.4rem;
   }
 
-  /* Testimonials */
   .testimonials .container-lg .card {
     width: 90%;
     height: auto;
+    padding: 2rem 6%;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  footer .container .brand {
+    margin: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  footer .container .brand ul {
+    margin: 1rem 24%;
+  }
+
+  footer .container .row {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  footer .container .row-3 {
+    justify-content: space-evenly;
+  }
+
+  footer .container .row .col {
+    display: flex;
+    margin: 2rem 4%;
+    align-items: flex-start;
+  }
+
+  footer .location p {
+    font-size: 14px;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  footer .location p a {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2rem;
+  }
+
+  footer .footer-content .contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  footer .footer-content .contact label {
+    margin: 0.4rem 0;
+  }
+
+  footer .footer-content .contact svg {
+    display: none;
+  }
+
+  footer .footer-content .rights p {
+    font-size: 13px;
+    margin: 0 2rem;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
+  header {
+    padding: 0.8rem 4%;
+  }
+
+  nav.sidenav {
+    width: 40%;
+  }
+
+  nav button.menu {
+    display: flex;
+  }
+
+  nav a.menu:hover {
+    background-color: linen;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .container {
+    padding: 3rem 8%;
+  }
+
+  .hero-section {
+    min-height: 100vh;
+  }
+
+  .homepage-overlay .homepage {
+    min-height: 100vh;
+  }
+
+  .homepage-overlay .watermark {
+    width: 80%;
+    bottom: auto;
+    right: auto;
+  }
+
+  .slider {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+
+  .prev-arrow,
+  .next-arrow {
+    top: 45% !important;
+    transform: translateY(-50%);
+    font-size: 24px !important;
+    padding: 8px !important;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+  }
+
+  .prev-arrow {
+    left: 10px !important;
+  }
+
+  .next-arrow {
+    right: 10px !important;
+  }
+
+  .slider-content {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .airceylon h1 {
+    font-size: 1.4rem;
+  }
+
+  .airceylon p {
+    font-size: 0.9rem;
+  }
+
+  .hero-section .container-fluid {
+    margin: 0 5rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .services .container-fluid h1 {
+    font-size: 2.4rem;
+  }
+
+  .welcome .container-fluid {
+    padding: 2rem 10%;
+    text-align: center;
+  }
+
+  .welcome .container-fluid h1 {
+    font-size: 2.4rem;
+  }
+
+  .welcome .container-fluid label {
+    font-size: 14px;
+  }
+
+  .welcome .container-fluid .introduction img {
+    width: 14%;
+  }
+
+  .destinations .container-fluid {
+    text-align: center;
+    margin: 0 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .destinations .container-fluid h1 {
+    font-size: 2rem;
+  }
+
+  .stats .container-fluid {
+    margin: 0 2rem;
+  }
+
+  .stats .container-fluid h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .stats .container-fluid h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .stats .container-lg {
+    flex-direction: column;
+  }
+
+  .stats .container-lg .card {
+    padding: 1.6rem 12%;
+    margin: 1rem;
+  }
+
+  .express .container-fluid {
+    margin: 1.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .express .container-fluid h1 {
+    font-size: 2.2rem;
+  }
+
+  .express .container-lg {
+    flex-direction: column;
+  }
+
+  .express .container-lg .card {
+    width: 60%;
+    text-align: center;
+    display: block;
+  }
+
+  .testimonials .container-fluid {
+    margin: 0 1rem;
+  }
+
+  .testimonials .container-fluid h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .testimonials .container-fluid h1 svg {
+    font-size: 2.4rem;
+  }
+
+  .testimonials .container-fluid h4 {
+    font-size: 14px;
+    margin: 0 2rem;
+  }
+
+  .testimonials .container-lg {
+    flex-direction: column;
+  }
+
+  .testimonials .container-lg .card {
+    width: 90%;
+    height: auto;
+    padding: 2rem 6%;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  footer .container .brand {
+    margin: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  footer .container .brand ul {
+    margin: 1rem 24%;
+  }
+
+  footer .container .row {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  footer .container .row .col {
+    width: 100%;
+    display: flex;
+    margin: 2rem 3%;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  footer .location p {
+    font-size: 14px;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  footer .location p a {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2rem;
+  }
+
+  footer .footer-content .contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  footer .footer-content .contact label {
+    margin: 0.4rem 0;
+  }
+
+  footer .footer-content .contact svg {
+    display: none;
+  }
+
+  footer .footer-content .rights p {
+    font-size: 13px;
+    margin: 0 2rem;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
+  header {
+    padding: 0.8rem 4%;
+  }
+
+  nav a.menu:hover {
+    background-color: linen;
+  }
+
+  nav.sidenav {
+    width: 40%;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .container {
+    padding: 3rem 8%;
+  }
+
+  .hero-section {
+    min-height: 100vh;
+  }
+
+  .homepage-overlay .homepage {
+    min-height: 100vh;
+  }
+
+  .homepage-overlay .watermark {
+    width: 80%;
+    bottom: auto;
+    right: auto;
+  }
+
+  .slider {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+
+  .prev-arrow,
+  .next-arrow {
+    top: 45% !important;
+    transform: translateY(-50%);
+    font-size: 24px !important;
+    padding: 8px !important;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+  }
+
+  .prev-arrow {
+    left: 10px !important;
+  }
+
+  .next-arrow {
+    right: 10px !important;
+  }
+
+  .slider-content {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .airceylon h1 {
+    font-size: 1.4rem;
+  }
+
+  .airceylon p {
+    font-size: 0.9rem;
+  }
+
+  .hero-section .container-fluid {
+    margin: 0 5rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .services .container-fluid h1 {
+    font-size: 2.4rem;
+  }
+
+  .welcome .container-fluid {
+    padding: 2rem 10%;
+    text-align: center;
+  }
+
+  .welcome .container-fluid h1 {
+    font-size: 2.4rem;
+  }
+
+  .welcome .container-fluid label {
+    font-size: 14px;
+  }
+
+  .welcome .container-fluid .introduction img {
+    width: 14%;
+  }
+
+  .destinations .container-fluid {
+    text-align: center;
+    margin: 0 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .destinations .container-fluid h1 {
+    font-size: 2rem;
+  }
+
+  .stats .container-fluid {
+    margin: 0 2rem;
+  }
+
+  .stats .container-fluid h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .stats .container-fluid h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .stats .container-lg {
+    flex-wrap: wrap;
+  }
+
+  .stats .container-lg .card {
+    padding: 1.6rem 4%;
+    margin: 1rem;
+  }
+
+  .stats .container-lg .card-body svg {
+    font-size: 6rem;
+  }
+
+  .express .container-fluid {
+    margin: 1.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .express .container-fluid h1 {
+    font-size: 2.2rem;
+  }
+
+  .express .container-lg .card {
+    width: 60%;
+    text-align: center;
+    display: block;
+  }
+
+  .testimonials .container-fluid {
+    margin: 0 1rem;
+  }
+
+  .testimonials .container-fluid h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .testimonials .container-fluid h1 svg {
+    font-size: 2.4rem;
+  }
+
+  .testimonials .container-fluid h4 {
+    font-size: 14px;
+    margin: 0 2rem;
+  }
+
+  .testimonials .container-lg .card {
+    height: 40vh;
+    padding: 2rem 4%;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  footer .container .brand {
+    margin: 0;
+    padding-top: 0;
+  }
+
+  footer .container .brand ul {
+    margin: 1rem 10%;
+  }
+
+  footer .container .row {
+    justify-content: space-around;
+  }
+
+  footer .container .row .col {
+    width: fit-content;
+  }
+
+  footer .location p {
+    font-size: 14px;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  footer .location p a {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2rem;
+  }
+
+  footer .footer-content .contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  footer .footer-content .contact label {
+    margin: 0.4rem 0;
+  }
+
+  footer .footer-content .contact svg {
+    display: none;
+  }
+
+  footer .footer-content .rights p {
+    font-size: 13px;
+    margin: 0 2rem;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1464px) {
