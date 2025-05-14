@@ -254,12 +254,13 @@ nav.subnav li a.nav-link-underline  {
 
 nav.subnav li a.nav-link-underline:hover  {
   color: var(--text-gold-brown);
-  border-bottom: 3px solid var(--text-gold-brown);
+  border-bottom: 4px solid var(--text-gold-brown);
 }
 
 nav.subnav li a.nav-link-underline-active  {
+  font-weight: 660;
   color: var(--text-gold-hover);
-  border-bottom: 3px solid var(--text-gold-hover);
+  border-bottom: 4px solid var(--text-gold-hover);
 }
 
 /* SideNav Section  */
