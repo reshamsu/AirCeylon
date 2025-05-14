@@ -102,19 +102,19 @@ const Footer = () => {
                 <ul>
                   <h3>Visa Service</h3>
                   <li>
-                    <a href="#">Europe</a>
+                    <a href="/services/visa-service/europe">Europe</a>
                   </li>
                   <li>
-                    <a href="#">Asia</a>
+                    <a href="/services/visa-service/asia">Asia</a>
                   </li>
                   <li>
-                    <a href="#">Middle-East</a>
+                    <a href="/services/visa-service/middle-east">Middle-East</a>
                   </li>
                   <li>
-                    <a href="#">East Asia</a>
+                    <a href="/services/visa-service/east-asia">East Asia</a>
                   </li>
                   <li>
-                    <a href="#">South-East Asia</a>
+                    <a href="/services/visa-service/south-east-asia">South-East Asia</a>
                   </li>
                 </ul>
               </div>

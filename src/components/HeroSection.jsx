@@ -7,13 +7,13 @@ const HeroSection = () => {
     <div className="hero-section">
       {/* Hero Carousel */}
       <div className="homepage-overlay">
-        <div>
-          <img
-            src="./assets/check.jpg" className="homepage darkened"
-          />
-        </div>
+        <img src="./assets/check.jpg" className="homepage darkened" />
 
-        <img src="./assets/Watermark.png" className="watermark" alt="Watermark" />
+        <img
+          src="./assets/Watermark.png"
+          className="watermark"
+          alt="Watermark"
+        />
       </div>
 
       <Container className="airceylon">

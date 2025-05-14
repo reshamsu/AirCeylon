@@ -40,7 +40,7 @@ html {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 104vh;
+  height: 100vh;
   z-index: -1;
   overflow: hidden;
 }
@@ -99,7 +99,7 @@ html {
 
 /* Navigation Section  */
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -107,7 +107,8 @@ header {
   box-sizing: border-box;
   padding: 1rem 10%;
   background: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  border-bottom: 1px solid var(--white-background-hover);
   transition: box-shadow 0.3 ease, border-bottom 0.3s ease, padding 0.3s ease;
 }
 
@@ -161,7 +162,6 @@ header nav .nav-link-active {
   background-color: linen;
   color: var(--text-gold-hover);
   border-radius: 11px;
-  font-weight: 650;
 }
 
 .nav-link-icon svg {
@@ -178,6 +178,10 @@ header nav .nav-link-active {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+span.nav-link.dropdown-toggle .nav-link-active {
+  color: var(--text-gold-hover);
 }
 
 .dropdown {
@@ -219,6 +223,43 @@ header nav .nav-link-active {
 
 .dropdown .dropdown-menu .dropdown-item:hover {
   color: var(--text-gold-hover);
+}
+
+/* SubNav Section  */
+nav.subnav {
+  position: relative;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+nav.subnav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+nav.subnav li {
+  margin: 0 .4rem;
+}
+
+nav.subnav li a.nav-link-underline  {
+  color: var(--text-black);
+  font-weight: 600;
+  /* border-bottom: 4px solid var(--text-gold-hover); */
+  padding: .8rem;
+  border-radius: 3px;
+}
+
+nav.subnav li a.nav-link-underline:hover  {
+  color: var(--text-gold-brown);
+  border-bottom: 3px solid var(--text-gold-brown);
+}
+
+nav.subnav li a.nav-link-underline-active  {
+  color: var(--text-gold-hover);
+  border-bottom: 3px solid var(--text-gold-hover);
 }
 
 /* SideNav Section  */
@@ -320,7 +361,7 @@ nav.sidenav span svg {
 
 /* Homepage Section  */
 .hero-section {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -616,7 +657,7 @@ nav.sidenav span svg {
 
 /* Services Content  */
 .services {
-  min-height: 80vh;
+  min-height: 84vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -634,7 +675,7 @@ nav.sidenav span svg {
 
 /* About Us Content  */
 .about {
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -916,7 +957,7 @@ footer .footer-content .rights a {
   }
 
   .hero-section {
-    min-height: 100vh;
+    min-height: 90vh;
   }
 
   .homepage-overlay .homepage {
@@ -1149,7 +1190,7 @@ footer .footer-content .rights a {
   }
 
   .hero-section {
-    min-height: 100vh;
+    min-height: 90vh;
   }
 
   .homepage-overlay .homepage {
@@ -1399,7 +1440,7 @@ footer .footer-content .rights a {
   }
 
   .hero-section {
-    min-height: 100vh;
+    min-height: 93vh;
   }
 
   .hero-section .container-fluid {
@@ -1647,7 +1688,7 @@ footer .footer-content .rights a {
   }
 
   .hero-section {
-    min-height: 100vh;
+    min-height: 90vh;
   }
 
   .hero-section .container-fluid {

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import { useMediaQuery } from "react-responsive";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import VisaService from "./pages/services/Visa-Services";
+import VisaService from "./pages/services/VisaService/Visa-Services";
 import EPTAcademy from "./pages/services/EPT-Academy";
 import TransitionSupport from "./pages/services/Transition-Support";
 import TravelTours from "./pages/services/Travel&Tours";
@@ -14,6 +14,11 @@ import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Checkout from "./pages/Checkout";
 import Footer from "./components/Footer";
+import Europe from "./pages/services/VisaService/Europe";
+import Asia from "./pages/services/VisaService/Asia";
+import MiddleEast from "./pages/services/VisaService/MiddleEast";
+import EastAsia from "./pages/services/VisaService/EastAsia";
+import SouthEastAsia from "./pages/services/VisaService/SouthEastAsia";
 import "./App.css";
 
 function App() {
@@ -28,6 +33,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services/visa-service" element={<VisaService />} />
+          <Route path="/services/visa-service/europe" element={<Europe />} />
+          <Route path="/services/visa-service/asia" element={<Asia />} />
+          <Route path="/services/visa-service/middle-east" element={<MiddleEast />} />
+          <Route path="/services/visa-service/east-asia" element={<EastAsia />} />
+          <Route path="/services/visa-service/south-east-asia" element={<SouthEastAsia />} />
           <Route path="/services/ept-academy" element={<EPTAcademy />} />
           <Route
             path="/services/transition-support"

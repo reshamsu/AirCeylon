@@ -7,7 +7,7 @@ const Checkout = () => {
       <Container>
         <div className="container">
           <div className="container-fluid">
-            <h1><span>Checkout</span></h1>
+            <h1>Check<span>out</span></h1>
             <p>
             </p>
           </div>
