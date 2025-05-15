@@ -689,9 +689,16 @@ nav.sidenav span svg {
   color: var(--text-gold-brown);
 }
 
+/* Contact Section  */
 .contact-section {
   min-height: 64vh;
   background-color: linen;
+}
+
+input, select, textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
 }
 
 .contact-section .container {
