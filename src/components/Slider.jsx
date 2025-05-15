@@ -9,25 +9,25 @@ const attractions = [
   {
     img: "./assets/east-asia-china.jpg",
     title: "The Great Wall of China",
-    location: "Greece",
+    location: "China",
     description:
-      "Clifftop views, whitewashed beauty, and tranquil luxury — Santorini offers the perfect escape bathed in Aegean sunshine.",
-    info: "China",
+      "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and tells tales of dynasties past.",
+    info: "Beijing, China",
   },
   {
     img: "./assets/europe-germany.jpg",
-    title: "Frankfort, Germany",
+    title: "Frankfurt, Germany",
     location: "Germany",
     description:
-      "Discover ultra-modern indulgence — from sky-high suites to private beaches, Dubai redefines luxury at every turn.",
-    info: "Berlin, Germany",
+      "A skyline of innovation meets Old World charm — Frankfurt blends financial power with cultural richness and historic streets.",
+    info: "Frankfurt, Germany",
   },
   {
     img: "./assets/middle-east-maldives.jpg",
     title: "Male, Maldives",
     location: "Maldives",
     description:
-      "Nestled by the Indian Ocean, Colombo blends colonial elegance with vibrant street life — an emerging gem in South Asia.",
+      "Turquoise lagoons, overwater villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
     info: "Male, Maldives",
   },
   {
@@ -35,15 +35,15 @@ const attractions = [
     title: "Madrid, Spain",
     location: "Spain",
     description:
-      "Wake up to Eiffel Tower views and Parisian grandeur — art, romance, and fine living await in the City of Light.",
-    info: "Esp. Spain",
+      "From flamenco rhythms to regal boulevards — Madrid pulses with art, flavor, and the warmth of Spanish spirit.",
+    info: "Madrid, Spain",
   },
   {
     img: "./assets/europe-canada.webp",
     title: "Toronto, Canada",
     location: "Canada",
     description:
-      "Downtown buzz meets lakeside calm — explore Toronto’s diverse neighborhoods, culinary scene, and cultural hotspots.",
+      "Toronto is a multicultural mosaic — where skyscrapers meet the shores of Lake Ontario and every street tells a global story.",
     info: "Toronto, Canada",
   },
   {
@@ -51,8 +51,8 @@ const attractions = [
     title: "Singapore",
     location: "Singapore",
     description:
-      "Soar above the skyline with rooftop pools and city gardens — Marina Bay Sands defines the future of urban luxury in Singapore.",
-    info: "Marine Bay, Singapore",
+      "A futuristic skyline meets lush green sanctuaries — explore Singapore’s seamless blend of innovation, culture, and cuisine.",
+    info: "Marina Bay, Singapore",
   },
 ];
 
@@ -99,7 +99,10 @@ const Gallery = () => {
 
         <Slider {...settings}>
           {attractions.map((item, index) => (
-            <div key={index} style={{ padding: "0 10px", boxSizing: "border-box" }}>
+            <div
+              key={index}
+              style={{ padding: "0 10px", boxSizing: "border-box" }}
+            >
               <div
                 className="slide-card"
                 style={{
@@ -124,7 +127,7 @@ const Gallery = () => {
                 </div>
                 <div className="card-body" style={{ padding: "1rem" }}>
                   <a
-                    href={`/home/learnmore?book=${encodeURIComponent(item.location)}`}
+                    href={`/hero/?book=${encodeURIComponent(item.location)}`}
                     style={{
                       fontWeight: "bold",
                       display: "flex",
@@ -149,7 +152,9 @@ const Gallery = () => {
                   >
                     {item.description}
                   </p>
-                  <label style={{ fontSize: "0.85rem", color: "#999" }}>{item.info}</label>
+                  <label style={{ fontSize: "0.85rem", color: "#999" }}>
+                    {item.info}
+                  </label>
                 </div>
               </div>
             </div>
