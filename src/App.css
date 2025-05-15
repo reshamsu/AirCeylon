@@ -334,14 +334,14 @@ nav.sidenav ul li a.active {
 
 nav ul.sidenav-submenu {
   margin: 1rem;
-  margin-top: .6rem;
-  padding-bottom: .6rem;
+  margin-top: 0.6rem;
+  padding-bottom: 0.6rem;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
 
 nav ul.sidenav-submenu li a {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
@@ -788,6 +788,7 @@ nav.sidenav span svg {
   color: var(--text-black-hover);
   font-size: 0.9rem;
   font-weight: 600;
+  margin: 1rem;
   text-align: center;
 }
 

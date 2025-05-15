@@ -139,7 +139,12 @@ const Express = () => {
                 <div style={{ margin: "1rem 0" }}>
                   <label>Phone:</label>
                   <h4 style={{ fontWeight: "600" }}>
-                    {expressOptions[openModalIndex].phone}
+                    <a
+                      href={`tel:${expressOptions[openModalIndex].phone.replace(/\s+/g, "")}`}
+                      style={{ color: "inherit", textDecoration: "underline", color: "var(--text-gold-hover)" }}
+                    >
+                      {expressOptions[openModalIndex].phone}
+                    </a>
                   </h4>
                 </div>
               )}
@@ -148,7 +153,12 @@ const Express = () => {
                 <div style={{ marginBottom: "1rem" }}>
                   <label>Email Address:</label>
                   <h4 style={{ fontWeight: "600" }}>
-                    {expressOptions[openModalIndex].email}
+                    <a
+                      href={`mailto:${expressOptions[openModalIndex].email}`}
+                      style={{ color: "inherit", textDecoration: "underline", color: "var(--text-gold-hover)"}}
+                    >
+                      {expressOptions[openModalIndex].email}
+                    </a>
                   </h4>
                 </div>
               )}
