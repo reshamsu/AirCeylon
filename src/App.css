@@ -34,8 +34,8 @@ html {
 /* Media Content  */
 .homepage-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,11 +54,11 @@ html {
 
 .homepage-overlay .watermark {
   position: absolute;
-  bottom: 4%;
+  bottom: auto;
   left: 50%;
   transform: translateX(-50%);
   width: 46%;
-  opacity: 0.09;
+  opacity: 0.06;
   pointer-events: none;
   z-index: 2;
   display: flex;
@@ -524,7 +524,7 @@ nav.sidenav span svg {
 .express {
   position: relative;
   overflow: hidden;
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -549,7 +549,6 @@ nav.sidenav span svg {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  margin-bottom: 1.5rem;
 }
 
 .express .container-fluid label {
@@ -558,7 +557,7 @@ nav.sidenav span svg {
   background-color: blanchedalmond;
   padding: 0.6rem 18px;
   border-radius: 12px;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .express .container-fluid h1 {
@@ -896,7 +895,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 .testimonials .container-fluid {
@@ -931,50 +930,42 @@ textarea {
 }
 
 .testimonials .container-lg .card {
-  background-color: linen;
-  /* background-color: var(--background-white); */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  border: 6px solid var(--text-gold-hover);
-  margin: 0.8rem;
+  border-top: 8px solid var(--text-gold-hover);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
   width: 70%;
-  height: 33vh;
-  padding: 2rem 3%;
   border-radius: 16px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .testimonials .container-lg label {
   font-weight: 600;
   color: var(--text-white);
-  background-color: var(--background-gold);
+  background-color: var(--text-gold-hover);
   padding: 0.6rem 18px;
-  border-radius: 12px;
+  padding-top: 0.2rem;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 10px;
+  width: fit-content;
 }
 
 .testimonials .container-lg .card .card-body {
+  padding: 1.4rem;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: space-around;
-}
-
-.testimonials .container-lg .card:hover {
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
-  transform: translateY(-6px);
+  justify-content: space-between;
 }
 
 .testimonials .container-lg .card p.card-text {
   color: var(--text-gold-hover);
-  font-size: 1rem;
   font-weight: 600;
   text-align: center;
+  margin: 1rem;
 }
 
 .testimonials .container-lg .card h4.card-title {
   color: var(--text-black-hover);
-  font-size: 0.9rem;
   font-weight: 600;
   margin: 1rem;
   text-align: center;
@@ -1179,15 +1170,18 @@ footer .footer-content .rights a {
   }
 
   .hero-section {
-    min-height: 90vh;
+    min-height: 50vh;
+  }
+
+  .homepage-overlay {
+    height: 50vh;
   }
 
   .homepage-overlay .homepage {
-    min-height: 100vh;
+    min-height: 64vh;
   }
 
   .homepage-overlay .watermark {
-    bottom: auto;
     width: 80%;
   }
 
@@ -1325,7 +1319,6 @@ footer .footer-content .rights a {
   .testimonials .container-lg .card {
     width: 90%;
     height: auto;
-    padding: 2rem 6%;
   }
 
   .contact-section .container {
@@ -1450,16 +1443,19 @@ footer .footer-content .rights a {
   }
 
   .hero-section {
-    min-height: 90vh;
+    min-height: 50vh;
+  }
+
+  .homepage-overlay {
+    height: 50vh;
   }
 
   .homepage-overlay .homepage {
-    min-height: 100vh;
+    min-height: 64vh;
   }
 
   .homepage-overlay .watermark {
-    bottom: auto;
-    width: 80%;
+    width: 60%;
   }
 
   .slider {
@@ -1610,7 +1606,6 @@ footer .footer-content .rights a {
   .testimonials .container-lg .card {
     width: 90%;
     height: auto;
-    padding: 2rem 6%;
   }
 
   .contact-section .container {
@@ -1902,7 +1897,6 @@ footer .footer-content .rights a {
   .testimonials .container-lg .card {
     width: 90%;
     height: auto;
-    padding: 2rem 6%;
   }
 
   .contact-section .container {
@@ -2183,9 +2177,8 @@ footer .footer-content .rights a {
     margin: 0 2rem;
   }
 
-  .testimonials .container-lg .card {
-    height: 40vh;
-    padding: 2rem 4%;
+  .testimonials .container-lg .card .card-body {
+    padding: 1.2rem;
   }
 
   .contact-section .container-fluid h1 {

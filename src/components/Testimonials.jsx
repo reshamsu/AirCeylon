@@ -16,20 +16,8 @@ const Testimonials = () => {
 
         <div className="container-lg">
           <div className="card">
-            {/* <div className="image" style={{ textAlign: "center" }}>
-              <img
-                src="./assets/profile2.webp"
-                alt=""
-                style={{
-                  width: "30%",
-                  background: "#fff",
-                  borderRadius: "100%",
-                }}
-              ></img>
-            </div> */}
+            <label>Business Client</label>
             <div className="card-body">
-              <label>Business Client</label>
-
               <h4 className="card-title">
                 <FaQuoteLeft />
                 At Hive Colombo, we navigate through any travel related
@@ -43,9 +31,8 @@ const Testimonials = () => {
           </div>
 
           <div className="card">
+            <label>EPT Academy</label>
             <div className="card-body">
-              <label>EPT Academy</label>
-
               <h4 className="card-title">
                 <FaQuoteLeft />
                 As a frequent traveler, I value efficiency, reliability, and
@@ -60,9 +47,8 @@ const Testimonials = () => {
           </div>
 
           <div className="card">
+            <label>Transition Support</label>
             <div className="card-body">
-              <label>Transition Support</label>
-
               <h4 className="card-title">
                 <FaQuoteLeft />
                 The level of personalized service Air Ceylon provides is

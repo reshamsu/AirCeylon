@@ -23,10 +23,13 @@ const Contact = () => {
               Contact <span>Us</span>
             </h1>
             <h5>
+              Visit us by appointment 
+            </h5>
+            {/* <h5>
               Email, Call, or complete the form to learn how{" "}
               <Link to="/">Air Ceylon</Link> can find the right solutions for
               you.
-            </h5>
+            </h5> */}
             <p>
               <Link>info@airceylonint.com</Link>
             </p>
