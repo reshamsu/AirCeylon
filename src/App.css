@@ -699,6 +699,7 @@ input, select, textarea {
   -webkit-appearance: none;
   appearance: none;
   outline: none;
+  font-size: 16px;
 }
 
 .contact-section .container {
