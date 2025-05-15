@@ -15,11 +15,12 @@ const Info = () => {
                 At Air Ceylon, your journey is our passion. - see what our
                 guests have to say.
               </h4> */}
-          <h4>
-            Your journey begins now. Explore a world of seamless travel,
-            exceptional service, and boundless possibilities. Let every scroll
-            guide you to the destination of your dreams.
-          </h4>
+          <p>Your journey begins now. </p>
+          <p>
+            Explore a world of seamless travel, exceptional service, and
+            boundless possibilities. Let every scroll guide you to the
+            destination of your dreams.
+          </p>
         </div>
       </Container>
     </div>

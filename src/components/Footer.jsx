@@ -25,7 +25,7 @@ const Footer = () => {
                     alt="Air Ceylon Logo"
                     style={{ width: "2.8rem", marginRight: ".8rem" }}
                   />
-                  AIR CEYLON
+                  Air Ceylon
                 </Link>
                 <p>Beyond the Horizon.</p>
 

@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { Container, Modal, Box, Button, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
+import { MdCall } from "react-icons/md";
+import { FaRegCalendarCheck } from "react-icons/fa6";
+import { TbEdit } from "react-icons/tb";
 
 const expressOptions = [
   {
@@ -9,6 +12,7 @@ const expressOptions = [
     description:
       "Our dedicated team is here to assist you with travel-related inquiries, visa consultation, and service clarifications. Whether you're planning your first trip or need guidance on our packages, we offer professional advice tailored to your needs.",
     button: "Call Us",
+    icon: <MdCall />,
     phone: "+94 760 301 141",
     email: "info@airceylonint.com",
     details:
@@ -20,6 +24,7 @@ const expressOptions = [
     description:
       "Schedule a one-on-one consultation at your convenience. Meet with our travel experts in person to discuss your travel plans, document assistance, or training options in a personalized setting.",
     button: "Book Now",
+    icon: <FaRegCalendarCheck />,
     phone: "+94 760 301 141",
     email: "info@airceylonint.com",
     details:
@@ -31,6 +36,7 @@ const expressOptions = [
     description:
       "Start your journey toward global education and career success with our comprehensive IELTS training programs. Designed by certified instructors, our courses prepare you to achieve your desired band score through expert guidance and structured practice.",
     button: "Register Now",
+    icon: <TbEdit />,
     details:
       "Enroll in our IELTS programs by registering through our online portal or at our office.",
     isModal: false,
@@ -69,8 +75,7 @@ const Express = () => {
         <div className="container-fluid">
           <label style={{ color: "var(--text-gold-hover)" }}>Express</label>
           <h1>
-            Express{" "}
-            <span style={{ color: "var(--text-gold-hover)" }}>Lane</span>
+            Express <span style={{ color: "var(--text-gold-hover)" }}>Lane</span>
           </h1>
         </div>
 
@@ -83,6 +88,7 @@ const Express = () => {
                     variant="contained"
                     className="btn btn-light"
                     onClick={() => handleOpen(index)}
+                    startIcon={item.icon}
                   >
                     {item.button}
                   </Button>
@@ -92,13 +98,12 @@ const Express = () => {
                     className="btn btn-light"
                     component={Link}
                     to={item.direct || "/"}
+                    startIcon={item.icon}
                   >
                     {item.button}
                   </Button>
                 )}
-                <h4 className="card-title">
-                  {item.title}
-                </h4>
+                <h4 className="card-title">{item.title}</h4>
               </div>
             </div>
           ))}

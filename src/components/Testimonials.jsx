@@ -9,11 +9,8 @@ const Testimonials = () => {
     <div className="testimonials">
       <Container className="container">
         <div className="container-fluid">
-          <label>Testimonials</label>
-
           <h1>
-            Experience with <span>Air Ceylon</span>{" "}
-            <FaCommentDots/>
+            Experience with <span>Air Ceylon</span> <FaCommentDots />
           </h1>
         </div>
 
@@ -31,6 +28,8 @@ const Testimonials = () => {
               ></img>
             </div> */}
             <div className="card-body">
+              <label>Business Client</label>
+
               <h4 className="card-title">
                 <FaQuoteLeft />
                 At Hive Colombo, we navigate through any travel related
@@ -45,6 +44,8 @@ const Testimonials = () => {
 
           <div className="card">
             <div className="card-body">
+              <label>EPT Academy</label>
+
               <h4 className="card-title">
                 <FaQuoteLeft />
                 As a frequent traveler, I value efficiency, reliability, and
@@ -54,14 +55,14 @@ const Testimonials = () => {
                 partner.
                 <FaQuoteRight />
               </h4>
-              <p className="card-text">
-                IELTS Student
-              </p>
+              <p className="card-text">IELTS Student</p>
             </div>
           </div>
 
           <div className="card">
             <div className="card-body">
+              <label>Transition Support</label>
+
               <h4 className="card-title">
                 <FaQuoteLeft />
                 The level of personalized service Air Ceylon provides is
@@ -70,9 +71,7 @@ const Testimonials = () => {
                 productive and enjoyable. Highly recommended for premium travel
                 needs. <FaQuoteRight />
               </h4>
-              <p className="card-text">
-                Resident from Toronto - Canada.
-              </p>
+              <p className="card-text">Resident from Toronto - Canada.</p>
             </div>
           </div>
         </div>

@@ -8,6 +8,7 @@ const Navbar = () => {
   const location = useLocation();
   const isServicesRoute = location.pathname.startsWith("/services");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   return (
     <>
@@ -23,7 +24,7 @@ const Navbar = () => {
               alt="Air Ceylon Logo"
               style={{ width: "2.8rem", marginRight: ".8rem" }}
             />
-            AIR CEYLON
+            Air Ceylon
           </NavLink>
 
           {/* Desktop Nav */}
@@ -137,46 +138,63 @@ const Navbar = () => {
               >
                 <FaChevronRight />
               </button>
-
               <h3>Menu</h3>
             </div>
+
             <li>
               <NavLink to="/" onClick={() => setMenuOpen(false)}>
                 Home
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/services/visa-service"
-                onClick={() => setMenuOpen(false)}
+
+            {/* Mobile Services Dropdown */}
+            <li
+              className={`dropdown ${isServicesRoute ? "nav-link-active" : ""}`}
+            >
+              <span
+                className="nav-link dropdown-toggle"
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
               >
-                Visa Service
-              </NavLink>
+                Services <IoChevronDownOutline />
+              </span>
+              {mobileServicesOpen && (
+                <ul className="sidenav-submenu">
+                  <li>
+                    <NavLink
+                      to="/services/visa-service"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Visa Service
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/services/ept-academy"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      EPT Academy
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/services/transition-support"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Transition Support
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/services/notarization"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Notarization
+                    </NavLink>
+                  </li>
+                </ul>
+              )}
             </li>
-            <li>
-              <NavLink
-                to="/services/ept-academy"
-                onClick={() => setMenuOpen(false)}
-              >
-                EPT Academy
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/services/transition-support"
-                onClick={() => setMenuOpen(false)}
-              >
-                Transition Support
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/services/notarization"
-                onClick={() => setMenuOpen(false)}
-              >
-                Notarization
-              </NavLink>
-            </li>
+
             <li>
               <NavLink to="/contact-us" onClick={() => setMenuOpen(false)}>
                 Contact
