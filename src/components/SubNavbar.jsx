@@ -34,8 +34,12 @@ const regions = [
 const SubNavbar = () => {
   const [openRegion, setOpenRegion] = useState(null);
 
-  const toggleDropdown = (region) => {
-    setOpenRegion(openRegion === region ? null : region);
+  const toggleRegion = (regionName) => {
+    setOpenRegion(openRegion === regionName ? null : regionName);
+  };
+
+  const closeMenus = () => {
+    setOpenRegion(null);
   };
 
   return (
@@ -43,32 +47,27 @@ const SubNavbar = () => {
       <nav className="subnav">
         <ul className="subnav-list">
           {regions.map((region) => (
-            <li key={region.name} className="subnav-item">
-              <div
-                className="subnav-region"
-                onClick={() => toggleDropdown(region.name)}
-                style={{ display: "flex", alignItems: "center", cursor: "pointer" }}
+            <li
+              key={region.name}
+              className={`dropdown ${openRegion === region.name ? "open" : ""}`}
+            >
+              <span
+                className="nav-link dropdown-toggle"
+                onClick={() => toggleRegion(region.name)}
               >
-                <NavLink
-                  to={`/services/visa-service/${region.path}`}
-                  className={({ isActive }) =>
-                    isActive
-                      ? "nav-link-underline nav-link-underline-active"
-                      : "nav-link-underline"
-                  }
-                  style={{ marginRight: "0.5rem" }}
-                >
-                  {region.name}
-                </NavLink>
-                <IoChevronDownOutline />
-              </div>
+                {region.name} <IoChevronDownOutline />
+              </span>
+
               {openRegion === region.name && (
-                <ul className="subnav-region-dropdown">
+                <ul className="dropdown-menu">
                   {region.countries.map((country) => (
                     <li key={country}>
                       <NavLink
-                        to={`/services/visa-service/${region.path}/${country.toLowerCase().replace(/\s+/g, "-")}`}
-                        className="nav-link-underline"
+                        to={`/services/visa-service/${region.path}/${country
+                          .toLowerCase()
+                          .replace(/\s+/g, "-")}`}
+                        className="nav-link"
+                        onClick={closeMenus}
                       >
                         {country}
                       </NavLink>
