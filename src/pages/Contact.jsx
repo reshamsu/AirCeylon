@@ -1,6 +1,5 @@
 import { Container } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
 import { FiSend } from "react-icons/fi";
 
 const Contact = () => {
@@ -20,18 +19,17 @@ const Contact = () => {
           <h1>
             Contact <span>Us</span>
           </h1>
-          <h5>Visit us by appointment</h5>
-          {/* <h5>
-              Email, Call, or complete the form to learn how{" "}
-              <Link to="/">Air Ceylon</Link> can find the right solutions for
-              you.
-            </h5> */}
+          <h5>Visit us by appointment:</h5>
           <p>
+            Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western
+            Province, Sri Lanka.
+          </p>
+          {/* <p>
             <Link>info@airceylonint.com</Link>
           </p>
           <p>
             <Link>94 12 345 6789</Link>
-          </p>
+          </p> */}
         </div>
         <div className="card">
           <div className="card-body">

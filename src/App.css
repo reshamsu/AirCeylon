@@ -49,23 +49,22 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(50%);
+  filter: brightness(80%);
 }
 
 .homepage-overlay .watermark {
   position: absolute;
-  bottom: auto;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(0) translateZ(0);
   width: 46%;
   opacity: 0.06;
   pointer-events: none;
   z-index: 2;
   display: flex;
   align-items: center;
-  will-change: transform;
   justify-content: center;
   backface-visibility: hidden;
+  will-change: opacity, transform;
 }
 
 /* Button Content  */
@@ -370,13 +369,14 @@ nav.mobile-subnav ul.dropdown-menu li strong {
 }
 
 nav.mobile-subnav ul.dropdown-menu li a {
-  color: var(--text-gold-brown);
+  color: var(--text-gold-hover);
   font-weight: 500;
+  text-decoration: revert-layer;
   margin-bottom: 0.4rem;
 }
 
 nav.mobile-subnav ul.dropdown-menu li a:hover {
-  color: var(--text-gold-hover);
+  color: var(--text-gold-brown);
 }
 
 /* SideNav Section  */
@@ -848,7 +848,8 @@ textarea {
 }
 
 .contact-section .container-fluid h5 {
-  font-weight: 600;
+  font-weight: 650;
+  text-decoration: underline;
   color: var(--text-black-hover);
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -1265,6 +1266,7 @@ footer .footer-content .rights a {
 
   .homepage-overlay .watermark {
     width: 80%;
+    max-width: 300px;
   }
 
   .custom-arrow {
@@ -1425,6 +1427,10 @@ footer .footer-content .rights a {
     text-align: center;
   }
 
+  .contact-section .container-fluid p {
+    text-align: center;
+  }
+
   .contact-section .card {
     width: 100%;
   }
@@ -1538,6 +1544,7 @@ footer .footer-content .rights a {
 
   .homepage-overlay .watermark {
     width: 60%;
+    max-width: 300px;
   }
 
   .slider {
@@ -1709,6 +1716,10 @@ footer .footer-content .rights a {
 
   .contact-section .container-fluid h5 {
     font-size: 0.96rem;
+    text-align: center;
+  }
+
+  .contact-section .container-fluid p {
     text-align: center;
   }
 
