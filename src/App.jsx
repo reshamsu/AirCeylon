@@ -14,6 +14,7 @@ import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Checkout from "./pages/Checkout";
 import Footer from "./components/Footer";
+import Countries from "./pages/Countries";
 import Europe from "./pages/services/VisaService/Europe";
 import Asia from "./pages/services/VisaService/Asia";
 import MiddleEast from "./pages/services/VisaService/MiddleEast";
@@ -33,6 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services/visa-service" element={<VisaService />} />
+          <Route path="/services/visa-service/countries" element={<Countries />} />
           <Route path="/services/visa-service/europe" element={<Europe />} />
           <Route path="/services/visa-service/asia" element={<Asia />} />
           <Route path="/services/visa-service/middle-east" element={<MiddleEast />} />

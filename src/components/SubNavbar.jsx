@@ -6,45 +6,47 @@ import { IoChevronDownOutline } from "react-icons/io5";
 const regions = [
   {
     name: "Europe",
-    path: "europe",
     countries: ["Germany", "France", "Italy", "Spain"],
   },
   {
     name: "Asia",
-    path: "asia",
     countries: ["India", "Sri Lanka", "Nepal", "Pakistan"],
   },
   {
     name: "Middle-East",
-    path: "middle-east",
     countries: ["UAE", "Saudi Arabia", "Qatar", "Oman"],
   },
   {
     name: "East-Asia",
-    path: "east-asia",
     countries: ["China", "Japan", "South Korea", "Taiwan"],
   },
   {
     name: "South-East Asia",
-    path: "south-east-asia",
     countries: ["Thailand", "Malaysia", "Singapore", "Indonesia"],
   },
 ];
 
 const SubNavbar = () => {
   const [openRegion, setOpenRegion] = useState(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const toggleRegion = (regionName) => {
     setOpenRegion(openRegion === regionName ? null : regionName);
   };
 
+  const toggleMobileMenu = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
   const closeMenus = () => {
     setOpenRegion(null);
+    setMobileOpen(false);
   };
 
   return (
     <Container>
-      <nav className="subnav">
+      {/* Desktop Subnav */}
+      <nav className="desktop-subnav">
         <ul className="subnav-list">
           {regions.map((region) => (
             <li
@@ -57,15 +59,12 @@ const SubNavbar = () => {
               >
                 {region.name} <IoChevronDownOutline />
               </span>
-
               {openRegion === region.name && (
                 <ul className="dropdown-menu">
                   {region.countries.map((country) => (
                     <li key={country}>
                       <NavLink
-                        to={`/services/visa-service/${region.path}/${country
-                          .toLowerCase()
-                          .replace(/\s+/g, "-")}`}
+                        to="/services/visa-service/countries"
                         className="nav-link"
                         onClick={closeMenus}
                       >
@@ -77,6 +76,42 @@ const SubNavbar = () => {
               )}
             </li>
           ))}
+        </ul>
+      </nav>
+
+      {/* Mobile Subnav */}
+      <nav className="mobile-subnav">
+        <ul className="subnav-list">
+          <li className={`dropdown ${mobileOpen ? "open" : ""}`}>
+            <span
+              className="nav-link dropdown-toggle"
+              onClick={toggleMobileMenu}
+            >
+              Countries <IoChevronDownOutline />
+            </span>
+            {mobileOpen && (
+              <ul className="dropdown-menu mobile-grid">
+                {regions.map((region) => (
+                  <li key={region.name} className="region-block">
+                    <strong className="region-title">{region.name}</strong>
+                    <ul className="dropdown-submenu">
+                      {region.countries.map((country) => (
+                        <li key={country}>
+                          <NavLink
+                            to="/services/visa-service/countries"
+                            className="nav-link"
+                            onClick={closeMenus}
+                          >
+                            {country}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
         </ul>
       </nav>
     </Container>

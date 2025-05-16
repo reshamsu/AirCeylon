@@ -41,12 +41,12 @@ const Navbar = () => {
             </li>
 
             <li
-              className={`dropdown ${isServicesRoute ? "nav-link-active" : ""}`}
+              className={`service-dropdown ${isServicesRoute ? "nav-link-active" : ""}`}
             >
               <span className="nav-link dropdown-toggle">
                 Services <IoChevronDownOutline />
               </span>
-              <ul className="dropdown-menu">
+              <ul className="service-dropdown-menu">
                 <li>
                   <NavLink
                     to="/services/visa-service"
