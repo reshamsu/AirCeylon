@@ -25,7 +25,7 @@ const expressOptions = [
 
 const Express = () => {
   return (
-    <div className="express" style={{ padding: "2rem 0" }}>
+    <div className="landing-express" style={{ padding: "2rem 0" }}>
       <Container>
         <div className="container-fluid">
           <label style={{ color: "var(--text-gold-hover)" }}>Express</label>
@@ -49,7 +49,7 @@ const Express = () => {
                 {item.phone ? (
                   <Button
                     variant="contained"
-                    className="btn btn-light"
+                    className="btn btn-primary"
                     href={`tel:${item.phone}`}
                   >
                     {item.button}
@@ -57,7 +57,7 @@ const Express = () => {
                 ) : (
                   <Button
                     variant="contained"
-                    className="btn btn-light"
+                    className="btn btn-primary"
                     component={Link}
                     to={item.direct}
                   >

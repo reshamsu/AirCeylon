@@ -6,7 +6,7 @@ import { FaQuoteRight } from "react-icons/fa6";
 
 const Testimonials = () => {
   return (
-    <div className="testimonials">
+    <div className="landing-testimonials">
       <Container className="container">
         <div className="container-fluid">
           <h1>

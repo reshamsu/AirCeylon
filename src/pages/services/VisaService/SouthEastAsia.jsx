@@ -7,7 +7,7 @@ const SouthEastAsia = () => {
     <>
       <SubNavbar />
 
-      <div className="services">
+      <div className="services-section">
         <Container>
           <div className="container">
             <div className="container-fluid">

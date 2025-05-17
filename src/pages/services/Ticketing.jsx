@@ -3,14 +3,12 @@ import React from "react";
 
 const Ticketing = () => {
   return (
-    <div className="services">
-      <Container>
-        <div className="container">
+    <div className="services-section">
+      <Container className="container">
           <div className="container-fluid">
             <h1>Ticketing</h1>
             <p>Info Tickets</p>
           </div>
-        </div>
       </Container>
     </div>
   );

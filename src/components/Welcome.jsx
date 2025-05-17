@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 
 const Info = () => {
   return (
-    <div className="welcome">
+    <div className="landing-welcome">
       <Container className="container">
         <div className="container-fluid">
           <label>Welcome</label>

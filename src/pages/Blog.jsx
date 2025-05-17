@@ -3,9 +3,8 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="services">
-      <Container>
-        <div className="container">
+    <div className="services-section">
+      <Container className="container">
           <div className="container-fluid">
             <h1><span>Blogs</span></h1>
             <p>
@@ -13,7 +12,6 @@ const Blog = () => {
               Travel Planning
             </p>
           </div>
-        </div>
       </Container>
     </div>
   );
