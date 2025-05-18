@@ -4,11 +4,15 @@ import React from "react";
 const TransitionSupport = () => {
   return (
     <div className="services-section">
-      <Container className="container">
+      <Container>
+        <div className="container">
           <div className="container-fluid">
-            <h1>Transition <span>Support</span></h1>
+            <h1>
+              Transition <span>Support</span>
+            </h1>
             <p>Info Transitional Support</p>
           </div>
+        </div>
       </Container>
     </div>
   );

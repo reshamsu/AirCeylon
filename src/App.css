@@ -2,14 +2,27 @@
 
 :root {
   --background-white: #ffffff;
-  --background-gold: #c67c0ed5;
+  --background-gradient-gold: linear-gradient(
+    90deg,
+    #f79700 0%,
+    #d98603 50%,
+    #ad6300 100%
+  );
+  --text-gradient-gold: linear-gradient(
+    90deg,
+    #ffc14d 0%,
+    #f0a000 50%,
+    #d17c00 100%
+  );
   --white-background-hover: #eeeeee;
+
   --text-white: #ffffff;
   --text-white-hover: #dddddd;
   --text-black: #111111;
   --text-black-hover: #333333;
   --text-gold-brown: #a87c47;
   --text-gold-hover: #c89238;
+
   --dark-blue: #19233e;
 }
 
@@ -77,7 +90,7 @@ html {
   font-weight: 600;
   padding: 0.7rem 1.6rem;
   color: var(--text-white);
-  background-color: var(--text-gold-hover);
+  background: var(--background-gradient-gold);
   transition: background-color 0.4s ease, color 0.4s ease;
   border-radius: 12px;
   box-shadow: none;
@@ -118,7 +131,7 @@ html {
   justify-content: center;
   font-size: 18px;
   font-weight: 700;
-  color: var(--text-gold-brown);
+  color: var(--text-gold-hover);
 }
 
 /* Navigation Section  */
@@ -562,8 +575,8 @@ nav.sidenav span svg {
 
 .landing-destinations .container-fluid label {
   font-weight: 650;
-  color: var(--text-gold-hover);
-  background: linen;
+  color: var(--text-white);
+  background: var(--background-gradient-gold);
   padding: 0.6rem 18px;
   border-radius: 12px;
   margin-bottom: 1rem;
@@ -588,7 +601,7 @@ nav.sidenav span svg {
 
 /* Statistics Content  */
 .landing-stats {
-  background-color: var(--background-gold);
+  background: var(--background-gradient-gold);
   min-height: 70vh;
   display: flex;
   align-items: center;
@@ -704,8 +717,8 @@ nav.sidenav span svg {
 
 .landing-express .container-fluid label {
   font-weight: 600;
-  color: var(--text-gold-hover);
-  background-color: blanchedalmond;
+  color: var(--text-white);
+  background: var(--background-gradient-gold);
   padding: 0.6rem 18px;
   border-radius: 12px;
   margin: 1rem 0;
@@ -802,14 +815,20 @@ nav.sidenav span svg {
   background-color: #ddd;
 }
 
+.ept-academy .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .ept-welcome,
 .ept-tutoring {
   background-color: linen;
 }
 
 .ept-pricing {
-  background-color: whitesmoke;
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
 }
@@ -840,15 +859,24 @@ nav.sidenav span svg {
   flex-direction: column;
 }
 
-.ept-academy .container-fluid label,
 .ept-welcome .container-fluid label,
+.ept-tutoring .container-fluid label {
+  font-weight: 600;
+  color: var(--text-white);
+  background: var(--background-gradient-gold);
+  padding: 0.6rem 18px;
+  border-radius: 12px;
+  width: fit-content;
+  margin: 0.8rem 0;
+}
+
+.ept-academy .container-fluid label,
 .ept-monologue .container-fluid label,
-.ept-tutoring .container-fluid label,
 .ept-pricing .container-fluid label,
 .ept-testimonials .container-fluid label {
   font-weight: 600;
   color: var(--text-gold-hover);
-  background-color: blanchedalmond;
+  background: linen;
   padding: 0.6rem 18px;
   border-radius: 12px;
   width: fit-content;
@@ -889,10 +917,11 @@ nav.sidenav span svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 1rem;
 }
 
 .ept-pricing .container-lg .card {
-  background-color: var(--text-gold-hover);
+  background: var(--background-gradient-gold);
   margin-right: 1.4rem;
   width: 70%;
   border-radius: 16px;
@@ -900,41 +929,46 @@ nav.sidenav span svg {
   flex-direction: column;
 }
 
-.ept-pricing .container-lg label {
-  font-weight: 660;
-  color: var(--text-white);
-  background-color: var(--text-black);
-  padding: 0.7rem 18px;
-  text-align: center;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-}
-
 .ept-pricing .container-lg .card .card-body {
-  padding: 1.4rem;
+  padding: 3rem;
+  height: 48vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.ept-pricing .container-lg .card p.card-text {
+.ept-pricing .container-lg .card h3.card-title {
   color: var(--text-white);
   font-weight: 600;
   text-align: center;
-  margin: 1rem;
 }
 
-.ept-pricing .container-lg .card h4.card-title {
+.ept-pricing .container-lg .card .card-text {
+  margin-bottom: 2rem;
+}
+
+.ept-pricing .container-lg .card .card-text h1 {
+  color: var(--text-white);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ept-pricing .container-lg .card .card-text ul {
+  list-style: none;
+}
+
+.ept-pricing .container-lg .card .card-text ul li {
   color: var(--text-white);
   font-weight: 600;
-  margin: 1.4rem;
-  text-align: center;
+  padding: 0.6rem;
+  display: flex;
 }
 
-.ept-pricing .container-lg .card-body svg {
-  font-size: 1.4rem;
+.ept-pricing .container-lg .card-body .card-text ul li svg {
+  font-size: 1.2rem;
   font-weight: 500;
-  margin: 0 0.2rem;
+  margin-right: 1rem;
   color: var(--text-white-hover);
 }
 
@@ -946,7 +980,6 @@ nav.sidenav span svg {
 }
 
 .ept-testimonials .container-lg .card {
-  border-top: 8px solid var(--text-gold-hover);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 1rem;
   width: 70%;
@@ -958,10 +991,9 @@ nav.sidenav span svg {
 .ept-testimonials .container-lg label {
   font-weight: 600;
   color: var(--text-white);
-  background-color: var(--text-gold-hover);
+  background: var(--background-gradient-gold);
   padding: 0.6rem 18px;
-  padding-top: 0.2rem;
-  border-top-left-radius: 8px;
+  border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   width: fit-content;
 }
@@ -1024,8 +1056,8 @@ textarea {
 
 .contact-section1 .container-fluid label {
   font-weight: 600;
-  color: var(--text-gold-hover);
-  background-color: blanchedalmond;
+  color: var(--text-white);
+  background: var(--background-gradient-gold);
   padding: 0.6rem 18px;
   border-radius: 12px;
   width: fit-content;
@@ -1173,8 +1205,8 @@ textarea {
 
 .contact-section2 .container .container-fluid label {
   font-weight: 600;
-  color: var(--text-gold-hover);
-  background-color: blanchedalmond;
+  color: var(--text-white);
+  background: var(--background-gradient-gold);
   padding: 0.6rem 18px;
   border-radius: 12px;
   width: fit-content;
@@ -1231,20 +1263,11 @@ textarea {
 
 .about-section1 .container-fluid label,
 .about-section2 .container-fluid label,
+.about-section3 .container-fluid label,
 .about-section4 .container-fluid label {
   font-weight: 600;
-  color: var(--text-gold-hover);
-  background-color: blanchedalmond;
-  padding: 0.6rem 18px;
-  border-radius: 12px;
-  width: fit-content;
-  margin: 0.8rem 0;
-}
-
-.about-section3 .container-fluid label {
-  font-weight: 600;
   color: var(--text-white);
-  background-color: var(--text-gold-brown);
+  background: var(--background-gradient-gold);
   padding: 0.6rem 18px;
   border-radius: 12px;
   width: fit-content;
@@ -1324,7 +1347,6 @@ textarea {
 }
 
 .landing-testimonials .container-lg .card {
-  border-top: 8px solid var(--text-gold-hover);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 1rem;
   width: 70%;
@@ -1336,11 +1358,10 @@ textarea {
 .landing-testimonials .container-lg label {
   font-weight: 600;
   color: var(--text-white);
-  background-color: var(--text-gold-hover);
+  background: var(--background-gradient-gold);
   padding: 0.6rem 18px;
-  padding-top: 0.2rem;
-  border-top-left-radius: 8px;
-  border-bottom-right-radius: 10px;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   width: fit-content;
 }
 
@@ -1560,7 +1581,7 @@ footer .footer-content .rights a {
   }
 
   .homepage-overlay {
-    height: 50vh;
+    height: 64vh;
   }
 
   .homepage-overlay .homepage {
@@ -1569,6 +1590,7 @@ footer .footer-content .rights a {
 
   .homepage-overlay .watermark {
     width: 80%;
+    bottom: 30px;
     max-width: 300px;
   }
 
@@ -1607,147 +1629,240 @@ footer .footer-content .rights a {
     text-align: center;
   }
 
-  .welcome .container-fluid {
+  .landing-welcome .container-fluid {
     padding: 2rem 10%;
     text-align: center;
   }
 
-  .welcome .container-fluid h1 {
+  .landing-welcome .container-fluid h1 {
     font-size: 2.2rem;
   }
 
-  .welcome .container-fluid label {
+  .landing-welcome .container-fluid label {
     font-size: 14px;
   }
 
-  .welcome .container-fluid .introduction img {
+  .landing-welcome .container-fluid .introduction img {
     width: 14%;
   }
 
-  .destinations .container-fluid {
+  .landing-destinations .container-fluid {
     text-align: center;
     margin: 0 3rem;
     padding-bottom: 1rem;
   }
 
-  .destinations .container-fluid h1 {
+  .landing-destinations .container-fluid h1 {
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
-  .services .container-fluid h1 {
-    font-size: 2rem;
-  }
-
-  .stats .container-fluid {
+  .landing-stats .container-fluid {
     margin: 0 2rem;
   }
 
-  .stats .container-fluid h1 {
+  .landing-stats .container-fluid h1 {
     font-size: 2.2rem;
     text-align: center;
   }
 
-  .stats .container-fluid h4 {
+  .landing-stats .container-fluid h4 {
     font-size: 14px;
     text-align: center;
   }
 
-  .stats .container-lg {
+  .landing-stats .container-lg {
     flex-direction: column;
   }
 
-  .stats .container-lg .card {
+  .landing-stats .container-lg .card {
     padding: 1.6rem 12%;
   }
 
-  .express .container-fluid {
+  .landing-express .container-fluid {
     margin: 1.4rem;
     display: flex;
     align-items: center;
   }
 
-  .express .container-fluid h1 {
+  .landing-express .container-fluid h1 {
     font-size: 2.2rem;
+    margin-bottom: 1rem;
   }
 
-  .express .container-lg {
+  .landing-express .container-lg {
     flex-direction: column;
   }
 
-  .express .container-lg .card {
+  .landing-express .container-lg .card {
     width: 90%;
     text-align: center;
     display: block;
   }
 
-  .testimonials .container-fluid {
+  .landing-testimonials .container-fluid {
     margin: 0 1rem;
   }
 
-  .testimonials .container-fluid h1 {
+  .landing-testimonials .container-fluid h1 {
     font-size: 2.2rem;
     text-align: center;
-    margin: 0.8rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
   }
 
-  .testimonials .container-fluid h1 svg {
+  .landing-testimonials .container-fluid h1 svg {
     font-size: 2.4rem;
   }
 
-  .testimonials .container-fluid h4 {
+  .landing-testimonials .container-fluid h4 {
     font-size: 14px;
     margin: 0 2rem;
   }
 
-  .testimonials .container-lg {
+  .landing-testimonials .container-lg {
     flex-direction: column;
   }
 
-  .testimonials .container-lg .card {
+  .landing-testimonials .container-lg .card {
     width: 90%;
     height: auto;
   }
 
-  .contact-section .container {
-    flex-direction: column;
-    padding: 1rem;
+  .services-section {
+    min-height: 50vh;
   }
 
-  .contact-section .container-fluid {
+  .services-section .container-fluid h1 {
+    font-size: 2rem;
+  }
+
+  .ept-academy {
+    min-height: 50vh;
+  }
+
+  .ept-academy .container-fluid {
+    align-items: flex-start;
+    padding: 0 2rem;
+  }
+
+  .ept-monologue .container .container-fluid, 
+  .ept-pricing .container .container-fluid {
+    padding: 0 1rem;
+  }
+
+  .ept-academy .container-fluid h1 {
+    font-size: 2rem;
+  }
+
+  .ept-welcome .container-fluid h1, 
+  .ept-monologue .container-fluid h1, 
+  .ept-tutoring .container-fluid h1, 
+  .ept-pricing .container-fluid h1, 
+  .ept-testimonials .container-fluid h1 {
+    font-size: 1.6rem;
+  }
+
+  .ept-welcome .container-fluid p,
+  .ept-tutoring .container-fluid p, 
+  .ept-testimonials .container-fluid p {
+    padding: 0 2rem;
+  }
+
+  .ept-pricing .container-lg {
+    flex-direction: column;
     padding: 0;
-    margin-bottom: 1rem;
+  }
+
+  .ept-pricing .container-lg .card {
+    width: 96%;
+    margin: 1rem;
+  }
+
+  .ept-testimonials .container-lg {
+    flex-direction: column;
+  }
+
+  .ept-testimonials .container-lg .card {
+    width: 96%;
+  }
+
+  .about-section1 .container .container-fluid, 
+  .about-section3 .container .container-fluid {
+    padding: 0;
+  }
+
+  .about-section2 .container .container-fluid, 
+  .about-section4 .container .container-fluid {
+    padding: 0 2rem;
+  }
+
+  .about-section1 .container-fluid h1, 
+  .about-section2 .container-fluid h1, 
+  .about-section4 .container-fluid h1 {
+    font-size: 2rem;
+  }
+
+  .about-section3 .container-fluid h1 {
+    font-size: 2rem;
+  }
+
+  .about-section1 .container-fluid p {
+    padding: 0 2rem;
+  }
+
+  .about-section3 .container-fluid p {
+    padding: 0 2rem;
+  }
+
+  .contact-section1 .container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .contact-section1 .container-fluid {
+    padding: 0;
+    margin: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .contact-section .container-fluid h1 {
+  .contact-section1 .container-fluid h1 {
     font-size: 3rem;
   }
 
-  .contact-section .container-fluid h5 {
+  .contact-section1 .container-fluid h5 {
     font-size: 0.96rem;
     text-align: center;
   }
 
-  .contact-section .container-fluid p {
+  .contact-section1 .container-fluid p {
     text-align: center;
   }
 
-  .contact-section .card {
+  .contact-section1 .card {
     width: 100%;
   }
 
-  .contact-section .card .card-body {
+  .contact-section1 .card .card-body {
     text-align: center;
   }
 
-  .contact-section .card form {
+  .contact-section1 .card form {
     flex-direction: column;
   }
 
-  .contact-section .card form .col {
+  .contact-section1 .card form .col {
     margin: 0;
+  }
+
+  .contact-section2 .container-fluid h1 {
+    font-size: 3rem;
+  }
+
+  .contact-section2 .container-fluid p {
+     padding: 0 2rem;
   }
 
   footer {

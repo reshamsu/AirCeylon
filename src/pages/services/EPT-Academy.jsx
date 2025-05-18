@@ -1,6 +1,7 @@
 import { Container } from "@mui/material";
 import React from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa6";
 
 const EPTAcademy = () => {
   return (
@@ -102,66 +103,79 @@ const EPTAcademy = () => {
         <Container className="container">
           <div className="container-fluid">
             <label>Pricing</label>
-            {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
             <h1>
               Pricing <span>Plans</span>
             </h1>
           </div>
+
           <div className="container-lg">
             <div className="card">
-              <label>Basic Plan</label>
               <div className="card-body">
-                <h4 className="card-title">
-                  Core Plan
-                </h4>
-                <h2>$100</h2>
-                <ul>
-                  <li>Freelancers</li>
-                   <li>Startups</li>
-                </ul>
+                <h3 className="card-title">Basic Plan</h3>
+                <div className="card-text">
+                  <h1>$100</h1>
+                  <ul>
+                    <li>
+                      <FaCheck /> Freelancers
+                    </li>
+                    <li>
+                      <FaCheck /> Startups
+                    </li>
+                  </ul>
+                </div>
                 <button className="btn btn-light">Get Started</button>
               </div>
             </div>
 
             <div className="card">
-              <label>Standard Plan</label>
               <div className="card-body">
-                <h4 className="card-title">
-                  Essential Plan
-                </h4>
-                <h2>$500</h2>
-                 <ul>
-                  <li>Freelancers</li>
-                   <li>Startups</li>
-                   <li>Small Scale Businesses</li>
-                </ul>
+                <h3 className="card-title">Standard Plan</h3>
+                <div className="card-text">
+                  <h1>$500</h1>
+                  <ul>
+                    <li>
+                      <FaCheck /> Freelancers
+                    </li>
+                    <li>
+                      <FaCheck /> Startups
+                    </li>
+                    <li>
+                      <FaCheck /> Small Scale Businesses
+                    </li>
+                  </ul>
+                </div>
                 <button className="btn btn-light">Get Started</button>
               </div>
             </div>
 
-            <div className="card" style={{ margin: "0"}}>
-              <label>Premium Plan</label>
+            <div className="card">
               <div className="card-body">
-                <h4 className="card-title">
-                  Pro Plan
-                </h4>
-                <h2>$1000</h2>
-                 <ul>
-                  <li>Startups</li>
-                   <li>Small Scale Businesses</li>
-                    <li>Medium Scale Businesses</li>
-                </ul>
+                <h3 className="card-title">Premium Plan</h3>
+                <div className="card-text">
+                  <h1>$1000</h1>
+                  <ul>
+                    <li>
+                      <FaCheck /> Startups
+                    </li>
+                    <li>
+                      <FaCheck /> Small Scale Businesses
+                    </li>
+                    <li>
+                      <FaCheck /> Medium Scale Businesses
+                    </li>
+                  </ul>
+                </div>
                 <button className="btn btn-light">Get Started</button>
               </div>
             </div>
           </div>
         </Container>
       </div>
+
       <div className="ept-testimonials">
         <Container className="container">
           <div className="container-fluid">
             <label>Testimonials</label>
-            {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
             <h1>
               What Our <span>Students Say</span>
             </h1>

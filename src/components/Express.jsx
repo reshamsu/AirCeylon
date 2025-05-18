@@ -28,9 +28,9 @@ const Express = () => {
     <div className="landing-express" style={{ padding: "2rem 0" }}>
       <Container>
         <div className="container-fluid">
-          <label style={{ color: "var(--text-gold-hover)" }}>Express</label>
+          <label>Express</label>
           <h1>
-            Express <span style={{ color: "var(--text-gold-hover)" }}>Lane</span>
+            Express <span>Lane</span>
           </h1>
         </div>
 
