@@ -12,7 +12,7 @@ const MiddleEast = () => {
           <div className="container">
             <div className="container-fluid">
               <h1>
-                Visit <span>Middle-East</span>
+                Visit <span className="gradient-text">Middle-East</span>
               </h1>
               <p>From Visa Services</p>
             </div>

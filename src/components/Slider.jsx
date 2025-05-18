@@ -93,7 +93,7 @@ const Gallery = () => {
         <div className="container-fluid">
           <label>Destinations</label>
           <h1>
-            Your Next <span>Journey Awaits</span>
+            Your Next <span className="gradient-text">Journey Awaits</span>
           </h1>
         </div>
 

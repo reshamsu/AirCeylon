@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { RxDividerVertical } from "react-icons/rx";
 
 const Footer = () => {
@@ -19,14 +19,18 @@ const Footer = () => {
           <div className="row">
             <div className="brand">
               <div className="footer-brand" style={{ textAlign: "center" }}>
-                <Link to="/" className="logo">
+                <NavLink
+                  to="/"
+                  className="logo"
+                  style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+                >
                   <img
-                    src="./assets/Logo.png"
+                    src="/assets/Logo.png"
                     alt="Air Ceylon Logo"
                     style={{ width: "2.8rem", marginRight: ".8rem" }}
                   />
                   Air Ceylon
-                </Link>
+                </NavLink>
                 <p>Beyond the Horizon.</p>
 
                 <ul>
@@ -114,7 +118,9 @@ const Footer = () => {
                     <a href="/services/visa-service/east-asia">East Asia</a>
                   </li>
                   <li>
-                    <a href="/services/visa-service/south-east-asia">South-East Asia</a>
+                    <a href="/services/visa-service/south-east-asia">
+                      South-East Asia
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -152,12 +158,12 @@ const Footer = () => {
             </div>
             <div className="contact">
               <label>
-                Phone Number: <a href="tel:+14372543077"> +94 760 301 141</a>
+                Phone Number: <a href="tel:+94 760 301 141"> +94 760 301 141</a>
               </label>
               <RxDividerVertical />
               <label>
                 Email Address:
-                <a href="mailto:info@airceylon.com">info@airceylonint.com</a>
+                <a href="mailto:info@airceylonint.com">info@airceylonint.com</a>
               </label>
             </div>
           </div>

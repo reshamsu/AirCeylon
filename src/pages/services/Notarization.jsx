@@ -8,7 +8,7 @@ const Notarization = () => {
         <div className="container">
           <div className="container-fluid">
             <h1>
-              <span>Notarization</span>
+              <span className="gradient-text">Notarization</span>
             </h1>
             <p>Info Notarization, Authetication, Verification</p>
           </div>

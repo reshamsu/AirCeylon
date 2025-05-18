@@ -12,7 +12,7 @@ const Countries = () => {
           <div className="container">
             <div className="container-fluid">
               <h1>
-                View <span>Countries</span>
+                View <span className="gradient-text">Countries</span>
               </h1>
               <p>from Visa Services</p>
             </div>

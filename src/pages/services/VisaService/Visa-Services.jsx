@@ -12,7 +12,7 @@ const VisaServices = () => {
           <div className="container">
             <div className="container-fluid">
               <h1>
-                Visa <span>Services</span>
+                Visa <span className="gradient-text">Services</span>
               </h1>
               <p>Info Visa Services</p>
             </div>

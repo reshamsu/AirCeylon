@@ -12,7 +12,7 @@ const SouthEastAsia = () => {
           <div className="container">
             <div className="container-fluid">
               <h1>
-                Visit <span>South East-Asia</span>
+                Visit <span className="gradient-text">South East-Asia</span>
               </h1>
               <p>From Visa Services</p>
             </div>

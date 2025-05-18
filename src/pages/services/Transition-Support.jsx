@@ -8,7 +8,7 @@ const TransitionSupport = () => {
         <div className="container">
           <div className="container-fluid">
             <h1>
-              Transition <span>Support</span>
+              Transition <span className="gradient-text">Support</span>
             </h1>
             <p>Info Transitional Support</p>
           </div>

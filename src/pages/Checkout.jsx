@@ -8,7 +8,7 @@ const Checkout = () => {
         <div className="container">
           <div className="container-fluid">
             <h1>
-              Check<span>Out</span>
+              Check<span className="gradient-text">Out</span>
             </h1>
             <p></p>
           </div>

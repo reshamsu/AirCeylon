@@ -10,7 +10,7 @@ const EPTAcademy = () => {
         <Container className="container">
           <div className="container-fluid">
             <h1>
-              EPT <span>Academy</span>
+              EPT <span className="gradient-text">Academy</span>
             </h1>
             <p>
               Info EPT <span>Academy</span>
@@ -24,7 +24,7 @@ const EPTAcademy = () => {
             <label>EPT Academy</label>
             {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
             <h1>
-              Welcome to <span>EPT Academy</span>
+              Welcome to <span className="gradient-text">EPT Academy</span>
             </h1>
             {/* <h4 className="card-title">
                     At Air Ceylon, your journey is our passion. - see what our
@@ -51,7 +51,7 @@ const EPTAcademy = () => {
             <label>Monologue</label>
             {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
             <h1>
-              Message from <span>EPT Academy Tutor</span>
+              Message from <span className="gradient-text">EPT Academy Tutor</span>
             </h1>
             {/* <h4 className="card-title">
                     At Air Ceylon, your journey is our passion. - see what our
@@ -78,7 +78,7 @@ const EPTAcademy = () => {
             <label>Tutors</label>
             {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
             <h1>
-              In-House <span>Tutors</span>
+              In-House <span className="gradient-text">Tutors</span>
             </h1>
             {/* <h4 className="card-title">
                     At Air Ceylon, your journey is our passion. - see what our
@@ -104,7 +104,7 @@ const EPTAcademy = () => {
           <div className="container-fluid">
             <label>Pricing</label>
             <h1>
-              Pricing <span>Plans</span>
+              Pricing <span className="gradient-text">Plans</span>
             </h1>
           </div>
 
@@ -177,7 +177,7 @@ const EPTAcademy = () => {
           <div className="container-fluid">
             <label>Testimonials</label>
             <h1>
-              What Our <span>Students Say</span>
+              What Our <span className="gradient-text">Students Say</span>
             </h1>
           </div>
           <div className="container-lg">

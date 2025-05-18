@@ -8,7 +8,7 @@ const Blog = () => {
         <div className="container">
           <div className="container-fluid">
             <h1>
-              <span>Blogs</span>
+              <span className="gradient-text">Blogs</span>
             </h1>
             <p>
               Why More Sri Lankans Trust <span>Air Ceylon</span> for Hassle-Free

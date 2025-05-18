@@ -19,7 +19,7 @@ const HeroSection = () => {
       <Container className="airceylon">
         <div className="container-fluid">
           <h1>
-            Discover <span>Your World</span>
+            Discover <span className="gradient-text">Your World</span>
           </h1>
           {/* <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis

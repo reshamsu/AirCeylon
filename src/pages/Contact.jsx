@@ -1,6 +1,10 @@
 import { Container } from "@mui/material";
 import React from "react";
 import { FiSend } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import { MdAddIcCall } from "react-icons/md";
+import { HiOutlineMailOpen } from "react-icons/hi";
+import { LuCalendarFold } from "react-icons/lu";
 
 const Contact = () => {
   return (
@@ -16,27 +20,24 @@ const Contact = () => {
 
         <Container className="container">
           <div className="container-fluid">
-            <label>Reach Out</label>
+            <label>Connect</label>
             <h1>
-              Contact <span>Us</span>
+              Contact <span className="gradient-text">Us</span>
             </h1>
-            <h5>Visit us by appointment:</h5>
             <p>
-              Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western
-              Province, Sri Lanka.
+             <Link><MdAddIcCall />By Phone: +94 760 301 141</Link>
             </p>
-            {/* <p>
-            <Link>info@airceylonint.com</Link>
-          </p>
-          <p>
-            <Link>94 12 345 6789</Link>
-          </p> */}
+            <p>
+              <Link><HiOutlineMailOpen />By Email: info@airceylonint.com</Link>
+            </p>
+            <h5><LuCalendarFold /> Visit us by appointment - Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western
+              Province, Sri Lanka.</h5>
           </div>
           <div className="card">
             <div className="card-body">
               <div className="card-title">
                 <h1>
-                  Get <span>Connected.</span>
+                  Get <span className="gradient-text">Connected.</span>
                 </h1>
               </div>
               <div className="card-text">
@@ -103,7 +104,7 @@ const Contact = () => {
           <div className="container-fluid">
             <label>FAQ</label>
             <h1>
-              FA<span>Q</span>
+              FA<span className="gradient-text">Q</span>
             </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam

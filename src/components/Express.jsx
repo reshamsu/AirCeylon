@@ -7,13 +7,13 @@ const expressOptions = [
     title: "For Inquiries / Consultations",
     button: "Call Us",
     iconPng: "/assets/express1.png",
-    phone: "+94760301141",
+    phone: "+94 760 301 141",
   },
   {
     title: "To Set an Appointment For Visit / Service",
     button: "Book Now",
     iconPng: "/assets/express2.png", 
-    phone: "+94760301141",
+    phone: "+94 760 301 141",
   },
   {
     title: "To Begin IELTS Training",
@@ -30,7 +30,7 @@ const Express = () => {
         <div className="container-fluid">
           <label>Express</label>
           <h1>
-            Express <span>Lane</span>
+            Express <span className="gradient-text">Lane</span>
           </h1>
         </div>
 

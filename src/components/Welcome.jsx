@@ -9,7 +9,7 @@ const Info = () => {
           <label>Welcome</label>
           {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
           <h1>
-            Welcome to <span>Air Ceylon</span>
+            Welcome to <span className="gradient-text">Air Ceylon</span>
           </h1>
           {/* <h4 className="card-title">
                 At Air Ceylon, your journey is our passion. - see what our

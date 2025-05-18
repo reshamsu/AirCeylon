@@ -10,7 +10,7 @@ const Testimonials = () => {
       <Container className="container">
         <div className="container-fluid">
           <h1>
-            Experience with <span>Air Ceylon</span> <FaCommentDots />
+            Experience with <span className="gradient-text">Air Ceylon</span> <FaCommentDots />
           </h1>
         </div>
 

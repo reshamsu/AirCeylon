@@ -7,7 +7,7 @@ const TravelTours = () => {
       <Container className="container">
         <div className="container-fluid">
           <h1>
-            Travel & <span>Tours</span>
+            Travel & <span className="gradient-text">Tours</span>
           </h1>
           <p>Info Travel and Tourism Support</p>
         </div>
