@@ -1249,7 +1249,7 @@ textarea {
 .about-section4 .container,
 .about-section5 .container,
 .about-section6 .container {
-  min-height: 64vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-between;

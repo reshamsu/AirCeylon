@@ -33,16 +33,21 @@ const About = () => {
             <h1>
               Mission & <span className="gradient-text">Vision </span>
             </h1>
-            <div className="vision">
-              <h4 className="gradient-text">Our Vision</h4>
-              <p>
-                "To be the international Hub of Sri Lanka as the Leader of Travel & Tourism."
-              </p>
+            <div className="vision" style={{ display: "flex", justifyContent: "space-around"}}>
+              <div className="body-text" style={{ display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                <h2 className="gradient-text">Our Vision</h2>
+                <p>
+                  "To be the international Hub of Sri Lanka as the Leader of
+                  Travel & Tourism."
+                </p>
+              </div>
+              <img src="./assets/vision.jpg" alt="vision" style={{ width: "30%", borderRadius: "100%"}}></img>
             </div>
             <div className="mission">
               <h4 className="gradient-text">Our Mission</h4>
               <p>
-                To Navigate New Oppotunties smoothly with ease confidence as you embark onto your next chapter."
+                To Navigate New Oppotunties smoothly with ease confidence as you
+                embark onto your next chapter."
               </p>
             </div>
           </div>
