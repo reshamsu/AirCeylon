@@ -1274,13 +1274,31 @@ textarea {
   flex-direction: column;
 }
 
+.about-section2 .container-fluid .company {
+  display: flex; 
+  justify-content: space-between; 
+  padding: 2rem;
+}
+
+.about-section2 .container-fluid .company img {
+  width: 36%;
+  border-radius: 20%;
+  }
+
+.about-section2 .container-fluid .company .body-text1, 
+.about-section2 .container-fluid .company .body-text2  {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+}
+
 .about-section1 .container-fluid label,
 .about-section2 .container-fluid label,
 .about-section3 .container-fluid label,
 .about-section4 .container-fluid label,
 .about-section5 .container-fluid label,
 .about-section6 .container-fluid label {
-  font-weight: 600;
+  font-weight: 650;
   color: var(--text-white);
   background: var(--background-gradient-gold);
   padding: 0.6rem 18px;
@@ -1290,12 +1308,16 @@ textarea {
 }
 
 .about-section1 .container-fluid h1,
-.about-section2 .container-fluid h1,
 .about-section4 .container-fluid h1,
 .about-section5 .container-fluid h1,
 .about-section6 .container-fluid h1 {
   font-size: 3.6rem;
   margin-bottom: 2rem;
+}
+
+.about-section2 .container-fluid h1 {
+  font-size: 3rem;
+   margin-bottom: 1rem;
 }
 
 .about-section3 .container-fluid h1 {
@@ -1311,6 +1333,12 @@ textarea {
 .about-section5 .container-fluid h1 span,
 .about-section6 .container-fluid h1 span {
   color: var(--text-gold-hover);
+}
+
+.about-section2 .container-fluid .company .body-text1 p, 
+.about-section2 .container-fluid .company .body-text2 p {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .about-section1 .container-fluid p {
@@ -1878,6 +1906,28 @@ footer .footer-content .rights a {
     padding: 0 2rem;
   }
 
+  .about-section2 .container-fluid .company {
+    padding: 2rem 0;
+  }
+
+  .about-section2 .container-fluid .company img {
+    display: none;
+  }
+
+  .about-section2 .container-fluid .company .body-text1 p,  
+  .about-section2 .container-fluid .company .body-text2 p {
+    font-size: 1rem;
+  }
+
+  .about-section2 .container-fluid .company .body-text2 {
+    padding: 0 !important;
+    align-items: end;
+  }
+
+    .about-section2 .container-fluid .company .body-text2 p{
+    text-align: end;
+  }
+
   .about-section1 .container-fluid h1,
   .about-section2 .container-fluid h1,
   .about-section4 .container-fluid h1,
@@ -1888,6 +1938,10 @@ footer .footer-content .rights a {
 
   .about-section3 .container-fluid h1 {
     font-size: 2rem;
+  }
+
+  .about-section2 .container-fluid .company .body-text p {
+    font-size: 1rem;
   }
 
   .about-section1 .container-fluid p {

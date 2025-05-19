@@ -29,28 +29,30 @@ const About = () => {
       <div className="about-section2">
         <Container className="container">
           <div className="container-fluid">
-            <label>Our Goal</label>
-            <h1>
-              Mission & <span className="gradient-text">Vision </span>
-            </h1>
-            <div className="vision" style={{ display: "flex", justifyContent: "space-around"}}>
-              <div className="body-text" style={{ display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                <h2 className="gradient-text">Our Vision</h2>
+            <div className="company">
+              <div className="body-text1">
+                <label>Vision</label>
+                <h1>Our <span className="gradient-text">Vision</span></h1>
                 <p>
                   "To be the international Hub of Sri Lanka as the Leader of
                   Travel & Tourism."
                 </p>
               </div>
-              <img src="./assets/vision.jpg" alt="vision" style={{ width: "30%", borderRadius: "100%"}}></img>
+              <img src="./assets/vision.jpg" alt="vision"></img>
             </div>
-            <div className="mission">
-              <h4 className="gradient-text">Our Mission</h4>
+            <div className="company">
+                <img src="./assets/mission.jpg" alt="mission" style={{ height: "44vh" }}></img>
+                <div className="body-text2" style={{ paddingLeft: "6rem"}}>
+                  <label>Mission</label>
+              <h1>Our <span className="gradient-text">Mission</span></h1>
               <p>
-                To Navigate New Oppotunties smoothly with ease confidence as you
+                "To Navigate New Oppotunties smoothly with ease confidence as you
                 embark onto your next chapter."
               </p>
+              </div>
+             
             </div>
-          </div>
+            </div>
         </Container>
       </div>
       <div className="about-section3">
