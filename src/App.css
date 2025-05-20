@@ -4,9 +4,9 @@
   --background-white: #ffffff;
   --background-gradient-gold: linear-gradient(
     90deg,
-    #f79700 0%,
-    #d98603 50%,
-    #ad6300 100%
+    #a16301ba 0%,
+    #be8901 50%,
+    #8d5600 100%
   );
   --white-background-hover: #eeeeee;
 
@@ -40,7 +40,7 @@ html {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #ffc14d 0%, #f0a000 50%, #d17c00 100%);
+  background: linear-gradient(90deg, #b8860b 0%, #a97400 50%, #8b5e00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -818,6 +818,10 @@ nav.sidenav span svg {
   background-color: linen;
 }
 
+.ept-packages {
+  background-color: var(--dark-blue);
+}
+
 .ept-pricing {
   min-height: 80vh;
   display: flex;
@@ -826,6 +830,7 @@ nav.sidenav span svg {
 
 .ept-welcome .container,
 .ept-monologue .container,
+.ept-packages .container,
 .ept-tutoring .container,
 .ept-testimonials .container {
   min-height: 70vh;
@@ -842,6 +847,7 @@ nav.sidenav span svg {
 }
 
 .ept-welcome .container .container-fluid,
+.ept-packages .container .container-fluid,
 .ept-tutoring .container .container-fluid,
 .ept-testimonials .container .container-fluid {
   display: flex;
@@ -851,6 +857,7 @@ nav.sidenav span svg {
 }
 
 .ept-welcome .container-fluid label,
+.ept-packages .container-fluid label,
 .ept-tutoring .container-fluid label {
   font-weight: 600;
   color: var(--text-white);
@@ -879,6 +886,12 @@ nav.sidenav span svg {
   margin-bottom: 1rem;
 }
 
+.ept-packages .container-fluid h1 {
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+  color: var(--text-white);
+}
+
 .ept-welcome .container-fluid h1,
 .ept-monologue .container-fluid h1,
 .ept-tutoring .container-fluid h1,
@@ -898,19 +911,85 @@ nav.sidenav span svg {
 }
 
 .ept-welcome .container-fluid p,
+.ept-packages .container-fluid p,
 .ept-tutoring .container-fluid p,
 .ept-testimonials .container-fluid p {
   text-align: center;
 }
 
-/* EPT Pricing Section  */
-.ept-pricing .container-lg {
+.ept-pricing .container-lg,
+.ept-packages .container-lg {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 1rem;
 }
 
+/* EPT Packages Section  */
+.ept-packages .container-lg .card {
+  background: var(--background-white);
+  margin: 1rem;
+  width: 70%;
+  padding: 2rem;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ept-packages .container-lg .card:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 12px rgba(255, 255, 255, 0.986);
+}
+
+.ept-packages .container-lg .card .card-body {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+}
+
+.ept-packages .container-lg .card .card-title h3 {
+  margin-bottom: 2rem;
+}
+
+.ept-packages .container-lg .card .card-text ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+  display: flex;
+  font-weight: 550;
+}
+
+.ept-packages .container-lg .card .card-text ul li svg {
+  margin-right: 1rem;
+  font-size: 28px;
+  color: var(--text-gold-hover);
+}
+
+.ept-packages .added-info ul {
+  padding: 3rem 0;
+}
+
+.ept-packages .added-info ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-white);
+}
+
+.ept-packages .added-info ul li svg {
+  margin-right: 0.8rem;
+  color: var(--text-gold-hover);
+}
+
+.ept-packages .added-info p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 660;
+  color: var(--text-gold-hover);
+}
+
+/* EPT Pricing Section  */
 .ept-pricing .container-lg .card {
   background: var(--background-gradient-gold);
   margin: 0 1rem;
@@ -1056,7 +1135,7 @@ textarea {
 }
 
 .contact-section1 .container-fluid h1 {
-  font-size: 3.6rem;
+  font-size: 3.3rem;
   margin-bottom: 2rem;
 }
 
@@ -1064,13 +1143,41 @@ textarea {
   color: var(--text-gold-hover);
 }
 
-.contact-section1 .container-fluid h5 {
-  font-weight: 600;
-  color: var(--text-black-hover);
-  font-size: 1rem;
-  width: 96%;
+.contact-section1 .container-fluid .info {
+  margin-bottom: 0.8rem;
   display: flex;
   align-items: center;
+}
+
+.contact-section1 .container-fluid .info svg {
+  font-size: 2.4rem;
+  padding: 8px;
+  background: var(--background-gradient-gold);
+  color: var(--text-white);
+  border-radius: 20px;
+  margin-right: 0.8rem;
+}
+
+.contact-section1 .container-fluid .info svg.appoint {
+  width: 9%;
+}
+
+.contact-section1 .container-fluid p a {
+  color: var(--text-gold-hover);
+  font-weight: 650;
+  margin-left: 0.6rem;
+  font-size: 1.1rem;
+}
+
+.contact-section1 .container-fluid p a:hover {
+  color: var(--text-gold-brown);
+}
+
+.contact-section1 .container-fluid h5 {
+  font-weight: 640;
+  color: var(--text-black-hover);
+  font-size: 1rem;
+  margin: 0.2rem;
 }
 
 .contact-section1 .container-fluid h5 svg {
@@ -1081,31 +1188,6 @@ textarea {
   border-radius: 20px;
   margin-right: 0.8rem;
   width: 9%;
-}
-
-.contact-section1 .container-fluid p {
-  margin-bottom: 0.6rem;
-}
-
-.contact-section1 .container-fluid p a {
-  color: var(--text-gold-hover);
-  font-weight: 650;
-  font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-}
-
-.contact-section1 .container-fluid p a svg {
-  font-size: 2.4rem;
-  padding: 8px;
-  background: var(--background-gradient-gold);
-  color: var(--text-white);
-  border-radius: 20px;
-  margin-right: 0.8rem;
-}
-
-.contact-section1 .container-fluid p a:hover {
-  color: var(--text-gold-brown);
 }
 
 .contact-section1 .card {
@@ -1196,11 +1278,13 @@ textarea {
   margin-left: 0.4rem;
 }
 
+.contact-section2 {
+  background: var(--white-background-hover);
+}
+
 .contact-section2 .container {
   min-height: 64vh;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .contact-section2 .container .container-fluid {
@@ -1221,7 +1305,7 @@ textarea {
 }
 
 .contact-section2 .container-fluid h1 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -1229,8 +1313,37 @@ textarea {
   color: var(--text-gold-hover);
 }
 
-.contact-section2 .container-fluid p {
-  text-align: center;
+.contact-section2 .container .container-lg {
+  width: 100%;
+}
+
+.contact-section2 .container .container-lg .card {
+  background-color: var(--background-white);
+  padding: 2rem;
+  margin: 1.4rem 4rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-section2 .container .container-lg .card svg {
+  font-size: 2.6rem;
+  cursor: pointer;
+  padding: 2.6px;
+  border-radius: 100%;
+}
+
+.contact-section2 .container .container-lg .card svg:hover {
+  background-color: var(--white-background-hover);
+}
+
+.contact-section2 .container .container-lg .card .card-body {
+  width: 80%;
+}
+
+.contact-section2 .container .container-lg .card .card-body .card-text p {
+  margin-top: 1rem;
 }
 
 /* About Us Content  */
@@ -1275,21 +1388,30 @@ textarea {
 }
 
 .about-section2 .container-fluid .company {
-  display: flex; 
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
   padding: 2rem;
 }
 
 .about-section2 .container-fluid .company img {
-  width: 36%;
-  border-radius: 20%;
-  }
+  width: 44%;
+  border-radius: 10%;
+  filter: brightness(0.8);
+}
 
-.about-section2 .container-fluid .company .body-text1, 
-.about-section2 .container-fluid .company .body-text2  {
-  display: flex; 
+.about-section2 .container-fluid .company .body-text1,
+.about-section2 .container-fluid .company .body-text2 {
+  display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
+}
+
+.about-section2 .container-fluid .company .body-text1 img.watermark,
+.about-section2 .container-fluid .company .body-text2 img.watermark {
+  position: absolute;
+  width: 30%;
+  z-index: -1;
 }
 
 .about-section1 .container-fluid label,
@@ -1317,7 +1439,7 @@ textarea {
 
 .about-section2 .container-fluid h1 {
   font-size: 3rem;
-   margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .about-section3 .container-fluid h1 {
@@ -1335,10 +1457,11 @@ textarea {
   color: var(--text-gold-hover);
 }
 
-.about-section2 .container-fluid .company .body-text1 p, 
+.about-section2 .container-fluid .company .body-text1 p,
 .about-section2 .container-fluid .company .body-text2 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .about-section1 .container-fluid p {
@@ -1851,19 +1974,24 @@ footer .footer-content .rights a {
 
   .ept-monologue .container .container-fluid,
   .ept-pricing .container .container-fluid {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 
   .ept-academy .container-fluid h1 {
     font-size: 2rem;
   }
 
-  .ept-welcome .container-fluid h1,
+  .ept-welcome .container-fluid h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
   .ept-monologue .container-fluid h1,
+  .ept-packages .container-fluid h1,
   .ept-tutoring .container-fluid h1,
   .ept-pricing .container-fluid h1,
   .ept-testimonials .container-fluid h1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   .ept-welcome .container-fluid p,
@@ -1872,13 +2000,31 @@ footer .footer-content .rights a {
     padding: 0 2rem;
   }
 
-  .ept-pricing .container-lg {
+  .ept-pricing .container-lg,
+  .ept-packages .container-lg {
     flex-direction: column;
-    padding: 0;
+  }
+
+  .ept-packages .container-lg .card {
+    width: 94%;
+  }
+
+  .ept-packages .added-info ul {
+    padding: 2rem;
+  }
+
+  .ept-packages .added-info ul li {
+    font-size: 1rem;
+  }
+
+  .ept-packages .added-info p {
+    padding: 0 2rem;
+    font-size: 1rem;
+    text-align: center;
   }
 
   .ept-pricing .container-lg .card {
-    width: 96%;
+    width: 94%;
     margin: 1rem;
   }
 
@@ -1887,7 +2033,7 @@ footer .footer-content .rights a {
   }
 
   .ept-testimonials .container-lg .card {
-    width: 96%;
+    width: 94%;
   }
 
   .about-section3 .container {
@@ -1910,22 +2056,35 @@ footer .footer-content .rights a {
     padding: 2rem 0;
   }
 
-  .about-section2 .container-fluid .company img {
+  .about-section2 .container-fluid .company img.image {
     display: none;
   }
 
-  .about-section2 .container-fluid .company .body-text1 p,  
-  .about-section2 .container-fluid .company .body-text2 p {
-    font-size: 1rem;
+  .about-section2 .container-fluid .company .body-text1 img.watermark,
+  .about-section2 .container-fluid .company .body-text2 img.watermark {
+    width: 77%;
   }
 
-  .about-section2 .container-fluid .company .body-text2 {
-    padding: 0 !important;
+  .about-section2 .container-fluid .company .body-text1 {
+    padding: 0% !important;
+    min-height: 30vh;
     align-items: end;
   }
 
-    .about-section2 .container-fluid .company .body-text2 p{
+  .about-section2 .container-fluid .company .body-text2 {
+    padding: 0% !important;
+    min-height: 30vh;
+    align-items: start;
+  }
+
+  .about-section2 .container-fluid .company .body-text1 p {
+    font-size: 1rem;
     text-align: end;
+  }
+
+  .about-section2 .container-fluid .company .body-text2 p {
+    font-size: 1rem;
+    text-align: start;
   }
 
   .about-section1 .container-fluid h1,
@@ -1968,19 +2127,6 @@ footer .footer-content .rights a {
     font-size: 3rem;
   }
 
-  .contact-section1 .container-fluid h5 {
-    font-size: 0.84rem;
-    font-weight: 650;
-  }
-
-  .contact-section1 .container-fluid h5 svg {
-    width: 24%;
-  }
-
-  .contact-section1 .container-fluid p {
-    text-align: center;
-  }
-
   .contact-section1 .card {
     width: 100%;
   }
@@ -1998,11 +2144,25 @@ footer .footer-content .rights a {
   }
 
   .contact-section2 .container-fluid h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
   }
 
-  .contact-section2 .container-fluid p {
-    padding: 0 2rem;
+  .contact-section1 .container-fluid .info svg.appoint {
+    width: 18%;
+  }
+
+  .contact-section2 .container .container-lg .card {
+    margin: 1.4rem 1rem;
+  }
+
+  .contact-section2 .container .container-lg .card .card-body {
+    width: 100%;
+  }
+
+  .contact-section2 .container .container-lg .card .card-body .card-title {
+    font-size: 1.1rem;
+    width: 90%;
   }
 
   footer {

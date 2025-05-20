@@ -2,6 +2,10 @@ import { Container } from "@mui/material";
 import React from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa6";
+import { PiTargetBold } from "react-icons/pi";
+import { WiTime4 } from "react-icons/wi";
+import { BsInboxesFill } from "react-icons/bs";
+import { GrOverview } from "react-icons/gr";
 
 const EPTAcademy = () => {
   return (
@@ -51,7 +55,8 @@ const EPTAcademy = () => {
             <label>Monologue</label>
             {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
             <h1>
-              Message from <span className="gradient-text">EPT Academy Tutor</span>
+              Message from{" "}
+              <span className="gradient-text">EPT Academy Tutor</span>
             </h1>
             {/* <h4 className="card-title">
                     At Air Ceylon, your journey is our passion. - see what our
@@ -68,6 +73,124 @@ const EPTAcademy = () => {
               Mauris vitae nulla in tellus dignissim dapibus ornare quis enim.
               Cras aliquam purus urna.every scroll guide you to the destination
               of your dreams.
+            </p>
+          </div>
+        </Container>
+      </div>
+      <div className="ept-packages">
+        <Container className="container">
+          <div className="container-fluid">
+            <label>Packages</label>
+            {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
+            <h1>
+              Academy <span className="gradient-text">Packages</span>
+            </h1>
+            {/* <h4 className="card-title">
+                    At Air Ceylon, your journey is our passion. - see what our
+                    guests have to say.
+                  </h4> */}
+          </div>
+          <div className="container-lg">
+            <div className="card">
+              <div className="card-body">
+                <div className="card-title">
+                  <h3>5-Day Crash Course (5 Sessions)</h3>
+                </div>
+                <div className="card-text">
+                  <ul>
+                    <li>
+                      <PiTargetBold /> Focus: Academic & General
+                    </li>
+                    <li>
+                      <WiTime4 /> Duration: 5 Sessions
+                    </li>
+                    <li>
+                       <BsInboxesFill style={{ marginLeft: ".2rem"}}/> Modules Covered: Listening, Reading, Writing,
+                      Speaking
+                    </li>
+                    <li>
+                      <GrOverview style={{ fontSize: "24px"}}/> Overview: Pending Info.
+                    </li>
+                  </ul>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-body">
+                <div className="card-title">
+                  <h3>10-Day Essential Course (10 Sessions)</h3>
+                </div>
+                <div className="card-text">
+                  <ul>
+                    <li>
+                      <PiTargetBold /> Focus: Academic & General
+                    </li>
+                    <li>
+                      <WiTime4 /> Duration: 10 Sessions
+                    </li>
+                    <li>
+                      <BsInboxesFill style={{ marginLeft: ".2rem"}}/> Modules Covered: Listening, Reading, Writing,
+                      Speaking
+                    </li>
+                    <li>
+                      <GrOverview style={{ fontSize: "24px"}}/> Overview: Pending Info.
+                    </li>
+                  </ul>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-body">
+                <div className="card-title">
+                  <h3>20-Day Pro Course (20 Sessions)</h3>
+                </div>
+                <div className="card-text">
+                  <ul>
+                    <li>
+                      <PiTargetBold /> Focus: Academic & General
+                    </li>
+                    <li>
+                      <WiTime4 /> Duration: 20 Sessions
+                    </li>
+                    <li>
+                       <BsInboxesFill style={{ marginLeft: ".2rem"}}/> Modules Covered: Listening, Reading, Writing,
+                      Speaking
+                    </li>
+                    <li>
+                      <GrOverview style={{ fontSize: "24px"}}/> Overview: Pending Info.
+                    </li>
+                  </ul>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="added-info">
+            <ul>
+              <li><FaCheck /> Virtual 1-to-1 Classes</li>
+              <li><FaCheck /> Target Audience: Academic and General IELTS candidates.</li>
+              <li>
+                <FaCheck /> Customization: Courses are designed to help you achieve your
+                specific score target.
+              </li>
+              <li>
+                <FaCheck /> Support: Individual attention and one-on-one speaking sessions.
+              </li>
+              <li>
+                <FaCheck /> Learning Materials: Access to online resources, including
+                ebooks, videos, reading materials, sample writings, and practice
+                exercises.
+              </li>
+              <li>
+                <FaCheck /> Progress Monitoring: Periodical mock tests to gauge overall
+                score and progress.
+              </li>
+            </ul>
+            <p>
+              Each course package is designed to cater to different preparation
+              needs, ensuring a comprehensive and effective learning experience.
             </p>
           </div>
         </Container>
@@ -182,14 +305,16 @@ const EPTAcademy = () => {
           </div>
           <div className="container-lg">
             <div className="card">
-              <label>Business Client</label>
+              <label>Label here...</label>
               <div className="card-body">
                 <h4 className="card-title">
                   <FaQuoteLeft />
-                  At Hive Colombo, we navigate through any travel related
-                  activities seamlessly and confidently via Air Ceylon. Their
-                  expertise, partnerships and commitment is unique but more
-                  importantly a reliable & valuable travel solution.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  rutrum vel tortor at tempor. Quisque tincidunt leo suscipit
+                  tellus lacinia placerat. Quisque eleifend turpis turpis, quis
+                  suscipit nisl fringilla id. In accumsan quam nec nisi
+                  faucibus, sed feugiat odio pulvinar. Nam est nisi, auctor ac
+                  hendrerit iaculis, feugiat nec justo.
                   <FaQuoteRight />
                 </h4>
                 <p className="card-text">Hive Colombo</p>
@@ -197,15 +322,16 @@ const EPTAcademy = () => {
             </div>
 
             <div className="card">
-              <label>EPT Academy</label>
+              <label>Label here...</label>
               <div className="card-body">
                 <h4 className="card-title">
                   <FaQuoteLeft />
-                  As a frequent traveler, I value efficiency, reliability, and
-                  local insight. Air Ceylon not only helped me navigate multiple
-                  destinations across Asia and Europe, but also offered curated
-                  itineraries that exceeded expectations. A truly trusted travel
-                  partner.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  rutrum vel tortor at tempor. Quisque tincidunt leo suscipit
+                  tellus lacinia placerat. Quisque eleifend turpis turpis, quis
+                  suscipit nisl fringilla id. In accumsan quam nec nisi
+                  faucibus, sed feugiat odio pulvinar. Nam est nisi, auctor ac
+                  hendrerit iaculis, feugiat nec justo.
                   <FaQuoteRight />
                 </h4>
                 <p className="card-text">IELTS Student</p>
@@ -213,15 +339,16 @@ const EPTAcademy = () => {
             </div>
 
             <div className="card">
-              <label>Transition Support</label>
+              <label>Label here...</label>
               <div className="card-body">
                 <h4 className="card-title">
                   <FaQuoteLeft />
-                  The level of personalized service Air Ceylon provides is
-                  unparalleled. Their attention to detail, swift communication,
-                  and thoughtful recommendations made my corporate retreat both
-                  productive and enjoyable. Highly recommended for premium
-                  travel needs. <FaQuoteRight />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  rutrum vel tortor at tempor. Quisque tincidunt leo suscipit
+                  tellus lacinia placerat. Quisque eleifend turpis turpis, quis
+                  suscipit nisl fringilla id. In accumsan quam nec nisi
+                  faucibus, sed feugiat odio pulvinar. Nam est nisi, auctor ac
+                  hendrerit iaculis, feugiat nec justo. <FaQuoteRight />
                 </h4>
                 <p className="card-text">Resident from Toronto - Canada.</p>
               </div>

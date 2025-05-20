@@ -1,12 +1,44 @@
 import { Container } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { FiSend } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { MdAddIcCall } from "react-icons/md";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { LuCalendarFold } from "react-icons/lu";
+import { IoIosAdd } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
+
+const faqs = [
+  {
+    question: "How do I get started?",
+    answer:
+      "Yes, we partner with trusted providers to offer optional travel insurance during checkout. It covers trip cancellations, medical emergencies, and lost baggage.",
+  },
+  {
+    question: "What destinations does Air Ceylon serve?",
+    answer:
+      "AirCeylon offers both domestic and international flights across Asia, Europe, and the Middle East. You can explore our destinations page for a full list.",
+  },
+  {
+    question: "How can I make a booking with Air Ceylon?",
+    answer:
+      "You can easily book flights through our website, mobile app, or by contacting our customer service. Simply choose your departure and arrival cities, dates, and select your preferred flight.",
+  },
+  {
+    question: "What is the best pricing plan?",
+    answer:
+      "We allow one carry-on (up to 7kg) and one checked bag (up to 23kg) for economy class. Additional or oversized baggage may incur extra fees. Business class passengers enjoy higher baggage allowances.",
+  },
+  {
+    question: "Can I change or cancel my booking?",
+    answer:
+      "Yes, most tickets are eligible for changes or cancellations, though fees may apply. Visit our “Manage Booking” section or contact support for assistance.",
+  },
+];
 
 const Contact = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
   return (
     <>
       <div className="contact-section1">
@@ -24,14 +56,31 @@ const Contact = () => {
             <h1>
               Contact <span className="gradient-text">Us</span>
             </h1>
-            <p>
-             <Link><MdAddIcCall />By Phone: +94 760 301 141</Link>
-            </p>
-            <p>
-              <Link><HiOutlineMailOpen />By Email: info@airceylonint.com</Link>
-            </p>
-            <h5><LuCalendarFold /> Visit us by appointment - Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western
-              Province, Sri Lanka.</h5>
+            <div className="info">
+              <MdAddIcCall />
+              <h5>By Phone:</h5>
+              <p>
+                <Link>+94 760 301 141</Link>
+              </p>
+            </div>
+            <div className="info">
+              <HiOutlineMailOpen />
+              <h5>By Email:</h5>
+              <p>
+                <Link>info@airceylonint.com</Link>
+              </p>
+            </div>
+            <div className="info">
+              <LuCalendarFold className="appoint"/>
+              <div>
+              <h5>Visit us by appointment:</h5>
+              <p>
+                {" "}
+                Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western
+                Province, Sri Lanka.
+              </p>
+              </div>
+            </div>
           </div>
           <div className="card">
             <div className="card-body">
@@ -93,7 +142,7 @@ const Contact = () => {
               </div>
             </form>
             <button className="btn btn-primary">
-              Submit Message <FiSend />{" "}
+              Submit Message <FiSend />
             </button>
           </div>
         </Container>
@@ -104,19 +153,41 @@ const Contact = () => {
           <div className="container-fluid">
             <label>FAQ</label>
             <h1>
-              FA<span className="gradient-text">Q</span>
+              Frequently Asked <span className="gradient-text">Questions</span>
             </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              rutrum vel tortor at tempor. Quisque tincidunt leo suscipit tellus
-              lacinia placerat. Quisque eleifend turpis turpis, quis suscipit
-              nisl fringilla id. In accumsan quam nec nisi faucibus, sed feugiat
-              odio pulvinar. Nam est nisi, auctor ac hendrerit iaculis, feugiat
-              nec justo. Vestibulum gravida, leo eu sollicitudin fringilla, nibh
-              turpis maximus orci, porttitor sollicitudin magna nisl id metus.
-              Mauris vitae nulla in tellus dignissim dapibus ornare quis enim.
-              Cras aliquam purus urna.
-            </p>
+            <div className="container-lg">
+              {faqs.map((faq, index) => (
+                <div
+                  className="card"
+                  key={index}
+                  style={{ position: "relative" }}
+                >
+                  <div className="card-body">
+                    <h3 className="card-title">{faq.question}</h3>
+                    {openIndex === index && (
+                      <div className="card-text">
+                        <p>{faq.answer}</p>
+                        <IoMdClose
+                          onClick={() => setOpenIndex(null)}
+                          style={{
+                            position: "absolute",
+                            top: "10px",
+                            right: "10px",
+                            cursor: "pointer",
+                            padding: "6px",
+                            fontSize: "2.4rem",
+                            margin: "10px 2%",
+                          }}
+                        />
+                      </div>
+                    )}
+                  </div>
+                  {openIndex !== index && (
+                    <IoIosAdd onClick={() => setOpenIndex(index)} />
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </Container>
       </div>
