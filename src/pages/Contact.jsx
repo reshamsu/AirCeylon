@@ -56,29 +56,53 @@ const Contact = () => {
             <h1>
               Contact <span className="gradient-text">Us</span>
             </h1>
+            <strong>General</strong>
             <div className="info">
               <MdAddIcCall />
-              <h5>By Phone:</h5>
+              <h5>Phone:</h5>
               <p>
                 <Link>+94 760 301 141</Link>
               </p>
             </div>
             <div className="info">
               <HiOutlineMailOpen />
-              <h5>By Email:</h5>
+              <h5>Email:</h5>
               <p>
                 <Link>info@airceylonint.com</Link>
               </p>
             </div>
+            <strong>EPT Academy</strong>
             <div className="info">
-              <LuCalendarFold className="appoint"/>
-              <div>
-              <h5>Visit us by appointment:</h5>
+              <HiOutlineMailOpen />
+              <h5>Email:</h5>
               <p>
-                {" "}
-                Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western
-                Province, Sri Lanka.
+                <Link>eptacademy@airceylonint.com</Link>
               </p>
+            </div>
+            <strong>Business Client</strong>
+            <div className="info">
+              <HiOutlineMailOpen />
+              <h5>Email:</h5>
+              <p>
+                <Link>alliances@airceylonint.com</Link>
+              </p>
+            </div>
+            <strong>Transition Support (Toronto - Canada)</strong>
+            <div className="info">
+               <MdAddIcCall />
+              <h5>Phone:</h5>
+              <p>
+                <Link>+1 437 254 3077</Link>
+              </p>
+            </div>
+            <strong>Visit us by appointment:</strong>
+            <div className="info">
+              <LuCalendarFold className="appoint" />
+              <div>
+                <p>
+                  Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western
+                  Province, Sri Lanka.
+                </p>
               </div>
             </div>
           </div>

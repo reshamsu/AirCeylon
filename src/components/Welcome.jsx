@@ -4,6 +4,14 @@ import { Container } from "@mui/material";
 const Info = () => {
   return (
     <div className="landing-welcome">
+      <div className="homepage-overlay">
+        <img
+          src="./assets/Watermark.png"
+          className="watermark"
+          alt="Watermark"
+        />
+      </div>
+
       <Container className="container">
         <div className="container-fluid">
           <label>Welcome</label>

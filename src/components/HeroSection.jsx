@@ -9,11 +9,11 @@ const HeroSection = () => {
       <div className="homepage-overlay">
         <img src="./assets/check.jpg" className="homepage darkened" />
 
-        <img
+        {/* <img
           src="./assets/Watermark.png"
           className="watermark"
           alt="Watermark"
-        />
+        /> */}
       </div>
 
       <Container className="airceylon">

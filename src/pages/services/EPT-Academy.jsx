@@ -11,13 +11,16 @@ const EPTAcademy = () => {
   return (
     <>
       <div className="ept-academy">
+        <div className="homepage-overlay">
+          <img src="/assets/ielts.png" className="homepage darkened" />
+        </div>
         <Container className="container">
           <div className="container-fluid">
             <h1>
               EPT <span className="gradient-text">Academy</span>
             </h1>
             <p>
-              Info EPT <span>Academy</span>
+              English Proficiency Training <span>(EPT)</span>
             </p>
           </div>
         </Container>
@@ -30,10 +33,6 @@ const EPTAcademy = () => {
             <h1>
               Welcome to <span className="gradient-text">EPT Academy</span>
             </h1>
-            {/* <h4 className="card-title">
-                    At Air Ceylon, your journey is our passion. - see what our
-                    guests have to say.
-                  </h4> */}
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               rutrum vel tortor at tempor. Quisque tincidunt leo suscipit tellus
@@ -53,15 +52,10 @@ const EPTAcademy = () => {
         <Container className="container">
           <div className="container-fluid">
             <label>Monologue</label>
-            {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
             <h1>
-              Message from{" "}
+              <img src="/assets/Tutor.jpeg" alt="Tutor" />
               <span className="gradient-text">EPT Academy Tutor</span>
             </h1>
-            {/* <h4 className="card-title">
-                    At Air Ceylon, your journey is our passion. - see what our
-                    guests have to say.
-                  </h4> */}
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               rutrum vel tortor at tempor. Quisque tincidunt leo suscipit tellus
@@ -81,14 +75,9 @@ const EPTAcademy = () => {
         <Container className="container">
           <div className="container-fluid">
             <label>Packages</label>
-            {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
             <h1>
               Academy <span className="gradient-text">Packages</span>
             </h1>
-            {/* <h4 className="card-title">
-                    At Air Ceylon, your journey is our passion. - see what our
-                    guests have to say.
-                  </h4> */}
           </div>
           <div className="container-lg">
             <div className="card">
@@ -105,11 +94,14 @@ const EPTAcademy = () => {
                       <WiTime4 /> Duration: 5 Sessions
                     </li>
                     <li>
-                       <BsInboxesFill style={{ marginLeft: ".2rem"}}/> Modules Covered: Listening, Reading, Writing,
-                      Speaking
+                      <BsInboxesFill
+                        style={{ marginLeft: ".2rem", marginRight: "20px" }}
+                      />{" "}
+                      Modules Covered: Listening, Reading, Writing, Speaking
                     </li>
                     <li>
-                      <GrOverview style={{ fontSize: "24px"}}/> Overview: Pending Info.
+                      <GrOverview style={{ fontSize: "24px" }} /> Overview:
+                      Pending Info.
                     </li>
                   </ul>
                   <p></p>
@@ -130,11 +122,14 @@ const EPTAcademy = () => {
                       <WiTime4 /> Duration: 10 Sessions
                     </li>
                     <li>
-                      <BsInboxesFill style={{ marginLeft: ".2rem"}}/> Modules Covered: Listening, Reading, Writing,
-                      Speaking
+                      <BsInboxesFill
+                        style={{ marginLeft: ".2rem", marginRight: "20px" }}
+                      />{" "}
+                      Modules Covered: Listening, Reading, Writing, Speaking
                     </li>
                     <li>
-                      <GrOverview style={{ fontSize: "24px"}}/> Overview: Pending Info.
+                      <GrOverview style={{ fontSize: "24px" }} /> Overview:
+                      Pending Info.
                     </li>
                   </ul>
                   <p></p>
@@ -155,11 +150,14 @@ const EPTAcademy = () => {
                       <WiTime4 /> Duration: 20 Sessions
                     </li>
                     <li>
-                       <BsInboxesFill style={{ marginLeft: ".2rem"}}/> Modules Covered: Listening, Reading, Writing,
-                      Speaking
+                      <BsInboxesFill
+                        style={{ marginLeft: ".2rem", marginRight: "20px" }}
+                      />{" "}
+                      Modules Covered: Listening, Reading, Writing, Speaking
                     </li>
                     <li>
-                      <GrOverview style={{ fontSize: "24px"}}/> Overview: Pending Info.
+                      <GrOverview style={{ fontSize: "24px" }} /> Overview:
+                      Pending Info.
                     </li>
                   </ul>
                   <p></p>
@@ -169,23 +167,29 @@ const EPTAcademy = () => {
           </div>
           <div className="added-info">
             <ul>
-              <li><FaCheck /> Virtual 1-to-1 Classes</li>
-              <li><FaCheck /> Target Audience: Academic and General IELTS candidates.</li>
               <li>
-                <FaCheck /> Customization: Courses are designed to help you achieve your
-                specific score target.
+                <FaCheck /> Virtual 1-to-1 Classes
               </li>
               <li>
-                <FaCheck /> Support: Individual attention and one-on-one speaking sessions.
+                <FaCheck /> Target Audience: Academic and General IELTS
+                candidates.
               </li>
               <li>
-                <FaCheck /> Learning Materials: Access to online resources, including
-                ebooks, videos, reading materials, sample writings, and practice
-                exercises.
+                <FaCheck /> Customization: Courses are designed to help you
+                achieve your specific score target.
               </li>
               <li>
-                <FaCheck /> Progress Monitoring: Periodical mock tests to gauge overall
-                score and progress.
+                <FaCheck /> Support: Individual attention and one-on-one
+                speaking sessions.
+              </li>
+              <li>
+                <FaCheck /> Learning Materials: Access to online resources,
+                including ebooks, videos, reading materials, sample writings,
+                and practice exercises.
+              </li>
+              <li>
+                <FaCheck /> Progress Monitoring: Periodical mock tests to gauge
+                overall score and progress.
               </li>
             </ul>
             <p>
@@ -203,10 +207,6 @@ const EPTAcademy = () => {
             <h1>
               In-House <span className="gradient-text">Tutors</span>
             </h1>
-            {/* <h4 className="card-title">
-                    At Air Ceylon, your journey is our passion. - see what our
-                    guests have to say.
-                  </h4> */}
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               rutrum vel tortor at tempor. Quisque tincidunt leo suscipit tellus
@@ -225,7 +225,7 @@ const EPTAcademy = () => {
       <div className="ept-pricing">
         <Container className="container">
           <div className="container-fluid">
-            <label>Pricing</label>
+            <label>IELTS Courses</label>
             <h1>
               Pricing <span className="gradient-text">Plans</span>
             </h1>

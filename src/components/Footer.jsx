@@ -35,7 +35,7 @@ const Footer = () => {
 
                 <ul>
                   <li>
-                    <a href="https://wa.me/14372543077">
+                    <a href="https://wa.me/94760301141">
                       <IoLogoWhatsapp />
                     </a>
                   </li>

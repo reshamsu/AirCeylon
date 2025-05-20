@@ -69,11 +69,11 @@ html {
 
 .homepage-overlay .watermark {
   position: absolute;
-  bottom: 0;
+  top: -16%;
   left: 50%;
   transform: translateX(-50%) translateZ(0);
   width: 46%;
-  opacity: 0.06;
+  /* opacity: 0.06; */
   pointer-events: none;
   z-index: 2;
   display: flex;
@@ -490,7 +490,9 @@ nav.sidenav span svg {
 
 /* Welcome Section  */
 .landing-welcome {
-  min-height: 40vh;
+  min-height: 60vh;
+  position: relative;
+  z-index: -1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -886,14 +888,26 @@ nav.sidenav span svg {
   margin-bottom: 1rem;
 }
 
+.ept-monologue .container-fluid h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.ept-monologue .container-fluid h1 img {
+  width: 15%;
+  border-radius: 80%;
+  margin-right: 1rem;
+}
+
 .ept-packages .container-fluid h1 {
   font-size: 3.6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: var(--text-white);
 }
 
 .ept-welcome .container-fluid h1,
-.ept-monologue .container-fluid h1,
 .ept-tutoring .container-fluid h1,
 .ept-pricing .container-fluid h1,
 .ept-testimonials .container-fluid h1 {
@@ -967,7 +981,7 @@ nav.sidenav span svg {
 }
 
 .ept-packages .added-info ul {
-  padding: 3rem 0;
+  padding: 2.2rem;
 }
 
 .ept-packages .added-info ul li {
@@ -986,6 +1000,7 @@ nav.sidenav span svg {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   font-weight: 660;
+  text-align: center;
   color: var(--text-gold-hover);
 }
 
@@ -1141,6 +1156,10 @@ textarea {
 
 .contact-section1 .container-fluid h1 span {
   color: var(--text-gold-hover);
+}
+
+.contact-section1 .container-fluid strong {
+  margin-bottom: 0.6rem;
 }
 
 .contact-section1 .container-fluid .info {
@@ -1799,7 +1818,7 @@ footer .footer-content .rights a {
   }
 
   .container {
-    padding: 3rem 8%;
+    padding: 2rem 8%;
   }
 
   .hero-section {
@@ -1815,9 +1834,9 @@ footer .footer-content .rights a {
   }
 
   .homepage-overlay .watermark {
-    width: 80%;
-    bottom: 30px;
+    top: 100px;
     max-width: 300px;
+    width: 80%;
   }
 
   .custom-arrow {
@@ -2003,6 +2022,15 @@ footer .footer-content .rights a {
   .ept-pricing .container-lg,
   .ept-packages .container-lg {
     flex-direction: column;
+    padding: 0;
+  }
+
+  .ept-monologue .container-fluid h1 {
+    font-size: 1.4rem;
+  }
+
+  .ept-monologue .container-fluid h1 img {
+    width: 30%;
   }
 
   .ept-packages .container-lg .card {
