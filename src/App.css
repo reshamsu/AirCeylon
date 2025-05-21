@@ -4,9 +4,9 @@
   --background-white: #ffffff;
   --background-gradient-gold: linear-gradient(
     90deg,
-    #a16301ba 0%,
+    #8d5600 0%,
     #be8901 50%,
-    #8d5600 100%
+    #976200 100%
   );
   --white-background-hover: #eeeeee;
 
@@ -85,7 +85,6 @@ html {
 }
 
 /* Button Content  */
-
 .btn.btn-primary {
   font-size: 16px;
   font-weight: 600;
@@ -93,7 +92,7 @@ html {
   color: var(--text-white);
   background: var(--background-gradient-gold);
   transition: background-color 0.4s ease, color 0.4s ease;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: none;
   cursor: pointer;
   width: 100%;
@@ -111,7 +110,7 @@ html {
   color: var(--text-black);
   background-color: var(--text-white);
   transition: background-color 0.4s ease, color 0.4s ease;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: none;
   cursor: pointer;
   width: 100%;
@@ -595,7 +594,7 @@ nav.sidenav span svg {
 
 /* Statistics Content  */
 .landing-stats {
-  background: var(--background-gradient-gold);
+  background: var(--dark-blue);
   min-height: 70vh;
   display: flex;
   align-items: center;
@@ -612,8 +611,8 @@ nav.sidenav span svg {
 
 .landing-stats .container-fluid label {
   font-weight: 600;
-  color: var(--text-gold-hover);
-  background-color: var(--text-white);
+  background: var(--background-gradient-gold);
+  color: var(--text-white);
   padding: 0.6rem 18px;
   border-radius: 12px;
   margin-bottom: 1rem;
@@ -640,7 +639,7 @@ nav.sidenav span svg {
 
 .landing-stats .container-lg .card {
   background-color: var(--background-white);
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+  /* box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4); */
   margin: 0.8rem;
   cursor: pointer;
   padding: 1.6rem 3%;
@@ -651,7 +650,7 @@ nav.sidenav span svg {
 }
 
 .landing-stats .container-lg .card:hover {
-  box-shadow: 0px 8px 8px rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.4);
 }
 
 .landing-stats .container-lg .card-body {
@@ -664,7 +663,6 @@ nav.sidenav span svg {
   color: var(--text-gold-hover);
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 0.6rem;
 }
 
 .landing-stats .container-lg i.card-text {
@@ -674,7 +672,7 @@ nav.sidenav span svg {
 .landing-stats .container-lg .card-body svg {
   font-size: 8rem;
   font-weight: 500;
-  margin-right: 1.4rem;
+  margin-right: 1rem;
   color: var(--text-gold-hover);
 }
 
