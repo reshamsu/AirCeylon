@@ -902,7 +902,7 @@ nav.sidenav span svg {
 }
 
 .ept-packages .container-fluid h1 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   color: var(--text-white);
 }
@@ -1112,7 +1112,7 @@ nav.sidenav span svg {
 }
 
 /* Contact Section  */
-.contact-section1 {
+.contact-section {
   min-height: 80vh;
   display: flex;
 
@@ -1128,192 +1128,194 @@ textarea {
   font-size: 15px;
 }
 
-.contact-section1 .container {
+.contact-section .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.contact-section1 .container-fluid {
-  display: flex;
   flex-direction: column;
-}
-
-.contact-section1 .container-fluid label {
-  font-weight: 600;
-  color: var(--text-white);
-  background: var(--background-gradient-gold);
-  padding: 0.6rem 18px;
-  border-radius: 12px;
-  width: fit-content;
-  margin: 0.8rem 0;
-}
-
-.contact-section1 .container-fluid h1 {
-  font-size: 3.3rem;
-  margin-bottom: 2rem;
-}
-
-.contact-section1 .container-fluid h1 span {
-  color: var(--text-gold-hover);
-}
-
-.contact-section1 .container-fluid strong {
-  margin-bottom: 0.6rem;
-}
-
-.contact-section1 .container-fluid .info {
-  margin-bottom: 0.8rem;
-  display: flex;
-  align-items: center;
-}
-
-.contact-section1 .container-fluid .info svg {
-  font-size: 2.4rem;
-  padding: 8px;
-  background: var(--background-gradient-gold);
-  color: var(--text-white);
-  border-radius: 20px;
-  margin-right: 0.8rem;
-}
-
-.contact-section1 .container-fluid .info svg.appoint {
-  width: 9%;
-}
-
-.contact-section1 .container-fluid p a {
-  color: var(--text-gold-hover);
-  font-weight: 650;
-  margin-left: 0.6rem;
-  font-size: 1.1rem;
-}
-
-.contact-section1 .container-fluid p a:hover {
-  color: var(--text-gold-brown);
-}
-
-.contact-section1 .container-fluid h5 {
-  font-weight: 640;
-  color: var(--text-black-hover);
-  font-size: 1rem;
-  margin: 0.2rem;
-}
-
-.contact-section1 .container-fluid h5 svg {
-  font-size: 2.4rem;
-  padding: 8px;
-  background: var(--background-gradient-gold);
-  color: var(--text-white);
-  border-radius: 20px;
-  margin-right: 0.8rem;
-  width: 9%;
-}
-
-.contact-section1 .card {
-  background: var(--text-white);
-  border-radius: 14px;
-  padding: 2.6rem 2rem;
-  width: 80%;
-  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
-}
-
-.contact-section1 .card form {
-  display: flex;
-  justify-content: space-around;
-}
-
-.contact-section1 .card form .col {
-  width: 100%;
-  margin: 0 0.8rem;
-}
-
-.contact-section1 .card .card-body {
-  margin: 0 0.6rem;
-}
-
-.contact-section1 .card .card-title h1 {
-  margin-bottom: 0.8rem;
-}
-
-.contact-section1 .card .card-title h1 span {
-  color: var(--text-gold-hover);
-}
-
-.contact-section1 .card .card-text p {
-  margin-bottom: 1.6rem;
-}
-
-.contact-section1 .card .form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.6rem;
-}
-
-.contact-section1 .card .form-group label {
-  margin-bottom: 0.6rem;
-  font-weight: 600;
-}
-
-.contact-section1 .card .form-group input {
-  padding: 1rem 8%;
-  border: 1.6px solid whitesmoke;
-  border-radius: 10px;
-  font-weight: 500;
-}
-
-.contact-section1 .card .form-group input:hover {
-  border: 1.6px solid var(--text-gold-hover);
-}
-
-.contact-section1 .card .form-group select {
-  padding: 1rem 8%;
-  border: 1.6px solid whitesmoke;
-  border-radius: 10px;
-  font-weight: 500;
-}
-
-.contact-section1 .card .form-group select:hover {
-  border: 1.6px solid var(--text-gold-hover);
-}
-
-.contact-section1 .card .form-group textarea {
-  padding: 1rem 8%;
-  border: 1.6px solid whitesmoke;
-  border-radius: 10px;
-  font-weight: 500;
-}
-
-.contact-section1 .card .form-group textarea:hover {
-  border: 1.6px solid var(--text-gold-hover);
-}
-
-.contact-section1 .card .btn.btn-light {
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.contact-section1 .card .btn.btn-light svg {
-  margin-left: 0.4rem;
+.contact-section .container-fluid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
 }
 
-.contact-section2 {
-  background: var(--white-background-hover);
+.contact-section .container-fluid h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.contact-section2 .container {
+.contact-section .container-fluid h1 span {
+  color: var(--text-gold-hover);
+}
+
+.contact-section .card .card-body {
+  padding: 2rem 2.6rem;
+  width: 46%;
+  border-radius: 14px;
+  background: var(--background-gradient-gold);
+}
+
+.contact-section .card .card-body h2 {
+  font-size: 1.6rem;
+  color: var(--text-white);
+  margin-bottom: 0.6rem;
+}
+
+.contact-section .card .card-body p {
+  color: var(--text-white);
+  margin-bottom: 2rem;
+}
+
+.contact-section .card .card-body .card-text {
+  padding-top: 2rem;
+}
+
+.contact-section .card .card-body .card-group {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.contact-section .card .card-body .card-group ul {
+  list-style: none;
+}
+
+.contact-section .card .card-body h4 {
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.contact-section .card .card-body .card-group svg {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  color: var(--background-white);
+}
+
+.contact-section .card .card-body .card-group ul li {
+  margin: 0.4rem 0;
+  font-weight: 550;
+  color: var(--text-white);
+}
+
+.contact-section .card .card-body .card-group ul li a {
+  color: var(--text-white);
+  font-weight: 500;
+}
+
+.contact-section .card .card-body .card-group ul li a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.contact-section .card {
+  background: var(--text-white);
+  border-radius: 22px;
+  padding: 0.8rem;
+  display: flex;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+}
+
+.contact-section .card form .row {
+  display: flex;
+}
+
+.contact-section .card .card-form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.contact-section .card .card-title h1 {
+  margin-bottom: 0.8rem;
+}
+
+.contact-section .card .card-title h1 span {
+  color: var(--text-gold-hover);
+}
+
+.contact-section .card .card-text p {
+  margin-bottom: 1.6rem;
+}
+
+.contact-section .card .form-group {
+  padding: 1.2rem 4%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section .card .form-group label {
+  font-weight: 600;
+  color: var(--text-gold-hover);
+}
+
+.contact-section .card .form-group input {
+  padding: 1rem 2%;
+  border-bottom: 3px solid var(--white-background-hover);
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.contact-section .card .form-group input:hover {
+  border-bottom: 3px solid var(--text-gold-hover);
+}
+
+.contact-section .card .form-group select {
+  padding: 1rem 4%;
+  border-bottom: 3px solid var(--white-background-hover);
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.contact-section .card .form-group select:hover {
+  border-bottom: 3px solid var(--text-gold-hover);
+}
+
+.contact-section .card .form-group textarea {
+  padding: 1rem 1%;
+  border-bottom: 3px solid var(--white-background-hover);
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.contact-section .card .form-group textarea:hover {
+  border-bottom: 3px solid var(--text-gold-hover);
+}
+
+.contact-section .card .btn.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1.4rem;
+  width: 36%;
+}
+
+.contact-section .card .btn.btn-primary svg {
+  margin-left: 0.6rem;
+}
+
+.faq-section {
+  background-color: var(--white-background-hover);
+}
+
+.faq-section .container {
   min-height: 64vh;
   align-items: center;
 }
 
-.contact-section2 .container .container-fluid {
+.faq-section .container .container-fluid {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.contact-section2 .container .container-fluid label {
+.faq-section .container .container-fluid label {
   font-weight: 600;
   color: var(--text-white);
   background: var(--background-gradient-gold);
@@ -1323,22 +1325,22 @@ textarea {
   margin: 0.8rem 0;
 }
 
-.contact-section2 .container-fluid h1 {
-  font-size: 3rem;
+.faq-section .container-fluid h1 {
+  font-size: 2.6rem;
   margin-bottom: 2rem;
 }
 
-.contact-section2 .container-fluid h1 span {
+.faq-section .container-fluid h1 span {
   color: var(--text-gold-hover);
 }
 
-.contact-section2 .container .container-lg {
+.faq-section .container .container-lg {
   width: 100%;
 }
 
-.contact-section2 .container .container-lg .card {
+.faq-section .container .container-lg .card {
   background-color: var(--background-white);
-  padding: 2rem;
+  padding: 1.6rem 2rem;
   margin: 1.4rem 4rem;
   border-radius: 20px;
   display: flex;
@@ -1346,22 +1348,22 @@ textarea {
   justify-content: space-between;
 }
 
-.contact-section2 .container .container-lg .card svg {
+.faq-section .container .container-lg .card svg {
   font-size: 2.6rem;
   cursor: pointer;
   padding: 2.6px;
   border-radius: 100%;
 }
 
-.contact-section2 .container .container-lg .card svg:hover {
+.faq-section .container .container-lg .card svg:hover {
   background-color: var(--white-background-hover);
 }
 
-.contact-section2 .container .container-lg .card .card-body {
+.faq-section .container .container-lg .card .card-body {
   width: 80%;
 }
 
-.contact-section2 .container .container-lg .card .card-body .card-text p {
+.faq-section .container .container-lg .card .card-body .card-text p {
   margin-top: 1rem;
 }
 
@@ -1452,7 +1454,7 @@ textarea {
 .about-section4 .container-fluid h1,
 .about-section5 .container-fluid h1,
 .about-section6 .container-fluid h1 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -1463,7 +1465,7 @@ textarea {
 
 .about-section3 .container-fluid h1 {
   color: var(--text-white);
-  font-size: 3.6rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -2139,56 +2141,92 @@ footer .footer-content .rights a {
     padding: 0;
   }
 
-  .contact-section1 .container {
+  .contact-section .container {
     flex-direction: column;
     padding: 2rem;
   }
 
-  .contact-section1 .container-fluid {
+  .contact-section .container-fluid {
     padding: 0;
     margin: 2.4rem 1rem;
     display: flex;
     justify-content: center;
   }
 
-  .contact-section1 .container-fluid h1 {
-    font-size: 3rem;
-  }
-
-  .contact-section1 .card {
-    width: 100%;
-  }
-
-  .contact-section1 .card .card-body {
+  .contact-section .container-fluid h1 {
+    font-size: 2.4rem;
     text-align: center;
   }
 
-  .contact-section1 .card form {
+  .contact-section .container-fluid p {
+    text-align: center;
+  }
+
+  .contact-section .card {
+    width: 100%;
+    display: flex;
     flex-direction: column;
   }
 
-  .contact-section1 .card form .col {
-    margin: 0;
+  .contact-section .card .card-body {
+    width: 100%;
+    padding: 2rem 2.2rem;
   }
 
-  .contact-section2 .container-fluid h1 {
+  .contact-section .card .card-body h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .contact-section .card .card-body p {
+    text-align: center;
+  }
+
+  .contact-section .card .card-body .card-group svg {
+    font-size: 2.4rem;
+  }
+
+  .contact-section .card .card-body .card-group ul li {
+    font-size: 0.9rem;
+  }
+
+  .contact-section .card form {
+    flex-direction: column;
+  }
+
+  .contact-section .card form .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-section .card .card-form {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .contact-section .card .form-group {
+    padding: 1.2rem 2%;
+  }
+
+  .contact-section .card .btn.btn-primary {
+    margin: 0%;
+    width: 100%;
+  }
+
+  .faq-section .container .container-fluid h1 {
     font-size: 2rem;
     text-align: center;
   }
 
-  .contact-section1 .container-fluid .info svg.appoint {
-    width: 18%;
-  }
-
-  .contact-section2 .container .container-lg .card {
+  .faq-section .container .container-lg .card {
     margin: 1.4rem 1rem;
   }
 
-  .contact-section2 .container .container-lg .card .card-body {
+  .faq-section .container .container-lg .card .card-body {
     width: 100%;
   }
 
-  .contact-section2 .container .container-lg .card .card-body .card-title {
+  .faq-section .container .container-lg .card .card-body .card-title {
     font-size: 1.1rem;
     width: 90%;
   }

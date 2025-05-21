@@ -1,10 +1,9 @@
 import { Container } from "@mui/material";
 import React, { useState } from "react";
 import { FiSend } from "react-icons/fi";
-import { Link } from "react-router-dom";
-import { MdAddIcCall } from "react-icons/md";
-import { HiOutlineMailOpen } from "react-icons/hi";
-import { LuCalendarFold } from "react-icons/lu";
+import { IoCall } from "react-icons/io5";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
 import { IoIosAdd } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 
@@ -41,138 +40,144 @@ const Contact = () => {
 
   return (
     <>
-      <div className="contact-section1">
-        <div className="homepage-overlay">
+      <div className="contact-section">
+        {/* <div className="homepage-overlay">
           <img
             src="./assets/Watermark.png"
             className="watermark"
             alt="Watermark"
           />
-        </div>
+        </div> */}
 
         <Container className="container">
           <div className="container-fluid">
-            <label>Connect</label>
             <h1>
-              Contact <span className="gradient-text">Us</span>
+              Get <span className="gradient-text">Connected.</span>
             </h1>
-            <strong>General</strong>
-            <div className="info">
-              <MdAddIcCall />
-              <h5>Phone:</h5>
-              <p>
-                <Link>+94 760 301 141</Link>
-              </p>
-            </div>
-            <div className="info">
-              <HiOutlineMailOpen />
-              <h5>Email:</h5>
-              <p>
-                <Link>info@airceylonint.com</Link>
-              </p>
-            </div>
-            <strong>EPT Academy</strong>
-            <div className="info">
-              <HiOutlineMailOpen />
-              <h5>Email:</h5>
-              <p>
-                <Link>eptacademy@airceylonint.com</Link>
-              </p>
-            </div>
-            <strong>Business Client</strong>
-            <div className="info">
-              <HiOutlineMailOpen />
-              <h5>Email:</h5>
-              <p>
-                <Link>alliances@airceylonint.com</Link>
-              </p>
-            </div>
-            <strong>Transition Support (Toronto - Canada)</strong>
-            <div className="info">
-               <MdAddIcCall />
-              <h5>Phone:</h5>
-              <p>
-                <Link>+1 437 254 3077</Link>
-              </p>
-            </div>
-            <strong>Visit us by appointment:</strong>
-            <div className="info">
-              <LuCalendarFold className="appoint" />
-              <div>
-                <p>
-                  Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western
-                  Province, Sri Lanka.
-                </p>
-              </div>
-            </div>
+            <p>
+              We're here to assist you with any inquires about our solutions
+            </p>
           </div>
+
           <div className="card">
             <div className="card-body">
-              <div className="card-title">
-                <h1>
-                  Get <span className="gradient-text">Connected.</span>
-                </h1>
+              {/* <label>Connect</label> */}
+              <h2>
+                Contact <span>Information</span>
+              </h2>
+              <p>
+                We're here to assist you with any inquires about our solutions
+              </p>
+              {/* <strong>General</strong> */}
+              <div className="card-group">
+                <IoCall />
+                <ul>
+                  <li>
+                    <a href="tel:+94760301141">+94 760 301 141</a> (General)
+                  </li>
+                  <li>
+                    <a href="tel:+14372543077">+1 437 254 3077</a> - Transition
+                    Support (Toronto - Canada)
+                  </li>
+                </ul>
+              </div>
+              <div className="card-group">
+                <MdEmail />
+                <ul>
+                  <li>
+                    <a href="mailto:info@airceylonint.com">
+                      info@airceylonint.com
+                    </a>{" "}
+                    (General)
+                  </li>
+                  <li>
+                    <a href="mailto:eptacademy@airceylonint.com">
+                      eptacademy@airceylonint.com
+                    </a>{" "}
+                    (EPT Academy)
+                  </li>
+                  <li>
+                    <a href="mailto:alliances@airceylonint.com">
+                      alliances@airceylonint.com
+                    </a>{" "}
+                    (Business Client)
+                  </li>
+                </ul>
               </div>
               <div className="card-text">
-                <p>
-                  We're here to assist you with any inquires about our solutions
-                </p>
+                <h4>Visit us by appointment:</h4>
+                <div className="card-group">
+                  <FaLocationDot />
+                  <ul>
+                    <li>
+                      Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya),
+                      Western Province, Sri Lanka.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <form>
-              <div className="col">
-                <div className="form-group">
-                  <label>Name</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Your Name"
-                  />
+
+            <div className="card-form">
+              <form>
+                <div className="row">
+                  <div className="form-group">
+                    <label>Name</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>Email Address</label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="Your Email"
+                    />
+                  </div>
                 </div>
-                <div className="form-group">
-                  <label>Email Address</label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    placeholder="Your Email Address"
-                  />
+
+                <div className="row">
+                  <div className="form-group">
+                    <label>Phone</label>
+                    <input
+                      type="tel"
+                      className="form-control"
+                      placeholder="Your Phone Number"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>Preferred Support System</label>
+                    <select className="form-control">
+                      <option>Call for Inquries</option>
+                      <option>Book an Appointment</option>
+                      <option>Register for a Course</option>
+                    </select>
+                  </div>
                 </div>
-                <div className="form-group">
-                  <label>Phone</label>
-                  <input
-                    type="tel"
-                    className="form-control"
-                    placeholder="Your Phone Number"
-                  />
+
+                <div className="row">
+                  <div className="form-group">
+                    <label>Additional Info</label>
+                    <textarea
+                      type="text"
+                      className="form-control"
+                      placeholder="Message here..."
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="col">
-                <div className="form-group">
-                  <label>Preferred Support System</label>
-                  <select className="form-control">
-                    <option>Call for Inquries</option>
-                    <option>Book an Appointment</option>
-                    <option>Register for a Course</option>
-                  </select>
-                </div>
-                <div className="form-group">
-                  <label>Additional Info</label>
-                  <textarea
-                    type="text"
-                    className="form-control"
-                    placeholder="Your Message here..."
-                  />
-                </div>
-              </div>
-            </form>
-            <button className="btn btn-primary">
-              Submit Message <FiSend />
-            </button>
+                <button className="btn btn-primary">
+                  Send Message <FiSend />
+                </button>
+              </form>
+            </div>
           </div>
         </Container>
       </div>
 
-      <div className="contact-section2">
+      <div className="faq-section">
         <Container className="container">
           <div className="container-fluid">
             <label>FAQ</label>
