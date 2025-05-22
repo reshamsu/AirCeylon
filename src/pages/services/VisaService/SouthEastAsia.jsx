@@ -8,11 +8,14 @@ const SouthEastAsia = () => {
       <SubNavbar />
 
       <div className="services-section">
+                <div className="homepage-overlay">
+          <img src="/assets/south-east-asia-section.webp" className="homepage darkened" />
+        </div>
         <Container>
           <div className="container">
             <div className="container-fluid">
               <h1>
-                Visit <span className="gradient-text">South East-Asia</span>
+                Visit South East-Asia
               </h1>
               <p>From Visa Services</p>
             </div>

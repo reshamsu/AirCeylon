@@ -8,6 +8,9 @@ const EastAsia = () => {
       <SubNavbar />
 
       <div className="services-section">
+                <div className="homepage-overlay">
+          <img src="/assets/east-asia-section.jpg" className="homepage darkened" />
+        </div>
         <Container>
           <div className="container">
             <div className="container-fluid">

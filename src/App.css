@@ -64,7 +64,7 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(80%);
+  filter: brightness(50%);
 }
 
 .homepage-overlay .watermark {
@@ -119,6 +119,24 @@ html {
 .btn.btn-light:hover {
   background-color: var(--text-white-hover);
   color: var(--text-black-hover);
+}
+
+.btn.btn-dark {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  color: var(--text-white);
+  background-color: var(--text-black);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  border-radius: 12px;
+  box-shadow: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn.btn-dark:hover {
+  background-color: var(--text-black-hover);
+  color: var(--text-white-hover);
 }
 
 .card {
@@ -256,9 +274,11 @@ span.nav-link.dropdown-toggle .nav-link-active {
 /* SubNav Section  */
 nav.desktop-subnav {
   position: relative;
-  padding-top: 1rem;
-  margin-bottom: 1rem;
+  padding: 1rem;
   display: block;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  background: var(--background-white);
 }
 
 nav.desktop-subnav ul.subnav-list {
@@ -313,6 +333,7 @@ nav.desktop-subnav ul.dropdown-menu li a:hover {
 nav.mobile-subnav {
   position: relative;
   display: none;
+  background: var(--background-white);
 }
 
 nav.mobile-subnav ul.subnav-list {
@@ -326,7 +347,7 @@ nav.mobile-subnav ul.subnav-list li {
 nav.mobile-subnav ul.subnav-list li span {
   font-weight: 650;
   color: var(--text-gold-hover);
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 nav.mobile-subnav ul.subnav-list li span svg {
@@ -765,11 +786,10 @@ nav.sidenav span svg {
 
 /* Services Section */
 .services-section {
-  min-height: 80vh;
+  min-height: 84.2vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #eee;
 }
 
 .services-section .container-fluid {
@@ -792,19 +812,19 @@ nav.sidenav span svg {
   font-size: 3.6rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: var(--text-white);
 }
 
-.services-section .container-fluid h1 span {
-  color: var(--text-gold-hover);
+.services-section .container-fluid p {
+  color: var(--text-white);
 }
 
 /* EPT Academy Content  */
 .ept-academy {
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ddd;
 }
 
 .ept-academy .container-fluid {
@@ -828,7 +848,14 @@ nav.sidenav span svg {
   align-items: center;
 }
 
-.ept-welcome .container,
+.ept-welcome .container {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .ept-monologue .container,
 .ept-packages .container,
 .ept-tutoring .container,
@@ -869,7 +896,6 @@ nav.sidenav span svg {
 }
 
 .ept-academy .container-fluid label,
-.ept-monologue .container-fluid label,
 .ept-pricing .container-fluid label,
 .ept-testimonials .container-fluid label {
   font-weight: 600;
@@ -884,19 +910,40 @@ nav.sidenav span svg {
 .ept-academy .container-fluid h1 {
   font-size: 3.6rem;
   margin-bottom: 1rem;
+  color: var(--text-white);
+}
+
+.ept-academy .container-fluid p {
+  color: var(--text-white);
 }
 
 .ept-monologue .container-fluid h1 {
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.6rem;
   display: flex;
   align-items: center;
 }
 
-.ept-monologue .container-fluid h1 img {
-  width: 15%;
-  border-radius: 80%;
-  margin-right: 1rem;
+.ept-monologue .container-fluid label {
+  font-weight: 500;
+}
+
+.ept-monologue .container-fluid label span {
+  color: var(--text-gold-hover);
+  font-weight: 600;
+}
+
+.ept-monologue .container-fluid .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.ept-monologue .container-fluid .row img {
+  width: 20%;
+  border: 10px solid var(--text-gold-hover);
+  border-radius: 100%;
+  margin-right: 3rem;
 }
 
 .ept-packages .container-fluid h1 {
@@ -909,7 +956,7 @@ nav.sidenav span svg {
 .ept-tutoring .container-fluid h1,
 .ept-pricing .container-fluid h1,
 .ept-testimonials .container-fluid h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   margin-bottom: 2rem;
 }
 
@@ -935,6 +982,7 @@ nav.sidenav span svg {
   align-items: center;
   justify-content: center;
   padding-top: 1rem;
+  width: 100%;
 }
 
 /* EPT Packages Section  */
@@ -942,9 +990,9 @@ nav.sidenav span svg {
   background: var(--background-white);
   margin: 1rem;
   width: 70%;
-  padding: 2rem;
   border-radius: 16px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -955,51 +1003,63 @@ nav.sidenav span svg {
 
 .ept-packages .container-lg .card .card-body {
   min-height: 30vh;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-
   justify-content: space-around;
 }
 
 .ept-packages .container-lg .card .card-title h3 {
-  margin-bottom: 2rem;
-}
-
-.ept-packages .container-lg .card .card-text ul li {
-  list-style: none;
-  margin-bottom: 1rem;
-  display: flex;
-  font-weight: 550;
-}
-
-.ept-packages .container-lg .card .card-text ul li svg {
-  margin-right: 1rem;
-  font-size: 28px;
-  color: var(--text-gold-hover);
-}
-
-.ept-packages .added-info ul {
-  padding: 2.2rem;
-}
-
-.ept-packages .added-info ul li {
-  list-style: none;
-  font-size: 1.2rem;
-  margin-bottom: 0.8rem;
+  text-align: center;
+  padding: 0.6rem;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background: var(--background-gradient-gold);
   color: var(--text-white);
 }
 
-.ept-packages .added-info ul li svg {
-  margin-right: 0.8rem;
+.ept-packages .container-lg .card .card-body h4 {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
   color: var(--text-gold-hover);
 }
 
-.ept-packages .added-info p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+.ept-packages .container-lg .card .card-body p {
+  font-size: 1.1rem;
   font-weight: 660;
-  text-align: center;
+}
+
+.ept-packages .container-lg .card .card-body ul.list li {
+  list-style: circle;
+}
+
+.ept-packages .container-lg .card .card-body ul li svg {
+  margin-right: 1rem;
+  font-size: 1.6rem;
   color: var(--text-gold-hover);
+}
+
+.ept-packages .container-lg .card .card-body ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.ept-packages .container-lg .card .card-body .card-description {
+  margin-bottom: 1rem;
+}
+
+.ept-packages .container-lg .card .card-body .btn.btn-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ept-packages .container-lg .card .card-body .btn.btn-dark svg {
+  font-size: 1.4rem;
+  margin-right: 0.6rem;
 }
 
 /* EPT Pricing Section  */
@@ -1592,7 +1652,7 @@ textarea {
 }
 
 .landing-testimonials .container-lg .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   margin: 1rem;
   width: 70%;
   border-radius: 16px;
@@ -1613,6 +1673,7 @@ textarea {
 .landing-testimonials .container-lg .card .card-body {
   padding: 1.4rem;
   display: flex;
+  min-height: 32vh;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -1815,6 +1876,8 @@ footer .footer-content .rights a {
 
   nav.mobile-subnav {
     display: block;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
 
   .container {
@@ -1975,7 +2038,7 @@ footer .footer-content .rights a {
   }
 
   .services-section {
-    min-height: 50vh;
+    min-height: 44vh;
   }
 
   .services-section .container-fluid h1 {
@@ -2002,7 +2065,7 @@ footer .footer-content .rights a {
 
   .ept-welcome .container-fluid h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .ept-monologue .container-fluid h1,
@@ -2029,8 +2092,10 @@ footer .footer-content .rights a {
     font-size: 1.4rem;
   }
 
-  .ept-monologue .container-fluid h1 img {
+  .ept-monologue .container-fluid .row img {
     width: 30%;
+    border: 6px solid var(--text-gold-hover);
+    margin-right: 1.4rem;
   }
 
   .ept-packages .container-lg .card {

@@ -8,11 +8,14 @@ const Asia = () => {
       <SubNavbar />
 
       <div className="services-section">
+                <div className="homepage-overlay">
+          <img src="/assets/asia-section.jpg" className="homepage darkened" />
+        </div>
         <Container>
           <div className="container">
             <div className="container-fluid">
               <h1>
-                Visit <span className="gradient-text">Asia</span>
+                Visit Asia
               </h1>
               <p>From Visa Services</p>
             </div>

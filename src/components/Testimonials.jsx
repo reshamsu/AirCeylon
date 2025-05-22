@@ -10,7 +10,8 @@ const Testimonials = () => {
       <Container className="container">
         <div className="container-fluid">
           <h1>
-            Experience with <span className="gradient-text">Air Ceylon</span> <FaCommentDots />
+            Experience with <span className="gradient-text">Air Ceylon</span>{" "}
+            <FaCommentDots />
           </h1>
         </div>
 
@@ -26,7 +27,7 @@ const Testimonials = () => {
                 importantly a reliable & valuable travel solution.
                 <FaQuoteRight />
               </h4>
-              <p className="card-text">Hive Colombo</p>
+              <p className="card-text">Hive Colombo HQ</p>
             </div>
           </div>
 
@@ -35,11 +36,9 @@ const Testimonials = () => {
             <div className="card-body">
               <h4 className="card-title">
                 <FaQuoteLeft />
-                As a frequent traveler, I value efficiency, reliability, and
-                local insight. Air Ceylon not only helped me navigate multiple
-                destinations across Asia and Europe, but also offered curated
-                itineraries that exceeded expectations. A truly trusted travel
-                partner.
+                "I wanted a band score of 6.5 for the IELTS, and my English was
+                very weak. Within a very short time, Tasha helped me improve my
+                English skills more than I expected. Highly recommended!"
                 <FaQuoteRight />
               </h4>
               <p className="card-text">IELTS Student</p>
