@@ -3,32 +3,29 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import { useMediaQuery } from "react-responsive";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import VisaService from "./pages/services/VisaService/Visa-Services";
-import EPTAcademy from "./pages/services/EPT-Academy";
-import TransitionSupport from "./pages/services/Transition-Support";
-import TravelTours from "./pages/services/Travel&Tours";
-import Ticketing from "./pages/services/Ticketing";
-import Notarization from "./pages/services/Notarization";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Checkout from "./pages/Checkout";
 import Footer from "./components/Footer";
 import Countries from "./pages/Countries";
-import Europe from "./pages/services/VisaService/Europe";
-import Asia from "./pages/services/VisaService/Asia";
-import MiddleEast from "./pages/services/VisaService/MiddleEast";
-import EastAsia from "./pages/services/VisaService/EastAsia";
-import SouthEastAsia from "./pages/services/VisaService/SouthEastAsia";
+import VisaService from "./pages/VisaService";
+import EPTAcademy from "./pages/EPTAcademy";
+import TransitionSupport from ".//components/Services/Transition-Support";
+import TravelTours from ".//components/Services/Travel&Tours";
+import Ticketing from ".//components/Services/Ticketing";
+import Notarization from ".//components/Services/Notarization";
+import Europe from "./components/Services/Visa-Service/Countries/Europe";
+import Asia from "./components/Services/Visa-Service/Countries/Asia";
+import MiddleEast from "./components/Services/Visa-Service/Countries/MiddleEast";
+import EastAsia from "./components/Services/Visa-Service/Countries/EastAsia";
+import SouthEastAsia from "./components/Services/Visa-Service/Countries/SouthEastAsia";
 import "./App.css";
 
 function App() {
-  // const isMobile = useMediaQuery({ maxWidth: 1024 });
-
   return (
     <Router basename="/">
       <div className="Air-Ceylon">
-        {/* {isMobile ? <MobileNav /> : <Navbar />} */}
         <Navbar />
 
         <Routes>

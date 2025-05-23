@@ -1,6 +1,6 @@
 import { Container } from "@mui/material";
 import React from "react";
-import Timeline from "../components/Timeline";
+import Timeline from "../components/Homepage/Timeline";
 
 const About = () => {
   return (
@@ -79,7 +79,7 @@ const About = () => {
       <div className="about-section3">
         <Container className="container">
           <div className="container-fluid">
-            <label>Experience</label>
+            <label>Timeline</label>
             <h1>
               Our <span className="gradient-text">Journey</span>
             </h1>

@@ -821,7 +821,7 @@ nav.sidenav span svg {
 
 /* EPT Academy Content  */
 .ept-academy {
-  min-height: 60vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -833,7 +833,8 @@ nav.sidenav span svg {
   flex-direction: column;
 }
 
-.ept-welcome,
+.ept-welcome, 
+.visa-welcome,
 .ept-tutoring {
   background-color: linen;
 }
@@ -848,7 +849,7 @@ nav.sidenav span svg {
   align-items: center;
 }
 
-.ept-welcome .container {
+.ept-welcome .container, .visa-welcome .container {
   min-height: 60vh;
   display: flex;
   align-items: center;
@@ -874,6 +875,7 @@ nav.sidenav span svg {
 }
 
 .ept-welcome .container .container-fluid,
+.visa-welcome .container .container--fluid,
 .ept-packages .container .container-fluid,
 .ept-tutoring .container .container-fluid,
 .ept-testimonials .container .container-fluid {

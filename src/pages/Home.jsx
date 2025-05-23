@@ -1,10 +1,10 @@
 import React from "react";
-import HeroSection from "../components/HeroSection";
-import Slider from "../components/Slider";
-import Express from "../components/Express";
-import Welcome from "../components/Welcome";
-import Statistics from "../components/Statistics";
-import Testimonials from "../components/Testimonials";
+import HeroSection from "../components/Homepage/HeroSection";
+import Slider from "../components/Homepage/Slider";
+import Express from "../components/Homepage/Express";
+import Welcome from "../components/Homepage/Welcome";
+import Statistics from "../components/Homepage/Statistics";
+import Testimonials from "../components/Homepage/Testimonials";
 
 const Home = () => {
   return (

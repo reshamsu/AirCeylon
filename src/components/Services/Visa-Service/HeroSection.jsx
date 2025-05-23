@@ -1,24 +1,21 @@
-import React from "react";
-import SubNavbar from "../../../components/SubNavbar";
 import { Container } from "@mui/material";
+import React from "react";
+import SubNavbar from "../../SubNavbar";
 
-const MiddleEast = () => {
+const VisaHeroSection = () => {
   return (
     <>
       <SubNavbar />
 
       <div className="services-section">
         <div className="homepage-overlay">
-          <img
-            src="/assets/middle-east-section.jpg"
-            className="homepage darkened"
-          />
+          <img src="/assets/visa-section.avif" className="homepage darkened" />
         </div>
         <Container>
           <div className="container">
             <div className="container-fluid">
-              <h1>Visit Middle-East</h1>
-              <p>From Visa Services</p>
+              <h1>VISA Service</h1>
+              <p>Info VISA Service</p>
             </div>
           </div>
         </Container>
@@ -27,4 +24,4 @@ const MiddleEast = () => {
   );
 };
 
-export default MiddleEast;
+export default VisaHeroSection;

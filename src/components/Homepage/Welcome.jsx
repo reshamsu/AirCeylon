@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "@mui/material";
 
-const Info = () => {
+const Welcome = () => {
   return (
     <div className="landing-welcome">
       <div className="homepage-overlay">
@@ -35,4 +35,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default Welcome;

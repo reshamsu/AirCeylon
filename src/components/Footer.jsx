@@ -80,7 +80,7 @@ const Footer = () => {
                 <ul>
                   <h3>Services</h3>
                   <li>
-                    <a href="/services/visa-service">Visa Service</a>
+                    <a href="/services/visa-service">VISA Service</a>
                   </li>
                   <li>
                     <a href="/services/ept-academy">EPT Academy</a>
