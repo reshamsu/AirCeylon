@@ -7,28 +7,28 @@ import "slick-carousel/slick/slick-theme.css";
 
 const attractions = [
   {
-    img: "./assets/east-asia-china.jpg",
-    title: "The Great Wall of China",
-    location: "China",
+    img: "/assets/east-asia-indonasia.jpg",
+    title: "Indonasia",
+    location: "Indonasia",
     description:
       "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and tells tales of dynasties past.",
-    info: "Beijing, China",
+    info: "Indonasia",
   },
   {
-    img: "./assets/europe-germany.jpg",
-    title: "Frankfurt, Germany",
-    location: "Germany",
+    img: "/assets/east-asia-japan.jpg",
+    title: "Tokyo, Japan",
+    location: "Japan",
     description:
       "A skyline of innovation meets Old World charm — Frankfurt blends financial power with cultural richness and historic streets.",
-    info: "Frankfurt, Germany",
+    info: "Tokyo, Japan",
   },
   {
-    img: "./assets/middle-east-maldives.jpg",
-    title: "Male, Maldives",
-    location: "Maldives",
+    img: "/assets/east-asia-singapore.jpg",
+    title: "Marine Bay, Singapore",
+    location: "Singapore",
     description:
       "Turquoise lagoons, overwater villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
-    info: "Male, Maldives",
+    info: "Marine Bay, Singapore",
   },
   // {
   //   img: "./assets/europe-spain.jpg",
@@ -88,8 +88,8 @@ const Gallery = () => {
   };
 
   return (
-    <div className="landing-destinations">
-      <Container id="destinations" style={{ padding: "3rem 0" }}>
+    <div className="visa-destinations1">
+      <Container className="container">
         <div className="container-fluid">
           <label>East Asia</label>
           <h1>

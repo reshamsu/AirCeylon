@@ -1,10 +1,11 @@
 import React from "react";
-import HeroSection from "../components/Services/EPT-Academy/HeroSection";
-import Welcome from "../components/Services/EPT-Academy/Welcome";
-import Monologue from "../components/Services/EPT-Academy/Monologue";
-import Courses from "../components/Services/EPT-Academy/Courses";
-import InHouseTutors from "../components/Services/EPT-Academy/InHouseTutors";
-import Testimonials from "../components/Services/EPT-Academy/Testimonials";
+import HeroSection from "../components/Services/EPTAcademy/HeroSection";
+import Welcome from "../components/Services/EPTAcademy/Welcome";
+import Monologue from "../components/Services/EPTAcademy/Monologue";
+import Packages from "../components/Services/EPTAcademy/Packages";
+import Statistics from "../components/Services/EPTAcademy/Statistics";
+import Testimonials from "../components/Services/EPTAcademy/Testimonials";
+import Contact from "../components/Services/EPTAcademy/Contact";
 
 const EPTAcademy = () => {
   return (
@@ -12,9 +13,10 @@ const EPTAcademy = () => {
       <HeroSection />
       <Welcome />
       <Monologue />
-      <Courses />
-      <InHouseTutors />
+      <Packages />
+      <Statistics />
       <Testimonials />
+      <Contact />
     </>
   );
 };

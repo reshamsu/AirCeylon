@@ -7,28 +7,28 @@ import "slick-carousel/slick/slick-theme.css";
 
 const attractions = [
   {
-    img: "./assets/east-asia-china.jpg",
-    title: "The Great Wall of China",
+    img: "/assets/middle-east-kuwait.jpg",
+    title: "Kuwait",
     location: "China",
     description:
       "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and tells tales of dynasties past.",
-    info: "Beijing, China",
+    info: "Kuwait",
   },
   {
-    img: "./assets/europe-germany.jpg",
-    title: "Frankfurt, Germany",
-    location: "Germany",
-    description:
-      "A skyline of innovation meets Old World charm — Frankfurt blends financial power with cultural richness and historic streets.",
-    info: "Frankfurt, Germany",
-  },
-  {
-    img: "./assets/middle-east-maldives.jpg",
+    img: "/assets/middle-east-maldives.jpg",
     title: "Male, Maldives",
     location: "Maldives",
     description:
-      "Turquoise lagoons, overwater villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
+      "A skyline of innovation meets Old World charm — Frankfurt blends financial power with cultural richness and historic streets.",
     info: "Male, Maldives",
+  },
+  {
+    img: "/assets/middle-east-dubai.jpg",
+    title: "Dubai, UAE",
+    location: "Dubai",
+    description:
+      "Turquoise lagoons, overwater villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
+    info: "Dubai, UAE",
   },
   // {
   //   img: "./assets/europe-spain.jpg",
@@ -88,12 +88,12 @@ const Gallery = () => {
   };
 
   return (
-    <div className="landing-destinations">
-      <Container id="destinations" style={{ padding: "3rem 0" }}>
+    <div className="visa-destinations2">
+      <Container className="container">
         <div className="container-fluid">
           <label>Middle East</label>
           <h1>
-            Visit <span className="gradient-text">Middle East</span>
+            Visit Middle East
           </h1>
         </div>
 

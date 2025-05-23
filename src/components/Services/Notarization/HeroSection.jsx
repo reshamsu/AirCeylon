@@ -1,20 +1,20 @@
 import { Container } from "@mui/material";
 import React from "react";
 
-const TransitionSupport = () => {
+const HeroSection = () => {
   return (
-    <div className="services-section">
+    <div className="ept-academy">
       <div className="homepage-overlay">
         <img
-          src="/assets/transition-support-section.jpg"
+          src="/assets/notarization-section.jpg"
           className="homepage darkened"
         />
       </div>
       <Container>
         <div className="container">
           <div className="container-fluid">
-            <h1>Transition Support</h1>
-            <p>Info Transitional Support</p>
+            <h1>Notarization</h1>
+            <p>Info Notarization, Authetication, Verification</p>
           </div>
         </div>
       </Container>
@@ -22,4 +22,4 @@ const TransitionSupport = () => {
   );
 };
 
-export default TransitionSupport;
+export default HeroSection;

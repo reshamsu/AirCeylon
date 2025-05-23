@@ -7,15 +7,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 const attractions = [
   {
-    img: "./assets/east-asia-china.jpg",
-    title: "The Great Wall of China",
-    location: "China",
+    img: "/assets/europe-spain2.jpg",
+    title: "Madrid, Spain",
+    location: "Spain",
     description:
       "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and tells tales of dynasties past.",
-    info: "Beijing, China",
+    info: "Madrid, Spain",
   },
   {
-    img: "./assets/europe-germany.jpg",
+    img: "/assets/europe-germany.jpg",
     title: "Frankfurt, Germany",
     location: "Germany",
     description:
@@ -23,12 +23,12 @@ const attractions = [
     info: "Frankfurt, Germany",
   },
   {
-    img: "./assets/middle-east-maldives.jpg",
-    title: "Male, Maldives",
-    location: "Maldives",
+    img: "/assets/europe-netherlands.jpg",
+    title: "Netherlands",
+    location: "Netherlands",
     description:
       "Turquoise lagoons, overwater villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
-    info: "Male, Maldives",
+    info: "Netherlands",
   },
   // {
   //   img: "./assets/europe-spain.jpg",
@@ -88,12 +88,12 @@ const Gallery = () => {
   };
 
   return (
-    <div className="landing-destinations">
-      <Container id="destinations" style={{ padding: "3rem 0" }}>
+    <div className="visa-destinations2">
+      <Container className="container">
         <div className="container-fluid">
           <label>Europe</label>
           <h1>
-            Visit <span className="gradient-text">Europe</span>
+            Visit Europe
           </h1>
         </div>
 

@@ -12,7 +12,7 @@ const EPTWelcome = () => {
             Welcome to Air Ceylon's{" "}
             <span className="gradient-text">EPT Academy</span>
           </h1>
-          <p>The key to unlock your path via IELTS starts here. </p>
+          <p style={{ fontWeight: "660", marginBottom: ".6rem" }}>The key to unlock your path via IELTS starts here. </p>
 
           <p>
             Achieve your IELTS goals with personalized, 1-to-1 virtual classes

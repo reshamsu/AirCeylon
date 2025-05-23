@@ -1,15 +1,13 @@
 import React from "react";
 import { Container } from "@mui/material";
 
-const EPTTutors = () => {
+const Welcome = () => {
   return (
-    <div className="ept-tutoring">
+    <div className="about-section1">
       <Container className="container">
         <div className="container-fluid">
-          <label>Tutors</label>
-          {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
           <h1>
-            In-House <span className="gradient-text">Tutors</span>
+            About <span className="gradient-text">Us</span>
           </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum
@@ -20,8 +18,7 @@ const EPTTutors = () => {
             justo. Vestibulum gravida, leo eu sollicitudin fringilla, nibh
             turpis maximus orci, porttitor sollicitudin magna nisl id metus.
             Mauris vitae nulla in tellus dignissim dapibus ornare quis enim.
-            Cras aliquam purus urna.every scroll guide you to the destination of
-            your dreams.
+            Cras aliquam purus urna.
           </p>
         </div>
       </Container>
@@ -29,4 +26,4 @@ const EPTTutors = () => {
   );
 };
 
-export default EPTTutors;
+export default Welcome;

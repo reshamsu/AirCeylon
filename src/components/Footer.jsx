@@ -106,19 +106,19 @@ const Footer = () => {
                 <ul>
                   <h3>Visa Service</h3>
                   <li>
-                    <a href="/services/visa-service/europe">Europe</a>
+                    <a href="/services/visa-service">Europe</a>
                   </li>
                   <li>
-                    <a href="/services/visa-service/asia">Asia</a>
+                    <a href="/services/visa-service">Asia</a>
                   </li>
                   <li>
-                    <a href="/services/visa-service/middle-east">Middle-East</a>
+                    <a href="/services/visa-service">Middle-East</a>
                   </li>
                   <li>
-                    <a href="/services/visa-service/east-asia">East Asia</a>
+                    <a href="/services/visa-service">East Asia</a>
                   </li>
                   <li>
-                    <a href="/services/visa-service/south-east-asia">
+                    <a href="/services/visa-service">
                       South-East Asia
                     </a>
                   </li>
@@ -129,13 +129,13 @@ const Footer = () => {
                 <ul>
                   <h3>EPT Academy</h3>
                   <li>
-                    <a href="#">Crash Course</a>
+                    <a href="/services/ept-academy">Crash Course</a>
                   </li>
                   <li>
-                    <a href="#">Essential Course</a>
+                    <a href="/services/ept-academy">Essential Course</a>
                   </li>
                   <li>
-                    <a href="#">Pro Course</a>
+                    <a href="/services/ept-academy">Pro Course</a>
                   </li>
                 </ul>
               </div>

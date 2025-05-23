@@ -48,10 +48,6 @@ const EPTPackages = () => {
                   <FaCheck /> Speaking
                 </li>
               </ul>
-
-              <div className="card-description">
-                <h4>Description:</h4>
-              </div>
               <button className="btn btn-dark">
                 LKR 25,000 <IoCart /> 
               </button>
@@ -90,12 +86,8 @@ const EPTPackages = () => {
                   <FaCheck /> Speaking
                 </li>
               </ul>
-
-              <div className="card-description">
-                <h4>Description:</h4>
-              </div>
               <button className="btn btn-dark">
-                LKR 25,000 <IoCart />
+                LKR 50,000 <IoCart />
               </button>
             </div>
           </div>
@@ -132,11 +124,8 @@ const EPTPackages = () => {
                   <FaCheck /> Speaking
                 </li>
               </ul>
-              <div className="card-description">
-                <h4>Description:</h4>
-              </div>
               <button className="btn btn-dark">
-                LKR 25,000 <IoCart />
+                LKR 100,000 <IoCart />
               </button>
             </div>
           </div>

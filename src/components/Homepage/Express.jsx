@@ -19,7 +19,8 @@ const expressOptions = [
     title: "To Begin IELTS Training",
     button: "Register Now",
     iconPng: "/assets/express3.png", 
-    direct: "/checkout",
+     phone: "+94 760 301 141",
+    // direct: "/checkout",
   },
 ];
 

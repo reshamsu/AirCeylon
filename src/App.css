@@ -819,6 +819,256 @@ nav.sidenav span svg {
   color: var(--text-white);
 }
 
+/* VISA Service Section  */
+.visa-contact {
+  min-height: 80vh;
+  display: flex;
+}
+
+input,
+select,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.visa-contact .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.visa-contact .container-fluid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.visa-contact .container-fluid h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.visa-contact .container-fluid h1 span {
+  color: var(--text-gold-hover);
+}
+
+.visa-contact .card .card-body {
+  padding: 2rem 2.6rem;
+  width: 46%;
+  border-radius: 14px;
+  background: var(--white-background-hover);
+}
+
+.visa-contact .card .card-body h2 {
+  font-size: 1.6rem;
+  color: var(--text-gold-hover);
+  margin-bottom: 0.6rem;
+}
+
+.visa-contact .card .card-body p {
+  color: var(--text-black);
+  margin-bottom: 2rem;
+}
+
+.visa-contact .card .card-body .card-text {
+  padding-top: 2rem;
+}
+
+.visa-contact .card .card-body .card-group {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.visa-contact .card .card-body .card-group ul {
+  list-style: none;
+}
+
+.visa-contact .card .card-body h4 {
+  font-weight: 700;
+  color: var(--text-gold-hover);
+}
+
+.visa-contact .card .card-body .card-group svg {
+  font-size: 1.6rem;
+  margin-right: 1rem;
+  color: var(--text-gold-hover);
+}
+
+.visa-contact .card .card-body .card-group ul li {
+  margin: 0.4rem 0;
+  font-weight: 550;
+  color: var(--dark-blue);
+}
+
+.visa-contact .card .card-body .card-group ul li a {
+  color: var(--text-blue);
+  font-weight: 500;
+}
+
+.visa-contact .card .card-body .card-group ul li a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.visa-contact .card {
+  background: var(--text-white);
+  border-radius: 22px;
+  padding: 0.8rem;
+  display: flex;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+}
+
+.visa-contact .card form .row {
+  display: flex;
+}
+
+.visa-contact .card .card-form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.visa-contact .card .card-title h1 {
+  margin-bottom: 0.8rem;
+}
+
+.visa-contact .card .card-title h1 span {
+  color: var(--text-gold-hover);
+}
+
+.visa-contact .card .card-text p {
+  margin-bottom: 1.6rem;
+}
+
+.visa-contact .card .form-group {
+  padding: 1.2rem 4%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.visa-contact .card .form-group label {
+  font-weight: 600;
+  color: var(--text-gold-hover);
+}
+
+.visa-contact .card .form-group input {
+  padding: 1rem 2%;
+  border-bottom: 3px solid var(--white-background-hover);
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.visa-contact .card .form-group input:hover {
+  border-bottom: 3px solid var(--text-gold-hover);
+}
+
+.visa-contact .card .form-group select {
+  padding: 1rem 4%;
+  border-bottom: 3px solid var(--white-background-hover);
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.visa-contact.card .form-group select:hover {
+  border-bottom: 3px solid var(--text-gold-hover);
+}
+
+.visa-contact .card .form-group textarea {
+  padding: 1rem 1%;
+  border-bottom: 3px solid var(--white-background-hover);
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.visa-contact .card .form-group textarea:hover {
+  border-bottom: 3px solid var(--text-gold-hover);
+}
+
+.visa-contact .card .btn.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1.4rem;
+  width: 36%;
+}
+
+.visa-contact .card .btn.btn-primary svg {
+  margin-left: 0.6rem;
+}
+
+/* VISA Destinations Section  */
+.visa-destinations2 .slide-card {
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.visa-destinations1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visa-destinations2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-gradient-gold);
+}
+
+.visa-destinations1 .container,
+.visa-destinations2 .container {
+  padding-bottom: 1rem;
+}
+
+.visa-destinations1 .container-fluid,
+.visa-destinations2 .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.visa-destinations1 .container-fluid label {
+  font-weight: 650;
+  color: var(--text-white);
+  background: var(--background-gradient-gold);
+  padding: 0.6rem 18px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.visa-destinations2 .container-fluid label {
+  font-weight: 650;
+  color: var(--text-black);
+  background: linen;
+  padding: 0.6rem 18px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.visa-destinations1 .container-fluid h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-black-hover);
+}
+
+.visa-destinations2 .container-fluid h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--text-white);
+}
+
 /* EPT Academy Content  */
 .ept-academy {
   min-height: 90vh;
@@ -833,7 +1083,7 @@ nav.sidenav span svg {
   flex-direction: column;
 }
 
-.ept-welcome, 
+.ept-welcome,
 .visa-welcome,
 .ept-tutoring {
   background-color: linen;
@@ -849,7 +1099,8 @@ nav.sidenav span svg {
   align-items: center;
 }
 
-.ept-welcome .container, .visa-welcome .container {
+.ept-welcome .container,
+.visa-welcome .container {
   min-height: 60vh;
   display: flex;
   align-items: center;
@@ -875,7 +1126,7 @@ nav.sidenav span svg {
 }
 
 .ept-welcome .container .container-fluid,
-.visa-welcome .container .container--fluid,
+.visa-welcome .container .container-fluid,
 .ept-packages .container .container-fluid,
 .ept-tutoring .container .container-fluid,
 .ept-testimonials .container .container-fluid {
@@ -885,7 +1136,6 @@ nav.sidenav span svg {
   flex-direction: column;
 }
 
-.ept-welcome .container-fluid label,
 .ept-packages .container-fluid label,
 .ept-tutoring .container-fluid label {
   font-weight: 600;
@@ -927,7 +1177,7 @@ nav.sidenav span svg {
 }
 
 .ept-monologue .container-fluid label {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .ept-monologue .container-fluid label span {
@@ -955,6 +1205,7 @@ nav.sidenav span svg {
 }
 
 .ept-welcome .container-fluid h1,
+.visa-welcome .container-fluid h1,
 .ept-tutoring .container-fluid h1,
 .ept-pricing .container-fluid h1,
 .ept-testimonials .container-fluid h1 {
@@ -972,6 +1223,7 @@ nav.sidenav span svg {
 }
 
 .ept-welcome .container-fluid p,
+.visa-welcome .container-fluid p,
 .ept-packages .container-fluid p,
 .ept-tutoring .container-fluid p,
 .ept-testimonials .container-fluid p {
@@ -1000,7 +1252,7 @@ nav.sidenav span svg {
 
 .ept-packages .container-lg .card:hover {
   cursor: pointer;
-  box-shadow: 0px 2px 12px rgba(255, 255, 255, 0.986);
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.986);
 }
 
 .ept-packages .container-lg .card .card-body {
@@ -1061,7 +1313,7 @@ nav.sidenav span svg {
 
 .ept-packages .container-lg .card .card-body .btn.btn-dark svg {
   font-size: 1.4rem;
-  margin-right: 0.6rem;
+  margin-left: 0.6rem;
 }
 
 /* EPT Pricing Section  */
@@ -1146,6 +1398,7 @@ nav.sidenav span svg {
 .ept-testimonials .container-lg .card .card-body {
   padding: 1.4rem;
   display: flex;
+  height: 48vh;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -1171,11 +1424,56 @@ nav.sidenav span svg {
   color: var(--text-gold-hover);
 }
 
-/* Contact Section  */
+/* EPT Contact Section  */
+.ept-contact .container {
+  display: flex;
+  justify-content: center;
+}
+
+.ept-contact .card {
+  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+  padding: 2.4rem;
+  border: 6px solid var(--text-gold-hover);
+  width: 70%;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ept-contact .card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ept-contact .card-body h1 {
+  margin-bottom: 1rem;
+}
+
+.ept-contact .card-body .card-group .col {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.ept-contact .card-body .card-group .col a.btn.btn-primary {
+  margin: 1rem;
+  width: 60%;
+  border-radius: 16px;
+  padding: 1.2rem 3rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.ept-contact .card-body .card-group .col .btn.btn-primary svg {
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+
+/* Contact Page  */
 .contact-section {
   min-height: 80vh;
   display: flex;
-
   background-color: linen;
 }
 
@@ -2047,6 +2345,84 @@ footer .footer-content .rights a {
     font-size: 2rem;
   }
 
+  .contact-section .container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .visa-contact .container-fluid {
+    padding: 0;
+    margin: 2.4rem 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .visa-contact .container-fluid h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .visa-contact .container-fluid p {
+    text-align: center;
+  }
+
+  .visa-contact .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .visa-contact .card .card-body {
+    width: 100%;
+    padding: 2rem 2.2rem;
+  }
+
+  .visa-contact .card .card-body h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .visa-contact .card .card-body p {
+    text-align: center;
+  }
+
+  .visa-contact .card .card-body .card-group svg {
+    font-size: 2.4rem;
+  }
+
+  .visa-contact .card .card-body .card-group ul li {
+    font-size: 0.9rem;
+  }
+
+  .visa-contact .card form {
+    flex-direction: column;
+  }
+
+  .visa-contact .card form .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .visa-contact .card .card-form {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .visa-contact .card .form-group {
+    padding: 1.2rem 2%;
+  }
+
+  .visa-contact .card .btn.btn-primary {
+    margin: 0%;
+    width: 100%;
+  }
+  .visa-destinations1 .container-fluid h1,
+  .visa-destinations2 .container-fluid h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
   .ept-academy {
     min-height: 50vh;
   }
@@ -2065,7 +2441,8 @@ footer .footer-content .rights a {
     font-size: 2rem;
   }
 
-  .ept-welcome .container-fluid h1 {
+  .ept-welcome .container-fluid h1,
+  .visa-welcome .container-fluid h1 {
     text-align: center;
     font-size: 1.8rem;
   }
@@ -2079,6 +2456,7 @@ footer .footer-content .rights a {
   }
 
   .ept-welcome .container-fluid p,
+  .visa-welcome .container-fluid p,
   .ept-tutoring .container-fluid p,
   .ept-testimonials .container-fluid p {
     padding: 0 2rem;
@@ -2131,6 +2509,38 @@ footer .footer-content .rights a {
     width: 94%;
   }
 
+  .ept-testimonials .container-lg .card .card-body {
+    height: 55vh;
+  }
+
+  .ept-contact .card {
+    width: 96%;
+  }
+
+  .ept-contact .card-body h1 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+    .ept-contact .card-body p {
+      text-align: center;
+    }
+
+  .ept-contact .card-body .card-group .col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .ept-contact .card-body .card-group .col a.btn.btn-primary {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .ept-contact .card-body .card-group .col .btn.btn-primary svg {
+    margin: 0;
+  }
+
   .about-section3 .container {
     display: block;
   }
@@ -2160,26 +2570,10 @@ footer .footer-content .rights a {
     width: 77%;
   }
 
-  .about-section2 .container-fluid .company .body-text1 {
-    padding: 0% !important;
-    min-height: 30vh;
-    align-items: end;
-  }
-
+  .about-section2 .container-fluid .company .body-text1,
   .about-section2 .container-fluid .company .body-text2 {
     padding: 0% !important;
     min-height: 30vh;
-    align-items: start;
-  }
-
-  .about-section2 .container-fluid .company .body-text1 p {
-    font-size: 1rem;
-    text-align: end;
-  }
-
-  .about-section2 .container-fluid .company .body-text2 p {
-    font-size: 1rem;
-    text-align: start;
   }
 
   .about-section1 .container-fluid h1,

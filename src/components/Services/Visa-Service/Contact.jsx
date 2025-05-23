@@ -7,11 +7,11 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const VisaContact = () => {
   return (
-    <div className="contact-section">
+    <div className="visa-contact">
       <Container className="container">
         <div className="container-fluid">
           <h1>
-            Get <span className="gradient-text">Connected.</span>
+            Reach <span className="gradient-text">Out.</span>
           </h1>
           <p>We're here to assist you with any inquires about our solutions</p>
         </div>
@@ -20,7 +20,7 @@ const VisaContact = () => {
           <div className="card-body">
             {/* <label>Connect</label> */}
             <h2>
-              Contact <span>Information</span>
+              Contact <span>VISA Service</span>
             </h2>
             <p>
               We're here to assist you with any inquires about our solutions
@@ -138,6 +138,29 @@ const VisaContact = () => {
                     <option>UAE</option>
                     <option>Uzbekistan</option>
                     <option>Vietnam</option>
+                  </select>
+                </div>
+              </div>
+              <div className="row">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">No. of Adults</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1 Adult</option>
+                    <option>2 Adults</option>
+                    <option>3 Adults</option>
+                    <option>4 Adults</option>
+                    <option>5 Adults</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">No. of Kids</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1 Kid</option>
+                    <option>2 Kids</option>
+                    <option>3 Kids</option>
+                    <option>4 Kids</option>
+                    <option>5 Kids</option>
                   </select>
                 </div>
               </div>

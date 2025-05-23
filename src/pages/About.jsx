@@ -1,167 +1,22 @@
-import { Container } from "@mui/material";
 import React from "react";
-import Timeline from "../components/Homepage/Timeline";
+import HeroSection from "../components/About/HeroSection";
+import Welcome from "../components/About/Welcome";
+import Goal from "../components/About/Goal";
+import Timeline from "../components/About/Timeline";
+import Values from "../components/About/Values";
+import Inititives from "../components/About/Inititives";
+import Message from "../components/About/Message";
 
 const About = () => {
   return (
     <>
-      <div className="about-section1">
-        <Container className="container">
-          <div className="container-fluid">
-            <label>About</label>
-            <h1>
-              About <span className="gradient-text">Us</span>
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              rutrum vel tortor at tempor. Quisque tincidunt leo suscipit tellus
-              lacinia placerat. Quisque eleifend turpis turpis, quis suscipit
-              nisl fringilla id. In accumsan quam nec nisi faucibus, sed feugiat
-              odio pulvinar. Nam est nisi, auctor ac hendrerit iaculis, feugiat
-              nec justo. Vestibulum gravida, leo eu sollicitudin fringilla, nibh
-              turpis maximus orci, porttitor sollicitudin magna nisl id metus.
-              Mauris vitae nulla in tellus dignissim dapibus ornare quis enim.
-              Cras aliquam purus urna.
-            </p>
-          </div>
-        </Container>
-      </div>
-      <div className="about-section2">
-        <Container className="container">
-          <div className="container-fluid">
-            <div className="company">
-              <div className="body-text1" style={{ paddingRight: "6rem" }}>
-                <img
-                  src="./assets/VisionW.png"
-                  alt="vision"
-                  className="watermark"
-                ></img>
-                <label>Vision</label>
-                <h1>
-                  Our <span className="gradient-text">Vision</span>
-                </h1>
-                <p>
-                  "To be the international Hub of Sri Lanka as the Leader of
-                  Travel & Tourism."
-                </p>
-              </div>
-              <img src="./assets/vision.jpg" alt="vision" className="image"></img>
-            </div>
-
-            <div className="company">
-              <img
-                src="./assets/mission.jpg"
-                alt="mission"
-                 className="image"
-                style={{
-                  height: "54vh",
-                }}
-              />
-              <div className="body-text2" style={{ paddingLeft: "6rem" }}>
-                <img
-                  src="./assets/MissionW.png"
-                  alt="mission"
-                  className="watermark"
-                ></img>
-                <label>Mission</label>
-                <h1>
-                  Our <span className="gradient-text">Mission</span>
-                </h1>
-                <p>
-                  "To Navigate New Oppotunties smoothly with ease confidence as
-                  you embark onto your next chapter."
-                </p>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </div>
-      <div className="about-section3">
-        <Container className="container">
-          <div className="container-fluid">
-            <label>Timeline</label>
-            <h1>
-              Our <span className="gradient-text">Journey</span>
-            </h1>
-            <Timeline />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              rutrum vel tortor at tempor. Quisque tincidunt leo suscipit tellus
-              lacinia placerat. Quisque eleifend turpis turpis, quis suscipit
-              nisl fringilla id. In accumsan quam nec nisi faucibus, sed feugiat
-              odio pulvinar. Nam est nisi, auctor ac hendrerit iaculis, feugiat
-              nec justo. Vestibulum gravida, leo eu sollicitudin fringilla, nibh
-              turpis maximus orci, porttitor sollicitudin magna nisl id metus.
-              Mauris vitae nulla in tellus dignissim dapibus ornare quis enim.
-              Cras aliquam purus urna.
-            </p>
-          </div>
-        </Container>
-      </div>
-      <div className="about-section4">
-        <Container className="container">
-          <div className="container-fluid">
-            <label>Core Values</label>
-            <h1>
-              Our <span className="gradient-text">Core Values</span>
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              rutrum vel tortor at tempor. Quisque tincidunt leo suscipit tellus
-              lacinia placerat. Quisque eleifend turpis turpis, quis suscipit
-              nisl fringilla id. In accumsan quam nec nisi faucibus, sed feugiat
-              odio pulvinar. Nam est nisi, auctor ac hendrerit iaculis, feugiat
-              nec justo. Vestibulum gravida, leo eu sollicitudin fringilla, nibh
-              turpis maximus orci, porttitor sollicitudin magna nisl id metus.
-              Mauris vitae nulla in tellus dignissim dapibus ornare quis enim.
-              Cras aliquam purus urna.
-            </p>
-          </div>
-        </Container>
-      </div>
-      <div className="about-section5">
-        <Container className="container">
-          <div className="container-fluid">
-            <label>ECO</label>
-            <h1>
-              ⁠Sustainability <span className="gradient-text">Initiatives</span>
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              rutrum vel tortor at tempor. Quisque tincidunt leo suscipit tellus
-              lacinia placerat. Quisque eleifend turpis turpis, quis suscipit
-              nisl fringilla id. In accumsan quam nec nisi faucibus, sed feugiat
-              odio pulvinar. Nam est nisi, auctor ac hendrerit iaculis, feugiat
-              nec justo. Vestibulum gravida, leo eu sollicitudin fringilla, nibh
-              turpis maximus orci, porttitor sollicitudin magna nisl id metus.
-              Mauris vitae nulla in tellus dignissim dapibus ornare quis enim.
-              Cras aliquam purus urna.
-            </p>
-          </div>
-        </Container>
-      </div>
-      <div className="about-section6">
-        <Container className="container">
-          <div className="container-fluid">
-            <label>Message</label>
-            <h1>
-              Message <span className="gradient-text">Info</span>
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-              rutrum vel tortor at tempor. Quisque tincidunt leo suscipit tellus
-              lacinia placerat. Quisque eleifend turpis turpis, quis suscipit
-              nisl fringilla id. In accumsan quam nec nisi faucibus, sed feugiat
-              odio pulvinar. Nam est nisi, auctor ac hendrerit iaculis, feugiat
-              nec justo. Vestibulum gravida, leo eu sollicitudin fringilla, nibh
-              turpis maximus orci, porttitor sollicitudin magna nisl id metus.
-              Mauris vitae nulla in tellus dignissim dapibus ornare quis enim.
-              Cras aliquam purus urna.
-            </p>
-            <strong>Message from the Founder.</strong>
-          </div>
-        </Container>
-      </div>
+      <HeroSection />
+      <Welcome />
+      <Goal />
+      <Timeline />
+      <Values />
+      <Inititives />
+      <Message />
     </>
   );
 };

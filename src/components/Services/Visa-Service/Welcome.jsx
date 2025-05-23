@@ -4,22 +4,15 @@ import { Container } from "@mui/material";
 const VisaWelcome = () => {
   return (
     <div className="visa-welcome">
-      <div className="homepage-overlay">
-        <img
-          src="./assets/Watermark.png"
-          className="watermark"
-          alt="Watermark"
-        />
-      </div>
       <Container className="container">
         <div className="container-fluid">
           {/* <label>EPT Academy</label> */}
           {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
           <h1>
             Welcome to Air Ceylon's{" "}
-            <span className="gradient-text">EPT Academy</span>
+            <span className="gradient-text">VISA Service</span>
           </h1>
-          <p>The key to unlock your path via IELTS starts here. </p>
+          <p style={{ fontWeight: "660", marginBottom: ".6rem" }}>The key to unlock your next journey starts here. </p>
 
           <p>
             Achieve your IELTS goals with personalized, 1-to-1 virtual classes

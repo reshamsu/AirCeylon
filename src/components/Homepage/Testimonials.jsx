@@ -46,7 +46,7 @@ const Testimonials = () => {
           </div>
 
           <div className="card">
-            <label>Transition Support</label>
+            <label>Notarization</label>
             <div className="card-body">
               <h4 className="card-title">
                 <FaQuoteLeft />
@@ -56,7 +56,7 @@ const Testimonials = () => {
                 productive and enjoyable. Highly recommended for premium travel
                 needs. <FaQuoteRight />
               </h4>
-              <p className="card-text">Resident from Toronto - Canada.</p>
+              <p className="card-text">Graduate - Canadian Affiliated College (Sri Lanka)</p>
             </div>
           </div>
         </div>

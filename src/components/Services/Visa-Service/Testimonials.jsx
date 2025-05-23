@@ -17,7 +17,6 @@ const VisaTestimonials = () => {
 
         <div className="container-lg">
           <div className="card">
-            <label>Label Here..</label>
             <div className="card-body">
               <h4 className="card-title">
                 <FaQuoteLeft />
@@ -32,7 +31,6 @@ const VisaTestimonials = () => {
           </div>
 
           <div className="card">
-             <label>Label Here..</label>
             <div className="card-body">
               <h4 className="card-title">
                 <FaQuoteLeft />
@@ -46,7 +44,6 @@ const VisaTestimonials = () => {
           </div>
 
           <div className="card">
-            <label>Label Here..</label>
             <div className="card-body">
               <h4 className="card-title">
                 <FaQuoteLeft />

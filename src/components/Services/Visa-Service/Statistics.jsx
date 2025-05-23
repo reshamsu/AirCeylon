@@ -7,7 +7,7 @@ import { FaMapLocationDot } from "react-icons/fa6";
 
 const Stats = () => {
   return (
-    <div className="visa-stats">
+    <div className="landing-stats">
       <Container className="container">
         <div className="container-fluid">
           <label>Our Expertise</label>
