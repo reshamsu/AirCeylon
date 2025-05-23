@@ -10,8 +10,9 @@ const Stats = () => {
     <div className="landing-stats">
       <Container className="container">
         <div className="container-fluid">
-          <label>Our Expertise</label>
-          <h1>Our Visa <span>Expertise</span></h1>
+          <h1>
+            Our <span className="gradient-text">Visa Expertise</span>
+          </h1>
           <h4>Navigating Your Experience with Confidence and Ease</h4>
         </div>
 
@@ -19,7 +20,6 @@ const Stats = () => {
           <div className="card">
             <div className="card-body">
               <h4 className="card-title">
-                {" "}
                 <FaHandshake /> Expert Partnerships
               </h4>
               <i className="card-text">

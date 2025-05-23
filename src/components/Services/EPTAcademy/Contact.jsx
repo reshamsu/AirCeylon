@@ -45,12 +45,12 @@ const Contact = () => {
           <div className="card">
             <div className="card-body">
               <h1>
-                <span>
-                  For More Inquires Reach Out to Us!
+                Contact <span className="gradient-text">
+                  EPT Academy
                 </span>
               </h1>
               <p>
-                We're here to assist you with any inquires about our solutions
+                We're open all 7 days a week to assist you with any inquiries about our academy and courses.
               </p>
               <div className="card-group">
                 <div className="col">

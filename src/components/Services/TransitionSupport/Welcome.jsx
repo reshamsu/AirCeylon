@@ -8,13 +8,14 @@ const Welcome = () => {
         <div className="container-fluid">
           <label>Welcome</label>
           <h1>
-            Welcome to Air Ceylon's <span className="gradient-text">Transition Support</span>
+            Every Mile of <span className="gradient-text">Your Journey</span>
           </h1>
-          <p style={{ fontWeight: "660", marginBottom: ".6rem" }}>Info Transition Support. </p>
           <p>
-            Explore a world of seamless travel, exceptional service, and
-            boundless possibilities. Let every scroll guide you to the
-            destination of your dreams.
+            We enjoy going the extra mile to ensure YOUR New Chapter is smooth
+            and confident. Our Regional Transition Support Advisor is determined
+            to provide you the assistance you require from the moment you touch
+            down onto a New World - from accommodation, jobs, communities and
+            lifestyle
           </p>
         </div>
       </Container>

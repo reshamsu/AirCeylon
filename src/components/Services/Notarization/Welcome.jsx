@@ -8,13 +8,15 @@ const Welcome = () => {
         <div className="container-fluid">
           <label>Welcome</label>
           <h1>
-            Welcome to Air Ceylon's <span className="gradient-text">Notarization</span>
+            <span className="gradient-text">Notarization</span>
           </h1>
-          <p style={{ fontWeight: "660", marginBottom: ".6rem" }}>Info Notarization. </p>
           <p>
-            Explore a world of seamless travel, exceptional service, and
-            boundless possibilities. Let every scroll guide you to the
-            destination of your dreams.
+            We understand the importance of verifying your documents before you
+            embark onto a new opportunity in a new city.
+          </p>
+          <p>
+            Be stress-free and confident with our well informed, speedy and
+            reliable Notarization Service.
           </p>
         </div>
       </Container>

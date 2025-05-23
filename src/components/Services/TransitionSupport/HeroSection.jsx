@@ -14,7 +14,6 @@ const TransitionSupportWelcome = () => {
         <div className="container">
           <div className="container-fluid">
             <h1>Transition Support</h1>
-            <p>Info Transitional Support</p>
           </div>
         </div>
       </Container>

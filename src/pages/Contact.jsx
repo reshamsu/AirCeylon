@@ -68,39 +68,55 @@ const Contact = () => {
               <p>
                 We're here to assist you with any inquires about our solutions
               </p>
-              {/* <strong>General</strong> */}
+              <strong>General Inquiries</strong>
               <div className="card-group">
-                <IoCall />
                 <ul>
                   <li>
-                    <a href="tel:+94760301141">+94 760 301 141</a> (General)
+                     <IoCall />
+                    <a href="tel:+94760301141">+94 760 301 141</a>
+                  </li>
+
+                  <li>
+                     <MdEmail />
+                    <a href="mailto:info@airceylonint.com">
+                      info@airceylonint.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <strong>EPT Academy</strong>
+              <div className="card-group">
+                <ul>
+                  <li>
+                    <IoCall />
+                    <a href="tel:+94760301141">+94 760 301 141</a>
                   </li>
                   <li>
+                    <MdEmail />
+                    <a href="mailto:eptacademy@airceylonint.com">
+                      eptacademy@airceylonint.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <strong>Transition Support</strong>
+              <div className="card-group">
+                <ul>
+                  <li>
+                    <IoCall />
                     <a href="tel:+14372543077">+1 437 254 3077</a> - Transition
                     Support (Toronto - Canada)
                   </li>
                 </ul>
               </div>
+              <strong>Business Client</strong>
               <div className="card-group">
-                <MdEmail />
                 <ul>
                   <li>
-                    <a href="mailto:info@airceylonint.com">
-                      info@airceylonint.com
-                    </a>{" "}
-                    (General)
-                  </li>
-                  <li>
-                    <a href="mailto:eptacademy@airceylonint.com">
-                      eptacademy@airceylonint.com
-                    </a>{" "}
-                    (EPT Academy)
-                  </li>
-                  <li>
+                    <MdEmail />
                     <a href="mailto:alliances@airceylonint.com">
                       alliances@airceylonint.com
-                    </a>{" "}
-                    (Business Client)
+                    </a>
                   </li>
                 </ul>
               </div>

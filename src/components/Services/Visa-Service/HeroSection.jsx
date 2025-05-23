@@ -15,7 +15,6 @@ const VisaHeroSection = () => {
           <div className="container">
             <div className="container-fluid">
               <h1>VISA Service</h1>
-              <p>Info VISA Service</p>
             </div>
           </div>
         </Container>

@@ -17,15 +17,13 @@ const VisaContact = () => {
         </div>
 
         <div className="card">
-          <div className="card-body">
-            {/* <label>Connect</label> */}
+          {/* <div className="card-body">
             <h2>
               Contact <span>VISA Service</span>
             </h2>
             <p>
               We're here to assist you with any inquires about our solutions
             </p>
-            {/* <strong>General</strong> */}
             <div className="card-group">
               <IoCall />
               <ul>
@@ -73,9 +71,18 @@ const VisaContact = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="card-form">
+            <div className="card-text">
+              <h2>
+                Contact <span>Information</span>
+              </h2>
+              <p>
+                We're here to assist you with any inquires about our solutions
+              </p>
+            </div>
+
             <form>
               <div className="row">
                 <div className="form-group">

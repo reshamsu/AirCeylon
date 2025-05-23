@@ -17,7 +17,7 @@ const Message = () => {
             Mauris vitae nulla in tellus dignissim dapibus ornare quis enim.
             Cras aliquam purus urna.
           </p>
-          <strong>Founder of Air Ceylon International</strong>
+          <strong>- Founder of Air Ceylon International</strong>
         </div>
       </Container>
     </div>

@@ -56,7 +56,7 @@ const Testimonials = () => {
                 productive and enjoyable. Highly recommended for premium travel
                 needs. <FaQuoteRight />
               </h4>
-              <p className="card-text">Graduate - Canadian Affiliated College (Sri Lanka)</p>
+              <p className="card-text">Graduate - Canadian College (Sri Lanka)</p>
             </div>
           </div>
         </div>
