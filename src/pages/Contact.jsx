@@ -68,7 +68,6 @@ const Contact = () => {
                     <IoCall />
                     <a href="tel:+94760301141">+94 760 301 141</a>
                   </li>
-
                   <li>
                     <MdEmail />
                     <a href="mailto:info@airceylonint.com">
@@ -82,6 +81,10 @@ const Contact = () => {
                 <h4>EPT Academy</h4>
                 <ul>
                   <li>
+                    <IoCall />
+                    <a href="tel:+94760301141">+94 760 301 141</a>
+                  </li>
+                  <li>
                     <MdEmail />
                     <a href="mailto:eptacademy@airceylonint.com">
                       eptacademy@airceylonint.com
@@ -92,6 +95,10 @@ const Contact = () => {
               <div className="card-group">
                 <h4>Business Client</h4>
                 <ul>
+                  <li>
+                    <IoCall />
+                    <a href="tel:+94760301141">+94 760 301 141</a>
+                  </li>
                   <li>
                     <MdEmail />
                     <a href="mailto:alliances@airceylonint.com">
@@ -105,8 +112,12 @@ const Contact = () => {
                 <ul>
                   <li>
                     <IoCall />
-                    <a href="tel:+14372543077">
-                      +1 437 254 3077 - Transition Support (Toronto - Canada)
+                    <a href="tel:+14372543077">+1 437 254 3077</a>
+                  </li>
+                  <li>
+                    <MdEmail />
+                    <a href="mailto:info@airceylonint.com">
+                      info@airceylonint.com
                     </a>
                   </li>
                 </ul>
@@ -169,7 +180,9 @@ const Contact = () => {
                     />
                   </div>
                   <div className="form-group">
-                    <label className="gradient-text">Preferred Support System</label>
+                    <label className="gradient-text">
+                      Preferred Support System
+                    </label>
                     <select className="form-control">
                       <option>Call for Inquries</option>
                       <option>Book an Appointment</option>

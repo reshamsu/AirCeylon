@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 
 const CoreValues = () => {
   return (
-    <div className="about-section4">
+    <div className="about-values">
       <Container className="container">
         <div className="container-fluid">
           <h1>

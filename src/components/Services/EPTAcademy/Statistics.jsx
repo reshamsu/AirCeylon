@@ -5,10 +5,10 @@ import { GiAchievement, GiProgression } from "react-icons/gi";
 
 const Statistics = () => {
   return (
-    <div className="landing-stats" style={{ background: "var(--text-gold-hover)"}}>
+    <div className="landing-stats2">
       <Container className="container">
         <div className="container-fluid">
-          <label style={{ color: "var(--dark-blue)", fontWeight: "700", background: "linen"}}>Our Achievements</label>
+          <label>Our Achievements</label>
           <h1>Empowering Minds, Shaping Futures</h1>
           <h4>Discover what makes EPT Academy a trusted name in education</h4>
         </div>

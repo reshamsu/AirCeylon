@@ -28,7 +28,6 @@ const EPTMonologue = () => {
             opportunity I've gotten and each connection I've formed along the
             way. I look forward to more teaching opportunities in the future.”
           </p>
-          <strong>—Tasha Vanhoff</strong>
         </div>
       </Container>
     </div>

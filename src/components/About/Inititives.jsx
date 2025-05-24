@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 
 const Initiatives = () => {
   return (
-    <div className="about-section5">
+    <div className="about-inititives">
       <Container className="container">
         <div className="container-fluid">
           <label>CSR</label>

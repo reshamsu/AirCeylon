@@ -88,7 +88,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="visa-destinations2">
+    <div className="landing-slider2">
       <Container className="container">
         <div className="container-fluid">
           <label>South East-Asia</label>
@@ -110,7 +110,7 @@ const Gallery = () => {
                   background: "#fff",
                   overflow: "hidden",
                   height: "100%",
-                  margin: "1rem",
+                  margin: "0 1rem",
                 }}
               >
                 <div className="image">

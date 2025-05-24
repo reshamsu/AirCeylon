@@ -14,7 +14,7 @@ const VisaWelcome = () => {
           </p>
           <p>
             Our VISA Service Experts are dedicated to make your dreams come
-            true. Apply with Air Ceylon and experience the ease in exploring the
+            true. Apply with Air Ceylon International and experience the ease in exploring the
             world!
           </p>
         </div>

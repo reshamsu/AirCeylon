@@ -88,7 +88,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="visa-destinations1">
+    <div className="landing-slider">
       <Container className="container">
         <div className="container-fluid">
           <label>East Asia</label>

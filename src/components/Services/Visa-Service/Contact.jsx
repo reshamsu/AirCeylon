@@ -11,7 +11,7 @@ const VisaContact = () => {
       <Container className="container">
         <div className="container-fluid">
           <h1>
-            Reach <span className="gradient-text">Out.</span>
+            Visit <span className="gradient-text">VISA Application Form.</span>
           </h1>
           <p>We're here to assist you with any inquires about our solutions</p>
         </div>
@@ -76,7 +76,7 @@ const VisaContact = () => {
           <div className="card-form">
             <div className="card-text">
               <h2>
-                Contact <span>Information</span>
+                VISA <span>Service Form</span>
               </h2>
               <p>
                 We're here to assist you with any inquires about our solutions
@@ -86,7 +86,15 @@ const VisaContact = () => {
             <form>
               <div className="row">
                 <div className="form-group">
-                  <label>Name</label>
+                  <label>First Name (Passport)</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Last Name (Passport)</label>
                   <input
                     type="text"
                     className="form-control"
@@ -115,6 +123,7 @@ const VisaContact = () => {
                 <div className="form-group">
                   <label>Choose Country</label>
                   <select className="form-control">
+                    <option>Select a Country</option>
                     <option>Azerbaijan</option>
                     <option>Bahrain</option>
                     <option>Bangladesh</option>
@@ -152,6 +161,7 @@ const VisaContact = () => {
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">No. of Adults</label>
                   <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Select Adult</option>
                     <option>1 Adult</option>
                     <option>2 Adults</option>
                     <option>3 Adults</option>
@@ -161,13 +171,14 @@ const VisaContact = () => {
                 </div>
 
                 <div class="form-group">
-                  <label for="exampleFormControlSelect1">No. of Kids</label>
+                  <label for="exampleFormControlSelect1">No. of Children</label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1 Kid</option>
-                    <option>2 Kids</option>
-                    <option>3 Kids</option>
-                    <option>4 Kids</option>
-                    <option>5 Kids</option>
+                    <option>Select</option>
+                    <option>1 Children</option>
+                    <option>2 Children</option>
+                    <option>3 Children</option>
+                    <option>4 Children</option>
+                    <option>5 Children</option>
                   </select>
                 </div>
               </div>

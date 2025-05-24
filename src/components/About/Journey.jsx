@@ -4,7 +4,7 @@ import Timeline from "../Timeline";
 
 const Journey = () => {
   return (
-      <div className="about-section3">
+      <div className="about-journey">
         <Container className="container">
           <div className="container-fluid">
             <label>Timeline</label>

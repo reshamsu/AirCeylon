@@ -64,7 +64,7 @@ const SubNavbar = () => {
                   {region.countries.map((country) => (
                     <li key={country}>
                       <NavLink
-                        to="/services/visa-service/countries"
+                        to="/services/visa-service"
                         className="nav-link"
                         onClick={closeMenus}
                       >

@@ -8,7 +8,6 @@ import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Checkout from "./pages/Checkout";
 import Footer from "./components/Footer";
-import Countries from "./pages/Countries";
 import VisaService from "./pages/VisaService";
 import EPTAcademy from "./pages/EPTAcademy";
 import TransitionSupport from "./pages/TransitionSupport";
@@ -31,7 +30,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services/visa-service" element={<VisaService />} />
-          <Route path="/services/visa-service/countries" element={<Countries />} />
           <Route path="/services/visa-service/europe" element={<Europe />} />
           <Route path="/services/visa-service/asia" element={<Asia />} />
           <Route path="/services/visa-service/middle-east" element={<MiddleEast />} />

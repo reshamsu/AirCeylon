@@ -4,7 +4,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 const EPTTestimonials = () => {
   return (
-    <div className="ept-testimonials">
+    <div className="landing-testimonials2">
       <Container className="container">
         <div className="container-fluid">
           <label>Testimonials</label>

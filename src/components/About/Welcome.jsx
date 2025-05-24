@@ -9,7 +9,7 @@ const Welcome = () => {
           <h1>
             About <span className="gradient-text">Us</span>
           </h1>
-          <p>
+          <p style={{ fontWeight: "660" }}>
             Air Ceylon International isn’t just about travel — we are about your
             entire journey.
           </p>

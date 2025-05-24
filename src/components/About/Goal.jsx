@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 
 const Goal = () => {
   return (
-    <div className="about-section2">
+    <div className="about-goal">
       <Container className="container">
         <div className="container-fluid">
           <div className="company">
@@ -31,7 +31,7 @@ const Goal = () => {
               alt="mission"
               className="image"
               style={{
-                height: "54vh",
+                height: "51vh",
               }}
             />
             <div className="body-text2" style={{ paddingLeft: "6rem" }}>

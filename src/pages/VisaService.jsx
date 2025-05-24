@@ -8,7 +8,7 @@ import Asia from "../components/Services/Visa-Service/Countries/Asia";
 import MiddleEast from "../components/Services/Visa-Service/Countries/MiddleEast";
 import EastAsia from "../components/Services/Visa-Service/Countries/EastAsia";
 import SouthEastAsia from "../components/Services/Visa-Service/Countries/SouthEastAsia";
-import Testimonials from "../components/Services/Visa-Service/Testimonials";
+// import Testimonials from "../components/Services/Visa-Service/Testimonials";
 
 const VisaService = () => {
   return (
@@ -22,7 +22,7 @@ const VisaService = () => {
       <MiddleEast />
       <EastAsia />
       <SouthEastAsia />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </>
   );
 };
