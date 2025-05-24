@@ -13,7 +13,7 @@
   --text-white-hover: #dddddd;
   --text-black: #111111;
   --text-black-hover: #333333;
-  /* --text-gold-brown: #a87c47; */
+  --text-gold-brown: #a87c47;
   --text-gold-hover: #c89238;
   --dark-blue: #19233e;
 }
@@ -1713,7 +1713,7 @@ textarea {
 .event-dot {
   width: 14px;
   height: 14px;
-  background-color: #007bff;
+  background-color: #fff;
   border-radius: 50%;
   margin: 0 1rem;
 }
@@ -1724,7 +1724,6 @@ textarea {
 }
 
 .checkout-section {
-  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1736,10 +1735,99 @@ textarea {
   justify-content: space-between;
 }
 
+.checkout-section .card .card-section {
+  width: 44%;
+  padding: 3rem 0;
+}
+
+.checkout-section .card h1 {
+  margin-bottom: 1rem;
+}
+
+.checkout-section .card h2 {
+  margin-bottom: 1rem;
+}
+
+.checkout-section .card h3 {
+  margin-bottom: 1rem;
+}
+
+.checkout-section .card h4 {
+  margin-bottom: 1rem;
+}
+
+.checkout-section .card .card-group {
+  margin-bottom: 1rem;
+}
+
+.checkout-section .card .card-group ul li {
+  margin-bottom: 0.6rem;
+  list-style: none;
+}
+
+.checkout-section .card .card-final {
+  width: 50%;
+  padding: 3rem;
+  background: whitesmoke;
+}
+
+.checkout-section .card .card-final .card-group {
+  margin-bottom: 1rem;
+}
+
+.checkout-section .card .card-final .card-summary {
+  border-bottom: 1.2px solid #bbb;
+}
+
+.checkout-section .card .card-final .card-payment {
+  padding: 2rem 0;
+}
+
+.checkout-section .card .card-final ul.summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.checkout-section .card .card-final ul.final-summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 0;
+  border-top: 1.2px solid #bbb;
+}
+
 .checkout-section .card .form-group {
   display: flex;
-  margin-bottom: 1rem;
+  width: 96%;
+  margin-bottom: 1.4rem;
+  margin-right: 1.4rem;
   flex-direction: column;
+}
+
+.checkout-section .card .form-group label {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.checkout-section .card .form-group input.form-control {
+  padding: 0.8rem 4%;
+  border-radius: 8px;
+  border: 1.2px solid var(--text-white-hover);
+}
+
+.checkout-section .card .button {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.checkout-section .card a.btn.btn-dark {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Footer Content */
@@ -1927,18 +2015,6 @@ footer .footer-content .rights a {
     padding: 2rem 8%;
   }
 
-  .ept-welcome .container .container-fluid,
-  .visa-welcome .container .container-fluid,
-  .ept-packages .container .container-fluid,
-  .ept-tutoring .container .container-fluid,
-  .ept-testimonials .container .container-fluid {
-    padding: 0 2rem;
-  }
-
-  .hero-section {
-    min-height: 50vh;
-  }
-
   .homepage-overlay {
     height: 64vh;
   }
@@ -1951,6 +2027,38 @@ footer .footer-content .rights a {
     top: 100px;
     max-width: 300px;
     width: 80%;
+  }
+
+  .ept-welcome .container .container-fluid,
+  .visa-welcome .container .container-fluid,
+  .ept-packages .container .container-fluid,
+  .ept-tutoring .container .container-fluid,
+  .ept-testimonials .container .container-fluid {
+    padding: 0 2rem;
+  }
+
+  .hero-section {
+    min-height: 50vh;
+  }
+
+  .visa-hero {
+    min-height: 44vh;
+  }
+
+  .hero-section .container-fluid,
+  .visa-hero .container-fluid {
+    margin: 0 2rem;
+  }
+
+  .hero-section h1,
+  .visa-hero h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    text-align: center;
   }
 
   .custom-arrow {
@@ -1966,27 +2074,15 @@ footer .footer-content .rights a {
     right: 5px;
   }
 
-  .hero-section .container-fluid {
-    margin: 0 2rem;
-  }
-
-  .hero-section h1 {
-    font-size: 2.4rem;
-    text-align: center;
-  }
-
-  .hero-section p {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .landing-welcome .container-fluid {
+  .landing-welcome .container-fluid,
+  .about-welcome .container-fluid {
     padding: 2rem 10%;
     text-align: center;
   }
 
-  .landing-welcome .container-fluid h1 {
-    font-size: 1.8rem;
+  .landing-welcome .container-fluid h1,
+  .about-welcome .container-fluid h1 {
+    font-size: 2rem;
   }
 
   .landing-welcome .container-fluid label {
@@ -1997,36 +2093,43 @@ footer .footer-content .rights a {
     width: 14%;
   }
 
-  .landing-slider .container-fluid {
+  .landing-slider .container-fluid,
+  .landing-slider2 .container-fluid {
     text-align: center;
     margin: 0 3rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
   }
 
-  .landing-slider .container-fluid h1 {
+  .landing-slider .container-fluid h1,
+  .landing-slider2 .container-fluid h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
 
   .landing-stats .container-fluid {
     margin: 0 2rem;
+    padding-top: 1rem;
   }
 
-  .landing-stats .container-fluid h1 {
+  .landing-stats .container-fluid h1,
+  .landing-stats2 .container-fluid h1 {
     font-size: 2.2rem;
     text-align: center;
   }
 
-  .landing-stats .container-fluid h4 {
+  .landing-stats .container-fluid h4,
+  .landing-stats2 .container-fluid h4 {
     font-size: 14px;
     text-align: center;
   }
 
-  .landing-stats .container-lg {
+  .landing-stats .container-lg,
+  .landing-stats2 .container-lg {
     flex-direction: column;
   }
 
-  .landing-stats .container-lg .card {
+  .landing-stats .container-lg .card,
+  .landing-stats2 .container-lg .card {
     padding: 1.6rem 12%;
   }
 
@@ -2052,14 +2155,13 @@ footer .footer-content .rights a {
   }
 
   .landing-testimonials .container-fluid {
-    margin: 0 1rem;
+    padding: 0;
   }
 
-  .landing-testimonials .container-fluid h1 {
+  .landing-testimonials .container-fluid h1,
+  .landing-testimonials2 .container-fluid h1 {
     font-size: 2.2rem;
     text-align: center;
-    padding: 1rem;
-    margin-bottom: 1rem;
   }
 
   .landing-testimonials .container-fluid h1 svg {
@@ -2071,11 +2173,13 @@ footer .footer-content .rights a {
     margin: 0 2rem;
   }
 
-  .landing-testimonials .container-lg {
+  .landing-testimonials .container-lg,
+  .landing-testimonials2 .container-lg {
     flex-direction: column;
   }
 
-  .landing-testimonials .container-lg .card {
+  .landing-testimonials .container-lg .card,
+  .landing-testimonials2 .container-lg .card {
     width: 90%;
     height: auto;
   }
@@ -2101,7 +2205,7 @@ footer .footer-content .rights a {
   }
 
   .visa-contact .container-fluid h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     text-align: center;
   }
 
@@ -2110,7 +2214,7 @@ footer .footer-content .rights a {
   }
 
   .visa-contact .card {
-    width: 100%;
+    width: 96%;
     display: flex;
     flex-direction: column;
   }
@@ -2152,7 +2256,7 @@ footer .footer-content .rights a {
   }
 
   .visa-contact .card .form-group {
-    padding: 1.2rem 2%;
+    padding: 1.2rem 6%;
   }
 
   .visa-contact .card .btn.btn-primary {
@@ -2277,58 +2381,56 @@ footer .footer-content .rights a {
     margin: 0;
   }
 
-  .about-section3 .container {
+  .about-journey .container {
     display: block;
   }
 
-  .about-section1 .container .container-fluid,
-  .about-section3 .container .container-fluid,
-  .about-section5 .container .container-fluid {
+  .about-journey .container .container-fluid,
+  .about-inititives .container .container-fluid {
     padding: 0 1rem;
   }
 
-  .about-section2 .container .container-fluid,
-  .about-section4 .container .container-fluid,
-  .about-section6 .container .container-fluid {
+  .about-goal .container .container-fluid,
+  .about-values .container .container-fluid,
+  .about-message .container .container-fluid {
     padding: 0 2rem;
   }
 
-  .about-section2 .container-fluid .company {
+  .about-goal .container-fluid .company {
     padding: 2rem 0;
   }
 
-  .about-section2 .container-fluid .company img.image {
+  .about-goal .container-fluid .company img.image {
     display: none;
   }
 
-  .about-section2 .container-fluid .company .body-text1 img.watermark,
-  .about-section2 .container-fluid .company .body-text2 img.watermark {
+  .about-goal .container-fluid .company .body-text1 img.watermark,
+  .about-goal .container-fluid .company .body-text2 img.watermark {
     width: 77%;
   }
 
-  .about-section2 .container-fluid .company .body-text1,
-  .about-section2 .container-fluid .company .body-text2 {
+  .about-goal .container-fluid .company .body-text1,
+  .about-goal .container-fluid .company .body-text2 {
     padding: 0% !important;
     min-height: 30vh;
   }
 
-  .about-section1 .container-fluid h1,
-  .about-section2 .container-fluid h1,
-  .about-section4 .container-fluid h1,
-  .about-section5 .container-fluid h1,
-  .about-section6 .container-fluid h1 {
+  .about-goal .container-fluid h1,
+  .about-values .container-fluid h1,
+  .about-inititives .container-fluid h1,
+  .about-message .container-fluid h1 {
     font-size: 2rem;
   }
 
-  .about-section3 .container-fluid h1 {
+  .about-journey .container-fluid h1 {
     font-size: 2rem;
   }
 
-  .about-section2 .container-fluid .company .body-text p {
+  .about-goal .container-fluid .company .body-text p {
     font-size: 1rem;
   }
 
-  .about-section3 .container-fluid p {
+  .about-journey .container-fluid p {
     padding: 0;
   }
 

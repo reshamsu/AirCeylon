@@ -9,12 +9,12 @@ const Checkout = () => {
           <div className="card-section">
             <div className="container-fluid">
               <h1>
-                <span className="gradient-text">CheckOut</span>
+                <span>Checkout</span>
               </h1>
             </div>
 
             <div className="card-group">
-              <h2>Personal Information</h2>
+              <h3 className="gradient-text">Personal Information</h3>
               <form action="">
                 <div className="form-group">
                   <label>Name</label>
@@ -56,59 +56,86 @@ const Checkout = () => {
             </div>
 
             <div className="card-group">
-              <h2>Service Type</h2>
-              <div className="form-check">
-                <input className="form-check-input" type="radio"></input>
-              </div>
+              <h3>Service Type</h3>
               <ul>
                 <li>Radio Check - Travel Service</li>
                 <li>Radio Check - Course Enrollment</li>
               </ul>
             </div>
+          </div>
 
-            <div className="card-group">
+          <div className="card-final">
+            <div className="card-summary">
+              <h2>Review and Pay</h2>
+              <h4>Checkout Summary</h4>
+              <ul className="summary">
+                <li>Selected service/courses</li>
+                <i>Example Service or Course</i>
+              </ul>
+              <ul className="summary">
+                <li>Taxes</li>
+                <i>Example Taxes $$$</i>
+              </ul>
+              <ul className="summary">
+                <li>Applied discounts or offers</li>
+                <i>Example Promo $$$</i>
+              </ul>
+              <ul className="summary">
+                <li>Total Price</li>
+                <i>Example $$$</i>
+              </ul>
+              <ul className="final-summary">
+                <strong>Total Price</strong>
+                <strong>Example $$$</strong>
+              </ul>
+            </div>
+            <div className="card-payment">
               <h2>Payment Information</h2>
               <form action="">
+                {/* <h4>Payment Method</h4> */}
                 <div className="form-group">
-                  <h4>Payment Method</h4>
-                  <div className="row">
-                    <label>Credit/Debit Card</label>
+                  <label>Credit/Debit Card</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Card Number"
+                  />
+                </div>
+                <div
+                  className="col"
+                  style={{ display: "flex", justifyContent: "space-between" }}
+                >
+                  <div className="form-group">
+                    <label>Expiry Date</label>
                     <input
-                      type="text"
+                      type="date"
                       className="form-control"
-                      placeholder="Card Number"
+                      style={{ padding: ".8rem 8%" }}
                     />
                   </div>
-                  <div className="row">
-                    <div className="col">
-                      <label>Expiry Date</label>
-                      <input type="date" className="form-control" />
-                    </div>
-                    <div className="col">
-                      <label>CVV</label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Security Code"
-                      />
-                    </div>
-                  </div>
-                  <div className="row">
-                    <label>Billing Address</label>
+                  <div className="form-group">
+                    <label>CVV</label>
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Billing Address"
+                      placeholder="Security Code"
+                      style={{ padding: ".8rem 8%" }}
                     />
                   </div>
                 </div>
+
+                <div className="form-group">
+                  <label>Billing Address</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Billing Address"
+                  />
+                </div>
               </form>
             </div>
-          </div>
-
-          <div className="card-section">
             <div className="card-group">
-              <h2>Terms & Conditions</h2>
+              <h3>Terms & Conditions</h3>
               <ul>
                 <li>Check Box - Agree to Terms & Conditions</li>
                 <li>
@@ -118,23 +145,8 @@ const Checkout = () => {
                 <li>Check Box - Acknowledge refund/cancellation policy</li>
               </ul>
             </div>
-
-            <div className="card-group">
-              <h2>Review and Submit</h2>
-              <ul>
-                <h4>Checkout Summary</h4>
-                <li>Selected service/courses</li>
-                <li>Total cost</li>
-                <li>Taxes</li>
-                <li>Applied discounts or offers</li>
-              </ul>
-            </div>
             <div className="button">
-              <a
-                href="/checkout"
-                className="btn btn-dark"
-                style={{ width: "100%" }}
-              >
+              <a href="/checkout" className="btn btn-dark">
                 Pay Now
               </a>
             </div>

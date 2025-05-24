@@ -11,7 +11,7 @@ const VisaContact = () => {
       <Container className="container">
         <div className="container-fluid">
           <h1>
-            Visit <span className="gradient-text">VISA Application Form.</span>
+            Visit VISA<span className="gradient-text"> Application Form.</span>
           </h1>
           <p>We're here to assist you with any inquires about our solutions</p>
         </div>
