@@ -1,5 +1,6 @@
 import { Container } from "@mui/material";
 import React from "react";
+import { MdVerifiedUser } from "react-icons/md";
 
 const Checkout = () => {
   return (
@@ -147,7 +148,7 @@ const Checkout = () => {
             </div>
             <div className="button">
               <a href="/checkout" className="btn btn-dark">
-                Pay Now
+                <MdVerifiedUser /> Pay Now
               </a>
             </div>
           </div>

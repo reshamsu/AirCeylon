@@ -1768,7 +1768,7 @@ textarea {
 .checkout-section .card .card-final {
   width: 50%;
   padding: 3rem;
-  background: whitesmoke;
+  background: var(--white-background-hover);
 }
 
 .checkout-section .card .card-final .card-group {
@@ -1827,7 +1827,13 @@ textarea {
 .checkout-section .card a.btn.btn-dark {
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+.checkout-section .card a.btn.btn-dark svg {
+  margin-right: .6rem;
+  font-size: 1.3rem;
 }
 
 /* Footer Content */
