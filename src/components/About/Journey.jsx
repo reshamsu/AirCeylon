@@ -1,7 +1,8 @@
 import React from "react";
 import { Container } from "@mui/material";
+import Timeline from "../Timeline";
 
-const Timeline = () => {
+const Journey = () => {
   return (
       <div className="about-section3">
         <Container className="container">
@@ -10,7 +11,8 @@ const Timeline = () => {
             <h1>
               Our <span className="gradient-text">Journey</span>
             </h1>
-            <p>
+            <Timeline />
+            {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
               rutrum vel tortor at tempor. Quisque tincidunt leo suscipit tellus
               lacinia placerat. Quisque eleifend turpis turpis, quis suscipit
@@ -20,11 +22,11 @@ const Timeline = () => {
               turpis maximus orci, porttitor sollicitudin magna nisl id metus.
               Mauris vitae nulla in tellus dignissim dapibus ornare quis enim.
               Cras aliquam purus urna.
-            </p>
+            </p> */}
           </div>
         </Container>
       </div>
   );
 };
 
-export default Timeline;
+export default Journey;

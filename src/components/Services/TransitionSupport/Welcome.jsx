@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "@mui/material";
 
-const Welcome = () => {
+const TransitionWelcome = () => {
   return (
-    <div className="ept-welcome">
+    <div className="landing-welcome">
       <Container className="container">
         <div className="container-fluid">
           <label>Welcome</label>
@@ -23,4 +23,4 @@ const Welcome = () => {
   );
 };
 
-export default Welcome;
+export default TransitionWelcome;

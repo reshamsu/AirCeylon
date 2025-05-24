@@ -14,6 +14,7 @@ const FAQ = () => {
           <p>What is Notarization?</p>
           <p>What is Verification?</p>
           <p>What is Attestation?</p>
+          <p>What is an Apostille?</p>
         </div>
       </Container>
     </div>

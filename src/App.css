@@ -491,9 +491,20 @@ nav.sidenav span svg {
   padding: 3rem 0;
 }
 
+.container-fluid p {
+  margin-bottom: 0.8rem;
+}
+
 /* Homepage Section  */
 .hero-section {
   min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.visa-hero {
+  min-height: 84vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -504,12 +515,22 @@ nav.sidenav span svg {
   color: var(--text-white);
 }
 
-.hero-section h1 span {
-  color: var(--text-gold-hover);
+.visa-hero h1 {
+  font-size: 3.6rem;
+  color: var(--text-white);
+}
+
+.hero-section p {
+  margin: 0.8rem 0;
+  color: var(--text-white);
 }
 
 /* Welcome Section  */
-.landing-welcome {
+.landing-welcome,
+.ept-welcome,
+.ept-tutoring,
+.visa-welcome,
+.about-welcome {
   min-height: 60vh;
   position: relative;
   z-index: -1;
@@ -532,10 +553,11 @@ nav.sidenav span svg {
   margin: 1rem 0;
 }
 
-.landing-welcome .container-fluid h1 {
+.landing-welcome .container-fluid h1,
+.about-welcome .container-fluid h1 {
   font-size: 40px;
   font-weight: 700;
-  margin: 2rem;
+  margin: 2rem 0;
   color: var(--text-black-hover);
 }
 
@@ -543,7 +565,8 @@ nav.sidenav span svg {
   color: var(--text-gold-hover);
 }
 
-.landing-welcome .container-fluid p {
+.landing-welcome .container-fluid p, 
+.about-welcome .container-fluid p {
   font-weight: 500;
 }
 
@@ -930,7 +953,7 @@ textarea {
 }
 
 .visa-contact .card .card-text h2 {
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
   color: var(--text-gold-brown);
 }
 
@@ -1080,7 +1103,7 @@ textarea {
 }
 
 /* EPT Academy Content  */
-.ept-academy {
+/* .ept-academy {
   min-height: 90vh;
   display: flex;
   align-items: center;
@@ -1091,13 +1114,7 @@ textarea {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.ept-welcome,
-.visa-welcome,
-.ept-tutoring {
-  background-color: linen;
-}
+} */
 
 .ept-packages {
   background-color: var(--dark-blue);
@@ -1522,19 +1539,19 @@ textarea {
 .contact-section .card .card-body {
   padding: 2rem 2.6rem;
   width: 46%;
+  background: var(--dark-blue);
   border-radius: 14px;
-  background: var(--background-gradient-gold);
 }
 
 .contact-section .card .card-body h2 {
   font-size: 1.6rem;
-  color: var(--text-white);
   margin-bottom: 0.6rem;
+  color: var(--text-white);
 }
 
 .contact-section .card .card-body p {
+  margin-bottom: 1rem;
   color: var(--text-white);
-  margin-bottom: 2rem;
 }
 
 .contact-section .card .card-body .card-text {
@@ -1542,40 +1559,42 @@ textarea {
 }
 
 .contact-section .card .card-body .card-group {
-  display: flex;
-  align-items: center;
-  padding: 1rem 0;
+  padding: 0.6rem 0;
 }
 
 .contact-section .card .card-body .card-group ul {
   list-style: none;
+  margin: 0 0.4rem;
 }
 
 .contact-section .card .card-body h4 {
-  font-weight: 700;
+  font-weight: 660;
+  margin-bottom: 1rem;
   color: var(--text-white);
 }
 
 .contact-section .card .card-body .card-group svg {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-right: 1rem;
-  color: var(--background-white);
+  color: var(--text-gold-hover);
 }
 
 .contact-section .card .card-body .card-group ul li {
   margin: 0.4rem 0;
-  font-weight: 550;
-  color: var(--text-white);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
 }
 
 .contact-section .card .card-body .card-group ul li a {
+  font-weight: 600;
   color: var(--text-white);
-  font-weight: 500;
 }
 
 .contact-section .card .card-body .card-group ul li a:hover {
   text-decoration: underline;
   font-weight: 600;
+  color: var(--text-gold-hover);
 }
 
 .contact-section .card {
@@ -1593,12 +1612,18 @@ textarea {
 .contact-section .card .card-form {
   padding: 2rem;
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
   width: 55%;
 }
 
+.contact-section .card .card-text {
+  padding: 0 4%;
+}
+
 .contact-section .card .card-title h1 {
   margin-bottom: 0.8rem;
+  color: var(--text-black-hover);
 }
 
 .contact-section .card .card-title h1 span {
@@ -1736,7 +1761,6 @@ textarea {
 }
 
 /* About Us Content  */
-.about-section1,
 .about-section5 {
   background-color: linen;
 }
@@ -1745,9 +1769,6 @@ textarea {
   background-color: var(--dark-blue);
 }
 
-.about-section1 .container,
-.about-section2 .container,
-.about-section3 .container,
 .about-section4 .container,
 .about-section5 .container,
 .about-section6 .container {
@@ -1869,58 +1890,45 @@ textarea {
   margin: 1rem 0;
 }
 
+/* About Timeline Section  */
 .timeline-wrapper {
-  padding: 1.6rem;
-  text-align: center;
-  font-family: sans-serif;
+  padding: 2rem;
 }
 
 .timeline-line {
-  position: relative;
-  height: 4px;
-  border-radius: 40%;
-  background: var(--background-gradient-gold);
-  margin: 0 auto;
-  width: 100%;
-  max-width: 900px;
+  position: absolute;
+  background: #ccc;
 }
 
 .timeline-events {
   display: flex;
-  justify-content: space-between;
-  max-width: 900px;
-  margin: 30px auto 0 auto;
+  flex-direction: column;
   position: relative;
 }
 
 .timeline-event {
-  position: relative;
-  text-align: center;
-  flex: 1;
-}
-
-.event-dot {
-  width: 16px;
-  height: 16px;
-  background: var(--text-white);
-  border: 3px solid white;
-  border-radius: 36%;
-  margin: 0 auto 10px;
-  position: relative;
-  top: -40px;
-  z-index: 2;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
 }
 
 .event-year {
+  width: 80px;
   font-weight: bold;
-  font-size: 0.9rem;
-  margin-bottom: 4px;
-  color: #333;
+  text-align: left;
+}
+
+.event-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin: 0 1rem;
 }
 
 .event-title {
-  font-size: 0.9rem;
-  color: #666;
+  flex: 1;
+  text-align: left;
 }
 
 /* Testimonials Section  */
@@ -2007,6 +2015,25 @@ textarea {
   font-weight: 500;
   margin: 0 0.2rem;
   color: var(--text-gold-hover);
+}
+
+.checkout-section {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.checkout-section .card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-section .card .form-group {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: column;
 }
 
 /* Footer Content */
@@ -2194,6 +2221,14 @@ footer .footer-content .rights a {
     padding: 2rem 8%;
   }
 
+  .ept-welcome .container .container-fluid,
+  .visa-welcome .container .container-fluid,
+  .ept-packages .container .container-fluid,
+  .ept-tutoring .container .container-fluid,
+  .ept-testimonials .container .container-fluid {
+    padding: 0 2rem;
+  }
+
   .hero-section {
     min-height: 50vh;
   }
@@ -2225,16 +2260,16 @@ footer .footer-content .rights a {
     right: 5px;
   }
 
-  .airceylon h1 {
+  /* .airceylon h1 {
     font-size: 1.4rem;
   }
 
   .airceylon p {
     font-size: 0.9rem;
-  }
+  } */
 
   .hero-section .container-fluid {
-    margin: 0 5rem;
+    margin: 0 2rem;
   }
 
   .hero-section h1 {
@@ -2253,7 +2288,7 @@ footer .footer-content .rights a {
   }
 
   .landing-welcome .container-fluid h1 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   .landing-welcome .container-fluid label {
@@ -2465,13 +2500,6 @@ footer .footer-content .rights a {
     font-size: 2rem;
   }
 
-  .ept-welcome .container-fluid p,
-  .visa-welcome .container-fluid p,
-  .ept-tutoring .container-fluid p,
-  .ept-testimonials .container-fluid p {
-    padding: 0 2rem;
-  }
-
   .ept-pricing .container-lg,
   .ept-packages .container-lg {
     flex-direction: column;
@@ -2602,17 +2630,13 @@ footer .footer-content .rights a {
     font-size: 1rem;
   }
 
-  .about-section1 .container-fluid p {
-    padding: 0 2rem;
-  }
-
   .about-section3 .container-fluid p {
     padding: 0;
   }
 
   .contact-section .container {
     flex-direction: column;
-    padding: 2rem;
+    padding: 1.6rem;
   }
 
   .contact-section .container-fluid {
@@ -2634,6 +2658,8 @@ footer .footer-content .rights a {
   .contact-section .card {
     width: 100%;
     display: flex;
+    box-shadow: none;
+    background: none;
     flex-direction: column;
   }
 
@@ -2670,7 +2696,20 @@ footer .footer-content .rights a {
 
   .contact-section .card .card-form {
     width: 100%;
-    padding: 2rem 1rem;
+    background: var(--background-white);
+    border-radius: 22px;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+
+  .contact-section .card .card-text {
+    padding: 0 2%;
+    text-align: center;
+  }
+
+  .contact-section .card .card-text h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
   }
 
   .contact-section .card .form-group {

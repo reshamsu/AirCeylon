@@ -2,10 +2,9 @@ import React from "react";
 import { Container } from "@mui/material";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const HeroSection = () => {
+const LandingHero = () => {
   return (
     <div className="hero-section">
-      {/* Hero Carousel */}
       <div className="homepage-overlay">
         <img src="./assets/check.jpg" className="homepage darkened" />
 
@@ -16,19 +15,15 @@ const HeroSection = () => {
         /> */}
       </div>
 
-      <Container className="airceylon">
+      <Container className="landing-hero">
         <div className="container-fluid">
           <h1>
             Discover <span className="gradient-text">Your World</span>
           </h1>
-          {/* <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-            varius ipsum. Aenean ex.
-          </p> */}
         </div>
       </Container>
     </div>
   );
 };
 
-export default HeroSection;
+export default LandingHero;

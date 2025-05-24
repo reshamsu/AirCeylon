@@ -1,10 +1,16 @@
 import { Container } from "@mui/material";
 import React from "react";
 
-const TravelTours = () => {
+const TravelToursHero = () => {
   return (
-    <div className="services-section">
-      <Container className="container">
+    <div className="hero-section">
+      <div className="homepage-overlay">
+        <img
+          src="/assets/notarization-section.jpg"
+          className="homepage darkened"
+        />
+      </div>
+      <Container className="t&t-hero">
         <div className="container-fluid">
           <h1>
             Travel & <span className="gradient-text">Tours</span>
@@ -16,4 +22,4 @@ const TravelTours = () => {
   );
 };
 
-export default TravelTours;
+export default TravelToursHero;

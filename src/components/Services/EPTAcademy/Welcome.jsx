@@ -3,14 +3,11 @@ import { Container } from "@mui/material";
 
 const EPTWelcome = () => {
   return (
-    <div className="ept-welcome">
+    <div className="landing-welcome">
       <Container className="container">
         <div className="container-fluid">
-          {/* <label>EPT Academy</label> */}
-          {/* <img src="./assets/Logo.png" alt="Air Ceylon Logo" /> */}
           <h1>
-            Welcome to Air Ceylon's{" "}
-            <span className="gradient-text">EPT Academy</span>
+            Welcome to Air Ceylon's <span className="gradient-text">EPT Academy</span>
           </h1>
           <p style={{ fontWeight: "660", marginBottom: ".6rem" }}>The key to unlock your path via IELTS starts here. </p>
 

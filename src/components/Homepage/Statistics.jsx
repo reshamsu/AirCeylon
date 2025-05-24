@@ -23,7 +23,8 @@ const Statistics = () => {
                 <FaHandshake /> Expert Partnerships
               </h4>
               <i className="card-text">
-                Trusted global alliance for seamless travel.
+                - Trusted Licensed Professionals to ensure Your Experience is in
+                the Best of Hands.
               </i>
             </div>
           </div>
@@ -37,7 +38,8 @@ const Statistics = () => {
                 <GiDiamondTrophy /> Exceeding Standards
               </h4>
               <i className="card-text">
-                Thousands of trips, flawlessly delivered.
+                - Commitment to High Quality Service & Support Beyond the
+                Boundaries by Flying the Extra Mile for You.
               </i>
             </div>
           </div>
@@ -51,7 +53,8 @@ const Statistics = () => {
                 <GiStarsStack /> Effortless Experience
               </h4>
               <i className="card-text">
-                Consistently high customer satisfaction.
+                - Dedicated to Implementing a Smart, Easy, Simple & Seamless
+                Experience as much as Your Journey.
               </i>
             </div>
           </div>
@@ -65,7 +68,7 @@ const Statistics = () => {
                 <FaMapLocationDot /> Exclusive Travel Hub
               </h4>
               <i className="card-text">
-                A vibrant community of avid travelers.
+                - Determined to Provide Exclusive Services All in One Place.
               </i>
             </div>
           </div>

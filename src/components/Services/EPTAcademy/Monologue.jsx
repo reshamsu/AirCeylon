@@ -17,19 +17,18 @@ const EPTMonologue = () => {
               </label>
             </div>
           </div>
-
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum
-            vel tortor at tempor. Quisque tincidunt leo suscipit tellus lacinia
-            placerat. Quisque eleifend turpis turpis, quis suscipit nisl
-            fringilla id. In accumsan quam nec nisi faucibus, sed feugiat odio
-            pulvinar. Nam est nisi, auctor ac hendrerit iaculis, feugiat nec
-            justo. Vestibulum gravida, leo eu sollicitudin fringilla, nibh
-            turpis maximus orci, porttitor sollicitudin magna nisl id metus.
-            Mauris vitae nulla in tellus dignissim dapibus ornare quis enim.
-            Cras aliquam purus urna.every scroll guide you to the destination of
-            your dreams.
+            “I am an Educator - I teach IELTS and Spoken English among other
+            subjects with over 6+ years of experience as an online tutor. I
+            enjoy teaching, and being able to witness a student progress in
+            their education is a gift indeed.{" "}
           </p>
+          <p>
+            Through my many years of teaching, I have appreciated every
+            opportunity I've gotten and each connection I've formed along the
+            way. I look forward to more teaching opportunities in the future.”
+          </p>
+          <strong>—Tasha Vanhoff</strong>
         </div>
       </Container>
     </div>

@@ -1,19 +1,23 @@
 import { Container } from "@mui/material";
 import React from "react";
 
-const Ticketing = () => {
+const TicketingHero = () => {
   return (
-    <div className="services-section">
-      <Container>
-        <div className="container">
+    <div className="hero-section">
+      <div className="homepage-overlay">
+        <img
+          src="/assets/notarization-section.jpg"
+          className="homepage darkened"
+        />
+      </div>
+      <Container className="ticketing-hero">
           <div className="container-fluid">
             <h1>Ticketing</h1>
             <p>Info Tickets</p>
           </div>
-        </div>
       </Container>
     </div>
   );
 };
 
-export default Ticketing;
+export default TicketingHero;

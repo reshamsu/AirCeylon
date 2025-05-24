@@ -7,14 +7,15 @@ import { WiTime4 } from "react-icons/wi";
 import { GrOverview } from "react-icons/gr";
 import { IoCart } from "react-icons/io5";
 
-const EPTAcademy = () => {
+const EPTHero = () => {
   return (
     <>
-      <div className="ept-academy">
+      <div className="hero-section">
         <div className="homepage-overlay">
           <img src="/assets/ielts2.jpg" className="homepage darkened" />
         </div>
-        <Container className="container">
+
+        <Container className="ept-hero">
           <div className="container-fluid">
             <h1>
               EPT Academy
@@ -107,4 +108,4 @@ const EPTAcademy = () => {
   );
 };
 
-export default EPTAcademy;
+export default EPTHero;

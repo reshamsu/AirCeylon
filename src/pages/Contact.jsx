@@ -41,14 +41,6 @@ const Contact = () => {
   return (
     <>
       <div className="contact-section">
-        {/* <div className="homepage-overlay">
-          <img
-            src="./assets/Watermark.png"
-            className="watermark"
-            alt="Watermark"
-          />
-        </div> */}
-
         <Container className="container">
           <div className="container-fluid">
             <h1>
@@ -63,34 +55,32 @@ const Contact = () => {
             <div className="card-body">
               {/* <label>Connect</label> */}
               <h2>
-                Contact <span>Information</span>
+                Contact <span className="gradient-text">Information</span>
               </h2>
               <p>
                 We're here to assist you with any inquires about our solutions
               </p>
-              <strong>General Inquiries</strong>
+
               <div className="card-group">
+                <h4>General Inquiries</h4>
                 <ul>
                   <li>
-                     <IoCall />
+                    <IoCall />
                     <a href="tel:+94760301141">+94 760 301 141</a>
                   </li>
 
                   <li>
-                     <MdEmail />
+                    <MdEmail />
                     <a href="mailto:info@airceylonint.com">
                       info@airceylonint.com
                     </a>
                   </li>
                 </ul>
               </div>
-              <strong>EPT Academy</strong>
+
               <div className="card-group">
+                <h4>EPT Academy</h4>
                 <ul>
-                  <li>
-                    <IoCall />
-                    <a href="tel:+94760301141">+94 760 301 141</a>
-                  </li>
                   <li>
                     <MdEmail />
                     <a href="mailto:eptacademy@airceylonint.com">
@@ -99,18 +89,8 @@ const Contact = () => {
                   </li>
                 </ul>
               </div>
-              <strong>Transition Support</strong>
               <div className="card-group">
-                <ul>
-                  <li>
-                    <IoCall />
-                    <a href="tel:+14372543077">+1 437 254 3077</a> - Transition
-                    Support (Toronto - Canada)
-                  </li>
-                </ul>
-              </div>
-              <strong>Business Client</strong>
-              <div className="card-group">
+                <h4>Business Client</h4>
                 <ul>
                   <li>
                     <MdEmail />
@@ -120,25 +100,49 @@ const Contact = () => {
                   </li>
                 </ul>
               </div>
-              <div className="card-text">
+              <div className="card-group">
+                <h4>Transition Support</h4>
+                <ul>
+                  <li>
+                    <IoCall />
+                    <a href="tel:+14372543077">
+                      +1 437 254 3077 - Transition Support (Toronto - Canada)
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="card-group">
                 <h4>Visit us by appointment:</h4>
-                <div className="card-group">
-                  <FaLocationDot />
-                  <ul>
-                    <li>
+                <ul>
+                  <li>
+                    <FaLocationDot />
+                    <a
+                      href="https://www.google.com/maps?q=WSPACE+-+252A,+GALLE+ROAD,+COLOMBO+4+(Bambalapitiya),+Western+Province,+Sri+Lanka"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya),
                       Western Province, Sri Lanka.
-                    </li>
-                  </ul>
-                </div>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
 
             <div className="card-form">
+              <div className="card-text">
+                <h1>
+                  Send us a <span className="gradient-text">Message.</span>
+                </h1>
+                <p>
+                  We're here to assist you with any inquires about our solutions
+                </p>
+              </div>
+
               <form>
                 <div className="row">
                   <div className="form-group">
-                    <label>Name</label>
+                    <label className="gradient-text">Name</label>
                     <input
                       type="text"
                       className="form-control"
@@ -146,7 +150,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="form-group">
-                    <label>Email Address</label>
+                    <label className="gradient-text">Email Address</label>
                     <input
                       type="email"
                       className="form-control"
@@ -157,7 +161,7 @@ const Contact = () => {
 
                 <div className="row">
                   <div className="form-group">
-                    <label>Phone</label>
+                    <label className="gradient-text">Phone</label>
                     <input
                       type="tel"
                       className="form-control"
@@ -165,7 +169,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="form-group">
-                    <label>Preferred Support System</label>
+                    <label className="gradient-text">Preferred Support System</label>
                     <select className="form-control">
                       <option>Call for Inquries</option>
                       <option>Book an Appointment</option>
@@ -176,7 +180,7 @@ const Contact = () => {
 
                 <div className="row">
                   <div className="form-group">
-                    <label>Additional Info</label>
+                    <label className="gradient-text">Additional Info</label>
                     <textarea
                       type="text"
                       className="form-control"

@@ -88,7 +88,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="landing-destinations">
+    <div className="landing-slider">
       <Container id="destinations" style={{ padding: "3rem 0" }}>
         <div className="container-fluid">
           <label>Destinations</label>
