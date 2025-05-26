@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 
 const Process = () => {
   return (
-    <div className="ept-process">
+    <div className="ept-monologue">
       <Container className="container">
         <div className="container-fluid">
           <label>Documentation</label>
