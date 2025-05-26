@@ -161,7 +161,7 @@ const VisaContact = () => {
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">No. of Adults</label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Select Adult</option>
+                    <option>Select</option>
                     <option>1 Adult</option>
                     <option>2 Adults</option>
                     <option>3 Adults</option>

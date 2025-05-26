@@ -6,7 +6,7 @@ const AboutHero = () => {
   return (
     <div className="hero-section">
       <div className="homepage-overlay">
-        <img src="./assets/about.jpg" className="homepage darkened" />
+        <img src="./assets/aboutus3.jpg" className="homepage darkened" />
       </div>
 
       <Container className="landing-hero">
