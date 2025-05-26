@@ -3,13 +3,22 @@ import { Container } from "@mui/material";
 
 const TransitionWelcome = () => {
   return (
-    <div className="ept-monologue">
+    <div className="ts-provision">
       <Container className="container">
+        <div className="container-fluid">
+          <h1>
+            What we <span className="gradient-text">Offer</span>
+          </h1>
+        </div>
         <div className="container-lg">
           <div className="card">
-            <div className="card-content">
-              <img src="/assets/accomadation.png" alt="digital" style={{ width: "6%" }}/>
-              <h2>Accomadation</h2>
+            <div className="card-group">
+              <img
+                src="/assets/accomadation.png"
+                alt="digital"
+                style={{ height: "8vh" }}
+              />
+              <h4>Accomadation</h4>
             </div>
             <div className="card-text">
               <p>
@@ -22,9 +31,9 @@ const TransitionWelcome = () => {
             </div>
           </div>
           <div className="card">
-            <div className="card-content">
-              <img src="/assets/securedocs.png" alt="digital" style={{ width: "6%" }}/>
-              <h2>Jobs</h2>
+            <div className="card-group">
+              <img src="/assets/securedocs.png" alt="digital" />
+              <h4>Jobs</h4>
             </div>
             <div className="card-text">
               <p>
@@ -37,9 +46,9 @@ const TransitionWelcome = () => {
             </div>
           </div>
           <div className="card">
-            <div className="card-content">
-              <img src="/assets/intertwined.png" alt="digital" style={{ width: "6%" }}/>
-              <h2>Community</h2>
+            <div className="card-group">
+              <img src="/assets/intertwined.png" alt="digital" />
+              <h4>Community</h4>
             </div>
             <div className="card-text">
               <p>
@@ -52,9 +61,9 @@ const TransitionWelcome = () => {
             </div>
           </div>
           <div className="card">
-            <div className="card-content">
-              <img src="/assets/lifestyle.png" alt="digital" style={{ width: "6%" }}/>
-              <h2>Lifestyle Management</h2>
+            <div className="card-group">
+              <img src="/assets/lifestyle.png" alt="digital" />
+              <h4>Lifestyle Management</h4>
             </div>
             <div className="card-text">
               <p>
