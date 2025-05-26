@@ -20,7 +20,7 @@ const Stats = () => {
           <div className="card">
             <div className="card-body">
               <h4 className="card-title">
-                <FaHandshake /> Expert Partnerships
+                <FaHandshake /> Over 30 Mil. VISA Applications
               </h4>
               <i className="card-text">
                 Trusted global alliance for seamless travel.
@@ -34,7 +34,7 @@ const Stats = () => {
             </div>
             <div className="card-body">
               <h4 className="card-title">
-                <GiDiamondTrophy /> Exceeding Standards
+                <GiDiamondTrophy /> Average VISA Processing Time
               </h4>
               <i className="card-text">
                 Thousands of trips, flawlessly delivered.
@@ -48,7 +48,7 @@ const Stats = () => {
             </div>
             <div className="card-body">
               <h4 className="card-title">
-                <GiStarsStack /> Effortless Experience
+                <GiStarsStack /> Top 5 MOST Applied Tourist VISAS
               </h4>
               <i className="card-text">
                 Consistently high customer satisfaction.
@@ -56,19 +56,19 @@ const Stats = () => {
             </div>
           </div>
 
-          <div className="card">
+          {/* <div className="card">
             <div className="image">
               <img src="" className="card-img-top" alt="" />
             </div>
             <div className="card-body">
               <h4 className="card-title">
-                <FaMapLocationDot /> Exclusive Travel Hub
+                <FaMapLocationDot /> VISA Rejection Rate 
               </h4>
               <i className="card-text">
                 A vibrant community of avid travelers.
               </i>
             </div>
-          </div>
+          </div> */}
         </div>
       </Container>
     </div>

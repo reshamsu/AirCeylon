@@ -5,7 +5,7 @@ import { MdVerifiedUser } from "react-icons/md";
 const Checkout = () => {
   return (
     <div className="checkout-section">
-      <Container className="landing-hero">
+      <Container className="container">
         <div className="card">
           <div className="card-section">
             <div className="container-fluid">
@@ -103,9 +103,7 @@ const Checkout = () => {
                   />
                 </div>
                 <div
-                  className="col"
-                  style={{ display: "flex", justifyContent: "space-between" }}
-                >
+                  className="col">
                   <div className="form-group">
                     <label>Expiry Date</label>
                     <input
@@ -120,7 +118,7 @@ const Checkout = () => {
                       type="text"
                       className="form-control"
                       placeholder="Security Code"
-                      style={{ padding: ".8rem 8%" }}
+                      style={{ padding: ".88rem 8%", width: "100%" }}
                     />
                   </div>
                 </div>

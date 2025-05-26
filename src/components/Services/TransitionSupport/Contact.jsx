@@ -3,7 +3,7 @@ import React from "react";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
-const Contact = () => {
+const TSContact = () => {
   return (
     <>
       <div className="ept-contact">
@@ -11,21 +11,21 @@ const Contact = () => {
           <div className="card">
             <div className="card-body">
               <h1>
-                Contact <span className="gradient-text">
-                  EPT Academy
-                </span>
+                Contact for{" "}
+                <span className="gradient-text">Transition Support</span>
               </h1>
               <p>
-                We're open all 7 days a week to assist you with any inquiries about our academy and courses.
+                We're open all 7 days a week to assist you with any inquiries
+                about our services.
               </p>
               <div className="card-group">
                 <div className="col">
-                  <a href="tel:+94760301141" className="btn btn-primary">
+                  <a href="tel:+14372543077" className="btn btn-primary">
                     <IoCall /> Call
                   </a>
 
                   <a
-                    href="mailto:eptacademy@airceylonint.com"
+                    href="mailto:info@airceylonint.com"
                     className="btn btn-primary"
                   >
                     <MdEmail /> Email
@@ -40,4 +40,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default TSContact;

@@ -22,7 +22,12 @@ const Goal = () => {
                 Travel & Tourism."
               </p>
             </div>
-            <img src="./assets/vision.jpg" alt="vision" className="image"></img>
+            <img
+              src="./assets/vision.jpg"
+              alt="vision"
+              className="image"
+              style={{ border: "10px solid var(--text-gold-hover)" }}
+            ></img>
           </div>
 
           <div className="company">
@@ -32,6 +37,7 @@ const Goal = () => {
               className="image"
               style={{
                 height: "51vh",
+                border: "10px solid var(--text-gold-hover)",
               }}
             />
             <div className="body-text2" style={{ paddingLeft: "6rem" }}>

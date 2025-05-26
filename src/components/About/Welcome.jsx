@@ -33,6 +33,7 @@ const Welcome = () => {
             confidence.
           </p>
         </div>
+        <img src="/assets/aboutus.png" alt="About" style={{ width: "44%", marginLeft: "4rem" }} />
       </Container>
     </div>
   );

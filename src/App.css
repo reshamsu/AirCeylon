@@ -521,7 +521,6 @@ nav.sidenav span svg {
 
 /* Landing Sections  */
 .landing-welcome,
-.about-inititives,
 .about-welcome {
   min-height: 60vh;
   position: relative;
@@ -1572,6 +1571,11 @@ textarea {
   background-color: var(--dark-blue);
 }
 
+.about-welcome .container {
+  display: flex;
+  align-items: center;
+}
+
 .about-journey .container {
   min-height: 70vh;
   display: flex;
@@ -1588,7 +1592,8 @@ textarea {
   justify-content: center;
 }
 
-.about-values .container-lg {
+.about-values .container-lg,
+.about-inititives .container-lg {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1596,20 +1601,20 @@ textarea {
 
 .about-values .container-lg .card {
   background-color: var(--background-white);
-  box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 10px rgb(0, 0, 0, 0.2);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 28vh;
+  height: 26vh;
   margin: 1rem;
   padding: 1.8rem;
 }
 
 .about-values .container-lg .card:hover {
   cursor: pointer;
-  box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 40px var(--text-gold-hover);
 }
 
 .about-values .container-lg .card .card-content span {
@@ -1637,6 +1642,44 @@ textarea {
   align-items: center;
 }
 
+.about-inititives {
+  min-height: 70vh;
+  display: flex;
+  background-color: linen;
+  align-items: center;
+}
+
+.about-inititives .container-lg .card {
+  border-radius: 12px;
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  margin: 1.4rem;
+}
+
+.about-inititives .container-lg .card .card-group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-inititives .container-lg .card .card-group img {
+  width: 36%;
+  padding: 1rem;
+  border-radius: 100%;
+  background: var(--background-gradient-gold);
+  margin-bottom: 1.4rem;
+}
+
+.about-inititives .container-lg .card .card-group h4 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-inititives .container-lg .card .card-group p {
+  text-align: center;
+}
+
 .about-journey .container .container-fluid,
 .about-inititives .container .container-fluid {
   display: flex;
@@ -1648,8 +1691,7 @@ textarea {
 }
 
 .about-goal .container .container-fluid,
-.about-values .container .container-fluid,
-.about-message .container .container-fluid {
+.about-values .container .container-fluid {
   display: flex;
   padding-right: 2rem;
   flex-direction: column;
@@ -1662,7 +1704,7 @@ textarea {
 }
 
 .about-goal .container-fluid .company img {
-  width: 44%;
+  width: 40%;
   border-radius: 10%;
   filter: brightness(0.8);
 }
@@ -1685,8 +1727,7 @@ textarea {
 .about-goal .container-fluid label,
 .about-journey .container-fluid label,
 .about-values .container-fluid label,
-.about-inititives .container-fluid label,
-.about-message .container-fluid label {
+.about-inititives .container-fluid label {
   font-weight: 650;
   color: var(--text-white);
   background: var(--background-gradient-gold);
@@ -1697,8 +1738,7 @@ textarea {
 }
 
 .about-values .container-fluid h1,
-.about-inititives .container-fluid h1,
-.about-message .container-fluid h1 {
+.about-inititives .container-fluid h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
@@ -1712,6 +1752,10 @@ textarea {
   color: var(--text-white);
   font-size: 3rem;
   margin-bottom: 2rem;
+}
+
+.about-journey .container-fluid h1 span {
+  color: var(--text-gold-hover);
 }
 
 .about-goal .container-fluid .company .body-text1 p,
@@ -1730,6 +1774,50 @@ textarea {
 .about-values .container-fluid strong,
 .about-message .container-fluid strong {
   margin: 1rem 0;
+}
+
+.about-message .card {
+  padding: 3.3rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 20px rgb(0, 0, 0, 0.6);
+  /* border: 7px solid var(--text-gold-hover); */
+  background-color: var(--dark-blue);
+}
+
+.about-message .card .card-text svg {
+  font-size: 2.4rem;
+  color: var(--text-gold-hover);
+}
+
+.about-message .card .card-text p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  display: flex;
+  color: var(--text-white);
+  align-items: flex-end;
+}
+
+.about-message .card .card-owner {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.about-message .card .card-owner .card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-message .card .card-owner .card-text h3 {
+  color: var(--text-white);
+  font-weight: 660;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.about-message .card .card-owner .card-text label {
+  color: var(--text-white);
+  font-size: 0.9rem;
 }
 
 /* About Timeline Section  */
@@ -1832,6 +1920,10 @@ textarea {
   min-height: 70vh;
 }
 
+.checkout-section .container {
+  padding: 0;
+}
+
 .checkout-section .card {
   display: flex;
   justify-content: space-between;
@@ -1919,6 +2011,17 @@ textarea {
   padding: 0.8rem 4%;
   border-radius: 8px;
   border: 1.2px solid var(--text-white-hover);
+}
+
+.checkout-section .card .card-payment .col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkout-section .card .card-payment .col input.form-control {
+  width: 96%;
+  margin-right: 1rem;
 }
 
 .checkout-section .card .button {
@@ -2302,7 +2405,6 @@ footer .footer-content .rights a {
 
   .contact-section .container {
     flex-direction: column;
-    padding: 2rem;
   }
 
   .visa-contact .container-fluid {
@@ -2493,6 +2595,15 @@ footer .footer-content .rights a {
     display: block;
   }
 
+  .about-welcome .container {
+    flex-direction: column-reverse;
+  }
+
+  .about-welcome .container img {
+    margin: 0 !important ;
+    width: 90% !important;
+  }
+
   .about-journey .container .container-fluid,
   .about-inititives .container .container-fluid {
     padding: 0 1rem;
@@ -2524,14 +2635,15 @@ footer .footer-content .rights a {
   }
 
   .about-goal .container-fluid h1,
-  .about-values .container-fluid h1,
+  .about-journey .container-fluid h1,
   .about-inititives .container-fluid h1,
   .about-message .container-fluid h1 {
     font-size: 2rem;
   }
 
-  .about-journey .container-fluid h1 {
+  .about-values .container-fluid h1 {
     font-size: 2rem;
+    margin-top: 1rem;
   }
 
   .about-goal .container-fluid .company .body-text p {
@@ -2542,14 +2654,58 @@ footer .footer-content .rights a {
     padding: 0;
   }
 
-  .contact-section .container {
+  .about-values .container-lg,
+  .about-inititives .container-lg {
+    flex-direction: column;
+  }
+
+  .about-values .container-lg .card {
+    width: 94%;
+    height: 24vh;
+  }
+
+  .about-values .container-lg .card .card-content span {
+    font-size: 1.4rem;
+  }
+
+  .about-values .container-lg,
+  .about-inititives .container-lg {
+    flex-direction: column;
+  }
+
+  .about-inititives .container-lg .card {
+    height: fit-content;
+    padding: 1rem 2rem;
+  }
+
+  .about-inititives .container-lg .card .card-group img {
+    width: 30%;
+  }
+
+  .about-inititives .container-lg .card .card-title h4 {
+    font-size: 1.2rem;
+  }
+
+  .about-inititives .container-lg .card .contact-section .container {
     flex-direction: column;
     padding: 1.6rem;
   }
 
+  .about-message .card {
+    padding: 2.8rem;
+  }
+
+  .about-message .card .card-text p {
+    display: block;
+  }
+
+  .about-message .card .card-owner img {
+    width: 20% !important;
+  }
+
   .contact-section .container-fluid {
     padding: 0;
-    margin: 2.4rem 1rem;
+    margin-top: 2.4rem;
     display: flex;
     justify-content: center;
   }
@@ -2573,16 +2729,25 @@ footer .footer-content .rights a {
 
   .contact-section .card .card-body {
     width: 100%;
-    padding: 2rem 2.2rem;
+    padding: 0;
+    background: none;
   }
 
   .contact-section .card .card-body h2 {
     font-size: 1.5rem;
     text-align: center;
+    color: var(--text-black);
+    display: none;
+  }
+
+  .contact-section .card .card-body h4 {
+    color: var(--text-black);
   }
 
   .contact-section .card .card-body p {
     text-align: center;
+    color: var(--text-black);
+    display: none;
   }
 
   .contact-section .card .card-body .card-group svg {
@@ -2591,6 +2756,10 @@ footer .footer-content .rights a {
 
   .contact-section .card .card-body .card-group ul li {
     font-size: 0.9rem;
+  }
+
+  .contact-section .card .card-body .card-group ul li a {
+    color: var(--text-black);
   }
 
   .contact-section .card form {
@@ -2647,6 +2816,40 @@ footer .footer-content .rights a {
     width: 90%;
   }
 
+  .checkout-section .container {
+    padding: 0;
+  }
+
+  .checkout-section .card {
+    flex-direction: column;
+  }
+
+  .checkout-section .card .card-section .card-group {
+    margin-top: 2.4rem;
+  }
+
+  .checkout-section .card .card-section {
+    width: 100%;
+    padding: 3rem;
+  }
+
+  .checkout-section .card .card-final {
+    width: 100%;
+  }
+
+  .checkout-section .card .card-final .card-summary i {
+    text-align: end;
+  }
+
+  .checkout-section .card .form-group {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .checkout-section .card .form-group input.form-control {
+    width: 100%;
+  }
+
   footer {
     padding: 0;
   }
@@ -2674,10 +2877,18 @@ footer .footer-content .rights a {
     margin: 2rem 10%;
   }
 
+  footer .footer-content .location p label {
+    margin: 0.6rem;
+    font-size: 1rem;
+  }
+
   footer .location p {
     font-size: 13px;
+    display: flex;
+    margin: 0 1rem;
     text-align: center;
-    margin: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
 
   footer .location p a {
@@ -2693,6 +2904,8 @@ footer .footer-content .rights a {
 
   footer .footer-content .contact label {
     margin: 0.4rem 0;
+    color: var(--text-black-hover);
+    font-weight: 700;
   }
 
   footer .footer-content .contact svg {

@@ -9,7 +9,7 @@ const Journey = () => {
           <div className="container-fluid">
             <label>Timeline</label>
             <h1>
-              Our <span className="gradient-text">Journey</span>
+              Our <span>Journey</span>
             </h1>
             <Timeline />
             {/* <p>
