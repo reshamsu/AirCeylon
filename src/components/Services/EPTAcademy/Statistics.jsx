@@ -1,7 +1,5 @@
 import React from "react";
 import { Container } from "@mui/material";
-import { FaUserGraduate, FaChalkboardTeacher } from "react-icons/fa";
-import { GiAchievement, GiProgression } from "react-icons/gi";
 
 const Statistics = () => {
   return (

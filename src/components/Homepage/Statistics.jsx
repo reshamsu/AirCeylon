@@ -1,9 +1,5 @@
 import React from "react";
 import { Container } from "@mui/material";
-import { FaHandshake } from "react-icons/fa";
-import { GiDiamondTrophy } from "react-icons/gi";
-import { GiStarsStack } from "react-icons/gi";
-import { FaMapLocationDot } from "react-icons/fa6";
 
 const Statistics = () => {
   return (
@@ -18,48 +14,60 @@ const Statistics = () => {
         <div className="container-lg">
           <div className="card">
             <div className="card-body">
-              <h4 className="card-group">
-                <FaHandshake /> Expert Partnerships
-              </h4>
-              <i className="card-text">
-                - Trusted Licensed Professionals to ensure Your Experience is in
-                the Best of Hands.
-              </i>
+              <div className="card-group">
+                <img src="/assets/partnerships.png" alt="digital" />
+                <h3>Expert Partnerships</h3>
+              </div>
+              <div className="card-text">
+                <p>
+                  Trusted Licensed Professionals to ensure Your Experience is in
+                  the Best of Hands.
+                </p>
+              </div>
             </div>
           </div>
 
           <div className="card">
             <div className="card-body">
-              <h4 className="card-group">
-                <GiDiamondTrophy /> Exceeding Standards
-              </h4>
-              <i className="card-text">
-                - Commitment to High Quality Service & Support Beyond the
-                Boundaries by Flying the Extra Mile for You.
-              </i>
+              <div className="card-group">
+                <img src="/assets/standards.png" alt="digital" />
+                <h3>Exceeding Standards</h3>
+              </div>
+              <div className="card-text">
+                <p>
+                  Commitment to High Quality Service & Support Beyond the
+                  Boundaries by Flying the Extra Mile for You.
+                </p>
+              </div>
             </div>
           </div>
 
           <div className="card">
             <div className="card-body">
-              <h4 className="card-group">
-                <GiStarsStack /> Effortless Experience
-              </h4>
-              <i className="card-text">
-                - Dedicated to Implementing a Smart, Easy, Simple & Seamless
-                Experience as much as Your Journey.
-              </i>
+              <div className="card-group">
+                <img src="/assets/experience.png" alt="digital" />
+                <h3>Effortless Experience</h3>
+              </div>
+              <p className="card-text">
+                <p>
+                  Dedicated to Implementing a Smart, Easy, Simple & Seamless
+                  Experience as much as Your Journey.
+                </p>
+              </p>
             </div>
           </div>
 
           <div className="card">
             <div className="card-body">
-              <h4 className="card-group">
-                <FaMapLocationDot /> Exclusive Travel Hub
-              </h4>
-              <i className="card-text">
-                - Determined to Provide Exclusive Services All in One Place.
-              </i>
+              <div className="card-group">
+                <img src="/assets/travel-hub.png" alt="digital" />
+                <h3>Exclusive Travel Hub</h3>
+              </div>
+              <div className="card-text">
+                <p>
+                  Determined to Provide Exclusive Services All in One Place.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -50,7 +50,7 @@ const FAQ = () => {
                 style={{ position: "relative" }}
               >
                 <div className="card-body">
-                  <h3 className="card-title">{faq.question}</h3>
+                  <h4 className="card-title">{faq.question}</h4>
                   {openIndex === index && (
                     <div className="card-text">
                       <p>{faq.answer}</p>

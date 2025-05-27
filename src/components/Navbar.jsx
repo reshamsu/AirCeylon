@@ -151,12 +151,12 @@ const Navbar = () => {
             <li
               className={`dropdown ${isServicesRoute ? "nav-link-active" : ""}`}
             >
-              <span
+              <a
                 className="nav-link dropdown-toggle"
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
               >
                 Services <IoChevronDownOutline />
-              </span>
+              </a>
               {mobileServicesOpen && (
                 <ul className="sidenav-submenu">
                   <li>
