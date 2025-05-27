@@ -7,12 +7,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 const attractions = [
   {
-    img: "/assets/east-asia-indonasia.jpg",
-    title: "Indonasia",
-    location: "Indonasia",
+    img: "/assets/east-asia-Indonesia.jpg",
+    title: "Indonesia",
+    location: "Indonesia",
     description:
       "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and tells tales of dynasties past.",
-    info: "Indonasia",
+    info: "Indonesia",
   },
   {
     img: "/assets/east-asia-japan.jpg",
@@ -27,7 +27,7 @@ const attractions = [
     title: "Marine Bay, Singapore",
     location: "Singapore",
     description:
-      "Turquoise lagoons, overwater villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
+      "Turquoise lagoons, over-water villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
     info: "Marine Bay, Singapore",
   },
   // {

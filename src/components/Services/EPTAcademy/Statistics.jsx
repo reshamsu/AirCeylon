@@ -16,45 +16,57 @@ const Statistics = () => {
         <div className="container-lg">
           <div className="card">
             <div className="card-body">
-              <h4 className="card-title">
-                <FaUserGraduate /> 5,000+ Graduates
-              </h4>
-              <i className="card-text">
-                Students trained and certified across multiple professional programs.
-              </i>
+              <div className="card-group">
+                <img src="/assets/graduate.png" alt="digital" />
+                <h3>5,000+ Graduates</h3>
+              </div>
+              <div className="card-text">
+                <p>
+                  Students trained and certified across multiple professional
+                  programs.
+                </p>
+              </div>
             </div>
           </div>
 
           <div className="card">
             <div className="card-body">
-              <h4 className="card-title">
-                <GiProgression /> 98% Pass Rate
-              </h4>
-              <i className="card-text">
-                Consistently high academic success across all courses.
-              </i>
+              <div className="card-group">
+                <img src="/assets/passrate.png" alt="digital" />
+                <h3>98% Pass Rate</h3>
+              </div>
+              <div className="card-text">
+                <p>Consistently high academic success across all courses.</p>
+              </div>
             </div>
           </div>
 
           <div className="card">
             <div className="card-body">
-              <h4 className="card-title">
-                <FaChalkboardTeacher /> 150+ Expert Instructors
-              </h4>
-              <i className="card-text">
-                Qualified professionals providing personalized learning support.
-              </i>
+              <div className="card-group">
+                <img src="/assets/experts.png" alt="digital" />
+                <h3>150+ Expert Instructors</h3>
+              </div>
+              <div className="card-text">
+                <p>
+                  Qualified professionals providing personalized learning
+                  support.
+                </p>
+              </div>
             </div>
           </div>
 
           <div className="card">
             <div className="card-body">
-              <h4 className="card-title">
-                <GiAchievement /> Globally Recognized
-              </h4>
-              <i className="card-text">
-                Programs acknowledged by institutions and employers worldwide.
-              </i>
+              <div className="card-group">
+                <img src="/assets/recognition.png" alt="digital" />
+                <h3>Globally Recognized</h3>
+              </div>
+              <div className="card-text">
+                <p>
+                  Programs acknowledged by institutions and employers worldwide.
+                </p>
+              </div>
             </div>
           </div>
         </div>

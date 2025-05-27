@@ -51,7 +51,7 @@ const Goal = () => {
                 Our <span className="gradient-text">Mission</span>
               </h1>
               <p>
-                "To Navigate New Oppotunties smoothly with ease confidence as
+                "To Navigate New Opportunities smoothly with ease confidence as
                 you embark onto your next chapter."
               </p>
             </div>

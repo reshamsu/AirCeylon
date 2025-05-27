@@ -139,7 +139,7 @@ const Checkout = () => {
                 <li>Check Box - Agree to Terms & Conditions</li>
                 <li>
                   Check Box - Consent for Personal Data Processing
-                  (GDPT-complaint)
+                  (GDPR-complaint)
                 </li>
                 <li>Check Box - Acknowledge refund/cancellation policy</li>
               </ul>

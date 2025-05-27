@@ -27,7 +27,7 @@ const attractions = [
     title: "Dubai, UAE",
     location: "Dubai",
     description:
-      "Turquoise lagoons, overwater villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
+      "Turquoise lagoons, over-water villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
     info: "Dubai, UAE",
   },
   // {

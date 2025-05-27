@@ -14,11 +14,11 @@ const TransitionWelcome = () => {
           <div className="card">
             <div className="card-group">
               <img
-                src="/assets/accomadation.png"
+                src="/assets/accommodation.png"
                 alt="digital"
                 style={{ height: "8vh" }}
               />
-              <h4>Accomadation</h4>
+              <h4>Accommodation</h4>
             </div>
             <div className="card-text">
               <p>

@@ -8,27 +8,27 @@ import "slick-carousel/slick/slick-theme.css";
 const attractions = [
   {
     img: "./assets/east-asia-china.jpg",
-    title: "Accomadation",
+    title: "Accommodation",
     location: "China",
     description:
       "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and tells tales of dynasties past.",
-    info: "Beijing, China",
+    info: "Ontario, Canada",
   },
   {
     img: "./assets/europe-germany.jpg",
-    title: "Carrers",
+    title: "Careers",
     location: "Germany",
     description:
       "A skyline of innovation meets Old World charm — Frankfurt blends financial power with cultural richness and historic streets.",
-    info: "Frankfurt, Germany",
+    info: "Ontario, Canada",
   },
   {
     img: "/assets/middle-east-maldives.jpg",
     title: "Community",
     location: "Maldives",
     description:
-      "Turquoise lagoons, overwater villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
-    info: "Male, Maldives",
+      "Turquoise lagoons, over-water villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
+    info: "Ontario, Canada",
   },
   {
     img: "/assets/europe-spain.jpg",
@@ -36,7 +36,7 @@ const attractions = [
     location: "Spain",
     description:
       "From flamenco rhythms to regal boulevards — Madrid pulses with art, flavor, and the warmth of Spanish spirit.",
-    info: "Madrid, Spain",
+    info: "Ontario, Canada",
   },
 ];
 
@@ -77,7 +77,7 @@ const Gallery = () => {
         <div className="container-fluid">
           <label>Provision</label>
           <h1>
-            Toronto - <span className="gradient-text">Canada</span>
+            <span className="gradient-text">Canada</span>
           </h1>
         </div>
 
@@ -135,7 +135,13 @@ const Gallery = () => {
                   >
                     {item.description}
                   </p>
-                  <label style={{ fontSize: "0.85rem", fontWeight: "600",color: "var(--text-gold-hover)" }}>
+                  <label
+                    style={{
+                      fontSize: "0.85rem",
+                      fontWeight: "600",
+                      color: "var(--text-gold-hover)",
+                    }}
+                  >
                     {item.info}
                   </label>
                 </div>

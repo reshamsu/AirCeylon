@@ -31,10 +31,11 @@ const Message = () => {
               lifestyle integration — we believe in going the extra mile, even
               after you land.
             </p>
-            <p>
+            <p style={{ alignItems: "flex-start" }}>
               At Air Ceylon, we are building more than a service. We’re building
               a bridge — between countries, between people, and between dreams
-              and reality. <FaQuoteRight  style={{ marginLeft: ".4rem" }}/>
+              and reality. 
+              <FaQuoteRight  style={{ marginLeft: ".4rem" }}/>
             </p>
           </div>
           <div className="card-owner">

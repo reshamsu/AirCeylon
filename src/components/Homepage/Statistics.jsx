@@ -18,8 +18,7 @@ const Statistics = () => {
         <div className="container-lg">
           <div className="card">
             <div className="card-body">
-              <h4 className="card-title">
-                {" "}
+              <h4 className="card-group">
                 <FaHandshake /> Expert Partnerships
               </h4>
               <i className="card-text">
@@ -30,11 +29,8 @@ const Statistics = () => {
           </div>
 
           <div className="card">
-            <div className="image">
-              <img src="" className="card-img-top" alt="" />
-            </div>
             <div className="card-body">
-              <h4 className="card-title">
+              <h4 className="card-group">
                 <GiDiamondTrophy /> Exceeding Standards
               </h4>
               <i className="card-text">
@@ -45,11 +41,8 @@ const Statistics = () => {
           </div>
 
           <div className="card">
-            <div className="image">
-              <img src="" className="card-img-top" alt="" />
-            </div>
             <div className="card-body">
-              <h4 className="card-title">
+              <h4 className="card-group">
                 <GiStarsStack /> Effortless Experience
               </h4>
               <i className="card-text">
@@ -60,11 +53,8 @@ const Statistics = () => {
           </div>
 
           <div className="card">
-            <div className="image">
-              <img src="" className="card-img-top" alt="" />
-            </div>
             <div className="card-body">
-              <h4 className="card-title">
+              <h4 className="card-group">
                 <FaMapLocationDot /> Exclusive Travel Hub
               </h4>
               <i className="card-text">

@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 
 const Initiatives = () => {
   return (
-    <div className="about-inititives">
+    <div className="about-initiatives">
       <Container className="container">
         <div className="container-fluid">
           <label>CSR</label>
@@ -11,6 +11,7 @@ const Initiatives = () => {
             ⁠Sustainability <span className="gradient-text">Initiatives</span>
           </h1>
         </div>
+        
         <div className="container-lg">
           <div className="card">
             <div className="card-group">

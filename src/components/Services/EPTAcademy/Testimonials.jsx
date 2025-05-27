@@ -36,8 +36,8 @@ const EPTTestimonials = () => {
             <div className="card-body">
               <h4 className="card-title">
                 <FaQuoteLeft />
-                Miss Tasha was very helpful, gained alot of tips and she
-                recommended really good resources to practice ielts, helped me
+                Miss Tasha was very helpful, gained a lot of tips and she
+                recommended really good resources to practice IELTS, helped me
                 gain a scope of the whole test in a short period of time, very
                 satisfied with her work and would definitely recommend.
                 <FaQuoteRight />

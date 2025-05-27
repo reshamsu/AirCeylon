@@ -14,6 +14,7 @@ const CoreValues = () => {
             Our <span className="gradient-text">Core Values</span>
           </h1>
         </div>
+        
         <div className="container-lg">
           <div className="card">
             <div className="card-content">

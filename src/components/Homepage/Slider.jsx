@@ -27,7 +27,7 @@ const attractions = [
     title: "Male, Maldives",
     location: "Maldives",
     description:
-      "Turquoise lagoons, overwater villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
+      "Turquoise lagoons, over-water villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
     info: "Male, Maldives",
   },
   {

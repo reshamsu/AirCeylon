@@ -11,7 +11,7 @@ const VisaContact = () => {
       <Container className="container">
         <div className="container-fluid">
           <h1>
-            Visit VISA <span className="gradient-text">Application Form.</span>
+            VISA <span className="gradient-text">Application Form.</span>
           </h1>
           <p>We're here to assist you with any inquires about our solutions</p>
         </div>
@@ -132,7 +132,7 @@ const VisaContact = () => {
                     <option>Egypt</option>
                     <option>Georgia</option>
                     <option>India</option>
-                    <option>Indonasia</option>
+                    <option>Indonesia</option>
                     <option>Japan</option>
                     <option>Jordan</option>
                     <option>Kuwait</option>
@@ -150,7 +150,7 @@ const VisaContact = () => {
                     <option>Singapore</option>
                     <option>Thailand</option>
                     <option>Tunisia</option>
-                    <option>Turkiye</option>
+                    <option>Turkey</option>
                     <option>UAE</option>
                     <option>Uzbekistan</option>
                     <option>Vietnam</option>

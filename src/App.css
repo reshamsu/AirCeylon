@@ -221,6 +221,7 @@ header nav .nav-link-active {
 .nav-link.dropdown-toggle {
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -343,7 +344,7 @@ nav.mobile-subnav ul.subnav-list li {
 }
 
 nav.mobile-subnav ul.subnav-list li span {
-  font-weight: 650;
+  font-weight: 700;
   color: var(--text-gold-hover);
   padding: 1rem;
 }
@@ -366,13 +367,14 @@ nav.mobile-subnav ul.dropdown-menu li {
 }
 
 nav.mobile-subnav ul.dropdown-menu li strong {
-  color: var(--text-black-hover);
-  margin-bottom: 0.2rem;
+  color: var(--text-gold-hover);
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
 }
 
 nav.mobile-subnav ul.dropdown-menu li a {
-  color: var(--text-gold-hover);
-  font-weight: 500;
+  color: var(--text-black);
+  font-weight: 550;
 }
 
 nav.mobile-subnav ul.dropdown-menu li a:hover {
@@ -721,14 +723,10 @@ nav.sidenav span svg {
 .landing-stats .container-lg .card,
 .landing-stats2 .container-lg .card {
   background-color: var(--background-white);
-  /* box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4); */
   margin: 0.8rem;
   cursor: pointer;
-  padding: 1.6rem 3%;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 1.8rem;
+  border-radius: 14px;
 }
 
 .landing-stats .container-lg .card:hover,
@@ -738,28 +736,40 @@ nav.sidenav span svg {
 
 .landing-stats .container-lg .card-body,
 .landing-stats2 .container-lg .card-body {
-  text-align: center;
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.landing-stats .container-lg h4.card-title,
-.landing-stats2 .container-lg h4.card-title {
+.landing-stats .container-lg .card-group,
+.landing-stats2 .container-lg .card-group {
   display: flex;
   align-items: center;
-  color: var(--text-gold-hover);
-  font-size: 1.2rem;
-  font-weight: 600;
+  margin-bottom: 0.8rem;
 }
 
-.landing-stats .container-lg i.card-text,
-.landing-stats2 .container-lg i.card-text {
-  font-weight: 500;
+.landing-stats .container-lg .card-group h3,
+.landing-stats2 .container-lg .card-group h3 {
+  color: var(--dark-blue);
+  font-weight: 660;
 }
 
-.landing-stats .container-lg .card-body svg,
-.landing-stats2 .container-lg .card-body svg {
-  font-size: 8rem;
+.landing-stats .container-lg .card-text p,
+.landing-stats2 .container-lg .card-text p {
   font-weight: 500;
-  margin-right: 1rem;
+  font-size: .9rem;
+}
+
+.landing-stats .container-lg .card-body img,
+.landing-stats2 .container-lg .card-body img {
+  width: 36%;
+  font-weight: 500;
+  margin-right: 1.1rem;
+  padding: 0.4rem;
+  border-radius: 12px;
+  background-color: blanchedalmond;
   color: var(--text-gold-hover);
 }
 
@@ -1592,7 +1602,7 @@ textarea {
 }
 
 .about-values .container-lg,
-.about-inititives .container-lg,
+.about-initiatives .container-lg,
 .ts-provision .container-lg {
   display: flex;
   margin: 2rem 0;
@@ -1639,7 +1649,6 @@ textarea {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 26vh;
   margin: 1rem;
   padding: 1.8rem;
 }
@@ -1676,14 +1685,14 @@ textarea {
 }
 
 .about-journey,
-.about-inititives {
+.about-initiatives {
   min-height: 70vh;
   display: flex;
   background-color: linen;
   align-items: center;
 }
 
-.about-inititives .container-lg .card {
+.about-initiatives .container-lg .card {
   border-radius: 12px;
   display: flex;
   width: 100%;
@@ -1691,13 +1700,13 @@ textarea {
   margin: 1.4rem;
 }
 
-.about-inititives .container-lg .card .card-group {
+.about-initiatives .container-lg .card .card-group {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.about-inititives .container-lg .card .card-group img {
+.about-initiatives .container-lg .card .card-group img {
   width: 36%;
   padding: 1rem;
   border-radius: 100%;
@@ -1705,17 +1714,17 @@ textarea {
   margin-bottom: 1.4rem;
 }
 
-.about-inititives .container-lg .card .card-group h4 {
+.about-initiatives .container-lg .card .card-group h4 {
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.about-inititives .container-lg .card .card-group p {
+.about-initiatives .container-lg .card .card-group p {
   text-align: center;
 }
 
 .about-journey .container .container-fluid,
-.about-inititives .container .container-fluid {
+.about-initiatives .container .container-fluid {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1761,7 +1770,7 @@ textarea {
 .about-goal .container-fluid label,
 .about-journey .container-fluid label,
 .about-values .container-fluid label,
-.about-inititives .container-fluid label {
+.about-initiatives .container-fluid label {
   font-weight: 650;
   color: var(--text-white);
   background: var(--background-gradient-gold);
@@ -1773,7 +1782,7 @@ textarea {
 
 .about-goal .container-fluid h1,
 .about-values .container-fluid h1,
-.about-inititives .container-fluid h1 {
+.about-initiatives .container-fluid h1 {
   font-size: 2.6rem;
   margin-bottom: 1rem;
 }
@@ -2621,7 +2630,7 @@ footer .footer-content .rights a {
   }
 
   .about-journey .container .container-fluid,
-  .about-inititives .container .container-fluid {
+  .about-initiatives .container .container-fluid {
     padding: 0 1rem;
   }
 
@@ -2652,7 +2661,7 @@ footer .footer-content .rights a {
 
   .about-goal .container-fluid h1,
   .about-journey .container-fluid h1,
-  .about-inititives .container-fluid h1,
+  .about-initiatives .container-fluid h1,
   .about-message .container-fluid h1 {
     font-size: 2rem;
   }
@@ -2671,7 +2680,7 @@ footer .footer-content .rights a {
   }
 
   .about-values .container-lg,
-  .about-inititives .container-lg {
+  .about-initiatives .container-lg {
     flex-direction: column;
   }
 
@@ -2691,7 +2700,6 @@ footer .footer-content .rights a {
 
   .about-values .container-lg .card {
     width: 94%;
-    height: 24vh;
   }
 
   .about-values .container-lg .card .card-content span {
@@ -2699,25 +2707,25 @@ footer .footer-content .rights a {
   }
 
   .about-values .container-lg,
-  .about-inititives .container-lg,
+  .about-initiatives .container-lg,
   .ts-provision .container-lg {
     flex-direction: column;
   }
 
-  .about-inititives .container-lg .card {
+  .about-initiatives .container-lg .card {
     height: fit-content;
     padding: 1rem 2rem;
   }
 
-  .about-inititives .container-lg .card .card-group img {
+  .about-initiatives .container-lg .card .card-group img {
     width: 30%;
   }
 
-  .about-inititives .container-lg .card .card-title h4 {
+  .about-initiatives .container-lg .card .card-title h4 {
     font-size: 1.2rem;
   }
 
-  .about-inititives .container-lg .card .contact-section .container {
+  .about-initiatives .container-lg .card .contact-section .container {
     flex-direction: column;
     padding: 1.6rem;
   }

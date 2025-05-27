@@ -11,7 +11,7 @@ const Blog = () => {
         <div className="container-fluid">
           <h1>Blogs</h1>
           <p>
-            Why More Sri Lankans Trust <span>Air Ceylon</span> for Hassle-Free
+            Why More Sri Lankan's Trust <span>Air Ceylon</span> for Hassle-Free
             Travel Planning
           </p>
         </div>

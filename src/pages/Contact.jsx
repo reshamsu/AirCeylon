@@ -184,7 +184,7 @@ const Contact = () => {
                       Preferred Support System
                     </label>
                     <select className="form-control">
-                      <option>Call for Inquries</option>
+                      <option>Call for Inquires</option>
                       <option>Book an Appointment</option>
                       <option>Register for a Course</option>
                     </select>

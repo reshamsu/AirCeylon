@@ -27,7 +27,7 @@ const attractions = [
     title: "Netherlands",
     location: "Netherlands",
     description:
-      "Turquoise lagoons, overwater villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
+      "Turquoise lagoons, over-water villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
     info: "Netherlands",
   },
   // {

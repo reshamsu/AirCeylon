@@ -11,7 +11,7 @@ const Process = () => {
             <span className="gradient-text">Canadian Issued Documents</span>
           </h1>
           <p>
-            Here’s a quick glance at the ease and process in getting your Canadian Issued Documents apostille, notarized authenticated & verified.
+            Here’s a quick glance at the ease and process in getting your Canadian Issued Documents Apostille, notarized authenticated & verified.
           </p>
           <p>
             -Break down Steps & Cost-
