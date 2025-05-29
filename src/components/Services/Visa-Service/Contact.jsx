@@ -101,6 +101,9 @@ const VisaContact = () => {
                     placeholder="Your Name"
                   />
                 </div>
+              </div>
+
+              <div className="row">
                 <div className="form-group">
                   <label>Email Address</label>
                   <input
@@ -109,9 +112,6 @@ const VisaContact = () => {
                     placeholder="Your Email"
                   />
                 </div>
-              </div>
-
-              <div className="row">
                 <div className="form-group">
                   <label>Phone</label>
                   <input
@@ -120,6 +120,8 @@ const VisaContact = () => {
                     placeholder="Your Phone Number"
                   />
                 </div>
+              </div>
+              <div className="row">
                 <div className="form-group">
                   <label>Choose Country</label>
                   <select className="form-control">
@@ -156,8 +158,6 @@ const VisaContact = () => {
                     <option>Vietnam</option>
                   </select>
                 </div>
-              </div>
-              <div className="row">
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">No. of Adults</label>
                   <select class="form-control" id="exampleFormControlSelect1">

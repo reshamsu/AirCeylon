@@ -1,41 +1,36 @@
 import React from "react";
 import Slider from "react-slick";
 import { Container } from "@mui/material";
-import { FaLocationDot } from "react-icons/fa6";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const attractions = [
   {
-    img: "./assets/east-asia-china.jpg",
+    img: "/assets/bedroom.jpg",
     title: "Accommodation",
-    location: "China",
     description:
-      "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and tells tales of dynasties past.",
+      "Experience comfort, convenience, and quality living with our range of modern, fully-equipped accommodations tailored to your needs.",
     info: "Ontario, Canada",
   },
   {
-    img: "./assets/europe-germany.jpg",
+    img: "/assets/careers.jpg",
     title: "Careers",
-    location: "Germany",
     description:
-      "A skyline of innovation meets Old World charm — Frankfurt blends financial power with cultural richness and historic streets.",
+      "Unlock your potential and build a rewarding future with diverse career opportunities in a dynamic and supportive environment.",
     info: "Ontario, Canada",
   },
   {
-    img: "/assets/middle-east-maldives.jpg",
+    img: "/assets/people.jpeg",
     title: "Community",
-    location: "Maldives",
     description:
-      "Turquoise lagoons, over-water villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
+      "Connect, engage, and grow in a vibrant community where people from all walks of life come together with shared values and purpose.",
     info: "Ontario, Canada",
   },
   {
-    img: "/assets/europe-spain.jpg",
+    img: "/assets/lifestyle-management.jpeg",
     title: "Lifestyle Management",
-    location: "Spain",
     description:
-      "From flamenco rhythms to regal boulevards — Madrid pulses with art, flavor, and the warmth of Spanish spirit.",
+      "Enhance your everyday living with personalized support and holistic services that help you balance wellness, work, and life with ease.",
     info: "Ontario, Canada",
   },
 ];
@@ -76,9 +71,7 @@ const Gallery = () => {
       <Container className="container">
         <div className="container-fluid">
           <label>Provision</label>
-          <h1>
-            <span className="gradient-text">Canada</span>
-          </h1>
+          <h1>Canada</h1>
         </div>
 
         <Slider {...settings}>

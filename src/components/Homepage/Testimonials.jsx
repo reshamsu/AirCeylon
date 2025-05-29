@@ -36,9 +36,9 @@ const Testimonials = () => {
             <div className="card-body">
               <h4 className="card-title">
                 <FaQuoteLeft />
-                "I wanted a band score of 6.5 for the IELTS, and my English was
+                I wanted a band score of 6.5 for the IELTS, and my English was
                 very weak. Within a very short time, Tasha helped me improve my
-                English skills more than I expected. Highly recommended!"
+                English skills more than I expected. Highly recommended!
                 <FaQuoteRight />
               </h4>
               <p className="card-text">IELTS Student</p>

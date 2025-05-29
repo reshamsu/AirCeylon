@@ -3,76 +3,69 @@ import { Container } from "@mui/material";
 
 const TransitionWelcome = () => {
   return (
-    <div className="ts-provision">
+    <div className="landing-stats">
       <Container className="container">
         <div className="container-fluid">
-          <h1>
-            What we <span className="gradient-text">Offer</span>
-          </h1>
+          <h1>What we <span className="gradient-text">Offer</span></h1>
         </div>
+
         <div className="container-lg">
           <div className="card">
-            <div className="card-group">
-              <img
-                src="/assets/accommodation.png"
-                alt="digital"
-                style={{ height: "8vh" }}
-              />
-              <h4>Accommodation</h4>
+            <div className="card-body" style={{ height: "26vh" }}>
+              <div className="card-group" style={{ alignItems: "start", flexDirection: "column" }}>
+                <img src="/assets/accommodation.png" alt="digital" />
+                <h3>Accommodation</h3>
+              </div>
+              <div className="card-text">
+                <p>
+                  Trusted Licensed Professionals to ensure Your Experience is in
+                  the Best of Hands.
+                </p>
+              </div>
             </div>
-            <div className="card-text">
-              <p>
-                We enjoy going the extra mile to ensure YOUR New Chapter is
-                smooth and confident. Our Regional Transition Support Advisor is
-                determined to provide you the assistance you require from the
-                moment you touch down onto a New World - from accommodation,
-                jobs, communities and lifestyle
+          </div>
+
+          <div className="card">
+            <div className="card-body" style={{ height: "28vh" }}>
+              <div className="card-group" style={{ alignItems: "start", flexDirection: "column" }}>
+                <img src="/assets/secure-docs.png" alt="digital" />
+                <h3>Jobs</h3>
+              </div>
+              <div className="card-text">
+                <p>
+                  Commitment to High Quality Service & Support Beyond the
+                  Boundaries by Flying the Extra Mile for You.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-body" style={{ height: "28vh" }}>
+              <div className="card-group" style={{ alignItems: "start", flexDirection: "column" }}>
+                <img src="/assets/community.png" alt="digital" />
+                <h3>Community</h3>
+              </div>
+              <p className="card-text">
+                <p>
+                  Dedicated to Implementing a Smart, Easy, Simple & Seamless
+                  Experience as much as Your Journey.
+                </p>
               </p>
             </div>
           </div>
+
           <div className="card">
-            <div className="card-group">
-              <img src="/assets/securedocs.png" alt="digital" />
-              <h4>Jobs</h4>
-            </div>
-            <div className="card-text">
-              <p>
-                We enjoy going the extra mile to ensure YOUR New Chapter is
-                smooth and confident. Our Regional Transition Support Advisor is
-                determined to provide you the assistance you require from the
-                moment you touch down onto a New World - from accommodation,
-                jobs, communities and lifestyle
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-group">
-              <img src="/assets/intertwined.png" alt="digital" />
-              <h4>Community</h4>
-            </div>
-            <div className="card-text">
-              <p>
-                We enjoy going the extra mile to ensure YOUR New Chapter is
-                smooth and confident. Our Regional Transition Support Advisor is
-                determined to provide you the assistance you require from the
-                moment you touch down onto a New World - from accommodation,
-                jobs, communities and lifestyle
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-group">
-              <img src="/assets/lifestyle.png" alt="digital" />
-              <h4>Lifestyle Management</h4>
-            </div>
-            <div className="card-text">
-              <p>
-                We enjoy going the extra mile to ensure YOUR New Chapter is
-                smooth and confident. Our Regional Transition Support Advisor is
-                determined to provide you the assistance you require from the
-                moment you touch down onto a New World - from accommodation,
-                jobs, communities and lifestyle
-              </p>
+            <div className="card-body" style={{ height: "26vh" }}>
+              <div className="card-group" style={{ alignItems: "start", flexDirection: "column" }}>
+                <img src="/assets/lifestyle.png" alt="digital" />
+                <h3>Lifestyle Management</h3>
+              </div>
+              <div className="card-text">
+                <p>
+                  Determined to Provide Exclusive Services All in One Place.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -23,7 +23,7 @@ const attractions = [
     info: "Frankfurt, Germany",
   },
   {
-    img: "./assets/middle-east-maldives.jpg",
+    img: "./assets/south-asia-maldives.jpg",
     title: "Male, Maldives",
     location: "Maldives",
     description:
@@ -47,7 +47,7 @@ const attractions = [
     info: "Toronto, Canada",
   },
   {
-    img: "./assets/east-asia-singapore.jpg",
+    img: "./assets/southeast-asia-singapore.jpg",
     title: "Singapore",
     location: "Singapore",
     description:
