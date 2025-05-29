@@ -6,29 +6,29 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const attractions = [
-    {
-    img: "/assets/east-asia-singapore.jpg",
-    title: "Marine Bay, Singapore",
+  {
+    img: "/assets/southeast-asia-singapore.jpg",
+    title: "Marina Bay, Singapore",
     location: "Singapore",
     description:
-      "Turquoise lagoons, over-water villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
-    info: "Marine Bay, Singapore",
+      "Famous for its futuristic skyline and lush gardens, Marina Bay offers a vibrant blend of innovation, culture, and coastal beauty.",
+    info: "Marina Bay, Singapore",
   },
   {
-    img: "/assets/east-asia-indonesia.jpg",
-    title: "Indonesia",
+    img: "/assets/southeast-asia-indonesia.jpg",
+    title: "Bali, Indonesia",
     location: "Indonesia",
     description:
-      "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and tells tales of dynasties past.",
-    info: "Indonesia",
+      "Bali’s tropical charm, spiritual temples, and stunning beaches make it a dream destination for relaxation and adventure.",
+    info: "Bali, Indonesia",
   },
   {
-    img: "/assets/east-asia-japan.jpg",
-    title: "Tokyo, Japan",
-    location: "Japan",
+    img: "/assets/southeast-asia-vietnam.jpg",
+    title: "Ha Long Bay, Vietnam",
+    location: "Vietnam",
     description:
-      "A skyline of innovation meets Old World charm — Frankfurt blends financial power with cultural richness and historic streets.",
-    info: "Tokyo, Japan",
+      "A surreal seascape of emerald waters and limestone islands — Ha Long Bay is a natural wonder steeped in legend.",
+    info: "Ha Long Bay, Vietnam",
   },
   // {
   //   img: "./assets/europe-spain.jpg",
@@ -88,12 +88,12 @@ const Gallery = () => {
   };
 
   return (
-    <div className="landing-slider2">
+    <div className="landing-slider">
       <Container className="container">
         <div className="container-fluid">
           <label>South East-Asia</label>
           <h1>
-            Visit South East-Asia
+            Visit <span className="gradient-text">South East-Asia</span>
           </h1>
         </div>
 
@@ -106,7 +106,7 @@ const Gallery = () => {
               <div
                 className="slide-card"
                 style={{
-                  borderRadius: "10px",
+                  borderRadius: "18px",
                   background: "#fff",
                   overflow: "hidden",
                   height: "100%",

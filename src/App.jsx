@@ -19,7 +19,7 @@ import Notarization from "./pages/Notarization";
 import TravelTours from ".//components/Services/Travel&Tours";
 import Ticketing from ".//components/Services/Ticketing";
 import Europe from "./components/Services/Visa-Service/Countries/Europe";
-import Asia from "./components/Services/Visa-Service/Countries/Asia";
+import SouthAsia from "./components/Services/Visa-Service/Countries/SouthAsia";
 import MiddleEast from "./components/Services/Visa-Service/Countries/MiddleEast";
 import EastAsia from "./components/Services/Visa-Service/Countries/EastAsia";
 import SouthEastAsia from "./components/Services/Visa-Service/Countries/SouthEastAsia";
@@ -35,7 +35,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services/visa-service" element={<VisaService />} />
           <Route path="/services/visa-service/europe" element={<Europe />} />
-          <Route path="/services/visa-service/asia" element={<Asia />} />
+          <Route path="/services/visa-service/south-asia" element={<SouthAsia />} />
           <Route path="/services/visa-service/middle-east" element={<MiddleEast />} />
           <Route path="/services/visa-service/east-asia" element={<EastAsia />} />
           <Route path="/services/visa-service/south-east-asia" element={<SouthEastAsia />} />

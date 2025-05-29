@@ -9,7 +9,7 @@ const Statistics = () => {
           <h1>
             Our <span className="gradient-text">Visa Expertise</span>
           </h1>
-          <h4>Expertise Unmatched</h4>
+          <h4>Hassle-Free VISA Assistance for Global Travel</h4>
         </div>
 
         <div className="container-lg">
@@ -17,10 +17,13 @@ const Statistics = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/success-rate.png" alt="digital" />
-                <h2>100% Success Rate</h2>
+                <h3>100% Approval Success</h3>
               </div>
               <div className="card-text">
-                <p>Trusted global alliance for seamless travel.</p>
+                <p>
+                  Commitment to High Quality Service & Support Beyond the
+                  Boundaries by Flying the Extra Mile for You.
+                </p>
               </div>
             </div>
           </div>
@@ -28,10 +31,13 @@ const Statistics = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/application.png" alt="digital" />
-                <h2>200+ Application</h2>
+                <h3>200+ Application Processed</h3>
               </div>
               <div className="card-text">
-                <p>Trusted global alliance for seamless travel.</p>
+                <p>
+                  Commitment to High Quality Service & Support Beyond the
+                  Boundaries by Flying the Extra Mile for You.
+                </p>
               </div>
             </div>
           </div>
@@ -39,10 +45,13 @@ const Statistics = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/countries.png" alt="digital" />
-                <h2>30+ Countries</h2>
+                <h3>Service in 30+ Countries</h3>
               </div>
               <div className="card-text">
-                <p>Trusted global alliance for seamless travel.</p>
+                <p>
+                  Commitment to High Quality Service & Support Beyond the
+                  Boundaries by Flying the Extra Mile for You.
+                </p>
               </div>
             </div>
           </div>
@@ -50,10 +59,13 @@ const Statistics = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/regions.png" alt="digital" />
-                <h2>5+ Regions</h2>
+                <h3>Covering 5+ Major Regions</h3>
               </div>
               <div className="card-text">
-                <p>Trusted global alliance for seamless travel.</p>
+                <p>
+                  Commitment to High Quality Service & Support Beyond the
+                  Boundaries by Flying the Extra Mile for You.
+                </p>
               </div>
             </div>
           </div>

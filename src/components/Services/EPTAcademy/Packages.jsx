@@ -23,7 +23,7 @@ const EPTPackages = () => {
             <div className="card-body">
               <ul>
                 <li>
-                  <GrOverview style={{ fontSize: "24px" }} /> Sessions: 5
+                  <GrOverview style={{ fontSize: "22px" }} /> Sessions: 5
                 </li>
                 <li>
                   <PiTargetBold /> Focus: Academic & General
@@ -54,14 +54,14 @@ const EPTPackages = () => {
             </div>
           </div>
 
-          <div className="card">
-            <div className="card-title">
+          <div className="card" style={{  boxShadow: "0px 2px 40px rgb(0, 0, 0, 0.6)", background: "linen" }}>
+            <div className="card-title-active">
               <h3>Essential Course</h3>
             </div>
             <div className="card-body">
               <ul>
                 <li>
-                  <GrOverview style={{ fontSize: "24px" }} /> Sessions: 10
+                  <GrOverview style={{ fontSize: "22px" }} /> Sessions: 10
                 </li>
                 <li>
                   <PiTargetBold /> Focus: Academic & General
@@ -86,7 +86,7 @@ const EPTPackages = () => {
                   <FaCheck /> Speaking
                 </li>
               </ul>
-              <button className="btn btn-dark">
+              <button className="btn btn-primary">
                 LKR 50,000 <IoCart />
               </button>
             </div>
@@ -99,7 +99,7 @@ const EPTPackages = () => {
             <div className="card-body">
               <ul>
                 <li>
-                  <GrOverview style={{ fontSize: "24px" }} /> Sessions: 20
+                  <GrOverview style={{ fontSize: "22px" }} /> Sessions: 20
                 </li>
                 <li>
                   <PiTargetBold /> Focus: Academic & General

@@ -693,7 +693,7 @@ nav.sidenav span svg {
 }
 
 .landing-slider2 .slide-card {
-  padding: 1rem;
+  padding: .8rem;
   border-radius: 20px;
 }
 
@@ -757,17 +757,10 @@ nav.sidenav span svg {
   margin-bottom: 1rem;
 }
 
-.landing-stats .container-lg .card-group h2,
-.landing-stats2 .container-lg .card-group h2 {
-  color: var(--text-gold-hover);
-  font-weight: 660;
-  padding: 0 0.4rem;
-}
-
 .landing-stats .container-lg .card-group h3,
 .landing-stats2 .container-lg .card-group h3 {
   color: var(--dark-blue);
-  font-weight: 660;
+  font-weight: 700;
 }
 
 .landing-stats .container-lg .card-text p,
@@ -1097,7 +1090,7 @@ textarea {
 }
 
 /* EPT Academy Section  */
-.ept-packages {
+.ept-monologue {
   background-color: var(--dark-blue);
 }
 
@@ -1132,11 +1125,16 @@ textarea {
 
 .ept-monologue .container-fluid label {
   font-weight: 600;
+  color: var(--text-white);
 }
 
 .ept-monologue .container-fluid label span {
   color: var(--text-gold-hover);
   font-weight: 600;
+}
+
+.ept-monologue .container-fluid p {
+  color: var(--text-white);
 }
 
 .ept-monologue .container-fluid .row {
@@ -1155,7 +1153,6 @@ textarea {
 .ept-packages .container-fluid h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: var(--text-white);
 }
 
 .ept-packages .container-fluid p,
@@ -1175,10 +1172,10 @@ textarea {
 
 /* EPT Packages Section  */
 .ept-packages .container-lg .card {
-  background: var(--background-white);
+  background: var(--white-background-hover);
   margin: 1rem;
   width: 70%;
-  border-radius: 16px;
+  border-radius: 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1186,7 +1183,7 @@ textarea {
 
 .ept-packages .container-lg .card:hover {
   cursor: pointer;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.986);
+  background: linen;
 }
 
 .ept-packages .container-lg .card .card-body {
@@ -1195,9 +1192,20 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
 }
 
 .ept-packages .container-lg .card .card-title h3 {
+  text-align: center;
+  padding: 0.6rem;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background: var(--text-gold-brown);
+  color: var(--text-white);
+}
+
+.ept-packages .container-lg .card .card-title-active h3 {
   text-align: center;
   padding: 0.6rem;
   border-top-left-radius: 14px;
@@ -1239,10 +1247,18 @@ textarea {
   margin-bottom: 1rem;
 }
 
+.ept-packages .container-lg .card .card-body .btn.btn.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 .ept-packages .container-lg .card .card-body .btn.btn-dark {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .ept-packages .container-lg .card .card-body .btn.btn-dark svg {
@@ -1304,6 +1320,10 @@ textarea {
 }
 
 /* EPT Contact Section  */
+.ept-contact {
+  background-color: linen;
+}
+
 .ept-contact .container {
   display: flex;
   justify-content: center;
@@ -1312,6 +1332,7 @@ textarea {
 .ept-contact .card {
   box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
   padding: 2.4rem;
+  background-color: var(--background-white);
   border: 6px solid var(--text-gold-hover);
   width: 70%;
   border-radius: 26px;
@@ -1676,6 +1697,7 @@ textarea {
 }
 
 .about-values .container-lg .card:hover,
+.ept-packages .container-lg .card:hover,
 .ts-provision .container-lg .card:hover {
   cursor: pointer;
   box-shadow: 0px 4px 40px var(--text-gold-hover);

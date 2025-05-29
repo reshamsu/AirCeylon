@@ -4,7 +4,7 @@ import Welcome from "../components/Services/Visa-Service/Welcome";
 import Contact from "../components/Services/Visa-Service/Contact";
 import Statistics from "../components/Services/Visa-Service/Statistics";
 import Europe from "../components/Services/Visa-Service/Countries/Europe";
-import Asia from "../components/Services/Visa-Service/Countries/Asia";
+import SouthAsia from "../components/Services/Visa-Service/Countries/SouthAsia";
 import MiddleEast from "../components/Services/Visa-Service/Countries/MiddleEast";
 import EastAsia from "../components/Services/Visa-Service/Countries/EastAsia";
 import SouthEastAsia from "../components/Services/Visa-Service/Countries/SouthEastAsia";
@@ -18,9 +18,9 @@ const VisaService = () => {
       <Contact />
       <Statistics />
       <Europe />
-      <Asia />
+      <EastAsia />      
       <MiddleEast />
-      <EastAsia />
+      <SouthAsia />
       <SouthEastAsia />
       {/* <Testimonials /> */}
     </>

@@ -6,28 +6,29 @@ import { IoChevronDownOutline } from "react-icons/io5";
 const regions = [
   {
     name: "Europe",
-    countries: ["Belarus"],
+    countries: ["Belarus", "Georgia", "Azerbaijan", "Turkiye"],
   },
   {
-    name: "East-Asia",
-    countries: ["China", "Japan", "Vietnam"],
+    name: "East Asia",
+    countries: ["China", "Japan", "South Korea"],
   },
   {
-    name: "Asia",
+    name: "South Asia",
+    countries: ["Bangladesh", "India", "Maldives", "Nepal", "Pakistan"],
+  },
+  {
+    name: "South-East Asia",
     countries: [
-      "Azerbaijan",
-      "Bangladesh",
-      "Georgia",
-      "India",
-      "Maldives",
-      "Mauritius",
-      "Nepal",
-      "Pakistan",
-      "Uzbekistan",
+      "Vietnam",
+      "Indonesia",
+      "Malaysia",
+      "Philippines",
+      "Singapore",
+      "Thailand",
     ],
   },
   {
-    name: "Middle-East",
+    name: "Middle East",
     countries: [
       "Bahrain",
       "Egypt",
@@ -37,18 +38,9 @@ const regions = [
       "Oman",
       "Qatar",
       "Saudi Arabia",
-      "Turkiye",
       "UAE",
-    ],
-  },
-  {
-    name: "South-East Asia",
-    countries: [
-      "Indonesia",
-      "Malaysia",
-      "Philippines",
-      "Singapore",
-      "Thailand",
+      "Uzbekistan",
+      "Mauritius", 
     ],
   },
 ];

@@ -7,28 +7,28 @@ import "slick-carousel/slick/slick-theme.css";
 
 const attractions = [
   {
-    img: "/assets/east-asia-Indonesia.jpg",
-    title: "Indonesia",
-    location: "Indonesia",
-    description:
-      "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and tells tales of dynasties past.",
-    info: "Indonesia",
-  },
-  {
     img: "/assets/east-asia-japan.jpg",
     title: "Tokyo, Japan",
     location: "Japan",
     description:
-      "A skyline of innovation meets Old World charm — Frankfurt blends financial power with cultural richness and historic streets.",
+      "A dazzling fusion of ancient temples and futuristic skylines — Tokyo offers a dynamic experience at every corner.",
     info: "Tokyo, Japan",
   },
   {
-    img: "/assets/east-asia-singapore.jpg",
-    title: "Marine Bay, Singapore",
-    location: "Singapore",
+    img: "/assets/east-asia-china.jpg",
+    title: "Great Wall, China",
+    location: "China",
     description:
-      "Turquoise lagoons, over-water villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
-    info: "Marine Bay, Singapore",
+      "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and dynastic history.",
+    info: "Great Wall, China",
+  },
+  {
+    img: "/assets/east-asia-korea.jpg",
+    title: "Seoul, South Korea",
+    location: "South Korea",
+    description:
+      "A cultural powerhouse — explore Seoul’s palaces, K-pop districts, vibrant street food, and cutting-edge fashion.",
+    info: "Seoul, South Korea",
   },
   // {
   //   img: "./assets/europe-spain.jpg",
@@ -88,13 +88,11 @@ const Gallery = () => {
   };
 
   return (
-    <div className="landing-slider">
+    <div className="landing-slider2">
       <Container className="container">
         <div className="container-fluid">
           <label>East Asia</label>
-          <h1>
-            Visit <span className="gradient-text">East Asia</span>
-          </h1>
+          <h1>Visit East Asia</h1>
         </div>
 
         <Slider {...settings}>
@@ -106,8 +104,8 @@ const Gallery = () => {
               <div
                 className="slide-card"
                 style={{
-                  borderRadius: "10px",
-                  background: "#fff",
+                  borderRadius: "18px",
+                  background: "#222",
                   overflow: "hidden",
                   height: "100%",
                   margin: "1rem",
@@ -144,7 +142,7 @@ const Gallery = () => {
                   <p
                     style={{
                       fontSize: "0.9rem",
-                      color: "#444",
+                      color: "#fff",
                       fontWeight: "400",
                       lineHeight: "1.5",
                       marginBottom: "0.75rem",
@@ -152,7 +150,7 @@ const Gallery = () => {
                   >
                     {item.description}
                   </p>
-                  <label style={{ fontSize: "0.85rem", color: "#999" }}>
+                  <label style={{ fontSize: "0.85rem", color: "#aaa" }}>
                     {item.info}
                   </label>
                 </div>

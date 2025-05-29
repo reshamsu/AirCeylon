@@ -7,53 +7,37 @@ import "slick-carousel/slick/slick-theme.css";
 
 const attractions = [
   {
-    img: "/assets/europe-spain2.jpg",
-    title: "Madrid, Spain",
-    location: "Spain",
+    img: "/assets/europe-turkiye.jpg",
+    title: "Istanbul, Turkiye",
+    location: "Turkiye",
     description:
-      "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and tells tales of dynasties past.",
-    info: "Madrid, Spain",
+      "Where East meets West — explore Istanbul’s majestic mosques, bustling bazaars, and centuries of layered history.",
+    info: "Istanbul, Turkiye",
   },
   {
-    img: "/assets/europe-germany.jpg",
-    title: "Frankfurt, Germany",
-    location: "Germany",
+    img: "/assets/europe-georgia.jpg",
+    title: "Tbilisi, Georgia",
+    location: "Georgia",
     description:
-      "A skyline of innovation meets Old World charm — Frankfurt blends financial power with cultural richness and historic streets.",
-    info: "Frankfurt, Germany",
+      "A charming blend of old and new — Tbilisi offers cobbled streets, wine culture, and scenic hilltop views.",
+    info: "Tbilisi, Georgia",
   },
   {
-    img: "/assets/europe-netherlands.jpg",
-    title: "Netherlands",
-    location: "Netherlands",
+    img: "/assets/europe-azerbaijan.jpg",
+    title: "Baku, Azerbaijan",
+    location: "Azerbaijan",
     description:
-      "Turquoise lagoons, over-water villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
-    info: "Netherlands",
+      "Modern architecture meets Caspian Sea breeze — discover Baku’s Flame Towers and its rich Silk Road history.",
+    info: "Baku, Azerbaijan",
   },
-  // {
-  //   img: "./assets/europe-spain.jpg",
-  //   title: "Madrid, Spain",
-  //   location: "Spain",
-  //   description:
-  //     "From flamenco rhythms to regal boulevards — Madrid pulses with art, flavor, and the warmth of Spanish spirit.",
-  //   info: "Madrid, Spain",
-  // },
-  // {
-  //   img: "./assets/europe-canada.webp",
-  //   title: "Toronto, Canada",
-  //   location: "Canada",
-  //   description:
-  //     "Toronto is a multicultural mosaic — where skyscrapers meet the shores of Lake Ontario and every street tells a global story.",
-  //   info: "Toronto, Canada",
-  // },
-  // {
-  //   img: "./assets/east-asia-singapore.jpg",
-  //   title: "Singapore",
-  //   location: "Singapore",
-  //   description:
-  //     "A futuristic skyline meets lush green sanctuaries — explore Singapore’s seamless blend of innovation, culture, and cuisine.",
-  //   info: "Marina Bay, Singapore",
-  // },
+  {
+    img: "/assets/europe-belarus.jpg",
+    title: "Minsk, Belarus",
+    location: "Belarus",
+    description:
+      "Wide avenues, Soviet-era architecture, and green parks — Minsk reveals an unexpected side of Eastern Europe.",
+    info: "Minsk, Belarus",
+  },
 ];
 
 const Gallery = () => {
@@ -88,12 +72,12 @@ const Gallery = () => {
   };
 
   return (
-    <div className="landing-slider2" id="europe">
+    <div className="landing-slider" id="europe">
       <Container className="container">
         <div className="container-fluid">
           <label>Europe</label>
           <h1>
-            Visit Europe
+            Visit <span className="gradient-text">Europe</span>
           </h1>
         </div>
 
@@ -106,7 +90,7 @@ const Gallery = () => {
               <div
                 className="slide-card"
                 style={{
-                  borderRadius: "10px",
+                  borderRadius: "18px",
                   background: "#fff",
                   overflow: "hidden",
                   height: "100%",

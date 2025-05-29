@@ -8,27 +8,27 @@ import "slick-carousel/slick/slick-theme.css";
 const attractions = [
   {
     img: "/assets/middle-east-kuwait.jpg",
-    title: "Kuwait",
-    location: "China",
+    title: "Kuwait City, Kuwait",
+    location: "Kuwait",
     description:
-      "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and tells tales of dynasties past.",
-    info: "Kuwait",
-  },
-  {
-    img: "/assets/middle-east-maldives.jpg",
-    title: "Male, Maldives",
-    location: "Maldives",
-    description:
-      "A skyline of innovation meets Old World charm — Frankfurt blends financial power with cultural richness and historic streets.",
-    info: "Male, Maldives",
+      "A blend of modernity and tradition — discover Kuwait City's coastal skyline, souks, and stunning cultural institutions.",
+    info: "Kuwait City, Kuwait",
   },
   {
     img: "/assets/middle-east-dubai.jpg",
     title: "Dubai, UAE",
-    location: "Dubai",
+    location: "UAE",
     description:
-      "Turquoise lagoons, over-water villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
+      "Futuristic skyscrapers, luxury shopping, and desert adventures — Dubai is a global hub of innovation and opulence.",
     info: "Dubai, UAE",
+  },
+  {
+    img: "/assets/middle-east-petra.jpg",
+    title: "Petra, Jordan",
+    location: "Jordan",
+    description:
+      "Step into a lost city carved from rose-red stone — Petra is Jordan’s most breathtaking archaeological wonder.",
+    info: "Petra, Jordan",
   },
   // {
   //   img: "./assets/europe-spain.jpg",
@@ -88,12 +88,12 @@ const Gallery = () => {
   };
 
   return (
-    <div className="landing-slider2">
+    <div className="landing-slider">
       <Container className="container">
         <div className="container-fluid">
           <label>Middle East</label>
           <h1>
-            Visit Middle East
+            Visit <span className="gradient-text">Middle East</span>
           </h1>
         </div>
 
@@ -106,7 +106,7 @@ const Gallery = () => {
               <div
                 className="slide-card"
                 style={{
-                  borderRadius: "10px",
+                  borderRadius: "18px",
                   background: "#fff",
                   overflow: "hidden",
                   height: "100%",
