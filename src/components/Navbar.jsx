@@ -41,7 +41,9 @@ const Navbar = () => {
             </li>
 
             <li
-              className={`service-dropdown ${isServicesRoute ? "nav-link-active" : ""}`}
+              className={`service-dropdown ${
+                isServicesRoute ? "nav-link-active" : ""
+              }`}
             >
               <span className="nav-link dropdown-toggle">
                 Services <IoChevronDownOutline />
@@ -111,7 +113,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="/checkout"
+                to="/checkout/no-items"
                 className={({ isActive }) =>
                   isActive ? "nav-link-icon nav-icon-active" : "nav-link-icon"
                 }
@@ -212,7 +214,7 @@ const Navbar = () => {
             </li>
           </ul>
           <span>
-            <NavLink to="/checkout" onClick={() => setMenuOpen(false)}>
+            <NavLink to="/checkout/no-items" onClick={() => setMenuOpen(false)}>
               Checkout
             </NavLink>
             <IoBagCheckOutline />

@@ -6,7 +6,11 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
-import Checkout from "./pages/Checkout";
+import ItemNone from "./pages/Checkout/ItemNone";
+import ItemAdd from "./pages/Checkout/ItemAdd";
+import PersonalInfo from "./pages/Checkout/PersonalInfo";
+import Payment from "./pages/Checkout/Payment";
+import Thank from "./pages/Checkout/Thank";
 import Footer from "./components/Footer";
 import VisaService from "./pages/VisaService";
 import EPTAcademy from "./pages/EPTAcademy";
@@ -46,7 +50,11 @@ function App() {
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about-us" element={<About />} />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/checkout/no-items" element={<ItemNone />} />
+          <Route path="/checkout/add-items" element={<ItemAdd />} />
+          <Route path="/checkout/personal-info" element={<PersonalInfo />} />
+          <Route path="/checkout/payment-processing" element={<Payment />} />
+           <Route path="/checkout/thankyou" element={<Thank />} />
         </Routes>
         <Footer />
       </div>
