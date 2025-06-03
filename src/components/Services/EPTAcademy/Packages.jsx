@@ -9,13 +9,55 @@ import { IoCart } from "react-icons/io5";
 const EPTPackages = () => {
   return (
     <div className="ept-packages">
-      <Container className="container">
+      <Container className="container" style={{ padding: "3rem 0" }}>
         <div className="container-fluid">
           <h1>
             IELTS <span className="gradient-text">Courses</span>
           </h1>
         </div>
         <div className="container-lg">
+          <div className="card">
+            <div className="card-title">
+              <h3 style={{ paddingLeft: "3rem" }}>
+                <img src="/assets/limited-offer.png" alt="offer" />
+                Course ZERO (Free)
+              </h3>
+            </div>
+            <div className="card-body">
+              <ul>
+                <li>
+                  <GrOverview style={{ fontSize: "22px" }} /> Sessions: 20
+                </li>
+                <li>
+                  <PiTargetBold /> Focus: Academic & General
+                </li>
+                <li>
+                  <WiTime4 /> Duration: 6 months
+                </li>
+              </ul>
+
+              <h4>Modules Covered:</h4>
+              <ul>
+                <li>
+                  <FaCheck /> Listening
+                </li>
+                <li>
+                  <FaCheck /> Reading
+                </li>
+                <li>
+                  <FaCheck /> Writing
+                </li>
+                <li>
+                  <FaCheck /> Speaking
+                </li>
+              </ul>
+              <label>*Terms & Conditions Apply*</label>
+              <a href="#" className="btn btn-dark" style={{ margin: "0"}}>
+                LKR 0 <IoCart />
+              </a>
+            </div>
+          </div>
+
           <div className="card">
             <div className="card-title">
               <h3>Crash Course</h3>
@@ -48,13 +90,19 @@ const EPTPackages = () => {
                   <FaCheck /> Speaking
                 </li>
               </ul>
-              <button className="btn btn-dark">
-                LKR 25,000 <IoCart /> 
-              </button>
+              <a href="#" className="btn btn-dark">
+                LKR 25,000 <IoCart />
+              </a>
             </div>
           </div>
 
-          <div className="card" style={{  boxShadow: "0px 2px 40px rgb(0, 0, 0, 0.6)", background: "linen" }}>
+          <div
+            className="card"
+            style={{
+              boxShadow: "0px 2px 40px rgb(0, 0, 0, 0.6)",
+              background: "linen",
+            }}
+          >
             <div className="card-title-active">
               <h3>Essential Course</h3>
             </div>
@@ -86,9 +134,9 @@ const EPTPackages = () => {
                   <FaCheck /> Speaking
                 </li>
               </ul>
-              <button className="btn btn-primary">
+              <a href="#" className="btn btn-primary">
                 LKR 50,000 <IoCart />
-              </button>
+              </a>
             </div>
           </div>
 
@@ -124,9 +172,9 @@ const EPTPackages = () => {
                   <FaCheck /> Speaking
                 </li>
               </ul>
-              <button className="btn btn-dark">
+              <a href="#" className="btn btn-dark">
                 LKR 100,000 <IoCart />
-              </button>
+              </a>
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 
 const Statistics = () => {
   return (
-    <div className="landing-stats">
+    <div className="landing-stats1">
       <Container className="container">
         <div className="container-fluid">
           <h1>
@@ -17,13 +17,10 @@ const Statistics = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/success-rate.png" alt="digital" />
-                <h3>100% Approval Success</h3>
-              </div>
-              <div className="card-text">
-                <p>
-                  Commitment to High Quality Service & Support Beyond the
-                  Boundaries by Flying the Extra Mile for You.
-                </p>
+                <div className="card-text">
+                  <h1>100% </h1>
+                  <h4>Approval Success</h4>
+                </div>
               </div>
             </div>
           </div>
@@ -31,13 +28,10 @@ const Statistics = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/application.png" alt="digital" />
-                <h3>200+ Application Processed</h3>
-              </div>
-              <div className="card-text">
-                <p>
-                  Commitment to High Quality Service & Support Beyond the
-                  Boundaries by Flying the Extra Mile for You.
-                </p>
+                <div className="card-text">
+                  <h1>200+</h1>
+                  <h4>Application Processed</h4>
+                </div>
               </div>
             </div>
           </div>
@@ -45,13 +39,10 @@ const Statistics = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/countries.png" alt="digital" />
-                <h3>Service in 30+ Countries</h3>
-              </div>
-              <div className="card-text">
-                <p>
-                  Commitment to High Quality Service & Support Beyond the
-                  Boundaries by Flying the Extra Mile for You.
-                </p>
+                <div className="card-text">
+                  <h1>30+</h1>
+                  <h4>Country Service </h4>
+                </div>
               </div>
             </div>
           </div>
@@ -59,13 +50,10 @@ const Statistics = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/regions.png" alt="digital" />
-                <h3>Covering 5+ Major Regions</h3>
-              </div>
-              <div className="card-text">
-                <p>
-                  Commitment to High Quality Service & Support Beyond the
-                  Boundaries by Flying the Extra Mile for You.
-                </p>
+                <div className="card-text">
+                  <h1>5+</h1>
+                  <h4>Covering Major Regions</h4>
+                </div>
               </div>
             </div>
           </div>

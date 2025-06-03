@@ -86,7 +86,7 @@ html {
 /* Button Content  */
 .btn.btn-primary {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 660;
   padding: 0.7rem 1.6rem;
   color: var(--text-white);
   background: var(--background-gradient-gold);
@@ -122,7 +122,7 @@ html {
 
 .btn.btn-dark {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 660;
   padding: 0.8rem 1.6rem;
   color: var(--text-white);
   background-color: var(--text-black);
@@ -551,9 +551,10 @@ nav.sidenav span svg {
 
 .landing-slider .container-fluid,
 .landing-slider2 .container-fluid,
-.landing-stats3 .container-fluid,
 .landing-stats .container-fluid,
+.landing-stats1 .container-fluid,
 .landing-stats2 .container-fluid,
+.landing-stats3 .container-fluid,
 .landing-testimonials .container-fluid,
 .landing-testimonials2 .container-fluid,
 .contact-section .container-fluid {
@@ -648,7 +649,8 @@ nav.sidenav span svg {
   z-index: 0;
 }
 
-.landing-stats {
+.landing-stats,
+.landing-stats1 {
   background: var(--dark-blue);
   min-height: 74vh;
   display: flex;
@@ -716,8 +718,9 @@ nav.sidenav span svg {
   color: var(--text-black-hover);
 }
 
-.landing-slider2 .container-fluid h1,
 .landing-stats .container-fluid h1,
+.landing-stats1 .container-fluid h1,
+.landing-slider2 .container-fluid h1,
 .landing-stats2 .container-fluid h1 {
   font-size: 2.8rem;
   font-weight: 700;
@@ -726,6 +729,7 @@ nav.sidenav span svg {
 }
 
 .landing-stats .container-fluid h4,
+.landing-stats1 .container-fluid h4,
 .landing-stats2 .container-fluid h4 {
   font-size: 1.2rem;
   font-weight: 500;
@@ -733,6 +737,7 @@ nav.sidenav span svg {
 }
 
 .landing-stats .container-lg,
+.landing-stats1 .container-lg,
 .landing-stats2 .container-lg,
 .landing-stats3 .container-lg {
   display: flex;
@@ -741,6 +746,7 @@ nav.sidenav span svg {
 }
 
 .landing-stats .container-lg .card,
+.landing-stats1 .container-lg .card,
 .landing-stats2 .container-lg .card {
   background-color: var(--background-white);
   margin: 0.8rem;
@@ -760,10 +766,11 @@ nav.sidenav span svg {
 
 .landing-stats .container-lg .card:hover,
 .landing-stats2 .container-lg .card:hover {
-  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.8);
 }
 
 .landing-stats .container-lg .card-body,
+.landing-stats1 .container-lg .card-body,
 .landing-stats2 .container-lg .card-body,
 .landing-stats3 .container-lg .card-body {
   display: flex;
@@ -779,6 +786,11 @@ nav.sidenav span svg {
   margin-bottom: 0.6rem;
 }
 
+.landing-stats1 .container-lg .card-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .landing-stats3 .container-lg .card-group {
   display: flex;
   align-items: center;
@@ -786,7 +798,21 @@ nav.sidenav span svg {
   margin-bottom: 1rem;
 }
 
+.landing-stats1 .container-lg .card-group h1 {
+  color: var(--text-gold-hover);
+  font-weight: 700;
+  padding: 0.4rem 0;
+}
+
+.landing-stats .container-lg .card-group h2,
+.landing-stats2 .container-lg .card-group h2 {
+  color: var(--dark-blue);
+  font-weight: 700;
+  padding: 0.4rem 0;
+}
+
 .landing-stats .container-lg .card-group h3,
+.landing-stats1 .container-lg .card-group h3,
 .landing-stats2 .container-lg .card-group h3 {
   color: var(--dark-blue);
   font-weight: 700;
@@ -828,6 +854,15 @@ nav.sidenav span svg {
   border-radius: 12px;
   background: var(--background-white);
   color: var(--text-gold-hover);
+}
+
+.landing-stats1 .container-lg .card-body img {
+  width: 33%;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  padding: 0.6rem;
+  border-radius: 12px;
+  background: blanchedalmond;
 }
 
 .landing-stats2 .container-lg .card-body img {
@@ -1234,7 +1269,7 @@ textarea {
 /* EPT Packages Section  */
 .ept-packages .container-lg .card {
   background: var(--white-background-hover);
-  margin: 1rem;
+  margin: 0.8rem;
   width: 70%;
   border-radius: 18px;
   display: flex;
@@ -1257,9 +1292,19 @@ textarea {
   border-bottom-right-radius: 14px;
 }
 
+.ept-packages .container-lg .card .card-title h3 img {
+  width: 15%;
+  position: absolute;
+  left: 7%;
+  top: 0;
+}
+
 .ept-packages .container-lg .card .card-title h3 {
   text-align: center;
-  padding: 0.6rem;
+  position: relative;
+  padding: 0.8rem;
+  font-weight: 660;
+  font-size: 1.1rem;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   background: var(--text-gold-brown);
@@ -1268,7 +1313,9 @@ textarea {
 
 .ept-packages .container-lg .card .card-title-active h3 {
   text-align: center;
-  padding: 0.6rem;
+  padding: 0.8rem;
+  font-weight: 660;
+  font-size: 1.1rem;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   background: var(--background-gradient-gold);
@@ -1277,7 +1324,7 @@ textarea {
 
 .ept-packages .container-lg .card .card-body h4 {
   margin: 0.8rem 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--text-gold-hover);
 }
 
@@ -1301,11 +1348,19 @@ textarea {
   display: flex;
   align-items: center;
   font-weight: 500;
+  font-size: 0.88rem;
   margin-bottom: 0.8rem;
 }
 
 .ept-packages .container-lg .card .card-body .card-description {
   margin-bottom: 1rem;
+}
+
+.ept-packages .container-lg .card .card-body label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: red;
 }
 
 .ept-packages .container-lg .card .card-body .btn.btn.btn-primary {
@@ -2204,7 +2259,7 @@ footer .footer-content .rights a {
   }
 
   .container {
-    padding: 2rem 8%;
+    padding: 2.4rem 8%;
   }
 
   .homepage-overlay {
@@ -2304,6 +2359,7 @@ footer .footer-content .rights a {
   }
 
   .landing-stats .container-fluid h1,
+  .landing-stats1 .container-fluid h1,
   .landing-stats2 .container-fluid h1,
   .landing-stats3 .container-fluid h1 {
     font-size: 2.2rem;
@@ -2311,12 +2367,14 @@ footer .footer-content .rights a {
   }
 
   .landing-stats .container-fluid h4,
+  .landing-stats1 .container-fluid h4,
   .landing-stats2 .container-fluid h4 {
     font-size: 1.1rem;
     text-align: center;
   }
 
   .landing-stats .container-lg,
+  .landing-stats1 .container-lg,
   .landing-stats2 .container-lg,
   .landing-stats3 .container-lg {
     flex-direction: column;
@@ -2328,18 +2386,39 @@ footer .footer-content .rights a {
     width: 96%;
   }
 
+  .landing-stats1 .container-lg .card {
+    padding: 1.8rem 8%;
+    width: 96%;
+  }
+
   .landing-stats3 .container-lg .card {
     padding: 1.8rem 10%;
     width: 96%;
     height: 33vh;
   }
 
+  .landing-stats1 .container-lg .card-group {
+    flex-direction: unset;
+    align-items: center;
+  }
+
+  .landing-stats1 .container-lg .card-body {
+    margin: 0%;
+    height: fit-content;
+  }
+
+  .landing-stats1 .container-lg .card-body img {
+    margin-right: 2rem;
+    margin-bottom: 0;
+    width: 30%;
+  }
+
   .landing-stats2 .container-lg .card-body img {
     width: 36%;
   }
 
-  .landing-stats .container-lg .card-group h2,
-  .landing-stats2 .container-lg .card-group h2 {
+  .landing-stats .container-lg .card-group h1,
+  .landing-stats2 .container-lg .card-group h1 {
     font-size: 1.5rem;
     font-weight: 700;
   }
@@ -2442,7 +2521,7 @@ footer .footer-content .rights a {
     display: flex;
     flex-direction: column;
   }
-  
+
   .visa-contact .card .card-text {
     margin: 0;
   }
@@ -2553,7 +2632,15 @@ footer .footer-content .rights a {
   }
 
   .ept-packages .container-lg .card {
-    width: 94%;
+    width: 88%;
+  }
+
+  .ept-packages .container-lg .card .card-title h3 img {
+    width: 12%;
+  }
+
+  .ept-packages .container-lg .card .card-title h3 {
+    padding: 0.8rem !important;
   }
 
   .ept-packages .added-info ul {
@@ -2568,6 +2655,11 @@ footer .footer-content .rights a {
     padding: 0 2rem;
     font-size: 1rem;
     text-align: center;
+  }
+
+  .ept-packages .container-lg .card .card-body label {
+    margin-bottom: 0.8rem;
+    font-size: 0.8rem;
   }
 
   .ept-pricing .container-lg .card {
