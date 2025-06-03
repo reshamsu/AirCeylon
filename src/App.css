@@ -1483,7 +1483,7 @@ textarea {
 }
 
 .contact-section .card .card-body .card-group {
-  padding: 0.6rem 0;
+  padding: 0.8rem;
 }
 
 .contact-section .card .card-body .card-group ul {
@@ -2559,6 +2559,8 @@ footer .footer-content .rights a {
 
   .visa-contact .card .card-form {
     width: 100%;
+    display: flex;
+    border: 8px solid var(--text-gold-hover);
     padding: 2rem;
   }
 
@@ -2885,6 +2887,7 @@ footer .footer-content .rights a {
   .contact-section .container-fluid {
     padding: 0;
     margin-top: 2.4rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
   }
@@ -2896,6 +2899,7 @@ footer .footer-content .rights a {
 
   .contact-section .container-fluid p {
     text-align: center;
+    margin: 0 2rem;
   }
 
   .contact-section .card {
@@ -2920,7 +2924,7 @@ footer .footer-content .rights a {
   }
 
   .contact-section .card .card-body h4 {
-    color: var(--text-black);
+    color: var(--dark-blue);
   }
 
   .contact-section .card .card-body p {
@@ -2929,16 +2933,17 @@ footer .footer-content .rights a {
     display: none;
   }
 
-  .contact-section .card .card-body .card-group svg {
-    font-size: 2.4rem;
-  }
+  /* .contact-section .card .card-body .card-group svg {
+    font-size: 1.6rem;
+  } */
 
   .contact-section .card .card-body .card-group ul li {
     font-size: 0.9rem;
   }
 
   .contact-section .card .card-body .card-group ul li a {
-    color: var(--text-black);
+    color: var(--text-gold-brown);
+    font-size: 1rem;
   }
 
   .contact-section .card form {
@@ -2953,6 +2958,7 @@ footer .footer-content .rights a {
   .contact-section .card .card-form {
     width: 100%;
     background: var(--background-white);
+    border: 9px solid var(--text-gold-hover);
     border-radius: 22px;
     margin-top: 2rem;
     padding: 2rem;

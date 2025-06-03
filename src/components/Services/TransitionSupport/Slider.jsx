@@ -20,7 +20,7 @@ const attractions = [
     info: "Ontario, Canada",
   },
   {
-    img: "/assets/people.jpeg",
+    img: "/assets/community.jpg",
     title: "Community",
     description:
       "Connect, engage, and grow in a vibrant community where people from all walks of life come together with shared values and purpose.",
