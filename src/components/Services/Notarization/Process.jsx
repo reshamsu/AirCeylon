@@ -3,19 +3,19 @@ import { Container } from "@mui/material";
 
 const Process = () => {
   return (
-    <div className="ept-monologue">
+    <div className="landing-process">
       <Container className="container">
         <div className="container-fluid">
           <label>Documentation</label>
           <h1>
-            <span className="gradient-text">Canadian Issued Documents</span>
+            Canadian Issued <span className="gradient-text">Documents</span>
           </h1>
           <p>
-            Here’s a quick glance at the ease and process in getting your Canadian Issued Documents Apostille, notarized authenticated & verified.
+            Here’s a quick glance at the ease and process in getting your
+            Canadian Issued Documents Apostille, notarized authenticated &
+            verified.
           </p>
-          <p>
-            -Break down Steps & Cost-
-          </p>
+          <p>-Break down Steps & Cost-</p>
         </div>
       </Container>
     </div>

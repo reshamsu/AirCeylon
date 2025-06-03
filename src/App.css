@@ -579,6 +579,7 @@ nav.sidenav span svg {
 .landing-welcome .container-fluid h1,
 .about-welcome .container-fluid h1,
 .landing-express .container-fluid h1,
+.landing-process .container-fluid h1,
 .landing-testimonials .container-fluid h1,
 .landing-testimonials2 .container-fluid h1,
 .contact-section .container-fluid h1,
@@ -626,7 +627,8 @@ nav.sidenav span svg {
   justify-content: center;
 }
 
-.landing-express {
+.landing-express,
+.landing-process {
   position: relative;
   overflow: hidden;
   min-height: 70vh;
@@ -675,7 +677,8 @@ nav.sidenav span svg {
   justify-content: center;
 }
 
-.landing-express .container-fluid {
+.landing-express .container-fluid,
+.landing-process .container-fluid {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -686,7 +689,8 @@ nav.sidenav span svg {
 .landing-slider .container-fluid label,
 .landing-stats .container-fluid label,
 .landing-stats3 .container-fluid label,
-.landing-express .container-fluid label {
+.landing-express .container-fluid label,
+.landing-process .container-fluid label {
   font-weight: 600;
   background: var(--background-gradient-gold);
   color: var(--text-white);
@@ -884,6 +888,7 @@ nav.sidenav span svg {
 
 /* Express Content  */
 .landing-express .container-lg,
+.landing-process .container-lg,
 .landing-testimonials .container-lg,
 .landing-testimonials2 .container-lg {
   display: flex;
@@ -1091,7 +1096,7 @@ textarea {
   width: 80%;
   display: flex;
   background-color: var(--background-pale);
-  border: 6px solid var(--text-gold-hover);
+  border: 9px solid var(--text-gold-hover);
   box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
 }
 
@@ -1215,8 +1220,6 @@ textarea {
 .ept-monologue .container-fluid h1 {
   font-size: 3rem;
   margin-bottom: 0.6rem;
-  display: flex;
-  align-items: center;
 }
 
 .ept-monologue .container-fluid label {
@@ -1258,15 +1261,26 @@ textarea {
 }
 
 .ept-pricing .container-lg,
-.ept-packages .container-lg {
+.ept-packages .container-lg,
+.ept-monologue .container-lg {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-top: 1rem;
   width: 100%;
 }
 
 /* EPT Packages Section  */
+.ept-monologue .container-lg .card {
+  background: blanchedalmond;
+  margin: 0.8rem;
+  width: 16%;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .ept-packages .container-lg .card {
   background: var(--white-background-hover);
   margin: 0.8rem;
@@ -1288,8 +1302,24 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
+}
+
+.ept-monologue .container-lg .card .card-body {
+  min-height: 16vh;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ept-monologue .container-lg .card .card-body h1 {
+  color: var(--text-gold-hover);
+  font-weight: 700;
+}
+
+.ept-monologue .container-lg .card .card-body strong {
+  color: var(--dark-blue);
+  font-weight: 700;
 }
 
 .ept-packages .container-lg .card .card-title h3 img {
@@ -2560,7 +2590,6 @@ footer .footer-content .rights a {
   .visa-contact .card .card-form {
     width: 100%;
     display: flex;
-    border: 8px solid var(--text-gold-hover);
     padding: 2rem;
   }
 

@@ -29,6 +29,32 @@ const EPTMonologue = () => {
             way. I look forward to more teaching opportunities in the future.”
           </p>
         </div>
+        <div className="container-lg">
+          <div className="card">
+            <div className="card-body">
+              <div className="card-title">
+                <h1>7+</h1>
+              </div>
+              <strong>Years Experience</strong>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-body">
+              <div className="card-title">
+                <h1>150+</h1>
+              </div>
+              <strong>Students</strong>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-body">
+              <div className="card-title">
+                <h1>80%</h1>
+              </div>
+              <strong>Pass Rate (1st Time)</strong>
+            </div>
+          </div>
+        </div>
       </Container>
     </div>
   );
