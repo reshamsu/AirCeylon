@@ -16,7 +16,7 @@ const Statistics = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/partnerships.png" alt="digital" />
-                <h3>Expert Partnerships</h3>
+                <h2>Expert Partnerships</h2>
               </div>
               <div className="card-text">
                 <p>
@@ -31,7 +31,7 @@ const Statistics = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/standards.png" alt="digital" />
-                <h3>Exceeding Standards</h3>
+                <h2>Exceeding Standards</h2>
               </div>
               <div className="card-text">
                 <p>
@@ -46,7 +46,7 @@ const Statistics = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/experience.png" alt="digital" />
-                <h3>Effortless Experience</h3>
+                <h2>Effortless Experience</h2>
               </div>
               <p className="card-text">
                 <p>
@@ -61,7 +61,7 @@ const Statistics = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/travel-hub.png" alt="digital" />
-                <h3>Exclusive Travel Hub</h3>
+                <h2>Exclusive Travel Hub</h2>
               </div>
               <div className="card-text">
                 <p>

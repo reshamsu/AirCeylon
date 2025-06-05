@@ -35,12 +35,12 @@ const Message = () => {
               At Air Ceylon, we are building more than a service. We’re building
               a bridge — between countries, between people, and between dreams
               and reality. 
-              <FaQuoteRight  style={{ marginLeft: ".4rem" }}/>
+              <FaQuoteRight  style={{ margin: ".2rem", position: "absolute", left: "81.4%" }}/>
             </p>
           </div>
           <div className="card-owner">
             <img
-              src="/assets/tab.png"
+              src="./assets/tab.png"
               alt="Logo"
               style={{ width: "6%", marginRight: "1.4rem" }}
             />

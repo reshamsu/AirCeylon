@@ -561,6 +561,7 @@ nav.sidenav span svg {
 .landing-stats1 .container-fluid,
 .landing-stats2 .container-fluid,
 .landing-stats3 .container-fluid,
+.landing-stats4 .container-fluid,
 .landing-testimonials .container-fluid,
 .landing-testimonials2 .container-fluid,
 .contact-section .container-fluid {
@@ -623,6 +624,18 @@ nav.sidenav span svg {
   transition: transform 0.3s ease;
 }
 
+.slide-card a {
+  color: var(--dark-blue);
+  transition: transform 0.3s ease;
+}
+
+.slide-card a svg {
+  color: var(--text-gold-brown);
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
 .slick-dots {
   padding-bottom: 1rem;
 }
@@ -658,7 +671,8 @@ nav.sidenav span svg {
 }
 
 .landing-stats,
-.landing-stats1 {
+.landing-stats1,
+.landing-stats4 {
   background: var(--dark-blue);
   min-height: 74vh;
   display: flex;
@@ -693,9 +707,7 @@ nav.sidenav span svg {
 }
 
 .landing-slider .container-fluid label,
-.landing-stats .container-fluid label,
 .landing-stats3 .container-fluid label,
-.landing-express .container-fluid label,
 .landing-process .container-fluid label {
   font-weight: 600;
   background: var(--background-gradient-gold);
@@ -705,11 +717,13 @@ nav.sidenav span svg {
   margin-bottom: 1rem;
 }
 
+.landing-stats .container-fluid label,
 .landing-slider2 .container-fluid label,
-.landing-stats2 .container-fluid label {
+.landing-stats2 .container-fluid label,
+.landing-express .container-fluid label {
   font-weight: 660;
-  color: var(--text-black);
-  background: linen;
+  color: var(--text-gold-brown);
+  background: blanchedalmond;
   padding: 0.6rem 18px;
   border-radius: 12px;
   margin-bottom: 1rem;
@@ -731,7 +745,8 @@ nav.sidenav span svg {
 .landing-stats .container-fluid h1,
 .landing-stats1 .container-fluid h1,
 .landing-slider2 .container-fluid h1,
-.landing-stats2 .container-fluid h1 {
+.landing-stats2 .container-fluid h1,
+.landing-stats4 .container-fluid h1 {
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -749,7 +764,8 @@ nav.sidenav span svg {
 .landing-stats .container-lg,
 .landing-stats1 .container-lg,
 .landing-stats2 .container-lg,
-.landing-stats3 .container-lg {
+.landing-stats3 .container-lg,
+.landing-stats4 .container-lg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -757,7 +773,8 @@ nav.sidenav span svg {
 
 .landing-stats .container-lg .card,
 .landing-stats1 .container-lg .card,
-.landing-stats2 .container-lg .card {
+.landing-stats2 .container-lg .card,
+.landing-stats4 .container-lg .card {
   background-color: var(--background-white);
   margin: 0.8rem;
   width: 100%;
@@ -770,7 +787,7 @@ nav.sidenav span svg {
   border-radius: 12px;
   display: flex;
   width: 100%;
-  height: 30vh;
+  height: 33vh;
   margin: 1.4rem;
 }
 
@@ -782,7 +799,8 @@ nav.sidenav span svg {
 .landing-stats .container-lg .card-body,
 .landing-stats1 .container-lg .card-body,
 .landing-stats2 .container-lg .card-body,
-.landing-stats3 .container-lg .card-body {
+/* .landing-stats3 .container-lg .card-body, */
+.landing-stats4 .container-lg .card-body {
   display: flex;
   height: 22vh;
   flex-direction: column;
@@ -796,7 +814,8 @@ nav.sidenav span svg {
   margin-bottom: 0.6rem;
 }
 
-.landing-stats1 .container-lg .card-group {
+.landing-stats1 .container-lg .card-group,
+.landing-stats4 .container-lg .card-group {
   display: flex;
   flex-direction: column;
 }
@@ -837,9 +856,10 @@ nav.sidenav span svg {
 }
 
 .landing-stats .container-lg .card-text p,
-.landing-stats2 .container-lg .card-text p {
+.landing-stats2 .container-lg .card-text p,
+.landing-stats4 .container-lg .card-body p {
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .landing-stats3 .container-lg .card-text p {
@@ -866,10 +886,11 @@ nav.sidenav span svg {
   color: var(--text-gold-hover);
 }
 
-.landing-stats1 .container-lg .card-body img {
+.landing-stats1 .container-lg .card-body img,
+.landing-stats4 .container-lg .card-body img {
   width: 33%;
   font-weight: 500;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
   padding: 0.6rem;
   border-radius: 12px;
   background: blanchedalmond;
@@ -2434,7 +2455,8 @@ footer .footer-content .rights a {
 
   .landing-stats .container-lg,
   .landing-stats2 .container-lg,
-  .landing-stats3 .container-lg {
+  .landing-stats3 .container-lg,
+  .landing-stats4 .container-lg {
     flex-direction: column;
   }
 
@@ -2449,13 +2471,23 @@ footer .footer-content .rights a {
     width: 40%;
   }
 
-  .landing-stats3 .container-lg .card {
-    padding: 1.8rem 10%;
+  .landing-stats3 .container-lg .card,
+  .landing-stats4 .container-lg .card {
+    padding: 1.8rem 8%;
     width: 96%;
-    height: 33vh;
+  }
+
+  .landing-stats .container-lg .card-body,
+  .landing-stats4 .container-lg .card-body {
+    height: 20vh !important;
   }
 
   .landing-stats1 .container-lg .card-group {
+    align-items: center;
+  }
+
+  .landing-stats4 .container-lg .card-group {
+    flex-direction: unset;
     align-items: center;
   }
 
@@ -2473,13 +2505,20 @@ footer .footer-content .rights a {
     width: 36%;
   }
 
+  .landing-stats4 .container-lg .card-body img {
+    margin-right: 1.4rem;
+    width: 24%;
+  }
+
   .landing-stats .container-lg .card-group h1,
   .landing-stats2 .container-lg .card-group h1 {
     font-size: 1.5rem;
     font-weight: 700;
   }
 
-  .landing-stats2 .container-lg .card-group h3 {
+  .landing-stats .container-lg .card-group h3,
+  .landing-stats2 .container-lg .card-group h3,
+  .landing-stats4 .container-lg .card-group h3 {
     font-size: 1.44rem;
     font-weight: 700;
   }
@@ -2495,7 +2534,8 @@ footer .footer-content .rights a {
   }
 
   .landing-stats .container-lg .card-text p,
-  .landing-stats2 .container-lg .card-text p {
+  .landing-stats2 .container-lg .card-text p,
+  .landing-stats4 .container-lg .card-text p {
     font-size: 0.96rem;
     font-weight: 600;
     text-align: center;
@@ -2517,9 +2557,30 @@ footer .footer-content .rights a {
   }
 
   .landing-express .container-lg .card {
-    width: 90%;
-    text-align: center;
+    width: 96%;
     display: block;
+    margin: 0.6rem;
+    padding: 1rem 6%;
+  }
+
+  .landing-express .container-lg .card .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .landing-express .container-lg .card .card-body img {
+    margin-bottom: 0 !important;
+    width: 30% !important;
+  }
+
+  .landing-express .container-lg .card .card-body .caller {
+    width: 60%;
+  }
+
+  .landing-express .container-lg .card .card-body h4 {
+    padding-top: 0.6rem;
+    font-size: 0.88rem;
   }
 
   .landing-testimonials .container-fluid {
@@ -2691,7 +2752,7 @@ footer .footer-content .rights a {
     margin-right: 1.4rem;
   }
 
-    .ept-monologue .container-lg {
+  .ept-monologue .container-lg {
     justify-content: space-around;
     padding: 1.4rem;
   }
@@ -2710,8 +2771,8 @@ footer .footer-content .rights a {
     font-size: 2rem;
   }
 
-    .ept-monologue .container-lg .card .card-body strong {
-    font-size: .88rem;
+  .ept-monologue .container-lg .card .card-body strong {
+    font-size: 0.88rem;
   }
 
   .ept-pricing .container-lg,
@@ -2721,7 +2782,7 @@ footer .footer-content .rights a {
   }
 
   .ept-packages .container-lg .card {
-    width: 88%;
+    width: 84%;
   }
 
   .ept-packages .container-lg .card .card-title h3 img {
@@ -2854,6 +2915,10 @@ footer .footer-content .rights a {
 
   .about-journey .container-fluid p {
     padding: 0;
+  }
+
+  .about-message .card .card-text svg {
+    left: 74% !important;
   }
 
   .ts-provision .container-lg .card {
@@ -3270,6 +3335,10 @@ footer .footer-content .rights a {
     padding: 10px;
     font-size: 14px;
     text-align: center;
+  }
+
+  .slide-card {
+    margin: 1rem 2rem;
   }
 
   .hero-section .container-fluid {

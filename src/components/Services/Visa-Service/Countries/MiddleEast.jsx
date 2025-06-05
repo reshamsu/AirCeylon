@@ -134,11 +134,10 @@ const Gallery = () => {
                       alignItems: "center",
                       margin: "0.75rem 0",
                       textDecoration: "none",
-                      color: "var(--text-gold-hover)",
                       fontSize: "1.05rem",
                     }}
                   >
-                    <FaLocationDot style={{ marginRight: "6px" }} />
+                    <FaLocationDot />
                     {item.title}
                   </a>
                   <p
@@ -152,7 +151,12 @@ const Gallery = () => {
                   >
                     {item.description}
                   </p>
-                  <label style={{ fontSize: "0.85rem", color: "#999" }}>
+                  <label
+                    style={{
+                      fontSize: ".9rem",
+                      color: "var(--text-gold-hover)",
+                    }}
+                  >
                     {item.info}
                   </label>
                 </div>

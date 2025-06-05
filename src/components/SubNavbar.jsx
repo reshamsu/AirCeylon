@@ -40,8 +40,11 @@ const regions = [
       "Saudi Arabia",
       "UAE",
       "Uzbekistan",
-      "Mauritius",
     ],
+  },
+  {
+    name: "Africa",
+    countries: ["Mauritius"],
   },
 ];
 

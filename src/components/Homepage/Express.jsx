@@ -38,7 +38,7 @@ const Express = () => {
         <div className="container-lg">
           {expressOptions.map((item, index) => (
             <div className="card" key={index}>
-              <div className="card-body" style={{ textAlign: "center" }}>
+              <div className="card-body">
                 {item.iconPng && (
                   <img
                     src={item.iconPng}
@@ -47,29 +47,29 @@ const Express = () => {
                   />
                 )}
 
-                {item.phone ? (
-                  <a href={`tel:${item.phone}`} style={{ textDecoration: "none" }}>
+                <div className="caller">
+                  {item.phone ? (
+                    <a
+                      href={`tel:${item.phone}`}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Button variant="contained" className="btn btn-primary">
+                        {item.button}
+                      </Button>
+                    </a>
+                  ) : (
                     <Button
                       variant="contained"
                       className="btn btn-primary"
+                      component={Link}
+                      to={item.direct}
                     >
                       {item.button}
                     </Button>
-                  </a>
-                ) : (
-                  <Button
-                    variant="contained"
-                    className="btn btn-primary"
-                    component={Link}
-                    to={item.direct}
-                  >
-                    {item.button}
-                  </Button>
-                )}
+                  )}
 
-                <h4 className="card-title" style={{ marginTop: "1rem" }}>
-                  {item.title}
-                </h4>
+                  <h4 className="card-title">{item.title}</h4>
+                </div>
               </div>
             </div>
           ))}

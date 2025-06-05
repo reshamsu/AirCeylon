@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 
 const TransitionWelcome = () => {
   return (
-    <div className="landing-stats">
+    <div className="landing-stats4">
       <Container className="container">
         <div className="container-fluid">
           <h1>What we <span className="gradient-text">Offer</span></h1>
@@ -11,8 +11,8 @@ const TransitionWelcome = () => {
 
         <div className="container-lg">
           <div className="card">
-            <div className="card-body" style={{ height: "26vh" }}>
-              <div className="card-group" style={{ alignItems: "start", flexDirection: "column" }}>
+            <div className="card-body" style={{ height: "24vh" }}>
+              <div className="card-group">
                 <img src="/assets/accommodation.png" alt="digital" />
                 <h3>Accommodation</h3>
               </div>
@@ -26,8 +26,8 @@ const TransitionWelcome = () => {
           </div>
 
           <div className="card">
-            <div className="card-body" style={{ height: "28vh" }}>
-              <div className="card-group" style={{ alignItems: "start", flexDirection: "column" }}>
+            <div className="card-body" style={{ height: "24vh" }}>
+              <div className="card-group">
                 <img src="/assets/secure-docs.png" alt="digital" />
                 <h3>Jobs</h3>
               </div>
@@ -41,8 +41,8 @@ const TransitionWelcome = () => {
           </div>
 
           <div className="card">
-            <div className="card-body" style={{ height: "28vh" }}>
-              <div className="card-group" style={{ alignItems: "start", flexDirection: "column" }}>
+            <div className="card-body" style={{ height: "24vh" }}>
+              <div className="card-group">
                 <img src="/assets/community.png" alt="digital" />
                 <h3>Community</h3>
               </div>
@@ -56,8 +56,8 @@ const TransitionWelcome = () => {
           </div>
 
           <div className="card">
-            <div className="card-body" style={{ height: "26vh" }}>
-              <div className="card-group" style={{ alignItems: "start", flexDirection: "column" }}>
+            <div className="card-body" style={{ height: "24vh" }}>
+              <div className="card-group">
                 <img src="/assets/lifestyle.png" alt="digital" />
                 <h3>Lifestyle Management</h3>
               </div>
