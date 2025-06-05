@@ -33,7 +33,7 @@ const EPTMonologue = () => {
           <div className="card">
             <div className="card-body">
               <div className="card-title">
-                <h1>7+</h1>
+                <h1 className="gradient-text">7+</h1>
               </div>
               <strong>Years Experience</strong>
             </div>
@@ -41,15 +41,15 @@ const EPTMonologue = () => {
           <div className="card">
             <div className="card-body">
               <div className="card-title">
-                <h1>150+</h1>
+                <h1 className="gradient-text">150+</h1>
               </div>
-              <strong>Students</strong>
+              <strong>Students Enrolled</strong>
             </div>
           </div>
           <div className="card">
             <div className="card-body">
               <div className="card-title">
-                <h1>80%</h1>
+                <h1 className="gradient-text">80%</h1>
               </div>
               <strong>Pass Rate (1st Time)</strong>
             </div>

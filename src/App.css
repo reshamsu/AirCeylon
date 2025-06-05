@@ -8,6 +8,12 @@
     #be8901 50%,
     #976200 100%
   );
+  --background-gradient-gold-hover: linear-gradient(
+    90deg,
+    #9b6706 0%,
+    #f1ae01 50%,
+    #9b6706 100%
+  );
   --background-pale: linen;
   --white-background-hover: #eeeeee;
   --text-white: #ffffff;
@@ -98,7 +104,7 @@ html {
 }
 
 .btn.btn-primary:hover {
-  background-color: var(--white-background-hover);
+  background: var(--background-gradient-gold-hover);
   color: var(--text-white);
 }
 
@@ -1119,7 +1125,7 @@ textarea {
   width: 100%;
 }
 
-.visa-contact .card .card-title h1 {
+.visa-contact .card .card-title h4 {
   margin-bottom: 0.8rem;
 }
 
@@ -1261,8 +1267,7 @@ textarea {
 }
 
 .ept-pricing .container-lg,
-.ept-packages .container-lg,
-.ept-monologue .container-lg {
+.ept-packages .container-lg {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -1270,21 +1275,42 @@ textarea {
   width: 100%;
 }
 
-/* EPT Packages Section  */
-.ept-monologue .container-lg .card {
-  background: blanchedalmond;
-  margin: 0.8rem;
-  width: 16%;
-  border-radius: 18px;
+.ept-monologue .container-lg {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 1rem;
+  width: 100%;
 }
 
+.ept-monologue .container-lg .card {
+  margin: 0.8rem;
+  width: 15%;
+  border-radius: 18px;
+}
+
+.ept-monologue .container-lg .card .card-body {
+  min-height: 16vh;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ept-monologue .container-lg .card .card-body h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.ept-monologue .container-lg .card .card-body strong {
+  color: var(--text-white);
+  font-weight: 700;
+}
+
+/* EPT Packages Section  */
 .ept-packages .container-lg .card {
   background: var(--white-background-hover);
   margin: 0.8rem;
-  width: 70%;
   border-radius: 18px;
   display: flex;
   flex-direction: column;
@@ -1304,25 +1330,14 @@ textarea {
   justify-content: space-around;
 }
 
-.ept-monologue .container-lg .card .card-body {
-  min-height: 16vh;
-  padding: 1.6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.ept-monologue .container-lg .card .card-body h1 {
-  color: var(--text-gold-hover);
-  font-weight: 700;
-}
-
-.ept-monologue .container-lg .card .card-body strong {
-  color: var(--dark-blue);
-  font-weight: 700;
-}
-
 .ept-packages .container-lg .card .card-title h3 img {
+  width: 15%;
+  position: absolute;
+  left: 7%;
+  top: 0;
+}
+
+.ept-packages .container-lg .card .card-title-active h3 img {
   width: 15%;
   position: absolute;
   left: 7%;
@@ -1337,12 +1352,13 @@ textarea {
   font-size: 1.1rem;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
-  background: var(--text-gold-brown);
+  background: var(--text-gold-hover);
   color: var(--text-white);
 }
 
 .ept-packages .container-lg .card .card-title-active h3 {
   text-align: center;
+  position: relative;
   padding: 0.8rem;
   font-weight: 660;
   font-size: 1.1rem;
@@ -2112,6 +2128,15 @@ footer {
   padding: 1.4rem 8%;
 }
 
+footer a.logo {
+  flex-direction: column;
+}
+
+footer a.logo img {
+  margin: 0.8rem;
+  width: 3.3rem !important;
+}
+
 footer .container .row {
   width: 100%;
   display: flex;
@@ -2403,8 +2428,11 @@ footer .footer-content .rights a {
     text-align: center;
   }
 
+  .landing-stats1 .container-lg {
+    flex-wrap: wrap;
+  }
+
   .landing-stats .container-lg,
-  .landing-stats1 .container-lg,
   .landing-stats2 .container-lg,
   .landing-stats3 .container-lg {
     flex-direction: column;
@@ -2417,8 +2445,8 @@ footer .footer-content .rights a {
   }
 
   .landing-stats1 .container-lg .card {
-    padding: 1.8rem 8%;
-    width: 96%;
+    padding: 1.4rem 6%;
+    width: 40%;
   }
 
   .landing-stats3 .container-lg .card {
@@ -2428,7 +2456,6 @@ footer .footer-content .rights a {
   }
 
   .landing-stats1 .container-lg .card-group {
-    flex-direction: unset;
     align-items: center;
   }
 
@@ -2438,9 +2465,8 @@ footer .footer-content .rights a {
   }
 
   .landing-stats1 .container-lg .card-body img {
-    margin-right: 2rem;
-    margin-bottom: 0;
-    width: 30%;
+    margin-bottom: 1rem;
+    width: 80%;
   }
 
   .landing-stats2 .container-lg .card-body img {
@@ -2453,10 +2479,19 @@ footer .footer-content .rights a {
     font-weight: 700;
   }
 
-  .landing-stats .container-lg .card-group h3,
   .landing-stats2 .container-lg .card-group h3 {
     font-size: 1.44rem;
     font-weight: 700;
+  }
+
+  .landing-stats1 .container-lg .card-text h4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .landing-stats1 .container-lg .card-text h4 span {
+    font-size: 1.4rem;
   }
 
   .landing-stats .container-lg .card-text p,
@@ -2646,12 +2681,6 @@ footer .footer-content .rights a {
     font-size: 2rem;
   }
 
-  .ept-pricing .container-lg,
-  .ept-packages .container-lg {
-    flex-direction: column;
-    padding: 0;
-  }
-
   .ept-monologue .container-fluid h1 {
     font-size: 1.4rem;
   }
@@ -2660,6 +2689,35 @@ footer .footer-content .rights a {
     width: 30%;
     border: 6px solid var(--text-gold-hover);
     margin-right: 1.4rem;
+  }
+
+    .ept-monologue .container-lg {
+    justify-content: space-around;
+    padding: 1.4rem;
+  }
+
+  .ept-monologue .container-lg .card {
+    width: 100%;
+  }
+
+  .ept-monologue .container-lg .card .card-body {
+    padding: 0;
+    min-height: 11vh;
+    justify-content: space-between;
+  }
+
+  .ept-monologue .container-lg .card .card-body h1 {
+    font-size: 2rem;
+  }
+
+    .ept-monologue .container-lg .card .card-body strong {
+    font-size: .88rem;
+  }
+
+  .ept-pricing .container-lg,
+  .ept-packages .container-lg {
+    flex-direction: column;
+    padding: 0;
   }
 
   .ept-packages .container-lg .card {

@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const attractions = [
   {
-    img: "/assets/bedroom.jpg",
+    img: "/assets/toronto.jpg",
     title: "Accommodation",
     description:
       "Experience comfort, convenience, and quality living with our range of modern, fully-equipped accommodations tailored to your needs.",

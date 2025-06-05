@@ -14,7 +14,7 @@ const EPTAcademy = () => {
       <Welcome />
       <Monologue />
       <Packages />
-      <Statistics />
+      {/* <Statistics /> */}
       <Testimonials />
       <Contact />
     </>

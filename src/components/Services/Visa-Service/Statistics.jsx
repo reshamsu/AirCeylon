@@ -9,7 +9,7 @@ const Statistics = () => {
           <h1>
             Our <span className="gradient-text">Visa Expertise</span>
           </h1>
-          <h4>Hassle-Free VISA Assistance for Global Travel</h4>
+          {/* <h4>Hassle-Free VISA Assistance for Global Travel</h4> */}
         </div>
 
         <div className="container-lg">
@@ -18,8 +18,9 @@ const Statistics = () => {
               <div className="card-group">
                 <img src="/assets/success-rate.png" alt="digital" />
                 <div className="card-text">
-                  <h1>100% </h1>
-                  <h4>Approval Success</h4>
+                  <h4>
+                    <span className="gradient-text">100%</span> Approval
+                  </h4>
                 </div>
               </div>
             </div>
@@ -29,8 +30,9 @@ const Statistics = () => {
               <div className="card-group">
                 <img src="/assets/application.png" alt="digital" />
                 <div className="card-text">
-                  <h1>200+</h1>
-                  <h4>Application Processed</h4>
+                  <h4>
+                    <span className="gradient-text">200+</span> Applications
+                  </h4>
                 </div>
               </div>
             </div>
@@ -40,8 +42,9 @@ const Statistics = () => {
               <div className="card-group">
                 <img src="/assets/countries.png" alt="digital" />
                 <div className="card-text">
-                  <h1>30+</h1>
-                  <h4>Country Service </h4>
+                  <h4>
+                    <span className="gradient-text">30+</span> Countries
+                  </h4>
                 </div>
               </div>
             </div>
@@ -51,8 +54,9 @@ const Statistics = () => {
               <div className="card-group">
                 <img src="/assets/regions.png" alt="digital" />
                 <div className="card-text">
-                  <h1>5+</h1>
-                  <h4>Covering Major Regions</h4>
+                  <h4>
+                    <span className="gradient-text">5+</span> Regions
+                  </h4>
                 </div>
               </div>
             </div>

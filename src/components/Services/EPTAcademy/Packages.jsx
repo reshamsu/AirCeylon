@@ -16,8 +16,14 @@ const EPTPackages = () => {
           </h1>
         </div>
         <div className="container-lg">
-          <div className="card">
-            <div className="card-title">
+          <div
+            className="card"
+            style={{
+              boxShadow: "0px 2px 40px rgb(0, 0, 0, 0.6)",
+              background: "linen",
+            }}
+          >
+            <div className="card-title-active">
               <h3 style={{ paddingLeft: "3rem" }}>
                 <img src="/assets/limited-offer.png" alt="offer" />
                 Course ZERO (Free)
@@ -52,7 +58,7 @@ const EPTPackages = () => {
                 </li>
               </ul>
               <label>*Terms & Conditions Apply*</label>
-              <a href="#" className="btn btn-dark" style={{ margin: "0"}}>
+              <a href="#" className="btn btn-primary" style={{ margin: "0" }}>
                 LKR 0 <IoCart />
               </a>
             </div>
@@ -96,14 +102,8 @@ const EPTPackages = () => {
             </div>
           </div>
 
-          <div
-            className="card"
-            style={{
-              boxShadow: "0px 2px 40px rgb(0, 0, 0, 0.6)",
-              background: "linen",
-            }}
-          >
-            <div className="card-title-active">
+          <div className="card">
+            <div className="card-title">
               <h3>Essential Course</h3>
             </div>
             <div className="card-body">
@@ -134,7 +134,7 @@ const EPTPackages = () => {
                   <FaCheck /> Speaking
                 </li>
               </ul>
-              <a href="#" className="btn btn-primary">
+              <a href="#" className="btn btn-dark">
                 LKR 50,000 <IoCart />
               </a>
             </div>
