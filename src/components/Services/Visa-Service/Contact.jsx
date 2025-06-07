@@ -1,9 +1,6 @@
 import React from "react";
 import { Container } from "@mui/material";
 import { FiSend } from "react-icons/fi";
-import { IoCall } from "react-icons/io5";
-import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
 
 const VisaContact = () => {
   return (
@@ -125,7 +122,7 @@ const VisaContact = () => {
                 <div className="form-group">
                   <label>Choose Country</label>
                   <select className="form-control">
-                    <option>Select a Country</option>
+                    <option disabled>Select a Country</option>
                     <option>Azerbaijan</option>
                     <option>Bahrain</option>
                     <option>Bangladesh</option>
@@ -161,7 +158,7 @@ const VisaContact = () => {
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">No. of Adults</label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Select</option>
+                    <option disabled>Select</option>
                     <option>1 Adult</option>
                     <option>2 Adults</option>
                     <option>3 Adults</option>
@@ -173,7 +170,7 @@ const VisaContact = () => {
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">No. of Children</label>
                   <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Select</option>
+                    <option disabled>Select</option>
                     <option>1 Children</option>
                     <option>2 Children</option>
                     <option>3 Children</option>
@@ -194,7 +191,8 @@ const VisaContact = () => {
                 </div>
               </div>
               <button className="btn btn-primary">
-                Send Message <FiSend />
+                Submit Now 
+                {/* <FiSend /> */}
               </button>
             </form>
           </div>

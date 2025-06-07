@@ -18,9 +18,9 @@ const Statistics = () => {
               <div className="card-group">
                 <img src="/assets/success-rate.png" alt="digital" />
                 <div className="card-text">
-                  <h4>
+                  <h2>
                     <span className="gradient-text">100%</span> Approval
-                  </h4>
+                  </h2>
                 </div>
               </div>
             </div>
@@ -30,9 +30,9 @@ const Statistics = () => {
               <div className="card-group">
                 <img src="/assets/application.png" alt="digital" />
                 <div className="card-text">
-                  <h4>
+                  <h2>
                     <span className="gradient-text">200+</span> Applications
-                  </h4>
+                  </h2>
                 </div>
               </div>
             </div>
@@ -42,9 +42,9 @@ const Statistics = () => {
               <div className="card-group">
                 <img src="/assets/countries.png" alt="digital" />
                 <div className="card-text">
-                  <h4>
+                  <h2>
                     <span className="gradient-text">30+</span> Countries
-                  </h4>
+                  </h2>
                 </div>
               </div>
             </div>
@@ -54,9 +54,9 @@ const Statistics = () => {
               <div className="card-group">
                 <img src="/assets/regions.png" alt="digital" />
                 <div className="card-text">
-                  <h4>
+                  <h2>
                     <span className="gradient-text">5+</span> Regions
-                  </h4>
+                  </h2>
                 </div>
               </div>
             </div>

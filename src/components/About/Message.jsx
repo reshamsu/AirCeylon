@@ -40,13 +40,13 @@ const Message = () => {
           </div>
           <div className="card-owner">
             <img
-              src="./assets/tab.png"
+              src="./assets/person.jpeg"
               alt="Logo"
-              style={{ width: "6%", marginRight: "1.4rem" }}
+              style={{ width: "7%", marginRight: "1.4rem", borderRadius: "100%" }}
             />
             <div className="card-text">
               <h3>Founder & CEO, Air Ceylon International</h3>
-              <label>Air Ceylon International</label>
+              <label>- Air Ceylon International</label>
             </div>
           </div>
         </div>

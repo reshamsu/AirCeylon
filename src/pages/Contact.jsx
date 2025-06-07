@@ -55,7 +55,7 @@ const Contact = () => {
             <div className="card-body">
               {/* <label>Connect</label> */}
               <h2>
-                Contact <span className="gradient-text">Information</span>
+                Contact <span>Information</span>
               </h2>
               <p>
                 We're here to assist you with any inquires about our solutions
@@ -205,6 +205,16 @@ const Contact = () => {
                   Send Message <FiSend />
                 </button>
               </form>
+            </div>
+          </div>
+          <div className="container-lg">
+            <div className="container-fluid">
+              <h2>Wspace Office</h2>
+            </div>
+
+            <div className="image">
+               <img src="/assets/office-desk.jpeg" className="office" />
+                <img src="/assets/office-counter.jpeg" className="office" />
             </div>
           </div>
         </Container>

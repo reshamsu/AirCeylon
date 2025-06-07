@@ -70,8 +70,8 @@ const Gallery = () => {
     <div className="landing-slider">
       <Container className="container">
         <div className="container-fluid">
-          <label>Provision</label>
-          <h1>Canada</h1>
+          <label>Canada</label>
+          <h1 className="gradient-text">Toronto</h1>
         </div>
 
         <Slider {...settings}>

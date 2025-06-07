@@ -21,7 +21,7 @@ const CoreValues = () => {
             <div className="card-body">
               <div className="card-group">
                 <FaScaleUnbalanced />
-                <h3>Integrity</h3>
+                <h2>Integrity</h2>
               </div>
               <div className="card-text">
                 <p>
@@ -36,7 +36,7 @@ const CoreValues = () => {
             <div className="card-body">
               <div className="card-group">
                 <PiLightbulbFilamentBold />
-                <h3>⁠Innovation</h3>
+                <h2>⁠Innovation</h2>
               </div>
               <div className="card-text">
                 <p>
@@ -51,7 +51,7 @@ const CoreValues = () => {
             <div className="card-body">
               <div className="card-group">
                 <FaHandsHolding />
-                <h3>⁠Initiative</h3>
+                <h2>⁠Initiative</h2>
               </div>
               <div className="card-text">
                 <p>
@@ -66,7 +66,7 @@ const CoreValues = () => {
             <div className="card-body">
               <div className="card-group">
                 <LuHeartHandshake />
-                <h3>Inspiration</h3>
+                <h2>Inspiration</h2>
               </div>
               <div className="card-text">
                 <p>

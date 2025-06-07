@@ -74,10 +74,10 @@ html {
 
 .homepage-overlay .watermark {
   position: absolute;
-  top: -16%;
+  top: -6%;
   left: 50%;
   transform: translateX(-50%) translateZ(0);
-  width: 46%;
+  width: 36%;
   /* opacity: 0.06; */
   pointer-events: none;
   z-index: 2;
@@ -779,7 +779,7 @@ nav.sidenav span svg {
   margin: 0.8rem;
   width: 100%;
   cursor: pointer;
-  padding: 1.8rem;
+  padding: 1.8rem 2.4%;
   border-radius: 14px;
 }
 
@@ -797,12 +797,11 @@ nav.sidenav span svg {
 }
 
 .landing-stats .container-lg .card-body,
-.landing-stats1 .container-lg .card-body,
 .landing-stats2 .container-lg .card-body,
 /* .landing-stats3 .container-lg .card-body, */
 .landing-stats4 .container-lg .card-body {
   display: flex;
-  height: 22vh;
+  height: 28vh;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -810,7 +809,7 @@ nav.sidenav span svg {
 .landing-stats .container-lg .card-group,
 .landing-stats2 .container-lg .card-group {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   margin-bottom: 0.6rem;
 }
 
@@ -859,7 +858,7 @@ nav.sidenav span svg {
 .landing-stats2 .container-lg .card-text p,
 .landing-stats4 .container-lg .card-body p {
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 0.88rem;
 }
 
 .landing-stats3 .container-lg .card-text p {
@@ -870,17 +869,17 @@ nav.sidenav span svg {
 
 .landing-stats .container-lg .card-body svg {
   color: var(--text-white);
-  border-radius: 10px;
+  border-radius: 14px;
   background: var(--text-gold-hover);
   padding: 0.9rem;
-  margin-right: 1.6rem;
-  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-size: 4.4rem;
 }
 
 .landing-stats .container-lg .card-body img {
   width: 36%;
   font-weight: 500;
-  margin-right: 1rem;
+  margin-bottom: .4rem;
   border-radius: 12px;
   background: var(--background-white);
   color: var(--text-gold-hover);
@@ -1122,9 +1121,9 @@ textarea {
   border-radius: 22px;
   width: 80%;
   display: flex;
-  background-color: var(--background-pale);
-  border: 9px solid var(--text-gold-hover);
-  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+  /* background-color: var(--background-pale); */
+  border: 8px solid var(--text-gold-hover);
+  box-shadow: 0px 2px 20px rgb(0, 0, 0, 0.6);
 }
 
 .visa-contact .card .card-text {
@@ -1166,42 +1165,36 @@ textarea {
 }
 
 .visa-contact .card .form-group label {
-  font-weight: 600;
-  color: var(--text-gold-brown);
+  font-weight: 550;
+  color: var(--text-gold-hover);
   margin-bottom: 0.6rem;
 }
 
 .visa-contact .card .form-group input {
   padding: 1rem 5%;
-  border-bottom: 3px solid var(--white-background-hover);
-  border-radius: 6px;
+  border: 2px solid #eee;
+  border-radius: 12px;
   font-weight: 500;
-}
-
-.visa-contact .card .form-group input:hover {
-  border-bottom: 3px solid var(--text-gold-hover);
 }
 
 .visa-contact .card .form-group select {
-  padding: 1rem 8%;
-  border-bottom: 3px solid var(--white-background-hover);
-  border-radius: 6px;
+  padding: 1rem 7%;
+  border: 2px solid #eee;
+  border-radius: 12px;
   font-weight: 500;
-}
-
-.visa-contact.card .form-group select:hover {
-  border-bottom: 3px solid var(--text-gold-hover);
 }
 
 .visa-contact .card .form-group textarea {
   padding: 1rem 2.4%;
-  border-bottom: 3px solid var(--white-background-hover);
-  border-radius: 6px;
+  border: 2px solid #eee;
+  border-radius: 12px;
   font-weight: 500;
 }
 
+.visa-contact .card .form-group input:hover,
+.visa-contact.card .form-group select:hover,
 .visa-contact .card .form-group textarea:hover {
-  border-bottom: 3px solid var(--text-gold-hover);
+  border: 2px solid var(--text-gold-hover);
 }
 
 .visa-contact .card .btn.btn-primary {
@@ -1210,7 +1203,7 @@ textarea {
   justify-content: center;
   padding: 1rem;
   margin: 1rem 2rem;
-  width: 26%;
+  width: 22%;
 }
 
 .visa-contact .card .btn.btn-primary svg {
@@ -1331,7 +1324,8 @@ textarea {
 /* EPT Packages Section  */
 .ept-packages .container-lg .card {
   background: var(--white-background-hover);
-  margin: 0.8rem;
+  margin: 0.6rem;
+  width: 100%;
   border-radius: 18px;
   display: flex;
   flex-direction: column;
@@ -1523,10 +1517,6 @@ textarea {
   justify-content: center;
 }
 
-.contact-section .container-fluid h1 span {
-  color: var(--text-gold-hover);
-}
-
 .contact-section .card .card-body {
   padding: 2rem 2.6rem;
   width: 46%;
@@ -1609,7 +1599,7 @@ textarea {
 }
 
 .contact-section .card .card-text {
-  padding: 0 4%;
+  padding: 0 2%;
 }
 
 .contact-section .card .card-title h1 {
@@ -1622,52 +1612,47 @@ textarea {
 }
 
 .contact-section .card .card-text p {
-  margin-bottom: 1.6rem;
+  margin: 1rem 0;
 }
 
 .contact-section .card .form-group {
-  padding: 1.2rem 4%;
+  padding: 1.2rem 2.4%;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .contact-section .card .form-group label {
-  font-weight: 600;
+  font-weight: 550;
   color: var(--text-gold-hover);
+  margin-bottom: 0.6rem;
 }
 
 .contact-section .card .form-group input {
-  padding: 1rem 2%;
-  border-bottom: 3px solid var(--white-background-hover);
-  border-radius: 2px;
+  padding: 1rem 8%;
+  border: 2px solid whitesmoke;
+  border-radius: 12px;
   font-weight: 500;
-}
-
-.contact-section .card .form-group input:hover {
-  border-bottom: 3px solid var(--text-gold-hover);
 }
 
 .contact-section .card .form-group select {
-  padding: 1rem 4%;
-  border-bottom: 3px solid var(--white-background-hover);
-  border-radius: 2px;
+  padding: 1rem 8%;
+  border: 2px solid whitesmoke;
+  border-radius: 12px;
   font-weight: 500;
-}
-
-.contact-section .card .form-group select:hover {
-  border-bottom: 3px solid var(--text-gold-hover);
 }
 
 .contact-section .card .form-group textarea {
-  padding: 1rem 1%;
-  border-bottom: 3px solid var(--white-background-hover);
-  border-radius: 2px;
+  padding: 1rem 4%;
+  border: 2px solid whitesmoke;
+  border-radius: 12px;
   font-weight: 500;
 }
 
+.contact-section .card .form-group input:hover,
+.contact-section .card .form-group select:hover,
 .contact-section .card .form-group textarea:hover {
-  border-bottom: 3px solid var(--text-gold-hover);
+  border: 2px solid var(--text-gold-hover);
 }
 
 .contact-section .card .btn.btn-primary {
@@ -1681,6 +1666,33 @@ textarea {
 
 .contact-section .card .btn.btn-primary svg {
   margin-left: 0.6rem;
+}
+
+.contact-section .container .container-lg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1.4rem;
+}
+
+.contact-section .container .container-lg h2 {
+  border-bottom: 4px solid var(--text-gold-hover);
+  border-radius: 2px;
+  padding: .8rem;
+}
+
+.contact-section .container .container-lg .image {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section .container .container-lg img.office {
+  width: 26%;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0 .6rem;
+  object-fit: cover;
 }
 
 .faq-section {
@@ -1899,7 +1911,8 @@ textarea {
 }
 
 .about-message .card .card-owner .card-text label {
-  color: var(--text-white);
+  color: var(--text-gold-hover);
+  font-weight: 600;
   font-size: 0.9rem;
 }
 
@@ -3038,8 +3051,7 @@ footer .footer-content .rights a {
 
   .contact-section .container-fluid {
     padding: 0;
-    margin-top: 2.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.4rem;
     display: flex;
     justify-content: center;
   }
@@ -3133,6 +3145,10 @@ footer .footer-content .rights a {
   .contact-section .card .btn.btn-primary {
     margin: 0%;
     width: 100%;
+  }
+
+  .contact-section .container .container-lg img.office {
+    width: 48%;
   }
 
   .faq-section .container .container-fluid h1 {
@@ -3580,7 +3596,7 @@ footer .footer-content .rights a {
   }
 
   .hero-section {
-    min-height: 93vh;
+    min-height: 86vh;
   }
 
   .hero-section .container-fluid {
@@ -3597,13 +3613,17 @@ footer .footer-content .rights a {
     text-align: center;
   }
 
+  .homepage-overlay {
+    min-height: 96vh;
+  }
+
   .homepage-overlay .homepage {
-    min-height: 100vh;
+    min-height: 96vh;
   }
 
   .homepage-overlay .watermark {
-    bottom: auto;
-    width: 64%;
+    top: 0;
+    width: 50%;
   }
 
   .welcome .container-fluid {
@@ -3872,20 +3892,25 @@ footer .footer-content .rights a {
     padding: 3rem 8%;
   }
 
-  .hero-section {
-    min-height: 90vh;
-  }
+  /* .hero-section {
+    min-height: 86vh;
+  } */
 
   .hero-section .container-fluid {
     padding: 0 4rem;
   }
 
+  .homepage-overlay {
+    min-height: 96vh;
+  }
+
   .homepage-overlay .homepage {
-    min-height: 100vh;
+    min-height: 96vh;
   }
 
   .homepage-overlay .watermark {
-    width: 50%;
+    top: 0;
+    width: 40%;
     bottom: auto;
   }
 
@@ -4018,6 +4043,11 @@ footer .footer-content .rights a {
   .testimonials .container-fluid h4 {
     font-size: 14px;
     margin: 0 2rem;
+  }
+
+  .landing-testimonials .container-lg .card,
+  .landing-testimonials2 .container-lg .card {
+    height: 57vh;
   }
 
   .testimonials .container-lg .card .card-body {
