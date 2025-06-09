@@ -7,16 +7,46 @@ const EPTMonologue = () => {
       <Container className="container">
         <div className="container-fluid">
           <div className="row">
-            <img src="/assets/tutor.png" alt="Tutor" />
-            <div className="col">
-              <h1>
-                <span className="gradient-text">Tasha Vanhoff</span>
-              </h1>
-              <label>
-                - Certified IELTS Tutor <span>(Brand Partner)</span>
-              </label>
+            <div className="tutor">
+              <img src="/assets/tutor.png" alt="Tutor" />
+              <div className="col">
+                <h1>
+                  <span className="gradient-text">Tasha Vanhoff</span>
+                </h1>
+                <label>
+                  - Certified IELTS Tutor <span>(Brand Partner)</span>
+                </label>
+              </div>
+            </div>
+
+            <div className="container-lg">
+              <div className="card">
+                <div className="card-body">
+                  <div className="card-title">
+                    <h1 className="gradient-text">7+</h1>
+                  </div>
+                  <strong>Years Experience</strong>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-body">
+                  <div className="card-title">
+                    <h1 className="gradient-text">150+</h1>
+                  </div>
+                  <strong>Students Enrolled</strong>
+                </div>
+              </div>
+              <div className="card">
+                <div className="card-body">
+                  <div className="card-title">
+                    <h1 className="gradient-text">80%</h1>
+                  </div>
+                  <strong>Pass Rate (1st Time)</strong>
+                </div>
+              </div>
             </div>
           </div>
+
           <p>
             “I am an Educator - I teach IELTS and Spoken English among other
             subjects with over 6+ years of experience as an online tutor. I
@@ -28,32 +58,6 @@ const EPTMonologue = () => {
             opportunity I've gotten and each connection I've formed along the
             way. I look forward to more teaching opportunities in the future.”
           </p>
-        </div>
-        <div className="container-lg">
-          <div className="card">
-            <div className="card-body">
-              <div className="card-title">
-                <h1 className="gradient-text">7+</h1>
-              </div>
-              <strong>Years Experience</strong>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-body">
-              <div className="card-title">
-                <h1 className="gradient-text">150+</h1>
-              </div>
-              <strong>Students Enrolled</strong>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-body">
-              <div className="card-title">
-                <h1 className="gradient-text">80%</h1>
-              </div>
-              <strong>Pass Rate (1st Time)</strong>
-            </div>
-          </div>
         </div>
       </Container>
     </div>

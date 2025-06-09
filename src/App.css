@@ -157,9 +157,9 @@ header {
   z-index: 1050;
   box-sizing: border-box;
   padding: 1rem 10%;
-  background: white;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  border-bottom: 1px solid var(--white-background-hover);
+  background: var(--background-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* border-bottom: 1px solid var(--white-background-hover); */
   transition: box-shadow 0.3 ease, border-bottom 0.3s ease, padding 0.3s ease;
 }
 
@@ -199,28 +199,28 @@ header nav ul li {
 header nav .nav-link {
   color: var(--text-black-hover);
   transition: background-color 0.3s ease, color 0.3s ease;
-  font-weight: 600;
-  padding: 0.6rem 1.4rem;
-  border-radius: 11px;
+  font-weight: 660;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
 }
 
 header nav .nav-link:hover {
-  background-color: whitesmoke;
-  color: var(--text-gold-hover);
+  color: var(--text-gold-brown);
 }
 
 header nav .nav-link-active {
-  background-color: linen;
   color: var(--text-gold-hover);
-  border-radius: 11px;
+  font-weight: 660;
+  font-size: 1.1rem;
+  border-radius: 4px;
 }
 
 .nav-link-icon svg {
-  margin-left: 0.4rem;
+  margin-left: 1rem;
   font-size: 2.6rem;
-  color: var(--text-gold-hover);
+  color: var(--text-white);
   padding: 0.6rem;
-  background-color: linen;
+  background: var(--background-gradient-gold);
   border-radius: 11px;
 }
 
@@ -299,7 +299,7 @@ nav.desktop-subnav ul.subnav-list li {
 }
 
 nav.desktop-subnav ul.subnav-list li span {
-  font-weight: 600;
+  font-weight: 660;
   color: var(--text-gold-hover);
 }
 
@@ -525,7 +525,7 @@ nav.sidenav span svg {
 
 .hero-section h1,
 .visa-hero h1 {
-  font-size: 3.6rem;
+  font-size: 4rem;
   color: var(--text-white);
 }
 
@@ -691,7 +691,7 @@ nav.sidenav span svg {
 
 .landing-stats3 {
   background: var(--background-pale);
-  min-height: 74vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -706,6 +706,7 @@ nav.sidenav span svg {
   padding: 1rem;
 }
 
+.landing-stats .container-fluid label,
 .landing-slider .container-fluid label,
 .landing-stats3 .container-fluid label,
 .landing-process .container-fluid label {
@@ -717,7 +718,6 @@ nav.sidenav span svg {
   margin-bottom: 1rem;
 }
 
-.landing-stats .container-fluid label,
 .landing-slider2 .container-fluid label,
 .landing-stats2 .container-fluid label,
 .landing-express .container-fluid label {
@@ -771,8 +771,33 @@ nav.sidenav span svg {
   justify-content: center;
 }
 
+.landing-stats1 .container-lg .container-sm {
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+.landing-stats1 .container-lg .container-sm h2 {
+  color: var(--text-white);
+  margin-bottom: 1.6rem;
+  font-size: 1.8rem;
+}
+
+.landing-stats1 .container-lg .container-sm p {
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.landing-stats1 .container-lg .container-md {
+  width: 55%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
 .landing-stats .container-lg .card,
-.landing-stats1 .container-lg .card,
 .landing-stats2 .container-lg .card,
 .landing-stats4 .container-lg .card {
   background-color: var(--background-white);
@@ -780,6 +805,14 @@ nav.sidenav span svg {
   width: 100%;
   cursor: pointer;
   padding: 1.8rem 2.4%;
+  border-radius: 14px;
+}
+
+.landing-stats1 .container-lg .card {
+  margin: 0.8rem;
+  width: 44%;
+  cursor: pointer;
+  padding: 1.8rem 0;
   border-radius: 14px;
 }
 
@@ -813,7 +846,12 @@ nav.sidenav span svg {
   margin-bottom: 0.6rem;
 }
 
-.landing-stats1 .container-lg .card-group,
+.landing-stats1 .container-lg .card-group {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+
 .landing-stats4 .container-lg .card-group {
   display: flex;
   flex-direction: column;
@@ -828,8 +866,13 @@ nav.sidenav span svg {
 
 .landing-stats1 .container-lg .card-group h1 {
   color: var(--text-gold-hover);
+  font-size: 4rem;
   font-weight: 700;
-  padding: 0.4rem 0;
+  margin-bottom: 0.6rem;
+}
+
+.landing-stats1 .container-lg .card-group h3 {
+  color: var(--text-white);
 }
 
 .landing-stats .container-lg .card-group h2,
@@ -840,7 +883,6 @@ nav.sidenav span svg {
 }
 
 .landing-stats .container-lg .card-group h3,
-.landing-stats1 .container-lg .card-group h3,
 .landing-stats2 .container-lg .card-group h3 {
   color: var(--dark-blue);
   font-weight: 700;
@@ -870,7 +912,7 @@ nav.sidenav span svg {
 .landing-stats .container-lg .card-body svg {
   color: var(--text-white);
   border-radius: 14px;
-  background: var(--text-gold-hover);
+  background: var(--background-gradient-gold);
   padding: 0.9rem;
   margin-bottom: 1rem;
   font-size: 4.4rem;
@@ -879,9 +921,19 @@ nav.sidenav span svg {
 .landing-stats .container-lg .card-body img {
   width: 36%;
   font-weight: 500;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
   border-radius: 12px;
   background: var(--background-white);
+  color: var(--text-gold-hover);
+}
+
+.landing-stats1 .container-lg .card-body svg {
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 8px;
+  margin-right: 1.8rem;
+  border-radius: 12px;
+  background: linear-gradient(45deg, black, transparent);
   color: var(--text-gold-hover);
 }
 
@@ -1259,14 +1311,19 @@ textarea {
 .ept-monologue .container-fluid .row {
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.ept-monologue .container-fluid .row .tutor {
+  display: flex;
+  align-items: center;
 }
 
 .ept-monologue .container-fluid .row img {
-  width: 20%;
+  width: 40%;
   border: 10px solid var(--text-gold-hover);
   border-radius: 100%;
-  margin-right: 3rem;
+  margin-right: 2.6rem;
 }
 
 .ept-packages .container-fluid h1 {
@@ -1292,20 +1349,17 @@ textarea {
 .ept-monologue .container-lg {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding-top: 1rem;
-  width: 100%;
+  justify-content: flex-end;
+  width: 80%;
 }
 
 .ept-monologue .container-lg .card {
-  margin: 0.8rem;
+  margin: 2rem;
   width: 15%;
-  border-radius: 18px;
 }
 
 .ept-monologue .container-lg .card .card-body {
-  min-height: 16vh;
-  padding-right: 1rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1679,7 +1733,7 @@ textarea {
 .contact-section .container .container-lg h2 {
   border-bottom: 4px solid var(--text-gold-hover);
   border-radius: 2px;
-  padding: .8rem;
+  padding: 0.8rem;
 }
 
 .contact-section .container .container-lg .image {
@@ -1691,7 +1745,7 @@ textarea {
   width: 26%;
   background-color: #fff;
   padding: 1rem;
-  margin: 0 .6rem;
+  margin: 0 0.6rem;
   object-fit: cover;
 }
 
@@ -1947,7 +2001,7 @@ textarea {
 
 .timeline-block {
   position: relative;
-  flex: 0 0 210px;
+  flex: 0 0 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2001,7 +2055,7 @@ textarea {
 }
 
 .timeline-block.bottom .timeline-content {
-  margin-top: 220px;
+  margin-top: 170px;
 }
 
 /* Checkout Section  */
@@ -2473,15 +2527,29 @@ footer .footer-content .rights a {
     flex-direction: column;
   }
 
+  .landing-stats1 .container-lg .container-sm {
+    display: none;
+  }
+
+  .landing-stats1 .container-lg .container-md {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
   .landing-stats .container-lg .card,
   .landing-stats2 .container-lg .card {
-    padding: 1.8rem 10%;
-    width: 96%;
+    padding: 1.8rem 8%;
+    width: 94%;
   }
 
   .landing-stats1 .container-lg .card {
-    padding: 1.4rem 6%;
-    width: 40%;
+    padding: 0rem;
+    width: 46%;
+    margin: 0.4rem 2%;
+    background: linear-gradient(45deg, black, transparent);
   }
 
   .landing-stats3 .container-lg .card,
@@ -2492,11 +2560,13 @@ footer .footer-content .rights a {
 
   .landing-stats .container-lg .card-body,
   .landing-stats4 .container-lg .card-body {
-    height: 20vh !important;
+    height: fit-content !important;
   }
 
   .landing-stats1 .container-lg .card-group {
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    padding: 1.6rem;
   }
 
   .landing-stats4 .container-lg .card-group {
@@ -2509,9 +2579,9 @@ footer .footer-content .rights a {
     height: fit-content;
   }
 
-  .landing-stats1 .container-lg .card-body img {
-    margin-bottom: 1rem;
-    width: 80%;
+  .landing-stats1 .container-lg .card-body svg {
+    margin: 0;
+    margin-bottom: 0.6rem;
   }
 
   .landing-stats2 .container-lg .card-body img {
@@ -2523,10 +2593,18 @@ footer .footer-content .rights a {
     width: 24%;
   }
 
+  .landing-stats1 .container-lg .card-group h1 {
+    font-size: 2.4rem;
+  }
+
   .landing-stats .container-lg .card-group h1,
   .landing-stats2 .container-lg .card-group h1 {
     font-size: 1.5rem;
     font-weight: 700;
+  }
+
+  .landing-stats3 .container-lg .card-group h3 {
+    font-size: 1.1rem;
   }
 
   .landing-stats .container-lg .card-group h3,
@@ -2551,7 +2629,6 @@ footer .footer-content .rights a {
   .landing-stats4 .container-lg .card-text p {
     font-size: 0.96rem;
     font-weight: 600;
-    text-align: center;
   }
 
   .landing-express .container-fluid {
@@ -2732,6 +2809,11 @@ footer .footer-content .rights a {
     padding: 0 2rem;
   }
 
+  .ept-monologue .container-fluid .row {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
   .ept-monologue .container .container-fluid,
   .ept-pricing .container .container-fluid {
     padding: 0 2rem;
@@ -2760,18 +2842,20 @@ footer .footer-content .rights a {
   }
 
   .ept-monologue .container-fluid .row img {
-    width: 30%;
+    width: 36%;
     border: 6px solid var(--text-gold-hover);
     margin-right: 1.4rem;
   }
 
   .ept-monologue .container-lg {
     justify-content: space-around;
-    padding: 1.4rem;
+    padding: 1.4rem 0;
+    width: fit-content;
   }
 
   .ept-monologue .container-lg .card {
     width: 100%;
+    margin: 1rem;
   }
 
   .ept-monologue .container-lg .card .card-body {
@@ -2961,7 +3045,7 @@ footer .footer-content .rights a {
   }
 
   .about-message .card .card-owner img {
-    width: 20% !important;
+    width: 26% !important;
   }
 
   .timeline-container {
@@ -2986,7 +3070,7 @@ footer .footer-content .rights a {
 
   .timeline-block {
     align-items: flex-start;
-    min-height: 22vh;
+    flex: 0 0 100px;
   }
 
   .timeline-block:nth-child(even) {
