@@ -36,7 +36,7 @@ const Goal = () => {
               alt="mission"
               className="image"
               style={{
-                height: "51vh",
+                height: "44vh",
                 border: "10px solid var(--text-gold-hover)",
               }}
             />

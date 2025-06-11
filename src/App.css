@@ -1647,13 +1647,14 @@ textarea {
 .contact-section .card .card-form {
   padding: 2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
   width: 55%;
 }
 
 .contact-section .card .card-text {
   padding: 0 2%;
+  margin-bottom: 2rem;
 }
 
 .contact-section .card .card-title h1 {
@@ -1685,21 +1686,21 @@ textarea {
 .contact-section .card .form-group input {
   padding: 1rem 8%;
   border: 2px solid whitesmoke;
-  border-radius: 12px;
+  border-radius: 10px;
   font-weight: 500;
 }
 
 .contact-section .card .form-group select {
   padding: 1rem 8%;
   border: 2px solid whitesmoke;
-  border-radius: 12px;
+  border-radius: 10px;
   font-weight: 500;
 }
 
 .contact-section .card .form-group textarea {
   padding: 1rem 4%;
   border: 2px solid whitesmoke;
-  border-radius: 12px;
+  border-radius: 10px;
   font-weight: 500;
 }
 
@@ -1736,12 +1737,12 @@ textarea {
   padding: 0.8rem;
 }
 
-.contact-section .container .container-lg .image {
+.contact-section .container .card .image {
   display: flex;
   justify-content: center;
 }
 
-.contact-section .container .container-lg img.office {
+.contact-section .container .card img.office {
   width: 26%;
   background-color: #fff;
   padding: 1rem;

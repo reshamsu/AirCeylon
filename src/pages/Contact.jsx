@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FiSend } from "react-icons/fi";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
@@ -35,6 +35,87 @@ const faqs = [
   },
 ];
 
+// ImageSlider Component
+const ImageSlider = ({ images }) => {
+  const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // 3 seconds
+
+    return () => clearInterval(interval);
+  }, [current]);
+
+  return (
+    <div
+      className="image-slider"
+      style={{
+        position: "relative",
+        width: "300px",
+        height: "200px",
+        overflow: "hidden",
+        borderRadius: "12px",
+        marginBottom: "1rem",
+      }}
+    >
+      <img
+        src={images[current]}
+        alt={`slide-${current}`}
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          borderRadius: "12px",
+          transition: "all 0.5s ease-in-out",
+        }}
+      />
+      <button
+        onClick={prevSlide}
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "10px",
+          transform: "translateY(-50%)",
+          background: "rgba(0,0,0,0.5)",
+          color: "#fff",
+          border: "none",
+          padding: "6px 10px",
+          borderRadius: "50%",
+          cursor: "pointer",
+        }}
+      >
+        ‹
+      </button>
+      <button
+        onClick={nextSlide}
+        style={{
+          position: "absolute",
+          top: "50%",
+          right: "10px",
+          transform: "translateY(-50%)",
+          background: "rgba(0,0,0,0.5)",
+          color: "#fff",
+          border: "none",
+          padding: "6px 10px",
+          borderRadius: "50%",
+          cursor: "pointer",
+        }}
+      >
+        ›
+      </button>
+    </div>
+  );
+};
+
 const Contact = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -46,20 +127,15 @@ const Contact = () => {
             <h1>
               Get <span className="gradient-text">Connected.</span>
             </h1>
-            <p>
-              We're here to assist you with any inquires about our solutions
-            </p>
+            <p>We're here to assist you with any inquires about our solutions</p>
           </div>
 
           <div className="card">
             <div className="card-body">
-              {/* <label>Connect</label> */}
               <h2>
                 Contact <span>Information</span>
               </h2>
-              <p>
-                We're here to assist you with any inquires about our solutions
-              </p>
+              <p>We're here to assist you with any inquires about our solutions</p>
 
               <div className="card-group">
                 <h4>General Inquiries</h4>
@@ -70,9 +146,7 @@ const Contact = () => {
                   </li>
                   <li>
                     <MdEmail />
-                    <a href="mailto:info@airceylonint.com">
-                      info@airceylonint.com
-                    </a>
+                    <a href="mailto:info@airceylonint.com">info@airceylonint.com</a>
                   </li>
                 </ul>
               </div>
@@ -92,6 +166,7 @@ const Contact = () => {
                   </li>
                 </ul>
               </div>
+
               <div className="card-group">
                 <h4>Business Client</h4>
                 <ul>
@@ -107,6 +182,7 @@ const Contact = () => {
                   </li>
                 </ul>
               </div>
+
               <div className="card-group">
                 <h4>Transition Support</h4>
                 <ul>
@@ -122,8 +198,15 @@ const Contact = () => {
                   </li>
                 </ul>
               </div>
+
               <div className="card-group">
                 <h4>Visit us by appointment:</h4>
+                <ImageSlider
+                  images={[
+                    "/assets/office-desk.jpeg",
+                    "/assets/office-counter.jpeg",
+                  ]}
+                />
                 <ul>
                   <li>
                     <FaLocationDot />
@@ -132,8 +215,8 @@ const Contact = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya),
-                      Western Province, Sri Lanka.
+                      Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western Province,
+                      Sri Lanka.
                     </a>
                   </li>
                 </ul>
@@ -145,9 +228,7 @@ const Contact = () => {
                 <h1>
                   Send us a <span className="gradient-text">Message.</span>
                 </h1>
-                <p>
-                  We're here to assist you with any inquires about our solutions
-                </p>
+                <p>We're here to assist you with any inquires about our solutions</p>
               </div>
 
               <form>
@@ -207,16 +288,6 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="container-lg">
-            <div className="container-fluid">
-              <h2>Wspace Office</h2>
-            </div>
-
-            <div className="image">
-               <img src="/assets/office-desk.jpeg" className="office" />
-                <img src="/assets/office-counter.jpeg" className="office" />
-            </div>
-          </div>
         </Container>
       </div>
 
@@ -229,11 +300,7 @@ const Contact = () => {
             </h1>
             <div className="container-lg">
               {faqs.map((faq, index) => (
-                <div
-                  className="card"
-                  key={index}
-                  style={{ position: "relative" }}
-                >
+                <div className="card" key={index} style={{ position: "relative" }}>
                   <div className="card-body">
                     <h4 className="card-title">{faq.question}</h4>
                     {openIndex === index && (
