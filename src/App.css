@@ -103,6 +103,24 @@ html {
   width: 100%;
 }
 
+.btn.btn-outline-primary {
+  font-size: 16px;
+  font-weight: 660;
+  padding: 0.7rem 1.6rem;
+  color: var(--text-black-hover);
+  background: var(--background-white);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  border-radius: 14px;
+  box-shadow: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn.btn-outline-primary:hover {
+  color: var(--text-gold-hover);
+  background-color: blanchedalmond;
+}
+
 .btn.btn-primary:hover {
   background: var(--background-gradient-gold-hover);
   color: var(--text-white);
@@ -1016,7 +1034,8 @@ nav.sidenav span svg {
 
 .landing-testimonials .container-lg .card,
 .landing-testimonials2 .container-lg .card {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--background-pale);
   margin: 1rem;
   width: 70%;
   border-radius: 16px;
@@ -1571,9 +1590,19 @@ textarea {
   justify-content: center;
 }
 
+.contact-section .tab-buttons {
+  background-color: var(--background-white);
+  padding: .8rem;
+  border-radius: 24px;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem; 
+  width: 40%;
+}
+
 .contact-section .card .card-body {
   padding: 2rem 2.6rem;
-  width: 46%;
+  width: 51%;
   background: var(--dark-blue);
   border-radius: 14px;
 }
@@ -1636,6 +1665,7 @@ textarea {
   background: var(--text-white);
   border-radius: 22px;
   padding: 0.8rem;
+  width: 100%;
   display: flex;
   box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
 }

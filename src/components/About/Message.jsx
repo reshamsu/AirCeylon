@@ -9,7 +9,7 @@ const Message = () => {
         <div className="card">
           <div className="card-text">
             <p>
-              <FaQuoteLeft style={{ marginRight: ".8rem" }}/>
+              <FaQuoteLeft style={{ marginRight: ".8rem" }} />
               When I came up with Air Ceylon, it wasn’t just about travel — it
               was about transformation.
             </p>
@@ -34,15 +34,19 @@ const Message = () => {
             <p style={{ alignItems: "flex-start" }}>
               At Air Ceylon, we are building more than a service. We’re building
               a bridge — between countries, between people, and between dreams
-              and reality. 
-              <FaQuoteRight  style={{ margin: ".2rem", position: "absolute", left: "81.4%" }}/>
+              and reality.
+              <FaQuoteRight style={{ margin: "0 .6rem" }} />
             </p>
           </div>
           <div className="card-owner">
             <img
               src="./assets/person.jpeg"
               alt="Logo"
-              style={{ width: "7%", marginRight: "1.4rem", borderRadius: "100%" }}
+              style={{
+                width: "7%",
+                marginRight: "1.4rem",
+                borderRadius: "100%",
+              }}
             />
             <div className="card-text">
               <h3>Founder & CEO, Air Ceylon International</h3>

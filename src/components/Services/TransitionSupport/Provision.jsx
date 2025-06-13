@@ -13,7 +13,7 @@ const TransitionWelcome = () => {
           <div className="card">
             <div className="card-body" style={{ height: "24vh" }}>
               <div className="card-group">
-                <img src="/assets/accommodation.png" alt="digital" />
+                <img src="/assets/accom.png" alt="digital" />
                 <h3>Accommodation</h3>
               </div>
               <div className="card-text">
@@ -28,7 +28,7 @@ const TransitionWelcome = () => {
           <div className="card">
             <div className="card-body" style={{ height: "24vh" }}>
               <div className="card-group">
-                <img src="/assets/secure-docs.png" alt="digital" />
+                <img src="/assets/jobs.png" alt="digital" />
                 <h3>Jobs</h3>
               </div>
               <div className="card-text">
