@@ -17,15 +17,10 @@ const EPTTestimonials = () => {
             <div className="card-body">
               <h4 className="card-title">
                 <FaQuoteLeft />
-                I had a good experience with the IELTS classes I attended. The
-                instructor, Tasha was incredibly knowledgeable and provided
-                tailored guidance that helped me understand the exam structure
-                and improve my skills in all areas, including reading, writing,
-                listening, and speaking. Her engaging individual teaching
-                methods kept my classes interesting and motivating. With her
-                support, I felt confident and well-prepared on test day. I
-                passed! I highly recommend these classes to anyone looking to
-                achieve a high score on the IELTS!
+                Miss Tasha was very helpful, gained a lot of tips and she
+                recommended really good resources to practice IELTS, helped me
+                gain a scope of the whole test in a short period of time, very
+                satisfied with her work and would definitely recommend.
                 <FaQuoteRight />
               </h4>
               <p className="card-text">IELTS Student</p>
@@ -36,10 +31,15 @@ const EPTTestimonials = () => {
             <div className="card-body">
               <h4 className="card-title">
                 <FaQuoteLeft />
-                Miss Tasha was very helpful, gained a lot of tips and she
-                recommended really good resources to practice IELTS, helped me
-                gain a scope of the whole test in a short period of time, very
-                satisfied with her work and would definitely recommend.
+                I had a good experience with the IELTS classes I attended. The
+                instructor, Tasha was incredibly knowledgeable and provided
+                tailored guidance that helped me understand the exam structure
+                and improve my skills in all areas, including reading, writing,
+                listening, and speaking. Her engaging individual teaching
+                methods kept my classes interesting and motivating. With her
+                support, I felt confident and well-prepared on test day. I
+                passed! I highly recommend these classes to anyone looking to
+                achieve a high score on the IELTS!
                 <FaQuoteRight />
               </h4>
               <p className="card-text">IELTS Student</p>

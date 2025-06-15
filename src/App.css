@@ -1569,7 +1569,8 @@ textarea {
 
 /* Contact Page  */
 .contact-section {
-  min-height: 80vh;
+  position: relative;
+  z-index: 2;
   display: flex;
   background-color: linen;
 }
@@ -1587,7 +1588,6 @@ textarea {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
 }
 
 .contact-section .tab-buttons {
@@ -1781,6 +1781,7 @@ textarea {
 }
 
 .faq-section {
+  position: relative;
   background-color: var(--white-background-hover);
 }
 
@@ -2596,7 +2597,8 @@ footer .footer-content .rights a {
 
   .landing-stats1 .container-lg .card-group {
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+    text-align: center;
     padding: 1.6rem;
   }
 
@@ -2743,9 +2745,9 @@ footer .footer-content .rights a {
     font-size: 2rem;
   }
 
-  .contact-section .container {
+  /* .contact-section .container {
     flex-direction: column;
-  }
+  } */
 
   .contact-section .tab-buttons {
     width: 96%;
