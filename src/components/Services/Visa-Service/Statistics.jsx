@@ -47,7 +47,7 @@ const Statistics = () => {
                     <h1>
                       <span className="gradient-text">100%</span>
                     </h1>
-                    <h3>Approval</h3>
+                    <h3>Approval Rate</h3>
                   </div>
                 </div>
               </div>
