@@ -182,7 +182,7 @@ header {
 }
 
 nav button.menu {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--text-gold-hover);
   display: none;
   border-radius: 10px;
@@ -638,7 +638,7 @@ nav.sidenav span svg {
 
 .slide-card {
   background: white;
-  border-radius: 10px;
+  border-radius: 16px;
   transition: transform 0.3s ease;
 }
 
@@ -1029,7 +1029,7 @@ nav.sidenav span svg {
 .landing-testimonials2 .container-fluid h1 svg {
   margin-left: 6px;
   font-size: 3rem;
-  color: var(--text-gold-hover);
+  color: var(--text-gold-brown);
 }
 
 .landing-testimonials .container-lg .card,
@@ -1243,21 +1243,21 @@ textarea {
 
 .visa-contact .card .form-group input {
   padding: 1rem 5%;
-  border: 2px solid #eee;
+  border: 1.4px solid #eee;
   border-radius: 12px;
   font-weight: 500;
 }
 
 .visa-contact .card .form-group select {
   padding: 1rem 7%;
-  border: 2px solid #eee;
+  border: 1.4px solid #eee;
   border-radius: 12px;
   font-weight: 500;
 }
 
 .visa-contact .card .form-group textarea {
   padding: 1rem 2.4%;
-  border: 2px solid #eee;
+  border: 1.4px solid #eee;
   border-radius: 12px;
   font-weight: 500;
 }
@@ -1265,7 +1265,7 @@ textarea {
 .visa-contact .card .form-group input:hover,
 .visa-contact.card .form-group select:hover,
 .visa-contact .card .form-group textarea:hover {
-  border: 2px solid var(--text-gold-hover);
+  border: 1.5px solid var(--text-gold-hover);
 }
 
 .visa-contact .card .btn.btn-primary {
@@ -2502,17 +2502,30 @@ footer .footer-content .rights a {
     text-align: center;
   }
 
+  .landing-process .container-fluid {
+    padding: 2rem 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
   .landing-welcome .container-fluid h1,
-  .about-welcome .container-fluid h1 {
+  .about-welcome .container-fluid h1,
+  .landing-process .container-fluid h1 {
     font-size: 2rem;
   }
 
-  .landing-welcome .container-fluid label {
+  .landing-welcome .container-fluid label,
+  .landing-process .container-fluid label {
     font-size: 14px;
   }
 
   .landing-welcome .container-fluid .introduction img {
     width: 14%;
+  }
+
+  .slide-card {
+    margin: 0 2rem !important;
   }
 
   .landing-slider .container-fluid,
@@ -2536,7 +2549,8 @@ footer .footer-content .rights a {
   .landing-stats .container-fluid h1,
   .landing-stats1 .container-fluid h1,
   .landing-stats2 .container-fluid h1,
-  .landing-stats3 .container-fluid h1 {
+  .landing-stats3 .container-fluid h1,
+  .landing-stats4 .container-fluid h1 {
     font-size: 2.2rem;
     text-align: center;
   }
@@ -2595,6 +2609,12 @@ footer .footer-content .rights a {
     height: fit-content !important;
   }
 
+  .landing-stats .container-lg .card-group {
+    flex-direction: unset;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
   .landing-stats1 .container-lg .card-group {
     flex-direction: column;
     align-items: center;
@@ -2605,6 +2625,7 @@ footer .footer-content .rights a {
   .landing-stats4 .container-lg .card-group {
     flex-direction: unset;
     align-items: center;
+    margin-bottom: 1rem;
   }
 
   .landing-stats1 .container-lg .card-body {
@@ -2612,9 +2633,18 @@ footer .footer-content .rights a {
     height: fit-content;
   }
 
+  .landing-stats .container-lg .card-body svg {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
   .landing-stats1 .container-lg .card-body svg {
     margin: 0;
     margin-bottom: 0.6rem;
+  }
+
+  .landing-stats .container-lg .card-body img {
+    margin-right: 1rem;
   }
 
   .landing-stats2 .container-lg .card-body img {
@@ -2665,7 +2695,7 @@ footer .footer-content .rights a {
   }
 
   .landing-express .container-fluid {
-    margin: 1.4rem;
+    margin: 0;
     display: flex;
     align-items: center;
   }
@@ -2683,7 +2713,7 @@ footer .footer-content .rights a {
     width: 96%;
     display: block;
     margin: 0.6rem;
-    padding: 1rem 6%;
+    padding: 1.4rem 6%;
   }
 
   .landing-express .container-lg .card .card-body {

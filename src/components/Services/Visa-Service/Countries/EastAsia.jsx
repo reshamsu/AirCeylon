@@ -104,7 +104,6 @@ const Gallery = () => {
               <div
                 className="slide-card"
                 style={{
-                  borderRadius: "18px",
                   background: "#222",
                   overflow: "hidden",
                   height: "100%",
@@ -117,9 +116,9 @@ const Gallery = () => {
                     alt={item.title}
                     style={{
                       width: "100%",
-                      height: "220px",
+                      height: "200px",
                       objectFit: "cover",
-                      borderRadius: "12px",
+                      borderRadius: "12px"
                     }}
                   />
                 </div>
@@ -150,7 +149,7 @@ const Gallery = () => {
                   >
                     {item.description}
                   </p>
-                  <label style={{ fontSize: "0.9rem", color: "var(--text-gold-hover)" }}>
+                  <label style={{ fontSize: "0.9rem", fontWeight: "600", color: "var(--text-gold-hover)" }}>
                     {item.info}
                   </label>
                 </div>
