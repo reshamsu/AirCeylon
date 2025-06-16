@@ -14,62 +14,6 @@ const VisaContact = () => {
         </div>
 
         <div className="card">
-          {/* <div className="card-body">
-            <h2>
-              Contact <span>VISA Service</span>
-            </h2>
-            <p>
-              We're here to assist you with any inquires about our solutions
-            </p>
-            <div className="card-group">
-              <IoCall />
-              <ul>
-                <li>
-                  <a href="tel:+94760301141">+94 760 301 141</a> (General)
-                </li>
-                <li>
-                  <a href="tel:+14372543077">+1 437 254 3077</a> - Transition
-                  Support (Toronto - Canada)
-                </li>
-              </ul>
-            </div>
-            <div className="card-group">
-              <MdEmail />
-              <ul>
-                <li>
-                  <a href="mailto:info@airceylonint.com">
-                    info@airceylonint.com
-                  </a>{" "}
-                  (General)
-                </li>
-                <li>
-                  <a href="mailto:eptacademy@airceylonint.com">
-                    eptacademy@airceylonint.com
-                  </a>{" "}
-                  (EPT Academy)
-                </li>
-                <li>
-                  <a href="mailto:alliances@airceylonint.com">
-                    alliances@airceylonint.com
-                  </a>{" "}
-                  (Business Client)
-                </li>
-              </ul>
-            </div>
-            <div className="card-text">
-              <h4>Visit us by appointment:</h4>
-              <div className="card-group">
-                <FaLocationDot />
-                <ul>
-                  <li>
-                    Wspace - 252A, Galle Road, Colombo 4 (Bambalapitiya),
-                    Western Province, Sri Lanka.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> */}
-
           <div className="card-form">
             <div className="card-text">
               <h2>
