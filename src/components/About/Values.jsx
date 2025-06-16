@@ -10,9 +10,9 @@ const CoreValues = () => {
     <div className="landing-stats">
       <Container className="container">
         <div className="container-fluid">
-          <label>Values</label>
+          {/* <label>Values</label> */}
           <h1>
-            Our <span>Core Values</span>
+            Our <span className="gradient-text">Core Values</span>
           </h1>
         </div>
 
