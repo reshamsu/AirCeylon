@@ -47,11 +47,11 @@ const Initiatives = () => {
             <div className="card-body">
               <div className="card-group">
                 <img src="/assets/education.png" alt="digital" />
-                <h3>⁠Community Integration & Support</h3>
+                <h3>⁠Community Transition & Support</h3>
               </div>
               <div className="card-text">
                 <p>
-                  We support migrant communities with long-term integration
+                  We support migrant communities with long-term transition
                   services that promote local engagement, sustainable living,
                   and inclusive development.
                 </p>
