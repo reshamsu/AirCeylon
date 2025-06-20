@@ -8,15 +8,11 @@ export default function ContactForm() {
 
   const tabButtons = [
     { key: "form", label: "Contact Form" },
-    { key: "visa", label: "Visa Service" },
-    { key: "ept", label: "EPT Academy" },
-    { key: "notaries", label: "Notarization" },
+    { key: "bookappointment", label: "Book Appointment" },
   ];
 
   const iframeSources = {
-    visa: "https://api.leadconnectorhq.com/widget/booking/jB6lhfWOEyrlzpm5uplC",
-    ept: "https://api.leadconnectorhq.com/widget/booking/c97GfuHSgiwbqGb3EtUu",
-    notaries: "https://api.leadconnectorhq.com/widget/booking/Rr0SH6ErZX4quHKFLmTH",
+    bookappointment: "https://api.leadconnectorhq.com/widget/booking/MuBKootQtAyenTNNfQVQ", // 🔧 FIXED key to match tab
   };
 
   return (
@@ -106,16 +102,16 @@ export default function ContactForm() {
               style={{ width: "100%", height: "800px" }}
             >
               <iframe
-                src={iframeSources[activeTab]}
+                src={iframeSources[activeTab]} // 🔧 FIXED to use dynamic src
                 style={{
                   width: "100%",
                   border: "none",
                   overflow: "hidden",
                   height: "100%",
-                }}
+                }} // 🔧 FIXED to use JSX object, not string
                 scrolling="no"
-                id={`${activeTab}_widget`}
-                title={`${activeTab} Widget`}
+                id={`${activeTab}_iframe`}
+                title="Booking Calendar"
               ></iframe>
             </div>
           )}
