@@ -12,7 +12,8 @@ export default function ContactForm() {
   ];
 
   const iframeSources = {
-    bookappointment: "https://api.leadconnectorhq.com/widget/booking/MuBKootQtAyenTNNfQVQ", // 🔧 FIXED key to match tab
+    bookappointment:
+      "https://api.leadconnectorhq.com/widget/booking/MuBKootQtAyenTNNfQVQ",
   };
 
   return (
@@ -99,9 +100,22 @@ export default function ContactForm() {
           ) : (
             <div
               className="calendar-booking"
-              style={{ width: "100%", height: "800px" }}
+              style={{ width: "100%", height: "100pc" }}
             >
               <iframe
+                src={iframeSources[activeTab]}
+                style={{
+                  width: "100%",
+                  border: "none",
+                  overflow: "hidden",
+                  height: "100%",
+                }}
+                scrolling="no"
+                id={`${activeTab}_iframe`}
+                title="Booking Calendar"
+              ></iframe>
+
+              {/* <iframe
                 src={iframeSources[activeTab]} // 🔧 FIXED to use dynamic src
                 style={{
                   width: "100%",
@@ -112,7 +126,7 @@ export default function ContactForm() {
                 scrolling="no"
                 id={`${activeTab}_iframe`}
                 title="Booking Calendar"
-              ></iframe>
+              ></iframe> */}
             </div>
           )}
         </div>
