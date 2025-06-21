@@ -100,7 +100,7 @@ export default function ContactForm() {
           ) : (
             <div
               className="calendar-booking"
-              style={{ width: "100%", height: "100pc" }}
+              style={{ width: "100%", height: "840px" }}
             >
               <iframe
                 src={iframeSources[activeTab]}

@@ -2802,6 +2802,10 @@ footer .footer-content .rights a {
     width: 100%;
   }
 
+  .calendar-booking {
+    height: 100pc !important;
+  }
+
   /* .visa-destinations1 .container-fluid h1,
   .visa-destinations2 .container-fluid h1 {
     font-size: 2rem;
