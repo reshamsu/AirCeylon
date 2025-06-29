@@ -116,7 +116,7 @@ const Gallery = () => {
                     alt={item.title}
                     style={{
                       width: "100%",
-                      height: "200px",
+                      height: "240px",
                       objectFit: "cover",
                       borderRadius: "12px"
                     }}
@@ -124,8 +124,7 @@ const Gallery = () => {
                 </div>
                 <div className="card-body" style={{ padding: "1rem" }}>
                   <a
-                    href={`/hero/?book=${encodeURIComponent(item.location)}`}
-                    style={{
+                    href="/" style={{
                       fontWeight: "bold",
                       display: "flex",
                       alignItems: "center",

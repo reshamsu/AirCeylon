@@ -102,14 +102,14 @@ const Gallery = () => {
                     alt={item.title}
                     style={{
                       width: "100%",
-                      height: "200px",
+                      height: "240px",
                       objectFit: "cover",
                     }}
                   />
                 </div>
                 <div className="card-body" style={{ padding: "1rem" }}>
                   <a
-                    href={`/hero/?book=${encodeURIComponent(item.location)}`}
+                    href="/"
                     style={{
                       fontWeight: "bold",
                       display: "flex",
@@ -135,7 +135,8 @@ const Gallery = () => {
                   </p>
                   <label
                     style={{
-                      fontSize: ".9rem",
+                      fontSize: "0.9rem",
+                      fontWeight: "600",
                       color: "var(--text-gold-hover)",
                     }}
                   >

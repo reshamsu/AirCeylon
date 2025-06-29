@@ -25,9 +25,7 @@ const Goal = () => {
             <img
               src="./assets/vision.jpg"
               alt="vision"
-              className="image"
-              style={{ border: "10px solid var(--text-gold-hover)" }}
-            ></img>
+              className="image" style={{boxShadow: "0px 2px 8px rgb(0, 0, 0, 0.4);"}}></img>
           </div>
 
           <div className="company">
@@ -36,10 +34,7 @@ const Goal = () => {
               alt="mission"
               className="image"
               style={{
-                height: "44vh",
-                border: "10px solid var(--text-gold-hover)",
-              }}
-            />
+                height: "46vh", boxShadow: "0px 2px 8px rgb(0, 0, 0, 0.4);"}}/>
             <div className="body-text2" style={{ paddingLeft: "6rem" }}>
               <img
                 src="./assets/MissionW.png"

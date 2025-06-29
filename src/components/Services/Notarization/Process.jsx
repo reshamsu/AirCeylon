@@ -1,6 +1,12 @@
 import React from "react";
 import { Container } from "@mui/material";
 
+const users = [
+  { id: 1, name: "John", age: 28, city: "New York" },
+  { id: 2, name: "Jane", age: 24, city: "Los Angeles" },
+  { id: 3, name: "Bob", age: 30, city: "Chicago" },
+];
+
 const Process = () => {
   return (
     <div className="landing-process">
@@ -16,6 +22,24 @@ const Process = () => {
             verified.
           </p>
           <p>-Break down Steps & Cost-</p>
+          <table border="1" cellPadding="10">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+              </tr>
+            </thead>
+            <tbody>
+              {users.map((user) => (
+                <tr key={user.id}>
+                  <td>{user.name}</td>
+                  <td>{user.age}</td>
+                  <td>{user.city}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </Container>
     </div>

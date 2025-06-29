@@ -118,7 +118,7 @@ const Gallery = () => {
                     alt={item.title}
                     style={{
                       width: "100%",
-                      height: "200px",
+                      height: "240px",
                       objectFit: "cover",
                     }}
                   />
