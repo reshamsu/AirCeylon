@@ -1220,7 +1220,7 @@ textarea {
   background-color: whitesmoke;
   border-radius: 20px;
   display: flex;
-  gap: .6rem;
+  gap: 0.6rem;
   margin-bottom: 1rem;
   padding: 0.4rem;
   width: 40%;
@@ -1301,7 +1301,6 @@ textarea {
 .ept-packages {
   background-color: whitesmoke;
 }
-
 
 .ept-monologue .container,
 .ept-packages .container,
@@ -1511,7 +1510,6 @@ textarea {
 .ept-packages .container-lg .card .card-body label {
   font-size: 0.7rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
   color: red;
 }
 
@@ -2015,11 +2013,22 @@ textarea {
 }
 
 /* Checkout Section  */
+.required {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
 .checkout-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
+  min-height: 55vh;
 }
 
 .checkout-section .container {
@@ -2070,9 +2079,12 @@ textarea {
 
 .checkout-section .card .card-final {
   width: 48%;
+  display: flex;
+  justify-content: space-around;
   height: 48vh;
   padding: 2.4rem;
   background: var(--white-background-hover);
+  flex-direction: column;
 }
 
 .checkout-section .card .card-final .card-group {
