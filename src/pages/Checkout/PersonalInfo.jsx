@@ -38,7 +38,7 @@ const PersonalInfo = () => {
                 </h2>
                 <div className="form-group">
                   <label>
-                    Email <span className="required">*</span>
+                    Email<span className="required">*</span>
                   </label>
                   <input
                     type="email"
@@ -59,7 +59,7 @@ const PersonalInfo = () => {
                 <div className="row">
                   <div className="form-group" style={{ marginRight: ".8rem" }}>
                     <label>
-                      First Name <span className="required">*</span>
+                      First Name<span className="required">*</span>
                     </label>
                     <input
                       type="text"
@@ -78,7 +78,7 @@ const PersonalInfo = () => {
                   </div>
                   <div className="form-group">
                     <label>
-                      Last Name <span className="required">*</span>
+                      Last Name<span className="required">*</span>
                     </label>
                     <input
                       type="text"
@@ -107,7 +107,7 @@ const PersonalInfo = () => {
 
                 <div className="form-group">
                   <label>
-                    Address <span className="required">*</span>
+                    Address<span className="required">*</span>
                   </label>
                   <input
                     type="text"
@@ -124,7 +124,7 @@ const PersonalInfo = () => {
 
                 <div className="form-group">
                   <label>
-                    City <span className="required">*</span>
+                    City<span className="required">*</span>
                   </label>
                   <input
                     type="text"
@@ -139,7 +139,7 @@ const PersonalInfo = () => {
 
                 <div className="form-group">
                   <label>
-                    Country <span className="required">*</span>
+                    Country<span className="required">*</span>
                   </label>
                   <input
                     type="text"
@@ -157,7 +157,7 @@ const PersonalInfo = () => {
                 <div className="row">
                   <div className="form-group">
                     <label>
-                      Postal Code <span className="required">*</span>
+                      Postal Code<span className="required">*</span>
                     </label>
                     <input
                       type="text"
@@ -176,7 +176,7 @@ const PersonalInfo = () => {
                   </div>
                   <div className="form-group" style={{ marginLeft: ".8rem" }}>
                     <label>
-                      Telephone <span className="required">*</span>
+                      Telephone<span className="required">*</span>
                     </label>
                     <input
                       type="tel"

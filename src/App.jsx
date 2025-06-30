@@ -53,7 +53,7 @@ function App() {
           <Route path="/checkout/no-items" element={<ItemNone />} />
           <Route path="/checkout/add-items" element={<ItemAdd />} />
           <Route path="/checkout/personal-info" element={<PersonalInfo />} />
-          <Route path="/checkout/payment-processing" element={<Payment />} />
+          <Route path="/checkout/payment" element={<Payment />} />
            <Route path="/checkout/thankyou" element={<Thank />} />
         </Routes>
         <Footer />

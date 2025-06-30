@@ -14,7 +14,7 @@ const products = [
     name: "Course",
     sessions: 20,
     duration: "6 months",
-    price: 0,
+    price: "0 (Free)",
     label: "ZERO (Free)",
   },
   {

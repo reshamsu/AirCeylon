@@ -1094,14 +1094,14 @@ nav.sidenav span svg {
   display: flex;
 }
 
-input,
+/* input,
 select,
 textarea {
   -webkit-appearance: none;
   appearance: none;
   outline: none;
   font-size: 15px;
-}
+} */
 
 .visa-contact .container {
   display: flex;
@@ -1513,22 +1513,18 @@ textarea {
   color: red;
 }
 
-.ept-packages .container-lg .card .card-body .btn.btn.btn-primary {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
+.ept-packages .container-lg .card .card-body .btn.btn-primary,
 .ept-packages .container-lg .card .card-body .btn.btn-dark {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
+  font-size: 1rem;
 }
 
+.ept-packages .container-lg .card .card-body .btn.btn-primary svg,
 .ept-packages .container-lg .card .card-body .btn.btn-dark svg {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-left: 0.6rem;
 }
 
@@ -1598,14 +1594,14 @@ textarea {
   background: burlywood;
 }
 
-input,
+/* input,
 select,
 textarea {
   -webkit-appearance: none;
   appearance: none;
   outline: none;
   font-size: 15px;
-}
+} */
 
 .contact-info .container,
 .contact-form .container,
@@ -2024,6 +2020,11 @@ textarea {
   margin-top: 0.25rem;
 }
 
+.text-danger {
+  color: red;
+  font-size: 0.9rem;
+}
+
 .checkout-section {
   display: flex;
   align-items: center;
@@ -2042,7 +2043,7 @@ textarea {
 
 .checkout-section .card .card-section {
   width: 44%;
-  padding: 2rem;
+  padding: 3rem 2rem;
 }
 
 .checkout-section .card h1 {

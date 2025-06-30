@@ -5,7 +5,7 @@ import { MdVerifiedUser } from "react-icons/md";
 const Checkout = () => {
   return (
     <div className="checkout-section">
-      <Container className="container">
+      <Container maxWidth="lg">
         <div className="card">
           <div className="card-section">
             <div className="card-group">
@@ -16,7 +16,7 @@ const Checkout = () => {
             </div>
           </div>
 
-          <div className="card-final">
+          <div className="card-final" style={{ borderRadius: "10px" }}>
             <div className="card-summary">
               <h2>YOUR CART</h2>
               <h4>Summary</h4>

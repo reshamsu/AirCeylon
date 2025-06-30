@@ -17,7 +17,7 @@ const Checkout = () => {
 
   return (
     <div className="checkout-section">
-      <Container className="container">
+      <Container maxWidth="lg">
         <div className="card">
           <div className="card-section">
             <div className="container-fluid">
