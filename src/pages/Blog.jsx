@@ -1,22 +1,19 @@
-import { Container } from "@mui/material";
 import React from "react";
+import HeroSection from "../components/Blogs/HeroSection";
+import Announcements from "../components/Blogs/Announcements";
+import Sustainability from "../components/Blogs/Sustainability(Stats)";
+import Brands from "../components/Blogs/Brands";
+import News from "../components/Blogs/News";
 
 const Blog = () => {
   return (
-    <div className="hero-section">
-      <div className="homepage-overlay">
-        <img src="/assets/blogs.jpg" className="homepage darkened" />
-      </div>
-      <Container className="landing-hero">
-        <div className="container-fluid">
-          <h1>Blogs</h1>
-          <p>
-            Why More Sri Lankan's Trust <span>Air Ceylon</span> for Hassle-Free
-            Travel Planning
-          </p>
-        </div>
-      </Container>
-    </div>
+    <>
+      <HeroSection />
+      <Announcements />
+      <Sustainability />
+      <Brands />
+      <News />
+    </>
   );
 };
 

@@ -523,7 +523,7 @@ nav.sidenav span svg {
 }
 
 .container-fluid p {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 /* Landing Sections  */
@@ -668,7 +668,7 @@ nav.sidenav span svg {
 .landing-process {
   position: relative;
   overflow: hidden;
-  min-height: 70vh;
+  min-height: 64vh;
   display: flex;
   align-items: center;
   justify-content: center;
