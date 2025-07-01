@@ -580,6 +580,7 @@ nav.sidenav span svg {
 .landing-stats2 .container-fluid,
 .landing-stats3 .container-fluid,
 .landing-stats4 .container-fluid,
+.landing-brands .container-fluid,
 .landing-testimonials .container-fluid,
 .landing-testimonials2 .container-fluid,
 .contact-section .container-fluid {
@@ -706,6 +707,14 @@ nav.sidenav span svg {
   justify-content: center;
 }
 
+.landing-brands {
+  background: linear-gradient(145deg, #2a2a2a, #111111, #000000);
+  min-height: 74vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .landing-slider2,
 .landing-stats2 {
   min-height: 70vh;
@@ -735,7 +744,8 @@ nav.sidenav span svg {
 .landing-stats .container-fluid label,
 .landing-slider .container-fluid label,
 .landing-stats3 .container-fluid label,
-.landing-process .container-fluid label {
+.landing-process .container-fluid label,
+.landing-brands .container-fluid label {
   font-weight: 600;
   background: var(--background-gradient-gold);
   color: var(--text-white);
@@ -772,16 +782,18 @@ nav.sidenav span svg {
 .landing-stats1 .container-fluid h1,
 .landing-slider2 .container-fluid h1,
 .landing-stats2 .container-fluid h1,
-.landing-stats4 .container-fluid h1 {
+.landing-stats4 .container-fluid h1,
+.landing-brands .container-fluid h1 {
   font-size: 2.8rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
   color: var(--text-white);
 }
 
 .landing-stats .container-fluid h4,
 .landing-stats1 .container-fluid h4,
-.landing-stats2 .container-fluid h4 {
+.landing-stats2 .container-fluid h4,
+.landing-brands .container-fluid h4 {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-white);
@@ -800,6 +812,14 @@ nav.sidenav span svg {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+
+.landing-brands .container-lg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .landing-stats1 .container-lg .container-sm {
@@ -851,6 +871,24 @@ nav.sidenav span svg {
   display: flex;
   width: 100%;
   margin: 1.4rem;
+}
+
+.landing-brands .container-lg .card {
+  width: 22%;
+  height: 18vh;
+  display: flex;
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: 12px;
+  justify-content: center;
+  border: 2px solid #aaa;
+  background-color: var(--background-white);
+}
+
+.landing-brands .container-lg .card img {
+  width: 100%;
+  cursor: pointer;
+  object-fit: contain;
 }
 
 .landing-stats .container-lg .card:hover,
@@ -2480,15 +2518,16 @@ footer .footer-content .rights a {
     padding: 1rem;
   }
 
-  .landing-slider .container-fluid h1,
-  .landing-slider2 .container-fluid h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
   .landing-stats .container-fluid {
     margin: 0 2rem;
     padding-top: 1rem;
+  }
+
+  .landing-slider .container-fluid h1,
+  .landing-slider2 .container-fluid h1,
+  .landing-brands .container-fluid h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
   .landing-stats .container-fluid h1,
@@ -2502,7 +2541,8 @@ footer .footer-content .rights a {
 
   .landing-stats .container-fluid h4,
   .landing-stats1 .container-fluid h4,
-  .landing-stats2 .container-fluid h4 {
+  .landing-stats2 .container-fluid h4,
+  .landing-brands .container-fluid h4 {
     font-size: 1.1rem;
     text-align: center;
   }
@@ -2516,6 +2556,7 @@ footer .footer-content .rights a {
   .landing-stats3 .container-lg,
   .landing-stats4 .container-lg {
     flex-direction: column;
+    gap: 0;
   }
 
   .landing-stats1 .container-lg .container-sm {
@@ -2547,6 +2588,11 @@ footer .footer-content .rights a {
   .landing-stats4 .container-lg .card {
     padding: 1.8rem 8%;
     width: 96%;
+  }
+
+  .landing-brands .container-lg .card {
+    width: 40%;
+    padding: 1.4rem;
   }
 
   .landing-stats .container-lg .card-body,
