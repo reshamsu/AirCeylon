@@ -128,7 +128,7 @@ const Process = () => {
           </p>
           <h3 style={{ marginBottom: "1rem" }}>- Break down of Steps & Cost -</h3>
 
-          <table border="1" cellPadding="10" style={{ width: "100%", borderCollapse: "collapse" }}>
+          {/* <table border="1" cellPadding="10" style={{ width: "100%", borderCollapse: "collapse" }}>
             <thead style={{ backgroundColor: "#e0e0e0" }}>
               <tr>
                 <th>Description of Cost</th>
@@ -158,7 +158,7 @@ const Process = () => {
                 </tr>
               ))}
             </tbody>
-          </table>
+          </table> */}
         </div>
       </Container>
     </div>
