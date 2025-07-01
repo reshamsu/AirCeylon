@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "@mui/material";
 const News = () => {
   return (
-    <div className="about-journey">
+    <div className="landing-process">
       <Container className="container">
         <div className="container-fluid">
           <label>News</label>

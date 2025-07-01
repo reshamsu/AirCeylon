@@ -106,7 +106,7 @@ html {
 .btn.btn-outline-primary {
   font-size: 16px;
   font-weight: 660;
-  padding: 0.7rem 1.6rem;
+  padding: 0.7rem 1rem;
   color: var(--text-black-hover);
   background: var(--background-white);
   transition: background-color 0.4s ease, color 0.4s ease;
@@ -664,6 +664,15 @@ nav.sidenav span svg {
   justify-content: center;
 }
 
+.landing-process {
+  min-height: 60vh;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .landing-express {
   position: relative;
   overflow: hidden;
@@ -708,7 +717,7 @@ nav.sidenav span svg {
 
 .landing-stats3 {
   background: var(--background-pale);
-  min-height: 60vh;
+  min-height: 64vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1216,8 +1225,8 @@ textarea {
 
 .contact-form .tab-buttons {
   align-items: center;
-  background-color: whitesmoke;
-  border-radius: 20px;
+  border: 1.6px solid #eee;
+  border-radius: 16px;
   display: flex;
   gap: 0.6rem;
   margin-bottom: 1rem;

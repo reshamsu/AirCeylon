@@ -51,7 +51,7 @@ const ContactFAQ = () => {
                   style={{ position: "relative" }}
                 >
                   <div className="card-body">
-                    <h4 className="card-title">{faq.question}</h4>
+                    <h3 className="card-title">{faq.question}</h3>
                     {openIndex === index && (
                       <div className="card-text">
                         <p>{faq.answer}</p>
