@@ -664,8 +664,7 @@ nav.sidenav span svg {
   justify-content: center;
 }
 
-.landing-express,
-.landing-process {
+.landing-express {
   position: relative;
   overflow: hidden;
   min-height: 64vh;

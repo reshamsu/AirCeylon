@@ -10,8 +10,8 @@ const Notarization = () => {
     <>
       <HeroSection />
       {/* <Welcome /> */}
-      <Process />
       <Procedure />
+      <Process />
       <FAQ />
     </>
   );
