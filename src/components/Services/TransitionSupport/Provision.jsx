@@ -6,7 +6,7 @@ const TransitionWelcome = () => {
     <div className="landing-stats">
       <Container className="container">
         <div className="container-fluid">
-          <h1>What We <span className="gradient-text">Offer</span></h1>
+          <h1>What We <span className="gradient-text-blue">Offer</span></h1>
         </div>
 
         <div className="container-lg">

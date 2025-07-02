@@ -11,10 +11,10 @@ const EPTMonologue = () => {
               <img src="/assets/tutor.png" alt="Tutor" />
               <div className="col">
                 <h1>
-                  <span className="gradient-text">Tasha Vanhoff</span>
+                  <span className="gradient-text-blue">Tasha Vanhoff</span>
                 </h1>
                 <label>
-                  - Certified IELTS Tutor <span>(Brand Partner)</span>
+                  - Certified IELTS Tutor <span className="gradient-text-blue">(Brand Partner)</span>
                 </label>
               </div>
             </div>
@@ -23,7 +23,7 @@ const EPTMonologue = () => {
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
-                    <h1 className="gradient-text">7+</h1>
+                    <h1 className="gradient-text-blue">7+</h1>
                   </div>
                   <strong>Years Experience</strong>
                 </div>
@@ -31,7 +31,7 @@ const EPTMonologue = () => {
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
-                    <h1 className="gradient-text">150+</h1>
+                    <h1 className="gradient-text-blue">150+</h1>
                   </div>
                   <strong>Students Enrolled</strong>
                 </div>
@@ -39,7 +39,7 @@ const EPTMonologue = () => {
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
-                    <h1 className="gradient-text">80%</h1>
+                    <h1 className="gradient-text-blue">80%</h1>
                   </div>
                   <strong>Pass Rate (1st Time)</strong>
                 </div>
@@ -51,7 +51,7 @@ const EPTMonologue = () => {
             “I am an Educator - I teach IELTS and Spoken English among other
             subjects with over 6+ years of experience as an online tutor. I
             enjoy teaching, and being able to witness a student progress in
-            their education is a gift indeed.{" "}
+            their education is a gift indeed.
           </p>
           <p>
             Through my many years of teaching, I have appreciated every

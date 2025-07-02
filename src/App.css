@@ -45,7 +45,14 @@ html {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #b8860b 0%, #a97400 50%, #8b5e00 100%);
+  background: linear-gradient(90deg, #b8860b 0%, #a97400 50%, #a06e01 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.gradient-text-blue {
+  background: linear-gradient(90deg, #ffbb00 0%, #ffa500 50%, #ff8c00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;

@@ -7,7 +7,7 @@ const Statistics = () => {
       <Container className="container">
         <div className="container-fluid">
           <label>Our Expertise</label>
-          <h1>Your Journey, Our Responsibility.</h1>
+          <h1>Your Journey, <span className="gradient-text-blue">Our Responsibility.</span></h1>
           <h4>Navigating Your Experience with Confidence and Ease</h4>
         </div>
 

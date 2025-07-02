@@ -71,7 +71,7 @@ const Gallery = () => {
       <Container className="container">
         <div className="container-fluid">
           <label>Canada</label>
-          <h1 className="gradient-text">Toronto</h1>
+          <h1>Toronto</h1>
         </div>
 
         <Slider {...settings}>

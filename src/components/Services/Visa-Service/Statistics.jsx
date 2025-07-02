@@ -11,7 +11,7 @@ const Statistics = () => {
       <Container className="container">
         <div className="container-fluid" style={{ padding: "1rem 0" }}>
           <h1>
-            Our Visa <span className="gradient-text">Expertise</span>
+            Our Visa <span className="gradient-text-blue">Expertise</span>
           </h1>
           {/* <h4>Hassle-Free VISA Assistance for Global Travel</h4> */}
         </div>
@@ -19,7 +19,7 @@ const Statistics = () => {
         <div className="container-lg">
           <div className="container-sm">
             <h2>
-              Build <span className="gradient-text">Something Greater.</span>
+              Build <span className="gradient-text-blue">Something Greater</span>
             </h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -45,7 +45,7 @@ const Statistics = () => {
                   <LuPercent />
                   <div className="card-text">
                     <h1>
-                      <span className="gradient-text">100%</span>
+                      <span className="gradient-text-blue">100%</span>
                     </h1>
                     <h3>Approval Rate</h3>
                   </div>
@@ -59,7 +59,7 @@ const Statistics = () => {
                   <ImStatsBars />
                   <div className="card-text">
                     <h1>
-                      <span className="gradient-text">200+</span>
+                      <span className="gradient-text-blue">200+</span>
                     </h1>
                     <h3>Applications</h3>
                   </div>
@@ -73,7 +73,7 @@ const Statistics = () => {
                   <FaGlobeEurope />
                   <div className="card-text">
                     <h1>
-                      <span className="gradient-text">30+</span>
+                      <span className="gradient-text-blue">30+</span>
                     </h1>
                     <h3>Countries</h3>
                   </div>
@@ -87,7 +87,7 @@ const Statistics = () => {
                   <FaMapLocationDot />
                   <div className="card-text">
                     <h1>
-                      <span className="gradient-text">5+</span>
+                      <span className="gradient-text-blue">5+</span>
                     </h1>
                     <h3>Regions</h3>
                   </div>
