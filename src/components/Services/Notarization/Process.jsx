@@ -38,12 +38,25 @@ const Process = () => {
           </h1>
           <p>
             Here’s a quick glance at the ease and process in getting your
-            Canadian Issued Documents Apostilled, Notarized, Authenticated & Verified.
+            Canadian Issued Documents Apostilled, Notarized, Authenticated &
+            Verified.
           </p>
+        </div>
 
-          <h3 className="gradient-text" style={{ marginBottom: "1rem" }}>Price & Procedure Breakdown</h3>
+        <div className="container-lg">
+          <h3 className="gradient-text" style={{ marginBottom: "1rem" }}>
+            Price & Procedure Breakdown
+          </h3>
 
-          <table border="1" cellPadding="10" style={{ width: "100%", borderCollapse: "collapse" }}>
+          <table
+            border="1"
+            cellPadding="10"
+            style={{
+              width: "100%",
+              borderCollapse: "collapse",
+              textAlign: "start",
+            }}
+          >
             <thead style={{ backgroundColor: "#e0e0e0" }}>
               <tr>
                 <th>Description</th>
@@ -53,7 +66,10 @@ const Process = () => {
             <tbody>
               {procedureSteps.map((item, index) =>
                 item.step ? (
-                  <tr key={`step-${index}`} style={{ backgroundColor: "#f0f8ff", fontWeight: "bold" }}>
+                  <tr
+                    key={`step-${index}`}
+                    style={{ backgroundColor: "#f0f8ff", fontWeight: "bold" }}
+                  >
                     <td colSpan={2}> {item.step}</td>
                   </tr>
                 ) : (
@@ -67,8 +83,9 @@ const Process = () => {
           </table>
 
           <p style={{ marginTop: "1rem", fontStyle: "italic", color: "#555" }}>
-            * Table prices are pre-tax and subject to 13% (HST) by the Province of Ontario,
-            payable to service providers located in Ontario, Canada via Air Ceylon International Office in Canada.
+            * Table prices are pre-tax and subject to 13% (HST) by the Province
+            of Ontario, payable to service providers located in Ontario, Canada
+            via Air Ceylon International Office in Canada.
           </p>
         </div>
       </Container>

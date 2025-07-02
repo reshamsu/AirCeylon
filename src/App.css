@@ -812,13 +812,20 @@ nav.sidenav span svg {
 .landing-stats3 .container-lg,
 .landing-stats4 .container-lg,
 .landing-express .container-lg,
-.landing-process .container-lg,
 .landing-testimonials .container-lg,
 .landing-testimonials2 .container-lg {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+
+.landing-process .container-lg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
 }
 
 .landing-brands .container-lg {
