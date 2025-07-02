@@ -8,6 +8,7 @@ const News = () => {
           <label>Announcements</label>
           <h1>
             Site <span className="gradient-text">Announcements</span>
+            News Rooms
           </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rutrum

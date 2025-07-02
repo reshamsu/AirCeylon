@@ -15,11 +15,9 @@ const Brands = () => {
     <div className="landing-brands">
       <Container className="container">
         <div className="container-fluid">
-          <label>Brand Partners</label>
           <h1>
             Brands we <span className="gradient-text">work with</span>
           </h1>
-          <h4>Lorum Ipsum Text Here</h4>
         </div>
         <div className="container-lg">
           {brandLogos.map((brand, index) => (
