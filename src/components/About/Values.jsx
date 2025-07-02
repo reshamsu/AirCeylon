@@ -12,7 +12,7 @@ const CoreValues = () => {
         <div className="container-fluid">
           {/* <label>Values</label> */}
           <h1>
-            Our <span className="gradient-text">Core Values</span>
+            Our Core <span className="gradient-text">Values</span>
           </h1>
         </div>
 

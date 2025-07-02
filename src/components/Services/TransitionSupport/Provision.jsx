@@ -3,10 +3,10 @@ import { Container } from "@mui/material";
 
 const TransitionWelcome = () => {
   return (
-    <div className="landing-stats4">
+    <div className="landing-stats">
       <Container className="container">
         <div className="container-fluid">
-          <h1>What we <span className="gradient-text">Offer</span></h1>
+          <h1>What We <span className="gradient-text">Offer</span></h1>
         </div>
 
         <div className="container-lg">
@@ -14,7 +14,7 @@ const TransitionWelcome = () => {
             <div className="card-body" style={{ height: "24vh" }}>
               <div className="card-group">
                 <img src="/assets/accom.png" alt="digital" />
-                <h3>Accommodation</h3>
+                <h2>Accommodation</h2>
               </div>
               <div className="card-text">
                 <p>
@@ -29,7 +29,7 @@ const TransitionWelcome = () => {
             <div className="card-body" style={{ height: "24vh" }}>
               <div className="card-group">
                 <img src="/assets/jobs.png" alt="digital" />
-                <h3>Jobs</h3>
+                <h2>Jobs</h2>
               </div>
               <div className="card-text">
                 <p>
@@ -44,7 +44,7 @@ const TransitionWelcome = () => {
             <div className="card-body" style={{ height: "24vh" }}>
               <div className="card-group">
                 <img src="/assets/community.png" alt="digital" />
-                <h3>Community</h3>
+                <h2>Community</h2>
               </div>
               <p className="card-text">
                 <p>
@@ -59,7 +59,7 @@ const TransitionWelcome = () => {
             <div className="card-body" style={{ height: "24vh" }}>
               <div className="card-group">
                 <img src="/assets/lifestyle.png" alt="digital" />
-                <h3>Lifestyle Management</h3>
+                <h2>Lifestyle Management</h2>
               </div>
               <div className="card-text">
                 <p>

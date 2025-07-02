@@ -786,7 +786,7 @@ nav.sidenav span svg {
 .landing-brands .container-fluid h1 {
   font-size: 2.8rem;
   font-weight: 700;
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
   color: var(--text-white);
 }
 
@@ -794,7 +794,7 @@ nav.sidenav span svg {
 .landing-stats1 .container-fluid h4,
 .landing-stats2 .container-fluid h4,
 .landing-brands .container-fluid h4 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--text-white);
 }
@@ -897,9 +897,7 @@ nav.sidenav span svg {
 }
 
 .landing-stats .container-lg .card-body,
-.landing-stats2 .container-lg .card-body,
-/* .landing-stats3 .container-lg .card-body, */
-.landing-stats4 .container-lg .card-body {
+.landing-stats2 .container-lg .card-body {
   display: flex;
   height: 28vh;
   flex-direction: column;
@@ -910,18 +908,12 @@ nav.sidenav span svg {
 .landing-stats2 .container-lg .card-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.6rem;
 }
 
 .landing-stats1 .container-lg .card-group {
   display: flex;
   align-items: center;
   justify-content: stretch;
-}
-
-.landing-stats4 .container-lg .card-group {
-  display: flex;
-  flex-direction: column;
 }
 
 .landing-stats3 .container-lg .card-group {
@@ -964,8 +956,7 @@ nav.sidenav span svg {
 }
 
 .landing-stats .container-lg .card-text p,
-.landing-stats2 .container-lg .card-text p,
-.landing-stats4 .container-lg .card-body p {
+.landing-stats2 .container-lg .card-text p {
   font-weight: 500;
   font-size: 0.88rem;
 }
@@ -1004,8 +995,7 @@ nav.sidenav span svg {
   color: var(--text-gold-hover);
 }
 
-.landing-stats1 .container-lg .card-body img,
-.landing-stats4 .container-lg .card-body img {
+.landing-stats1 .container-lg .card-body img {
   width: 33%;
   font-weight: 500;
   margin-bottom: 0.6rem;
@@ -1028,11 +1018,10 @@ nav.sidenav span svg {
   padding: 1rem;
   border-radius: 100%;
   background: var(--background-gradient-gold);
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
 }
 
 /* Express Content  */
-
 .landing-express .container-lg .card {
   width: 32%;
   padding: 2rem;
@@ -2584,9 +2573,13 @@ footer .footer-content .rights a {
     background: linear-gradient(45deg, black, transparent);
   }
 
-  .landing-stats3 .container-lg .card,
+  .landing-stats3 .container-lg .card {
+    padding: 1.6rem 8%;
+    width: 96%;
+  }
+
   .landing-stats4 .container-lg .card {
-    padding: 1.8rem 8%;
+    padding: 0rem 8%;
     width: 96%;
   }
 
