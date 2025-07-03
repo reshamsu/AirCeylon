@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 
 const brandLogos = [
   { image: "/assets/myhive.png" },
-  { image: "/assets/google.webp" },
+  { image: "/assets/google.png" },
   { image: "/assets/dhl.jpg" },
   { image: "/assets/wspace.png" },
   { image: "/assets/ielts.jpg" },
@@ -16,7 +16,7 @@ const Brands = () => {
       <Container className="container">
         <div className="container-fluid">
           <h1>
-            Brands we <span className="gradient-text">work with</span>
+            Brands We <span className="gradient-text-blue">Work With</span>
           </h1>
         </div>
         <div className="container-lg">

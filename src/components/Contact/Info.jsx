@@ -157,6 +157,8 @@ const ContactInfo = () => {
               images={[
                 "/assets/office-desk.jpeg",
                 "/assets/office-counter.jpeg",
+                "/assets/meeting_room.jpg",
+                "/assets/interview.jpg",
               ]}
             />
 
@@ -166,7 +168,7 @@ const ContactInfo = () => {
               rel="noopener noreferrer"
             >
               <FaLocationDot />
-              WSPACE - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western
+              WSpace Building - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western
               Province, Sri Lanka.
             </a>
           </div>

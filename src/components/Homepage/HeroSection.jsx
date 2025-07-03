@@ -18,7 +18,7 @@ const LandingHero = () => {
       <Container className="landing-hero">
         <div className="container-fluid">
           <h1>
-            Discover <span className="gradient-text">Your World</span>
+            Beyond <span className="gradient-text-blue">Travelling</span>
           </h1>
         </div>
       </Container>

@@ -1,17 +1,21 @@
 import React from "react";
 import HeroSection from "../components/Services/Notarization/HeroSection";
-// import Welcome from "../components/Services/Notarization/Welcome";
-import Process from "../components/Services/Notarization/Process";
-import Procedure from "../components/Services/Notarization/Procedure";
+import Definitions from "../components/Services/Notarization/Definitions";
+import ForWhom from "../components/Services/Notarization/ForWhom";
+import Documentation from "../components/Services/Notarization/Documentation";
+import Steps from "../components/Services/Notarization/Steps";
+import Testimonials from "../components/Services/Notarization/Testimonials";
 import FAQ from "../components/Services/Notarization/FAQ";
 
 const Notarization = () => {
   return (
     <>
       <HeroSection />
-      {/* <Welcome /> */}
-      <Procedure />
-      <Process />
+      <Definitions />
+      <ForWhom />
+      <Documentation />
+      <Steps />
+      <Testimonials />
       <FAQ />
     </>
   );

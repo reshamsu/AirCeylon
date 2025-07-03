@@ -57,7 +57,7 @@ const Process = () => {
               textAlign: "start",
             }}
           >
-            <thead style={{ backgroundColor: "#e0e0e0" }}>
+            <thead style={{ backgroundColor: "#eeeeee" }}>
               <tr>
                 <th>Description</th>
                 <th>Price (CAD)$</th>
@@ -68,7 +68,10 @@ const Process = () => {
                 item.step ? (
                   <tr
                     key={`step-${index}`}
-                    style={{ backgroundColor: "#f0f8ff", fontWeight: "bold" }}
+                    style={{
+                      backgroundColor: "blanchedalmond",
+                      fontWeight: "bold",
+                    }}
                   >
                     <td colSpan={2}> {item.step}</td>
                   </tr>
@@ -84,8 +87,9 @@ const Process = () => {
 
           <p style={{ marginTop: "1rem", fontStyle: "italic", color: "#555" }}>
             * Table prices are pre-tax and subject to 13% (HST) by the Province
-            of Ontario, payable to service providers located in Ontario, Canada
-            via Air Ceylon International Office in Canada.
+            of Ontario, payable to service providers located in Ontario -
+            Canada, State of Ontario via Air Ceylon International Office in
+            Canada.
           </p>
         </div>
       </Container>

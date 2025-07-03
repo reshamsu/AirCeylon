@@ -715,7 +715,8 @@ nav.sidenav span svg {
 }
 
 .landing-brands {
-  background: linear-gradient(145deg, #2a2a2a, #111111, #000000);
+  /* background: linear-gradient(145deg, #2a2a2a, #111111, #000000); */
+  background: linen;
   min-height: 74vh;
   display: flex;
   align-items: center;
@@ -779,7 +780,8 @@ nav.sidenav span svg {
 
 .landing-slider .container-fluid h1,
 .landing-stats3 .container-fluid h1,
-.ts-provision .container-fluid h1 {
+.ts-provision .container-fluid h1,
+.landing-brands .container-fluid h1 {
   font-size: 2.6rem;
   font-weight: 700;
   color: var(--text-black-hover);
@@ -789,8 +791,7 @@ nav.sidenav span svg {
 .landing-stats1 .container-fluid h1,
 .landing-slider2 .container-fluid h1,
 .landing-stats2 .container-fluid h1,
-.landing-stats4 .container-fluid h1,
-.landing-brands .container-fluid h1 {
+.landing-stats4 .container-fluid h1 {
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -865,10 +866,10 @@ nav.sidenav span svg {
 .landing-stats .container-lg .card,
 .landing-stats2 .container-lg .card,
 .landing-stats4 .container-lg .card {
-  background-color: var(--background-white);
+  /* background-color: var(--background-white); */
   width: 100%;
   cursor: pointer;
-  padding: 1.8rem 2.4%;
+  padding: 1.8rem 2%;
   border-radius: 14px;
 }
 
@@ -888,14 +889,14 @@ nav.sidenav span svg {
 }
 
 .landing-brands .container-lg .card {
-  width: 22%;
-  height: 18vh;
+  width: 20%;
+  height: 20vh;
   display: flex;
-  padding: 2rem;
+  padding: 1.8rem;
   cursor: pointer;
   border-radius: 12px;
   justify-content: center;
-  border: 2px solid #aaa;
+  border: 2px solid #eee;
   background-color: var(--background-white);
 }
 
@@ -914,6 +915,7 @@ nav.sidenav span svg {
 .landing-stats2 .container-lg .card-body {
   display: flex;
   height: 28vh;
+  text-align: center;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -921,6 +923,7 @@ nav.sidenav span svg {
 .landing-stats .container-lg .card-group,
 .landing-stats2 .container-lg .card-group {
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -949,18 +952,20 @@ nav.sidenav span svg {
 }
 
 .landing-stats .container-lg .card-group h2,
+.landing-stats .container-lg .card-body h3,
+.landing-stats .container-lg .card-info h2,
 .landing-stats2 .container-lg .card-group h2 {
-  color: var(--dark-blue);
+  color: var(--text-white);
   font-weight: 700;
-  padding: 0.4rem 0;
+  padding: 0.4rem;
 }
 
-.landing-stats .container-lg .card-group h3,
+/* .landing-stats .container-lg .card-group h3,
 .landing-stats2 .container-lg .card-group h3 {
   color: var(--dark-blue);
   font-weight: 700;
   padding: 0.4rem 0;
-}
+} */
 
 .landing-stats3 .container-lg .card-group h3 {
   color: var(--dark-blue);
@@ -973,6 +978,7 @@ nav.sidenav span svg {
 .landing-stats2 .container-lg .card-text p {
   font-weight: 500;
   font-size: 0.88rem;
+  color: var(--text-white);
 }
 
 .landing-stats3 .container-lg .card-text p {
@@ -990,13 +996,25 @@ nav.sidenav span svg {
   font-size: 4.4rem;
 }
 
+.landing-stats .container-lg .card-label {
+  text-align: end;
+}
+
+.landing-stats .container-lg .card-label img {
+  width: 16%;
+}
+
 .landing-stats .container-lg .card-body img {
   width: 36%;
   font-weight: 500;
   margin-bottom: 0.4rem;
   border-radius: 12px;
-  background: var(--background-white);
+  /* background: var(--background-white); */
   color: var(--text-gold-hover);
+}
+
+.landing-stats .container-lg .card .button {
+  padding-top: 1rem;
 }
 
 .landing-stats1 .container-lg .card-body svg {
@@ -2484,8 +2502,12 @@ footer .footer-content .rights a {
 
   .landing-welcome .container-fluid,
   .about-welcome .container-fluid {
-    padding: 2rem 10%;
+    padding: 0 10%;
     text-align: center;
+  }
+
+  .landing-welcome .container-lg {
+ padding: 2rem 8%;
   }
 
   .landing-process .container-fluid {
@@ -2556,8 +2578,12 @@ footer .footer-content .rights a {
 
   .landing-stats .container-lg,
   .landing-stats2 .container-lg,
-  .landing-stats3 .container-lg,
   .landing-stats4 .container-lg {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .landing-stats3 .container-lg {
     flex-direction: column;
     gap: 0;
   }
