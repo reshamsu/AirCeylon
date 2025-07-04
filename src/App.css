@@ -2598,6 +2598,7 @@ footer .footer-content .rights a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 1rem;
+    gap: 1rem;
   }
 
   .landing-stats .container-lg .card,
@@ -2609,7 +2610,7 @@ footer .footer-content .rights a {
   .landing-stats1 .container-lg .card {
     padding: 0rem;
     width: 46%;
-    margin: 0.4rem 2%;
+    margin: 0;
     background: linear-gradient(45deg, black, transparent);
   }
 
@@ -2633,11 +2634,10 @@ footer .footer-content .rights a {
     height: fit-content !important;
   }
 
-  .landing-stats .container-lg .card-group {
-    flex-direction: unset;
+  /* .landing-stats .container-lg .card-group {
     align-items: center;
-    margin-bottom: 1rem;
-  }
+    margin-bottom: 1.4rem;
+  } */
 
   .landing-stats1 .container-lg .card-group {
     flex-direction: column;
@@ -2657,19 +2657,19 @@ footer .footer-content .rights a {
     height: fit-content;
   }
 
-  .landing-stats .container-lg .card-body svg {
+  /* .landing-stats .container-lg .card-body svg {
     margin-right: 1rem;
     margin-bottom: 0;
-  }
+  } */
 
   .landing-stats1 .container-lg .card-body svg {
     margin: 0;
     margin-bottom: 0.6rem;
   }
-
+/* 
   .landing-stats .container-lg .card-body img {
-    margin-right: 1rem;
-  }
+    margin: 0;
+  } */
 
   .landing-stats2 .container-lg .card-body img {
     width: 36%;
@@ -2716,6 +2716,7 @@ footer .footer-content .rights a {
   .landing-stats4 .container-lg .card-text p {
     font-size: 0.96rem;
     font-weight: 600;
+    margin: .6rem 0;
   }
 
   .landing-express .container-fluid {
