@@ -12,7 +12,7 @@ const attractions = [
     location: "Japan",
     description:
       "A dazzling fusion of ancient temples and futuristic skylines — Tokyo offers a dynamic experience at every corner.",
-    info: "Tokyo, Japan",
+    info: "Japan",
   },
   {
     img: "/assets/east-asia-china.jpg",
@@ -20,7 +20,7 @@ const attractions = [
     location: "China",
     description:
       "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and dynastic history.",
-    info: "Great Wall, China",
+    info: "China",
   },
   {
     img: "/assets/east-asia-korea.jpg",
@@ -28,7 +28,7 @@ const attractions = [
     location: "South Korea",
     description:
       "A cultural powerhouse — explore Seoul’s palaces, K-pop districts, vibrant street food, and cutting-edge fashion.",
-    info: "Seoul, South Korea",
+    info: "South Korea",
   },
   // {
   //   img: "./assets/europe-spain.jpg",
@@ -104,10 +104,10 @@ const Gallery = () => {
               <div
                 className="slide-card"
                 style={{
-                  background: "#222",
+                  background: "transparent",
                   overflow: "hidden",
                   height: "100%",
-                  margin: "1rem",
+                  margin: ".4rem",
                 }}
               >
                 <div className="image">
@@ -118,13 +118,14 @@ const Gallery = () => {
                       width: "100%",
                       height: "240px",
                       objectFit: "cover",
-                      borderRadius: "12px"
+                      borderRadius: "10px",
                     }}
                   />
                 </div>
                 <div className="card-body" style={{ padding: "1rem" }}>
                   <a
-                    href="/" style={{
+                    href="/"
+                    style={{
                       fontWeight: "bold",
                       display: "flex",
                       alignItems: "center",
@@ -134,13 +135,13 @@ const Gallery = () => {
                       fontSize: "1.05rem",
                     }}
                   >
-                    <FaLocationDot />
+                    <FaLocationDot style={{ color: "var(--text-white)" }} />
                     {item.title}
                   </a>
                   <p
                     style={{
                       fontSize: "0.9rem",
-                      color: "#888",
+                      color: "#fff",
                       fontWeight: "400",
                       lineHeight: "1.5",
                       marginBottom: "0.75rem",
@@ -148,7 +149,13 @@ const Gallery = () => {
                   >
                     {item.description}
                   </p>
-                  <label style={{ fontSize: "0.9rem", fontWeight: "600", color: "var(--text-gold-hover)" }}>
+                  <label
+                    style={{
+                      fontSize: "0.9rem",
+                      fontWeight: "600",
+                      color: "var(--dark-blue)",
+                    }}
+                  >
                     {item.info}
                   </label>
                 </div>

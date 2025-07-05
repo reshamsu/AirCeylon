@@ -7,7 +7,7 @@ const VisaWelcome = () => {
       <div className="container">
         <div className="container-fluid">
           <h1>
-            Who is <span className="gradient-text-blue">it for?</span>
+            Who is <span className="gradient-text">it for?</span>
           </h1>
           <h4>The key to notarize your documents starts here.</h4>
         </div>
@@ -18,7 +18,7 @@ const VisaWelcome = () => {
             </div>
             <div className="card-body">
               <img
-                src="/assets/affiliation.png"
+                src="/assets/student-notary.webp"
                 alt="Affiliation"
                 style={{ width: "90%" }}
               />
@@ -33,9 +33,9 @@ const VisaWelcome = () => {
             </div>
             <div className="card-body">
               <img
-                src="/assets/affiliation.png"
+                src="/assets/notary-seal.jpeg"
                 alt="Affiliation"
-                style={{ width: "90%" }}
+                style={{ width: "90%", objectFit: "cover" }}
               />
               <h3>Canadian Affiliated Institutions in Sri Lanka</h3>
             </div>
@@ -46,7 +46,7 @@ const VisaWelcome = () => {
             </div>
             <div className="card-body">
               <img
-                src="/assets/affiliation.png"
+                src="/assets/canada-notaries.jpg"
                 alt="Affiliation"
                 style={{ width: "90%" }}
               />

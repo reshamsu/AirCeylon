@@ -22,7 +22,11 @@ const Footer = () => {
                 <NavLink
                   to="/"
                   className="logo"
-                  style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
                 >
                   <img
                     src="/assets/Logo.png"
@@ -118,9 +122,7 @@ const Footer = () => {
                     <a href="/services/visa-service">East Asia</a>
                   </li>
                   <li>
-                    <a href="/services/visa-service">
-                      South-East Asia
-                    </a>
+                    <a href="/services/visa-service">South-East Asia</a>
                   </li>
                 </ul>
               </div>
@@ -128,6 +130,9 @@ const Footer = () => {
               <div className="col">
                 <ul>
                   <h3>EPT Academy</h3>
+                   <li>
+                    <a href="/services/ept-academy">Course ZERO (Free)</a>
+                  </li>
                   <li>
                     <a href="/services/ept-academy">Crash Course</a>
                   </li>
@@ -145,10 +150,11 @@ const Footer = () => {
           <div className="col">
             <div className="location">
               <p>
-                <label>Visit us by Appointment:</label> Wspace - 252A, Galle
-                Road, Colombo 4 (Bambalapitiya), Western Province, Sri Lanka.
+                <label>Visit us by Appointment:</label> Air Ceylon International
+                - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western Province,
+                Sri Lanka.
                 <a
-                  href="https://www.google.com/maps?q=WSPACE+-+252A,+GALLE+ROAD,+COLOMBO+4+(Bambalapitiya),+Western+Province,+Sri+Lanka"
+                  href="https://www.google.com/maps?q=Air+Ceylon+International,+252A+Galle+Road,+Colombo+00400,+Sri+Lanka"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

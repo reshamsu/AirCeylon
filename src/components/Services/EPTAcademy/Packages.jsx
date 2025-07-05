@@ -57,16 +57,9 @@ const EPTPackages = () => {
         </div>
         <div className="container-lg">
           {products.map((product) => (
-            <div
-              className="card"
-              key={product.id}
-              style={{
-                boxShadow: "0px 2px 40px rgb(0, 0, 0, 0.6)",
-                background: "linen",
-              }}
-            >
+            <div className="card" key={product.id}>
               <div className="card-title-active">
-                <h3 style={{ paddingLeft: "3rem" }}>
+                <h3>
                   {product.id === 1 && (
                     <img
                       src="/assets/limited-offer.png"
@@ -75,9 +68,7 @@ const EPTPackages = () => {
                     />
                   )}
                   {product.name}{" "}
-                  {product.label ? (
-                    <span>{product.label}</span>
-                  ) : null}
+                  {product.label ? <span>{product.label}</span> : null}
                 </h3>
               </div>
 
@@ -110,14 +101,12 @@ const EPTPackages = () => {
                     <FaCheck /> Speaking
                   </li>
                 </ul>
-                {product.id === 1 && (
-                  <label>
-                    *Terms & Conditions Apply*
-                  </label>
-                )}
+                {product.id === 1 && <label>*Terms & Conditions Apply*</label>}
                 <button
                   onClick={() => handleBuyNow(product)}
-                  className={`btn ${product.id === 1 ? "btn-primary" : "btn-dark"}`}
+                  className={`btn ${
+                    product.id === 1 ? "btn-primary" : "btn-dark"
+                  }`}
                 >
                   LKR {product.price.toLocaleString()} <IoCart />
                 </button>

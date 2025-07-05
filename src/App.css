@@ -45,18 +45,18 @@ html {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #b8860b 0%, #a97400 50%, #a06e01 100%);
+  background: linear-gradient(90deg, #bd8b02 0%, #d39e00 50%, #aa7f11 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
 
-.gradient-text-blue {
+/* .gradient-text-blue {
   background: linear-gradient(90deg, #ffbb00 0%, #ffa500 50%, #ff8c00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-}
+} */
 
 /* Media Content  */
 .homepage-overlay {
@@ -2507,7 +2507,7 @@ footer .footer-content .rights a {
   }
 
   .landing-welcome .container-lg {
- padding: 2rem 8%;
+    padding: 2rem 8%;
   }
 
   .landing-process .container-fluid {
@@ -2666,7 +2666,7 @@ footer .footer-content .rights a {
     margin: 0;
     margin-bottom: 0.6rem;
   }
-/* 
+  /* 
   .landing-stats .container-lg .card-body img {
     margin: 0;
   } */
@@ -2716,7 +2716,7 @@ footer .footer-content .rights a {
   .landing-stats4 .container-lg .card-text p {
     font-size: 0.96rem;
     font-weight: 600;
-    margin: .6rem 0;
+    margin: 0.6rem 0;
   }
 
   .landing-express .container-fluid {

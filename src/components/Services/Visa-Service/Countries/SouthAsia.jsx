@@ -12,7 +12,7 @@ const attractions = [
     location: "India",
     description:
       "Home to the Taj Mahal — a timeless symbol of love, blending Mughal architecture with cultural splendor.",
-    info: "Agra, India",
+    info: "India",
   },
   {
     img: "/assets/south-asia-maldives.jpg",
@@ -20,7 +20,7 @@ const attractions = [
     location: "Maldives",
     description:
       "Turquoise lagoons, over-water villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
-    info: "Malé, Maldives",
+    info: "Maldives",
   },
   {
     img: "/assets/south-asia-nepal.jpg",
@@ -28,7 +28,7 @@ const attractions = [
     location: "Nepal",
     description:
       "Nestled in the Himalayas, Kathmandu is a spiritual hub filled with ancient temples, stupas, and breathtaking mountain views.",
-    info: "Kathmandu, Nepal",
+    info: "Nepal",
   },
   // {
   //   img: "./assets/europe-spain.jpg",
@@ -104,10 +104,10 @@ const Gallery = () => {
               <div
                 className="slide-card"
                 style={{
-                  background: "#222",
+                  background: "transparent",
                   overflow: "hidden",
                   height: "100%",
-                  margin: "1rem",
+                  margin: ".4rem",
                 }}
               >
                 <div className="image">
@@ -118,7 +118,7 @@ const Gallery = () => {
                       width: "100%",
                       height: "240px",
                       objectFit: "cover",
-                      borderRadius: "12px",
+                      borderRadius: "10px",
                     }}
                   />
                 </div>
@@ -135,13 +135,13 @@ const Gallery = () => {
                       fontSize: "1.05rem",
                     }}
                   >
-                    <FaLocationDot />
+                    <FaLocationDot style={{ color: "var(--text-white)" }} />
                     {item.title}
                   </a>
                   <p
                     style={{
                       fontSize: "0.9rem",
-                      color: "#888",
+                      color: "#fff",
                       fontWeight: "400",
                       lineHeight: "1.5",
                       marginBottom: "0.75rem",
@@ -153,7 +153,7 @@ const Gallery = () => {
                     style={{
                       fontSize: "0.9rem",
                       fontWeight: "600",
-                      color: "var(--text-gold-hover)",
+                      color: "var(--dark-blue)",
                     }}
                   >
                     {item.info}
