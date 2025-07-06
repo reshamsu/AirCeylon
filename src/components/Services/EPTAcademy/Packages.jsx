@@ -48,7 +48,7 @@ const EPTPackages = () => {
   };
 
   return (
-    <div className="ept-packages">
+    <div className="ept-packages" id="packages">
       <Container className="container" style={{ padding: "3rem 0" }}>
         <div className="container-fluid">
           <h1>

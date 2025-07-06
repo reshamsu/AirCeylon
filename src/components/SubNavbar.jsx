@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { IoChevronDownOutline } from "react-icons/io5";
 
 const regions = [
@@ -51,6 +51,7 @@ const regions = [
 const SubNavbar = () => {
   const [openRegion, setOpenRegion] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleRegion = (regionName) => {
     setOpenRegion(openRegion === regionName ? null : regionName);
@@ -65,9 +66,14 @@ const SubNavbar = () => {
     setMobileOpen(false);
   };
 
+  const handleRedirectToRegion = (regionName) => {
+    closeMenus();
+    const id = regionName.toLowerCase().replace(/\s+/g, "-");
+    navigate(`/services/visa-service#${id}`);
+  };
+
   return (
     <Container>
-      {/* Desktop Subnav */}
       <nav className="desktop-subnav">
         <ul className="subnav-list">
           {regions.map((region) => (
@@ -86,9 +92,8 @@ const SubNavbar = () => {
                   {region.countries.map((country) => (
                     <li key={country}>
                       <NavLink
-                        to="/services/visa-service"
                         className="nav-link"
-                        onClick={closeMenus}
+                        onClick={() => handleRedirectToRegion(region.name)}
                       >
                         {country}
                       </NavLink>
@@ -101,7 +106,6 @@ const SubNavbar = () => {
         </ul>
       </nav>
 
-      {/* Mobile Subnav */}
       <nav className="mobile-subnav">
         <ul className="subnav-list">
           <li className={`dropdown ${mobileOpen ? "open" : ""}`}>
@@ -119,13 +123,12 @@ const SubNavbar = () => {
                     <ul className="dropdown-submenu">
                       {region.countries.map((country) => (
                         <li key={country}>
-                          <NavLink
-                            to="/services/visa-service"
+                          <button
                             className="nav-link"
-                            onClick={closeMenus}
+                            onClick={() => handleRedirectToRegion(region.name)}
                           >
                             {country}
-                          </NavLink>
+                          </button>
                         </li>
                       ))}
                     </ul>

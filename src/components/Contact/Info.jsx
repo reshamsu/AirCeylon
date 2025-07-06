@@ -8,87 +8,7 @@ import { FaGraduationCap } from "react-icons/fa6";
 import { FaUserTie } from "react-icons/fa6";
 import { BiSupport } from "react-icons/bi";
 import { Link } from "react-router-dom";
-
-// ImageSlider Component
-const ImageSlider = ({ images }) => {
-  const [current, setCurrent] = useState(0);
-
-  const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setCurrent((prev) => (prev - 1 + images.length) % images.length);
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 3000); // 3 seconds
-
-    return () => clearInterval(interval);
-  }, [current]);
-
-  return (
-    <div
-      className="image-slider"
-      style={{
-        position: "relative",
-        width: "300px",
-        height: "200px",
-        overflow: "hidden",
-        borderRadius: "12px",
-        marginBottom: "1rem",
-      }}
-    >
-      <img
-        src={images[current]}
-        alt={`slide-${current}`}
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          borderRadius: "12px",
-          transition: "all 0.5s ease-in-out",
-        }}
-      />
-      <button
-        onClick={prevSlide}
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "10px",
-          transform: "translateY(-50%)",
-          background: "rgba(0,0,0,0.5)",
-          color: "#fff",
-          border: "none",
-          padding: "6px 10px",
-          borderRadius: "50%",
-          cursor: "pointer",
-        }}
-      >
-        ‹
-      </button>
-      <button
-        onClick={nextSlide}
-        style={{
-          position: "absolute",
-          top: "50%",
-          right: "10px",
-          transform: "translateY(-50%)",
-          background: "rgba(0,0,0,0.5)",
-          color: "#fff",
-          border: "none",
-          padding: "6px 10px",
-          borderRadius: "50%",
-          cursor: "pointer",
-        }}
-      >
-        ›
-      </button>
-    </div>
-  );
-};
+import Slider from "../Contact/Slider";
 
 const contacts = [
   {
@@ -153,23 +73,15 @@ const ContactInfo = () => {
 
           <div className="container-sm">
             <h3>Visit us by appointment:</h3>
-            <ImageSlider
-              images={[
-                "/assets/office-desk.jpeg",
-                "/assets/office-counter.jpeg",
-                "/assets/meeting_room.jpg",
-                "/assets/interview.jpg",
-              ]}
-            />
-
+            <Slider />
             <a
               href="https://www.google.com/maps?q=WSPACE+-+252A,+GALLE+ROAD,+COLOMBO+4+(Bambalapitiya),+Western+Province,+Sri+Lanka"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaLocationDot />
-              WSpace Building - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western
-              Province, Sri Lanka.
+              WSpace Building - 252A, Galle Road, Colombo 4 (Bambalapitiya),
+              Western Province, Sri Lanka.
             </a>
           </div>
         </Container>

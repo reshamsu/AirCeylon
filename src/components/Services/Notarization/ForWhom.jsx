@@ -37,7 +37,7 @@ const VisaWelcome = () => {
                 alt="Affiliation"
                 style={{ width: "90%", objectFit: "cover" }}
               />
-              <h3>Canadian Affiliated Institutions in Sri Lanka</h3>
+              <h3>Canadian Affiliated Academic Institution's in Sri Lanka</h3>
             </div>
           </div>
           <div className="card">
@@ -50,7 +50,7 @@ const VisaWelcome = () => {
                 alt="Affiliation"
                 style={{ width: "90%" }}
               />
-              <h3>Canadian Affiliated Academic Institutions in Sri Lanka</h3>
+              <h3>Canadian Academic Bodies in Sri Lanka</h3>
             </div>
           </div>
         </Container>

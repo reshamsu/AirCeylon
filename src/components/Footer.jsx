@@ -8,10 +8,26 @@ import {
 } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { RxDividerVertical } from "react-icons/rx";
 
 const Footer = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavigation = (path, sectionId) => {
+    if (location.pathname === path) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    } else {
+      navigate(path + "#" + sectionId);
+    }
+  };
+
   return (
     <footer>
       <Container className="container">
@@ -84,24 +100,24 @@ const Footer = () => {
                 <ul>
                   <h3>Services</h3>
                   <li>
-                    <a href="/services/visa-service">VISA Service</a>
+                    <a onClick={() => handleNavigation("/services/visa-service", "top")}>
+                      VISA Service
+                    </a>
                   </li>
                   <li>
-                    <a href="/services/ept-academy">EPT Academy</a>
+                    <a onClick={() => handleNavigation("/services/ept-academy", "top")}>
+                      EPT Academy
+                    </a>
                   </li>
                   <li>
-                    <a href="/services/transition-support">
+                    <a onClick={() => handleNavigation("/services/transition-support", "top")}>
                       Transition Support
                     </a>
                   </li>
-                  {/* <li>
-                  <a href="/services/travels-tours">Travels & Tours</a>
-                </li>
-                <li>
-                  <a href="/services/ticketing">Ticketing</a>
-                </li> */}
                   <li>
-                    <a href="/services/notarization">Notarization</a>
+                    <a onClick={() => handleNavigation("/services/notarization", "top")}>
+                      Notarization
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -110,19 +126,29 @@ const Footer = () => {
                 <ul>
                   <h3>Visa Service</h3>
                   <li>
-                    <a href="/services/visa-service">Europe</a>
+                    <a onClick={() => handleNavigation("/services/visa-service", "europe")}>
+                      Europe
+                    </a>
+                  </li>
+                    <li>
+                    <a onClick={() => handleNavigation("/services/visa-service", "east-asia")}>
+                      East Asia
+                    </a>
                   </li>
                   <li>
-                    <a href="/services/visa-service">Asia</a>
+                    <a onClick={() => handleNavigation("/services/visa-service", "middle-east")}>
+                      Middle-East
+                    </a>
+                  </li>
+                <li>
+                    <a onClick={() => handleNavigation("/services/visa-service", "south-asia")}>
+                      South Asia
+                    </a>
                   </li>
                   <li>
-                    <a href="/services/visa-service">Middle-East</a>
-                  </li>
-                  <li>
-                    <a href="/services/visa-service">East Asia</a>
-                  </li>
-                  <li>
-                    <a href="/services/visa-service">South-East Asia</a>
+                    <a onClick={() => handleNavigation("/services/visa-service", "southeast-asia")}>
+                      South-East Asia
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -130,17 +156,25 @@ const Footer = () => {
               <div className="col">
                 <ul>
                   <h3>EPT Academy</h3>
-                   <li>
-                    <a href="/services/ept-academy">Course ZERO (Free)</a>
+                  <li>
+                    <a onClick={() => handleNavigation("/services/ept-academy", "packages")}>
+                      Course ZERO (Free)
+                    </a>
                   </li>
                   <li>
-                    <a href="/services/ept-academy">Crash Course</a>
+                    <a onClick={() => handleNavigation("/services/ept-academy", "packages")}>
+                      Crash Course
+                    </a>
                   </li>
                   <li>
-                    <a href="/services/ept-academy">Essential Course</a>
+                    <a onClick={() => handleNavigation("/services/ept-academy", "packages")}>
+                      Essential Course
+                    </a>
                   </li>
                   <li>
-                    <a href="/services/ept-academy">Pro Course</a>
+                    <a onClick={() => handleNavigation("/services/ept-academy", "packages")}>
+                      Pro Course
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -164,11 +198,11 @@ const Footer = () => {
             </div>
             <div className="contact">
               <label>
-                Phone Number: <a href="tel:+94 760 301 141"> +94 760 301 141</a>
+                Phone Number: <a href="tel:+94760301141">+94 760 301 141</a>
               </label>
               <RxDividerVertical />
               <label>
-                Email Address:
+                Email Address:{" "}
                 <a href="mailto:info@airceylonint.com">info@airceylonint.com</a>
               </label>
             </div>

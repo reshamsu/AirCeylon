@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { IoChevronDownOutline, IoBagCheckOutline } from "react-icons/io5";
 import { HiMenuAlt3 } from "react-icons/hi";
@@ -10,6 +10,16 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [location.pathname]);
+
+  const handleNavClick = (path) => {
+    if (location.pathname === path) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <header>
@@ -18,6 +28,7 @@ const Navbar = () => {
             to="/"
             className="logo"
             style={{ display: "flex", alignItems: "center" }}
+            onClick={() => handleNavClick("/")}
           >
             <img
               src="/assets/Logo.png"
@@ -35,6 +46,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link nav-link-active" : "nav-link"
                 }
+                onClick={() => handleNavClick("/")}
               >
                 Home
               </NavLink>
@@ -53,12 +65,17 @@ const Navbar = () => {
                   <NavLink
                     to="/services/visa-service"
                     className="dropdown-item"
+                    onClick={() => handleNavClick("/services/visa-service")}
                   >
                     Visa Service
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/services/ept-academy" className="dropdown-item">
+                  <NavLink
+                    to="/services/ept-academy"
+                    className="dropdown-item"
+                    onClick={() => handleNavClick("/services/ept-academy")}
+                  >
                     EPT Academy
                   </NavLink>
                 </li>
@@ -66,6 +83,7 @@ const Navbar = () => {
                   <NavLink
                     to="/services/transition-support"
                     className="dropdown-item"
+                    onClick={() => handleNavClick("/services/transition-support")}
                   >
                     Transition Support
                   </NavLink>
@@ -74,6 +92,7 @@ const Navbar = () => {
                   <NavLink
                     to="/services/notarization"
                     className="dropdown-item"
+                    onClick={() => handleNavClick("/services/notarization")}
                   >
                     Notarization
                   </NavLink>
@@ -87,6 +106,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link nav-link-active" : "nav-link"
                 }
+                onClick={() => handleNavClick("/contact-us")}
               >
                 Contact
               </NavLink>
@@ -97,6 +117,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link nav-link-active" : "nav-link"
                 }
+                onClick={() => handleNavClick("/about-us")}
               >
                 About
               </NavLink>
@@ -107,6 +128,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link nav-link-active" : "nav-link"
                 }
+                onClick={() => handleNavClick("/blog")}
               >
                 Blogs
               </NavLink>
@@ -117,6 +139,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link-icon nav-icon-active" : "nav-link-icon"
                 }
+                onClick={() => handleNavClick("/checkout/no-items")}
               >
                 <IoBagCheckOutline />
               </NavLink>
@@ -134,25 +157,25 @@ const Navbar = () => {
         <nav className="sidenav">
           <ul className="sidenav-menu-list">
             <div className="title">
-              <button
-                className="close-sidebar"
-                onClick={() => setMenuOpen(false)}
-              >
+              <button className="close-sidebar" onClick={() => setMenuOpen(false)}>
                 <FaChevronRight />
               </button>
               <h3>Menu</h3>
             </div>
 
             <li>
-              <NavLink to="/" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/"
+                onClick={() => {
+                  setMenuOpen(false);
+                  handleNavClick("/");
+                }}
+              >
                 Home
               </NavLink>
             </li>
 
-            {/* Mobile Services Dropdown */}
-            <li
-              className={`dropdown ${isServicesRoute ? "nav-link-active" : ""}`}
-            >
+            <li className={`dropdown ${isServicesRoute ? "nav-link-active" : ""}`}>
               <a
                 className="nav-link dropdown-toggle"
                 onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
@@ -164,7 +187,10 @@ const Navbar = () => {
                   <li>
                     <NavLink
                       to="/services/visa-service"
-                      onClick={() => setMenuOpen(false)}
+                      onClick={() => {
+                        setMenuOpen(false);
+                        handleNavClick("/services/visa-service");
+                      }}
                     >
                       Visa Service
                     </NavLink>
@@ -172,7 +198,10 @@ const Navbar = () => {
                   <li>
                     <NavLink
                       to="/services/ept-academy"
-                      onClick={() => setMenuOpen(false)}
+                      onClick={() => {
+                        setMenuOpen(false);
+                        handleNavClick("/services/ept-academy");
+                      }}
                     >
                       EPT Academy
                     </NavLink>
@@ -180,7 +209,10 @@ const Navbar = () => {
                   <li>
                     <NavLink
                       to="/services/transition-support"
-                      onClick={() => setMenuOpen(false)}
+                      onClick={() => {
+                        setMenuOpen(false);
+                        handleNavClick("/services/transition-support");
+                      }}
                     >
                       Transition Support
                     </NavLink>
@@ -188,7 +220,10 @@ const Navbar = () => {
                   <li>
                     <NavLink
                       to="/services/notarization"
-                      onClick={() => setMenuOpen(false)}
+                      onClick={() => {
+                        setMenuOpen(false);
+                        handleNavClick("/services/notarization");
+                      }}
                     >
                       Notarization
                     </NavLink>
@@ -198,23 +233,48 @@ const Navbar = () => {
             </li>
 
             <li>
-              <NavLink to="/contact-us" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/contact-us"
+                onClick={() => {
+                  setMenuOpen(false);
+                  handleNavClick("/contact-us");
+                }}
+              >
                 Contact
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about-us" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/about-us"
+                onClick={() => {
+                  setMenuOpen(false);
+                  handleNavClick("/about-us");
+                }}
+              >
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink to="/blog" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/blog"
+                onClick={() => {
+                  setMenuOpen(false);
+                  handleNavClick("/blog");
+                }}
+              >
                 Blogs
               </NavLink>
             </li>
           </ul>
+
           <span>
-            <NavLink to="/checkout/no-items" onClick={() => setMenuOpen(false)}>
+            <NavLink
+              to="/checkout/no-items"
+              onClick={() => {
+                setMenuOpen(false);
+                handleNavClick("/checkout/no-items");
+              }}
+            >
               Checkout
             </NavLink>
             <IoBagCheckOutline />
