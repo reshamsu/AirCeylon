@@ -5,9 +5,14 @@ import { FaLocationDot } from "react-icons/fa6";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// Correct Image Imports
+import singapore from "../../../../assets/southeast-asia-singapore.jpg";
+import indonesia from "../../../../assets/southeast-asia-indonesia.jpg";
+import vietnam from "../../../../assets/southeast-asia-vietnam.jpg";
+
 const attractions = [
   {
-    img: "/assets/southeast-asia-singapore.jpg",
+    img: singapore,
     title: "Marina Bay, Singapore",
     location: "Singapore",
     description:
@@ -15,7 +20,7 @@ const attractions = [
     info: "Marina Bay, Singapore",
   },
   {
-    img: "/assets/southeast-asia-indonesia.jpg",
+    img: indonesia,
     title: "Bali, Indonesia",
     location: "Indonesia",
     description:
@@ -23,37 +28,13 @@ const attractions = [
     info: "Bali, Indonesia",
   },
   {
-    img: "/assets/southeast-asia-vietnam.jpg",
+    img: vietnam,
     title: "Ha Long Bay, Vietnam",
     location: "Vietnam",
     description:
       "A surreal seascape of emerald waters and limestone islands — Ha Long Bay is a natural wonder steeped in legend.",
     info: "Ha Long Bay, Vietnam",
   },
-  // {
-  //   img: "./assets/europe-spain.jpg",
-  //   title: "Madrid, Spain",
-  //   location: "Spain",
-  //   description:
-  //     "From flamenco rhythms to regal boulevards — Madrid pulses with art, flavor, and the warmth of Spanish spirit.",
-  //   info: "Madrid, Spain",
-  // },
-  // {
-  //   img: "./assets/europe-canada.webp",
-  //   title: "Toronto, Canada",
-  //   location: "Canada",
-  //   description:
-  //     "Toronto is a multicultural mosaic — where skyscrapers meet the shores of Lake Ontario and every street tells a global story.",
-  //   info: "Toronto, Canada",
-  // },
-  // {
-  //   img: "./assets/east-asia-singapore.jpg",
-  //   title: "Singapore",
-  //   location: "Singapore",
-  //   description:
-  //     "A futuristic skyline meets lush green sanctuaries — explore Singapore’s seamless blend of innovation, culture, and cuisine.",
-  //   info: "Marina Bay, Singapore",
-  // },
 ];
 
 const Gallery = () => {

@@ -1,13 +1,20 @@
 import React from "react";
 import { Container } from "@mui/material";
 
+import myHiveLogo from "../../assets/myhive.png";
+import googleLogo from "../../assets/google.png";
+import dhlLogo from "../../assets/dhl.jpg";
+import wspaceLogo from "../../assets/Wspace.png";
+import ieltsLogo from "../../assets/ielts.jpg";
+import redSealLogo from "../../assets/redsealnotary.webp";
+
 const brandLogos = [
-  { image: "/assets/myhive.png" },
-  { image: "/assets/google.png" },
-  { image: "/assets/dhl.jpg" },
-  { image: "/assets/wspace.png" },
-  { image: "/assets/ielts.jpg" },
-  { image: "/assets/redsealnotary.webp" },
+  { image: myHiveLogo, name: "myHive" },
+  { image: googleLogo, name: "Google" },
+  { image: dhlLogo, name: "DHL" },
+  { image: wspaceLogo, name: "WSPACE" },
+  { image: ieltsLogo, name: "IELTS" },
+  { image: redSealLogo, name: "Red Seal Notary" },
 ];
 
 const Brands = () => {
@@ -30,32 +37,5 @@ const Brands = () => {
     </div>
   );
 };
-
-// Inline styling (you can move this to your CSS if preferred)
-// const gridStyle = {
-//   display: "grid",
-//   gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
-//   gap: "24px",
-//   justifyItems: "center",
-//   alignItems: "center",
-//   marginTop: "2rem",
-// };
-
-// const cardStyle = {
-//   padding: "12px",
-//   borderRadius: "12px",
-//   backgroundColor: "#f5f5f5",
-//   boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
-//   display: "flex",
-//   justifyContent: "center",
-//   alignItems: "center",
-//   height: "100px",
-// };
-
-// const imgStyle = {
-//   maxWidth: "100px",
-//   maxHeight: "60px",
-//   objectFit: "contain",
-// };
 
 export default Brands;

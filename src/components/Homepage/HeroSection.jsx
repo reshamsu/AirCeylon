@@ -1,12 +1,13 @@
 import React from "react";
 import { Container } from "@mui/material";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import hero from "../../assets/check.jpg";
 
 const LandingHero = () => {
   return (
     <div className="hero-section">
       <div className="homepage-overlay">
-        <img src="./assets/check.jpg" className="homepage darkened" />
+        <img src={hero} className="homepage darkened" />
 
         {/* <img
           src="./assets/Watermark.png"

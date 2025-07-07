@@ -5,9 +5,17 @@ import { FaLocationDot } from "react-icons/fa6";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// Import images from src/assets
+import china from "../../assets/east-asia-china.jpg";
+import germany from "../../assets/europe-germany.jpg";
+import maldives from "../../assets/south-asia-maldives.jpg";
+import spain from "../../assets/europe-spain.jpg";
+import canada from "../../assets/europe-canada.webp";
+import singapore from "../../assets/southeast-asia-singapore.jpg";
+
 const attractions = [
   {
-    img: "./assets/east-asia-china.jpg",
+    img: china,
     title: "The Great Wall of China",
     location: "China",
     description:
@@ -15,7 +23,7 @@ const attractions = [
     info: "Beijing, China",
   },
   {
-    img: "./assets/europe-germany.jpg",
+    img: germany,
     title: "Frankfurt, Germany",
     location: "Germany",
     description:
@@ -23,7 +31,7 @@ const attractions = [
     info: "Frankfurt, Germany",
   },
   {
-    img: "./assets/south-asia-maldives.jpg",
+    img: maldives,
     title: "Male, Maldives",
     location: "Maldives",
     description:
@@ -31,7 +39,7 @@ const attractions = [
     info: "Male, Maldives",
   },
   {
-    img: "./assets/europe-spain.jpg",
+    img: spain,
     title: "Madrid, Spain",
     location: "Spain",
     description:
@@ -39,7 +47,7 @@ const attractions = [
     info: "Madrid, Spain",
   },
   {
-    img: "./assets/europe-canada.webp",
+    img: canada,
     title: "Toronto, Canada",
     location: "Canada",
     description:
@@ -47,7 +55,7 @@ const attractions = [
     info: "Toronto, Canada",
   },
   {
-    img: "./assets/southeast-asia-singapore.jpg",
+    img: singapore,
     title: "Singapore",
     location: "Singapore",
     description:
@@ -149,7 +157,13 @@ const Gallery = () => {
                   >
                     {item.description}
                   </p>
-                  <label style={{ fontSize: ".9rem", fontWeight: "600", color: "var(--text-gold-hover)" }}>
+                  <label
+                    style={{
+                      fontSize: ".9rem",
+                      fontWeight: "600",
+                      color: "var(--text-gold-hover)",
+                    }}
+                  >
                     {item.info}
                   </label>
                 </div>

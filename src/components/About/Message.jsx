@@ -2,11 +2,15 @@ import React from "react";
 import { Container } from "@mui/material";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
+// Correct image import (Assuming assets inside src/assets folder)
+import founderImage from "../../assets/person.jpeg";
+
 const Message = () => {
   return (
     <div className="about-message">
       <Container className="container">
         <div className="card">
+          
           <div className="card-text">
             <p>
               <FaQuoteLeft style={{ marginRight: ".8rem" }} />
@@ -17,7 +21,7 @@ const Message = () => {
               I saw and experienced the challenges people face when navigating
               new journeys: visas, immigration, education, transitions, and the
               uncertainties that follow. Too often, these experiences were
-              stressful, discouraging and impersonal. The mission for Air Ceylon
+              stressful, discouraging, and impersonal. The mission for Air Ceylon
               was born to change that.
             </p>
             <p>
@@ -31,21 +35,23 @@ const Message = () => {
               lifestyle integration — we believe in going the extra mile, even
               after you land.
             </p>
-            <p style={{ alignItems: "flex-start" }}>
+            <p>
               At Air Ceylon, we are building more than a service. We’re building
               a bridge — between countries, between people, and between dreams
               and reality.
-              <FaQuoteRight style={{ margin: "0 .6rem" }} />
+              <FaQuoteRight style={{ marginLeft: ".6rem" }} />
             </p>
           </div>
+
           <div className="card-owner">
             <img
-              src="./assets/person.jpeg"
-              alt="Logo"
+              src={founderImage}
+              alt="Founder & CEO"
               style={{
                 width: "7%",
+                minWidth: "50px",
                 marginRight: "1.4rem",
-                borderRadius: "100%",
+                borderRadius: "50%",
               }}
             />
             <div className="card-text">
@@ -53,6 +59,7 @@ const Message = () => {
               <label>- Air Ceylon International</label>
             </div>
           </div>
+
         </div>
       </Container>
     </div>

@@ -1,18 +1,18 @@
 import React from "react";
 import { Container } from "@mui/material";
+import Annoucements from "../../api/Annoucements";
 
 const News = () => {
   return (
     <div className="landing-process">
       <Container className="container">
         <div className="container-fluid">
-          <label>Announcements</label>
+          <label>News Room</label>
           <h1>
-            Announcement <span className="gradient-text">News Rooms</span>
+            Announcements <span className="gradient-text"></span>
           </h1>
-          {/* <NewsFeed source="ircc" title="IRCC Canada News" />
-          <NewsFeed source="travel" title="Travel Advisories" />
-          <NewsFeed source="immigration" title="Immigration Updates" /> */}
+
+          {/* <Annoucements /> */}
 
           <ul>
             <li>IRCC Canada</li>

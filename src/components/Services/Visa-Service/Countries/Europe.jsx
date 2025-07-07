@@ -5,9 +5,15 @@ import { FaLocationDot } from "react-icons/fa6";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// Import images from src/assets
+import turkiye from "../../../../assets/europe-turkiye.jpg";
+import georgia from "../../../../assets/europe-georgia.jpg";
+import azerbaijan from "../../../../assets/europe-azerbaijan.jpg";
+import belarus from "../../../../assets/europe-belarus.jpg";
+
 const attractions = [
   {
-    img: "/assets/europe-turkiye.jpg",
+    img: turkiye,
     title: "Istanbul, Turkiye",
     location: "Turkiye",
     description:
@@ -15,7 +21,7 @@ const attractions = [
     info: "Istanbul, Turkiye",
   },
   {
-    img: "/assets/europe-georgia.jpg",
+    img: georgia,
     title: "Tbilisi, Georgia",
     location: "Georgia",
     description:
@@ -23,7 +29,7 @@ const attractions = [
     info: "Tbilisi, Georgia",
   },
   {
-    img: "/assets/europe-azerbaijan.jpg",
+    img: azerbaijan,
     title: "Baku, Azerbaijan",
     location: "Azerbaijan",
     description:
@@ -31,7 +37,7 @@ const attractions = [
     info: "Baku, Azerbaijan",
   },
   {
-    img: "/assets/europe-belarus.jpg",
+    img: belarus,
     title: "Minsk, Belarus",
     location: "Belarus",
     description:

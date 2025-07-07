@@ -10,6 +10,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { HiOutlineMail } from "react-icons/hi";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { RxDividerVertical } from "react-icons/rx";
+import logo from "../assets/Logo.png";
 
 const Footer = () => {
   const location = useLocation();
@@ -45,7 +46,7 @@ const Footer = () => {
                   }}
                 >
                   <img
-                    src="/assets/Logo.png"
+                    src={logo}
                     alt="Air Ceylon Logo"
                     style={{ width: "2.8rem", marginRight: ".8rem" }}
                   />

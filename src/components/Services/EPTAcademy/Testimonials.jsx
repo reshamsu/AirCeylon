@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "@mui/material";
+import { FaCommentDots } from "react-icons/fa";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 const EPTTestimonials = () => {
@@ -9,7 +10,8 @@ const EPTTestimonials = () => {
         <div className="container-fluid">
           <label>Testimonials</label>
           <h1>
-            What Our <span className="gradient-text">Students Say</span>
+            What Our <span className="gradient-text">Students Say</span>{" "}
+            <FaCommentDots />
           </h1>
         </div>
         <div className="container-lg">

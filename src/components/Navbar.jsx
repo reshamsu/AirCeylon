@@ -3,6 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { IoChevronDownOutline, IoBagCheckOutline } from "react-icons/io5";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { FaChevronRight } from "react-icons/fa";
+import logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const location = useLocation();
@@ -31,8 +32,8 @@ const Navbar = () => {
             onClick={() => handleNavClick("/")}
           >
             <img
-              src="/assets/Logo.png"
-              alt="Air Ceylon Logo"
+              src={logo}
+              alt="Air Ceylon"
               style={{ width: "2.8rem", marginRight: ".8rem" }}
             />
             Air Ceylon

@@ -6,6 +6,7 @@ import { WiTime4 } from "react-icons/wi";
 import { GrOverview } from "react-icons/gr";
 import { IoCart } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import offer from "../../../assets/limited-offer.png";
 
 // Complete product list
 const products = [
@@ -62,7 +63,7 @@ const EPTPackages = () => {
                 <h3>
                   {product.id === 1 && (
                     <img
-                      src="/assets/limited-offer.png"
+                      src={offer}
                       alt="offer"
                       style={{ width: "40px", marginRight: "1rem" }}
                     />

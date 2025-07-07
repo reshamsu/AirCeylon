@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "@mui/material";
+import tutor from "../../../assets/tutor.png";
 
 const EPTMonologue = () => {
   return (
@@ -8,7 +9,7 @@ const EPTMonologue = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="tutor">
-              <img src="/assets/tutor.png" alt="Tutor" />
+              <img src={tutor} alt="Tutor" />
               <div className="col">
                 <h1>
                   <span className="gradient-text">Tasha Vanhoff</span>

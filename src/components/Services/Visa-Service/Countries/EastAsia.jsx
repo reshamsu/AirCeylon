@@ -5,9 +5,14 @@ import { FaLocationDot } from "react-icons/fa6";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// Import images from src/assets
+import japan from "../../../../assets/east-asia-japan.jpg";
+import china from "../../../../assets/east-asia-china.jpg";
+import korea from "../../../../assets/east-asia-korea.jpg";
+
 const attractions = [
   {
-    img: "/assets/east-asia-japan.jpg",
+    img: japan,
     title: "Tokyo, Japan",
     location: "Japan",
     description:
@@ -15,7 +20,7 @@ const attractions = [
     info: "Japan",
   },
   {
-    img: "/assets/east-asia-china.jpg",
+    img: china,
     title: "Great Wall, China",
     location: "China",
     description:
@@ -23,37 +28,13 @@ const attractions = [
     info: "China",
   },
   {
-    img: "/assets/east-asia-korea.jpg",
+    img: korea,
     title: "Seoul, South Korea",
     location: "South Korea",
     description:
       "A cultural powerhouse — explore Seoul’s palaces, K-pop districts, vibrant street food, and cutting-edge fashion.",
     info: "South Korea",
   },
-  // {
-  //   img: "./assets/europe-spain.jpg",
-  //   title: "Madrid, Spain",
-  //   location: "Spain",
-  //   description:
-  //     "From flamenco rhythms to regal boulevards — Madrid pulses with art, flavor, and the warmth of Spanish spirit.",
-  //   info: "Madrid, Spain",
-  // },
-  // {
-  //   img: "./assets/europe-canada.webp",
-  //   title: "Toronto, Canada",
-  //   location: "Canada",
-  //   description:
-  //     "Toronto is a multicultural mosaic — where skyscrapers meet the shores of Lake Ontario and every street tells a global story.",
-  //   info: "Toronto, Canada",
-  // },
-  // {
-  //   img: "./assets/east-asia-singapore.jpg",
-  //   title: "Singapore",
-  //   location: "Singapore",
-  //   description:
-  //     "A futuristic skyline meets lush green sanctuaries — explore Singapore’s seamless blend of innovation, culture, and cuisine.",
-  //   info: "Marina Bay, Singapore",
-  // },
 ];
 
 const Gallery = () => {

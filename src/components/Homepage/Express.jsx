@@ -2,23 +2,28 @@ import React from "react";
 import { Container, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
+// Import images from src/assets
+import express1 from "../../assets/express1.png";
+import express2 from "../../assets/express2.png";
+import express3 from "../../assets/express3.png";
+
 const expressOptions = [
   {
     title: "For Inquiries / Consultations",
     button: "Call Us",
-    iconPng: "/assets/express1.png",
+    iconPng: express1,
     phone: "+94760301141",
   },
   {
     title: "To Set an Appointment For Visit / Service",
     button: "Book Now",
-    iconPng: "/assets/express2.png",
+    iconPng: express2,
     phone: "+94760301141",
   },
   {
     title: "To Begin IELTS Training",
     button: "Register Now",
-    iconPng: "/assets/express3.png",
+    iconPng: express3,
     phone: "+94760301141",
     // direct: "/checkout",
   },

@@ -628,6 +628,26 @@ nav.sidenav span svg {
   font-weight: 500;
 }
 
+.landing-welcome .container-lg .define {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.landing-welcome .container-lg img {
+  border-radius: 12px;
+  padding: 0.4rem;
+  margin-right: 1.4rem;
+  background: var(--text-black);
+  width: 3.6%;
+}
+
+.landing-welcome .container-lg h3 {
+  padding-bottom: 0.4rem;
+  border-bottom: 4px solid var(--text-gold-hover);
+  width: 4%;
+}
+
 /* Slider Content  */
 .slick-prev:before,
 .slick-next:before {
@@ -875,6 +895,14 @@ nav.sidenav span svg {
   border-radius: 14px;
 }
 
+.landing-stats .container-lg .card-info {
+  width: 100%;
+  cursor: pointer;
+  padding: 1.8rem 2%;
+  border-radius: 14px;
+  background-color: #fff;
+}
+
 .landing-stats1 .container-lg .card {
   margin: 0.8rem;
   width: 44%;
@@ -918,6 +946,7 @@ nav.sidenav span svg {
   display: flex;
   height: 28vh;
   text-align: center;
+  align-items: center;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -954,20 +983,13 @@ nav.sidenav span svg {
 }
 
 .landing-stats .container-lg .card-group h2,
-.landing-stats .container-lg .card-body h3,
 .landing-stats .container-lg .card-info h2,
-.landing-stats2 .container-lg .card-group h2 {
+.landing-stats2 .container-lg .card-group h2,
+.landing-stats .container-lg .card-group h3 {
   color: var(--text-white);
   font-weight: 700;
   padding: 0.4rem;
 }
-
-/* .landing-stats .container-lg .card-group h3,
-.landing-stats2 .container-lg .card-group h3 {
-  color: var(--dark-blue);
-  font-weight: 700;
-  padding: 0.4rem 0;
-} */
 
 .landing-stats3 .container-lg .card-group h3 {
   color: var(--dark-blue);
@@ -1006,7 +1028,7 @@ nav.sidenav span svg {
   width: 16%;
 }
 
-.landing-stats .container-lg .card-body img {
+.landing-stats .container-lg .card .card-body img {
   width: 36%;
   font-weight: 500;
   margin-bottom: 0.4rem;
@@ -1017,6 +1039,7 @@ nav.sidenav span svg {
 
 .landing-stats .container-lg .card .button {
   padding-top: 1rem;
+  text-align: center;
 }
 
 .landing-stats1 .container-lg .card-body svg {

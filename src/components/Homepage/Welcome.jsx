@@ -1,12 +1,13 @@
 import React from "react";
 import { Container } from "@mui/material";
+import welcome from "../../assets/Watermark.png";
 
 const Welcome = () => {
   return (
     <div className="landing-welcome">
       <div className="homepage-overlay">
         <img
-          src="./assets/Watermark.png"
+          src={welcome}
           className="watermark"
           alt="Watermark"
         />

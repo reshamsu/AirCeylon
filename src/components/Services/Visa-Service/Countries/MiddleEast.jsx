@@ -5,9 +5,14 @@ import { FaLocationDot } from "react-icons/fa6";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// Correct Image Imports
+import kuwait from "../../../../assets/middle-east-kuwait.jpg";
+import dubai from "../../../../assets/middle-east-dubai.jpg";
+import petra from "../../../../assets/middle-east-petra.jpg";
+
 const attractions = [
   {
-    img: "/assets/middle-east-kuwait.jpg",
+    img: kuwait,
     title: "Kuwait City, Kuwait",
     location: "Kuwait",
     description:
@@ -15,7 +20,7 @@ const attractions = [
     info: "Kuwait City, Kuwait",
   },
   {
-    img: "/assets/middle-east-dubai.jpg",
+    img: dubai,
     title: "Dubai, UAE",
     location: "UAE",
     description:
@@ -23,37 +28,13 @@ const attractions = [
     info: "Dubai, UAE",
   },
   {
-    img: "/assets/middle-east-petra.jpg",
+    img: petra,
     title: "Petra, Jordan",
     location: "Jordan",
     description:
       "Step into a lost city carved from rose-red stone — Petra is Jordan’s most breathtaking archaeological wonder.",
     info: "Petra, Jordan",
   },
-  // {
-  //   img: "./assets/europe-spain.jpg",
-  //   title: "Madrid, Spain",
-  //   location: "Spain",
-  //   description:
-  //     "From flamenco rhythms to regal boulevards — Madrid pulses with art, flavor, and the warmth of Spanish spirit.",
-  //   info: "Madrid, Spain",
-  // },
-  // {
-  //   img: "./assets/europe-canada.webp",
-  //   title: "Toronto, Canada",
-  //   location: "Canada",
-  //   description:
-  //     "Toronto is a multicultural mosaic — where skyscrapers meet the shores of Lake Ontario and every street tells a global story.",
-  //   info: "Toronto, Canada",
-  // },
-  // {
-  //   img: "./assets/east-asia-singapore.jpg",
-  //   title: "Singapore",
-  //   location: "Singapore",
-  //   description:
-  //     "A futuristic skyline meets lush green sanctuaries — explore Singapore’s seamless blend of innovation, culture, and cuisine.",
-  //   info: "Marina Bay, Singapore",
-  // },
 ];
 
 const Gallery = () => {
@@ -99,10 +80,7 @@ const Gallery = () => {
 
         <Slider {...settings}>
           {attractions.map((item, index) => (
-            <div
-              key={index}
-              style={{ padding: "0 10px", boxSizing: "border-box" }}
-            >
+            <div key={index} style={{ padding: "0 10px", boxSizing: "border-box" }}>
               <div
                 className="slide-card"
                 style={{

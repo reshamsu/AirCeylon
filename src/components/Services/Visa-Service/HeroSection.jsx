@@ -1,6 +1,7 @@
 import { Container } from "@mui/material";
 import React from "react";
 import SubNavbar from "../../SubNavbar";
+import hero from "../../../assets/visa-section.avif";
 
 const VISAHero = () => {
   return (
@@ -9,7 +10,7 @@ const VISAHero = () => {
 
       <div className="visa-hero">
         <div className="homepage-overlay">
-          <img src="/assets/visa-section.avif" className="homepage darkened" />
+          <img src={hero} className="homepage darkened" />
         </div>
         <Container className="visa-hero">
           <div className="container-fluid">

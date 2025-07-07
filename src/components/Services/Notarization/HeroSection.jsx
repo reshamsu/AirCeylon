@@ -1,12 +1,13 @@
 import { Container } from "@mui/material";
 import React from "react";
+import hero from "../../../assets/notarization-section.jpg";
 
 const NotariesHero = () => {
   return (
     <div className="hero-section">
       <div className="homepage-overlay">
         <img
-          src="/assets/notarization-section.jpg"
+          src={hero}
           className="homepage darkened"
         />
       </div>

@@ -1,31 +1,36 @@
 import React from "react";
 import { Container } from "@mui/material";
 
+import ethicalIcon from "../../assets/ethical.png";
+import proactiveIcon from "../../assets/proactive.png";
+import ecoIcon from "../../assets/eco.png";
+import growthIcon from "../../assets/growth.png";
+
 const Sustainability = () => {
   const cards = [
     {
       title: "Ethical Innovation",
       description:
         "We lead with honesty, integrity, and smart innovation. Every service we deliver is built on trust, ethics, and forward-thinking tech.",
-      icon: "/assets/ethical.png",
+      icon: ethicalIcon,
     },
     {
       title: "Proactive & People-First",
       description:
         "We anticipate challenges and empower people. From personalized journeys to community transition support, we go beyond expectations.",
-      icon: "/assets/proactive.png",
+      icon: proactiveIcon,
     },
     {
       title: "Green Practices",
       description:
         "Our operations are digital-first to reduce waste. We support eco-conscious partners, remote work, and energy-efficient office culture.",
-      icon: "/assets/eco.png",
+      icon: ecoIcon,
     },
     {
       title: "Inclusive Growth",
       description:
         "We uplift migrant communities and promote inclusive development through education, jobs, and sustainable living support.",
-      icon: "/assets/growth.png",
+      icon: growthIcon,
     },
   ];
 
@@ -43,7 +48,7 @@ const Sustainability = () => {
           {cards.map((card, index) => (
             <div className="card" key={index}>
               <div className="card-body">
-                <div className="card-info">
+                <div className="card-group">
                   <img src={card.icon} alt={card.title} />
                   <h3>{card.title}</h3>
                 </div>
