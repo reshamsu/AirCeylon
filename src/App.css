@@ -715,7 +715,7 @@ nav.sidenav span svg {
 
 .landing-express::before {
   content: "";
-  background-image: url("/public/assets/thunderbolt.png");
+  background-image: url("/src/assets/thunderbolt.png");
   background-size: 320px 320px;
   background-repeat: no-repeat;
   background-position: center;

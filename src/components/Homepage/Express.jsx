@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import express1 from "../../assets/express1.png";
 import express2 from "../../assets/express2.png";
 import express3 from "../../assets/express3.png";
+import thunder from "../../assets/express3.png";
 
 const expressOptions = [
   {
