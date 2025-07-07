@@ -7,7 +7,7 @@ import { LuHeartHandshake } from "react-icons/lu";
 
 const CoreValues = () => {
   return (
-    <div className="landing-stats">
+    <div className="landing-stats" id="values">
       <Container className="container">
         <div className="container-fluid">
           {/* <label>Values</label> */}

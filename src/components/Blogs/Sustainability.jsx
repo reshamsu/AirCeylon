@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "@mui/material";
+import { Link } from "react-router-dom";
 
 import ethicalIcon from "../../assets/ethical.png";
 import proactiveIcon from "../../assets/proactive.png";
@@ -47,7 +48,7 @@ const Sustainability = () => {
         <div className="container-lg">
           {cards.map((card, index) => (
             <div className="card" key={index}>
-              <div className="card-body">
+              <div className="card-body" style={{ height: "36vh"}}>
                 <div className="card-group">
                   <img src={card.icon} alt={card.title} />
                   <h3>{card.title}</h3>
@@ -55,11 +56,10 @@ const Sustainability = () => {
                 <div className="card-text">
                   <p>{card.description}</p>
                 </div>
-              </div>
-              <div className="button">
-                <button to="/" className="btn btn-primary">
+
+                <Link to="/about-us#values" className="btn btn-primary">
                   Learn More
-                </button>
+                </Link>
               </div>
             </div>
           ))}

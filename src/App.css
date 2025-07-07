@@ -944,7 +944,7 @@ nav.sidenav span svg {
 .landing-stats .container-lg .card-body,
 .landing-stats2 .container-lg .card-body {
   display: flex;
-  height: 28vh;
+  height: 30vh;
   text-align: center;
   align-items: center;
   flex-direction: column;
@@ -988,7 +988,7 @@ nav.sidenav span svg {
 .landing-stats .container-lg .card-group h3 {
   color: var(--text-white);
   font-weight: 700;
-  padding: 0.4rem;
+  padding: .8rem;
 }
 
 .landing-stats3 .container-lg .card-group h3 {
@@ -1031,14 +1031,13 @@ nav.sidenav span svg {
 .landing-stats .container-lg .card .card-body img {
   width: 36%;
   font-weight: 500;
-  margin-bottom: 0.4rem;
   border-radius: 12px;
   /* background: var(--background-white); */
   color: var(--text-gold-hover);
 }
 
-.landing-stats .container-lg .card .button {
-  padding-top: 1rem;
+.landing-stats .container-lg .card .btn.btn-primary {
+  margin-top: 1rem;
   text-align: center;
 }
 

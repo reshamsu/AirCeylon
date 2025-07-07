@@ -19,7 +19,7 @@ const TransitionWelcome = () => {
 
         <div className="container-lg">
           <div className="card">
-            <div className="card-body" style={{ height: "24vh" }}>
+            <div className="card-body">
               <div className="card-group">
                 <img src={accom} alt="Accommodation" />
                 <h2>Accommodation</h2>
@@ -34,7 +34,7 @@ const TransitionWelcome = () => {
           </div>
 
           <div className="card">
-            <div className="card-body" style={{ height: "24vh" }}>
+            <div className="card-body">
               <div className="card-group">
                 <img src={jobs} alt="Jobs" />
                 <h2>Jobs</h2>
@@ -49,7 +49,7 @@ const TransitionWelcome = () => {
           </div>
 
           <div className="card">
-            <div className="card-body" style={{ height: "24vh" }}>
+            <div className="card-body">
               <div className="card-group">
                 <img src={community} alt="Community" />
                 <h2>Community</h2>
@@ -64,7 +64,7 @@ const TransitionWelcome = () => {
           </div>
 
           <div className="card">
-            <div className="card-body" style={{ height: "24vh" }}>
+            <div className="card-body">
               <div className="card-group">
                 <img src={lifestyle} alt="Lifestyle Management" />
                 <h2>Lifestyle Management</h2>
