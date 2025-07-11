@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "@mui/material";
-import Annoucements from "../../api/Annoucements";
+import IRCCNews from "../IRCCNews";
 
 const News = () => {
   return (
@@ -12,7 +12,7 @@ const News = () => {
             Announcements <span className="gradient-text"></span>
           </h1>
 
-          {/* <Annoucements /> */}
+          <IRCCNews />
 
           <ul>
             <li>IRCC Canada</li>
