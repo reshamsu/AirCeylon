@@ -32,9 +32,9 @@ const EPTMonologue = () => {
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
-                    <h1 className="gradient-text">150+</h1>
+                    <h1 className="gradient-text">100+</h1>
                   </div>
-                  <strong>Students Enrolled</strong>
+                  <strong>Students Trained</strong>
                 </div>
               </div>
               <div className="card">

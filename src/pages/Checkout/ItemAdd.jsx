@@ -6,10 +6,15 @@ const Checkout = () => {
   const navigate = useNavigate();
   const product = location.state?.product;
 
+  const REGISTRATION_FEE = 10000;
+
   if (!product) {
     navigate("/checkout/no-items");
     return null;
   }
+
+  const courseFee = Number(product.price) || 0; // Ensure numeric
+  const total = REGISTRATION_FEE + courseFee;
 
   const handleCheckout = () => {
     navigate("/checkout/personal-info", { state: { product } });
@@ -36,19 +41,19 @@ const Checkout = () => {
               <h4>Summary</h4>
               <ul className="summary">
                 <li>Registration Fee</li>
-                <li>LKR 10,000</li>
+                <li>LKR {REGISTRATION_FEE.toLocaleString()}</li>
               </ul>
               <ul className="summary">
                 <li>Course Fee</li>
-                <li>LKR {product.price.toLocaleString()}</li>
+                <li>{courseFee === 0 ? "Free" : `LKR ${courseFee.toLocaleString()}`}</li>
               </ul>
               <ul className="final-summary">
                 <strong>Subtotal</strong>
-                <strong>LKR {product.price.toLocaleString()}</strong>
+                <strong>LKR {total.toLocaleString()}</strong>
               </ul>
               <ul className="final-summary">
                 <strong>Total Price</strong>
-                <strong>LKR {product.price.toLocaleString()}</strong>
+                <strong>LKR {total.toLocaleString()}</strong>
               </ul>
             </div>
             <div className="button">

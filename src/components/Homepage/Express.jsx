@@ -9,19 +9,42 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-// Import images
 import express1 from "../../assets/express1.png";
 import express2 from "../../assets/express2.png";
 import express3 from "../../assets/express3.png";
 
-// Sample Courses
-const courses = [
-  { name: "Course Zero (Free)", sessions: 20 },
-  { name: "Crash Course", sessions: 5 },
-  { name: "Essential Course", sessions: 10 },
-  { name: "Pro Course", sessions: 20 },
+// Reuse exact product list from EPTPackages
+const products = [
+  {
+    id: 1,
+    name: "Course ZERO (Free)",
+    sessions: 20,
+    duration: "6 months",
+    price: 0,
+  },
+  {
+    id: 2,
+    name: "Crash Course",
+    sessions: 5,
+    duration: "Customizable",
+    price: 25000,
+  },
+  {
+    id: 3,
+    name: "Essential Course",
+    sessions: 10,
+    duration: "Customizable",
+    price: 50000,
+  },
+  {
+    id: 4,
+    name: "Pro Course",
+    sessions: 20,
+    duration: "Customizable",
+    price: 100000,
+  },
 ];
 
 const expressOptions = [
@@ -45,6 +68,7 @@ const expressOptions = [
 ];
 
 const Express = () => {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
@@ -89,6 +113,15 @@ const Express = () => {
     });
   };
 
+  const handleRedirectToCheckout = () => {
+    const selectedProduct = products.find(
+      (p) => p.name === formData.course
+    );
+    if (selectedProduct) {
+      navigate("/checkout/add-items", { state: { product: selectedProduct } });
+    }
+  };
+
   return (
     <div className="landing-express" style={{ padding: "2rem 0" }}>
       <Container>
@@ -118,10 +151,7 @@ const Express = () => {
                       {item.button}
                     </Button>
                   ) : item.phone ? (
-                    <a
-                      href={`tel:${item.phone}`}
-                      style={{ textDecoration: "none" }}
-                    >
+                    <a href={`tel:${item.phone}`} style={{ textDecoration: "none" }}>
                       <Button variant="contained" className="btn btn-primary">
                         {item.button}
                       </Button>
@@ -143,29 +173,9 @@ const Express = () => {
           ))}
         </div>
 
-        {/* Modal Pop-Up */}
-        <Dialog
-          open={open}
-          onClose={handleClose}
-          fullWidth
-          maxWidth="sm"
-          PaperProps={{
-            style: {
-              borderRadius: "14px",
-              padding: "1rem",
-              boxShadow: "0px 10px 30px rgba(0,0,0,0.2)",
-              backgroundColor: "#fff",
-            },
-          }}
-        >
-          <DialogTitle
-            style={{
-              textAlign: "center",
-              fontWeight: 660,
-              fontSize: "1.5rem",
-              marginBottom: "1rem",
-            }}
-          >
+        {/* Dialog Steps */}
+        <Dialog open={open} onClose={handleClose} fullWidth maxWidth="sm">
+          <DialogTitle>
             {step === 1
               ? "Select a Course"
               : step === 2
@@ -174,135 +184,86 @@ const Express = () => {
           </DialogTitle>
 
           <DialogContent>
-            {step === 1 && (
-              <>
-                {courses.map((c, i) => (
-                  <Button
-                    key={i}
-                    onClick={() =>
-                      setFormData({ ...formData, course: c.name })
-                    }
-                    className="btn btn-outline-primary"
-                    variant={formData.course === c.name ? "contained" : "outlined"}
-                    fullWidth
-                    style={{
-                      margin: "8px 0",
-                      borderRadius: "12px",
-                      textTransform: "none",
-                      fontWeight: 550,
-                      backgroundColor:
-                        formData.course === c.name ? "#a87c47" : "transparent",
-                      color:
-                        formData.course === c.name ? "#fff" : "#a87c47",
-                      border:
-                        formData.course === c.name
-                          ? "none"
-                          : "1px solid #a87c47",
-                      boxShadow:
-                        formData.course === c.name
-                          ? "0 4px 10px rgba(25, 118, 210, 0.2)"
-                          : "none",
-                    }}
-                  >
-                    {c.name} – {c.sessions} sessions
-                  </Button>
-                ))}
-              </>
-            )}
+            {step === 1 &&
+              products.map((course, i) => (
+                <Button
+                  key={i}
+                  onClick={() => setFormData({ ...formData, course: course.name })}
+                  className="btn btn-outline-primary"
+                  variant={formData.course === course.name ? "contained" : "outlined"}
+                  fullWidth
+                  style={{
+                    boxShadow: "none",
+                    border: "1px solid #ddd",
+                    margin: "8px 0",
+                  }}
+                >
+                  {course.name} – {course.sessions} sessions
+                </Button>
+              ))}
 
             {step === 2 && (
               <>
                 <TextField
-                  margin="normal"
                   label="First Name"
                   name="firstName"
                   fullWidth
                   required
                   value={formData.firstName}
                   onChange={handleChange}
-                  variant="outlined"
-                  sx={{ mb: 2 }}
+                  margin="normal"
                 />
                 <TextField
-                  margin="normal"
                   label="Last Name"
                   name="lastName"
                   fullWidth
                   required
                   value={formData.lastName}
                   onChange={handleChange}
-                  variant="outlined"
-                  sx={{ mb: 2 }}
+                  margin="normal"
                 />
                 <TextField
-                  margin="normal"
                   label="Gmail Address"
                   name="gmail"
-                  type="email"
                   fullWidth
                   required
+                  type="email"
                   value={formData.gmail}
                   onChange={handleChange}
-                  variant="outlined"
-                  error={formData.gmail && !formData.gmail.endsWith("@gmail.com")}
+                  error={
+                    formData.gmail && !formData.gmail.endsWith("@gmail.com")
+                  }
                   helperText={
                     formData.gmail &&
                     !formData.gmail.endsWith("@gmail.com") &&
-                    "Please enter a valid Gmail address"
+                    "Please use a valid Gmail address"
                   }
-                  sx={{ mb: 2 }}
+                  margin="normal"
                 />
-                <Typography sx={{ mb: 1 }}>Upload NIC/Passport</Typography>
                 <input
                   type="file"
                   name="document"
                   accept=".pdf,.jpg,.jpeg,.png"
                   required
                   onChange={handleChange}
-                  style={{
-                    padding: "10px",
-                    backgroundColor: "#f9f9f9",
-                    borderRadius: "8px",
-                    border: "1px solid #ccc",
-                    width: "100%",
-                    marginBottom: "1rem",
-                  }}
+                  style={{ marginTop: "1rem" }}
                 />
               </>
             )}
 
             {step === 3 && (
-              <Typography
-                align="center"
-                color="green"
-                fontWeight="bold"
-                fontSize="1.1rem"
-              >
-                ✅ All information filled. Proceed to secure payment gateway.
+              <Typography>
+                ✅ All information complete. Click “Pay Now” to proceed to checkout.
               </Typography>
             )}
           </DialogContent>
 
-          <DialogActions
-            sx={{
-              justifyContent: "space-between",
-              paddingTop: "1.5rem",
-            }}
-          >
-            <Button
-              onClick={handleClose}
-              variant="outlined"
-              className="btn btn-outline-primary"
-              style={{ borderRadius: "12px", border: "none" }}
-            >
-              Cancel
-            </Button>
+          <DialogActions>
+            <Button onClick={handleClose}>Cancel</Button>
             {step < 3 ? (
               <Button
-                onClick={handleNext}
                 variant="contained"
-                className="btn btn-primary"
-                style={{ borderRadius: "12px", border: "none" }}
+                onClick={handleNext}
                 disabled={
                   (step === 1 && !formData.course) ||
                   (step === 2 &&
@@ -318,10 +279,7 @@ const Express = () => {
               <Button
                 variant="contained"
                 color="success"
-                component={Link}
-                to="/checkout/add-items"
-                className="btn btn-primary"
-                style={{ borderRadius: "12px" }}
+                onClick={handleRedirectToCheckout}
               >
                 Pay Now
               </Button>

@@ -9,6 +9,10 @@ const Payment = () => {
   const location = useLocation();
   const productInfo = location.state?.product || null;
 
+  const REGISTRATION_FEE = 10000;
+  const courseFee = Number(productInfo?.price) || 0;
+  const totalPrice = REGISTRATION_FEE + courseFee;
+
   const {
     register,
     handleSubmit,
@@ -175,28 +179,20 @@ const Payment = () => {
               <h2>YOUR CART</h2>
               <h4>Summary</h4>
               <ul className="summary">
-                <li>Product Name</li>
+                <li>Selected Course</li>
                 <p>{productInfo?.name || "Not provided"}</p>
               </ul>
               <ul className="summary">
-                <li>Price</li>
-                <p>$ {productInfo?.price || "0.00"}</p>
+                <li>Registration Fee</li>
+                <p>LKR {REGISTRATION_FEE.toLocaleString()}</p>
               </ul>
               <ul className="summary">
-                <li>Taxes</li>
-                <p>$ 0</p>
-              </ul>
-              <ul className="summary">
-                <li>Discounts</li>
-                <i>No Discount Applied</i>
-              </ul>
-              <ul className="summary">
-                <li>Total Price</li>
-                <p>$ {productInfo?.price || "0.00"}</p>
+                <li>Course Fee</li>
+                <p>{courseFee === 0 ? "Free" : `LKR ${courseFee.toLocaleString()}`}</p>
               </ul>
               <ul className="final-summary">
                 <strong>Total Price</strong>
-                <strong>$ {productInfo?.price || "0.00"}</strong>
+                <strong>LKR {totalPrice.toLocaleString()}</strong>
               </ul>
             </div>
           </div>

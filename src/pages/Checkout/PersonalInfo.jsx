@@ -8,6 +8,8 @@ const PersonalInfo = () => {
   const navigate = useNavigate();
   const product = location.state?.product;
 
+  const REGISTRATION_FEE = 10000;
+
   const {
     register,
     handleSubmit,
@@ -21,6 +23,9 @@ const PersonalInfo = () => {
   }, [product, navigate]);
 
   if (!product) return null;
+
+  const courseFee = Number(product.price) || 0;
+  const totalPrice = REGISTRATION_FEE + courseFee;
 
   const onSubmit = (data) => {
     navigate("/checkout/payment", { state: { product, customerInfo: data } });
@@ -71,9 +76,7 @@ const PersonalInfo = () => {
                       style={{ padding: ".8rem 8%" }}
                     />
                     {errors.firstName && (
-                      <p className="error-message">
-                        {errors.firstName.message}
-                      </p>
+                      <p className="error-message">{errors.firstName.message}</p>
                     )}
                   </div>
                   <div className="form-group">
@@ -169,9 +172,7 @@ const PersonalInfo = () => {
                       style={{ padding: ".8rem 8%" }}
                     />
                     {errors.postalCode && (
-                      <p className="error-message">
-                        {errors.postalCode.message}
-                      </p>
+                      <p className="error-message">{errors.postalCode.message}</p>
                     )}
                   </div>
                   <div className="form-group" style={{ marginLeft: ".8rem" }}>
@@ -220,20 +221,16 @@ const PersonalInfo = () => {
                 <p>{product.name}</p>
               </ul>
               <ul className="summary">
-                <li>Taxes</li>
-                <p>LKR 0</p>
+                <li>Registration Fee</li>
+                <p>LKR {REGISTRATION_FEE.toLocaleString()}</p>
               </ul>
               <ul className="summary">
-                <li>Discounts</li>
-                <i>No Discount Applied</i>
-              </ul>
-              <ul className="summary">
-                <li>Total Price</li>
-                <p>LKR {product.price.toLocaleString()}</p>
+                <li>Course Fee</li>
+                <p>{courseFee === 0 ? "Free" : `LKR ${courseFee.toLocaleString()}`}</p>
               </ul>
               <ul className="final-summary">
                 <strong>Total Price</strong>
-                <strong>LKR {product.price.toLocaleString()}</strong>
+                <strong>LKR {totalPrice.toLocaleString()}</strong>
               </ul>
             </div>
           </div>

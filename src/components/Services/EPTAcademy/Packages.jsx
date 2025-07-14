@@ -16,7 +16,6 @@ const products = [
     sessions: 20,
     duration: "6 months",
     price: "0 (Free)",
-    label: "ZERO (Free)",
   },
   {
     id: 2,
