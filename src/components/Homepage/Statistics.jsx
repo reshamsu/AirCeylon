@@ -14,7 +14,7 @@ const Statistics = () => {
         <div className="container-fluid">
           <label>Our Expertise</label>
           <h1>
-            Your Journey, <span className="gradient-text">Our Responsibility.</span>
+            Your Journey, Our Responsibility.
           </h1>
           <h4>Navigating Your Experience with Confidence and Ease</h4>
         </div>
