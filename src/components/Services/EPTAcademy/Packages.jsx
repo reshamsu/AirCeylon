@@ -12,7 +12,7 @@ import offer from "../../../assets/limited-offer.png";
 const products = [
   {
     id: 1,
-    name: "Course",
+    name: "Course ZERO (Free)",
     sessions: 20,
     duration: "6 months",
     price: "0 (Free)",

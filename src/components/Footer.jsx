@@ -52,7 +52,7 @@ const Footer = () => {
                   />
                   Air Ceylon
                 </NavLink>
-                <p>Beyond Traveling</p>
+                <p>Beyond Travelling</p>
 
                 <ul>
                   <li>

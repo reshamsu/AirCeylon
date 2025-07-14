@@ -1,9 +1,10 @@
 import React from "react";
 import { Container } from "@mui/material";
 
-import myHiveLogo from "../../assets/myhive.png";
+import myHiveLogo from "../../assets/myhive.jpg";
 import googleLogo from "../../assets/google.png";
 import dhlLogo from "../../assets/dhl.jpg";
+import tashaLogo from "../../assets/tasha.jpg";
 import wspaceLogo from "../../assets/Wspace.png";
 import ieltsLogo from "../../assets/ielts.jpg";
 import redSealLogo from "../../assets/redsealnotary.webp";
@@ -13,6 +14,7 @@ const brandLogos = [
   { image: googleLogo, name: "Google" },
   { image: dhlLogo, name: "DHL" },
   { image: wspaceLogo, name: "WSPACE" },
+  { image: tashaLogo, name: "Tasha" },
   { image: ieltsLogo, name: "IELTS" },
   { image: redSealLogo, name: "Red Seal Notary" },
 ];

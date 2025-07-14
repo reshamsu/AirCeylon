@@ -21,26 +21,26 @@ const Checkout = () => {
               <h2>YOUR CART</h2>
               <h4>Summary</h4>
               <ul className="summary">
-                <li>Taxes</li>
-                <p>$ 0</p>
+                <li>Registration Fee</li>
+                <li>LKR 10,000</li>
               </ul>
               <ul className="summary">
-                <li>Discounts</li>
-                <i>No Discount Applied</i>
+                <li>Course Fee</li>
+                <li>LKR 0</li>
               </ul>
-              <ul className="summary">
-                <li>Total Price</li>
-                <p>$ 0</p>
+              <ul className="final-summary">
+                <strong>Subtotal</strong>
+                <strong>LKR 0</strong>
               </ul>
               <ul className="final-summary">
                 <strong>Total Price</strong>
-                <strong>$ 0</strong>
+                <strong>LKR 0</strong>
               </ul>
             </div>
             <div className="button">
-              <a href="/checkout/personal-info" className="btn btn-dark">
-                Checkout
-              </a>
+              <button className="btn btn-dark">
+                Proceed to Checkout
+              </button>
             </div>
           </div>
         </div>

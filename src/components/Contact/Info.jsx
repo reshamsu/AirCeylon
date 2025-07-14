@@ -72,12 +72,13 @@ const ContactInfo = () => {
           </div>
 
           <div className="container-sm">
-            <h3>Visit us by appointment:</h3>
+            <h2 style={{ textAlign: "center", marginBottom: "1rem" }}>Visit us by appointment</h2>
             <Slider />
             <a
               href="https://www.google.com/maps?q=WSPACE+-+252A,+GALLE+ROAD,+COLOMBO+4+(Bambalapitiya),+Western+Province,+Sri+Lanka"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ alignItems: "center", justifyContent: "center" }}
             >
               <FaLocationDot />
               WSpace Building - 252A, Galle Road, Colombo 4 (Bambalapitiya),

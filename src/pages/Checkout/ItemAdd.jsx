@@ -32,17 +32,19 @@ const Checkout = () => {
 
           <div className="card-final" style={{ borderRadius: "10px" }}>
             <div className="card-summary">
+              <h2>YOUR CART</h2>
+              <h4>Summary</h4>
               <ul className="summary">
-                <li>Taxes</li>
-                <i>LKR 0</i>
+                <li>Registration Fee</li>
+                <li>LKR 10,000</li>
               </ul>
               <ul className="summary">
-                <li>Applied discounts or offers</li>
-                <i>No Discount Applied</i>
+                <li>Course Fee</li>
+                <li>LKR {product.price.toLocaleString()}</li>
               </ul>
-              <ul className="summary">
-                <li>Total Price</li>
-                <i>LKR {product.price.toLocaleString()}</i>
+              <ul className="final-summary">
+                <strong>Subtotal</strong>
+                <strong>LKR {product.price.toLocaleString()}</strong>
               </ul>
               <ul className="final-summary">
                 <strong>Total Price</strong>

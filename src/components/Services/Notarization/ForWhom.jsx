@@ -1,69 +1,100 @@
 import React from "react";
 import { Container } from "@mui/material";
 
-// Import images properly for stable paths (assuming assets inside src/assets)
 import leafIcon from "../../../assets/leaf.png";
 import studentNotary from "../../../assets/student-notary.webp";
 import notarySeal from "../../../assets/notary-seal.jpeg";
 import canadaNotaries from "../../../assets/canada-notaries.jpg";
 
+const cardData = [
+  {
+    img: studentNotary,
+    title: "Students with Canadian Affiliated Certificates and Documents",
+  },
+  {
+    img: notarySeal,
+    title: "Canadian Affiliated Academic Institutions in Sri Lanka",
+  },
+  {
+    img: canadaNotaries,
+    title: "Canadian Academic Bodies in Sri Lanka",
+  },
+];
+
 const VisaWelcome = () => {
   return (
-    <div className="landing-stats">
-      <div className="container">
-        <div className="container-fluid">
+    <div className="landing-stats" style={{ padding: "3rem 0", background: "#f9f9f9" }}>
+      <Container maxWidth="lg">
+        <div style={{ textAlign: "center", marginBottom: "3rem" }}>
           <h1>
             Who is <span className="gradient-text">it for?</span>
           </h1>
           <h4>The key to notarize your documents starts here.</h4>
         </div>
 
-        <Container className="container-lg">
-          
-          <div className="card-info">
-            <div className="card-label">
-              <img src={leafIcon} alt="Leaf Icon" />
-            </div>
-            <div className="card-body">
-              <img
-                src={studentNotary}
-                alt="Students with Canadian Affiliated Certificates"
-                style={{ width: "90%" }}
+        <div
+          className="card-grid"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "2rem",
+            margin: "1rem"
+          }}
+        >
+          {cardData.map((item, index) => (
+            <div
+              key={index}
+              className="card-info"
+              style={{
+                position: "relative",
+                height: "260px",
+                borderRadius: "16px",
+                overflow: "hidden",
+                backgroundImage: `url(${item.img})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                boxShadow: "0 6px 20px rgba(0,0,0,0.15)",
+              }}
+            >
+              {/* Dark overlay */}
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  backgroundColor: "rgba(0,0,0,0.55)",
+                }}
               />
-              <h3>Students with Canadian Affiliated Certificates and Documents</h3>
-            </div>
-          </div>
 
-          <div className="card-info">
-            <div className="card-label">
-              <img src={leafIcon} alt="Leaf Icon" />
-            </div>
-            <div className="card-body">
-              <img
-                src={notarySeal}
-                alt="Canadian Affiliated Academic Institutions"
-                style={{ width: "90%", objectFit: "cover" }}
-              />
-              <h3>Canadian Affiliated Academic Institutions in Sri Lanka</h3>
-            </div>
-          </div>
+              {/* Leaf icon */}
+              <div
+                style={{
+                  position: "absolute",
+                  top: "1rem",
+                  left: "1rem",
+                  zIndex: 2,
+                }}
+              >
+                <img src={leafIcon} alt="Leaf Icon" style={{ width: "40px" }} />
+              </div>
 
-          <div className="card-info">
-            <div className="card-label">
-              <img src={leafIcon} alt="Leaf Icon" />
+              {/* Card content */}
+              <div
+                className="card-body"
+                style={{
+                  position: "absolute",
+                  bottom: "1.5rem",
+                  left: "1.5rem",
+                  right: "1.5rem",
+                  color: "#fff",
+                  zIndex: 2,
+                }}
+              >
+                <h3 style={{ fontSize: "1.2rem", lineHeight: 1.5 }}>{item.title}</h3>
+              </div>
             </div>
-            <div className="card-body">
-              <img
-                src={canadaNotaries}
-                alt="Canadian Academic Bodies"
-                style={{ width: "90%" }}
-              />
-              <h3>Canadian Academic Bodies in Sri Lanka</h3>
-            </div>
-          </div>
-
-        </Container>
-      </div>
+          ))}
+        </div>
+      </Container>
     </div>
   );
 };
