@@ -9,8 +9,12 @@ const Message = () => {
   return (
     <div className="about-message">
       <Container className="container">
+        <div className="container-fluid">
+          <h1>
+            A Message from <span className="gradient-text">The Founder</span>
+          </h1>
+        </div>
         <div className="card">
-          
           <div className="card-text">
             <p>
               <FaQuoteLeft style={{ marginRight: ".8rem" }} />
@@ -21,8 +25,8 @@ const Message = () => {
               I saw and experienced the challenges people face when navigating
               new journeys: visas, immigration, education, transitions, and the
               uncertainties that follow. Too often, these experiences were
-              stressful, discouraging, and impersonal. The mission for Air Ceylon
-              was born to change that.
+              stressful, discouraging, and impersonal. The mission for Air
+              Ceylon was born to change that.
             </p>
             <p>
               Our vision is to become Sri Lanka’s main travel and transition hub
@@ -59,7 +63,6 @@ const Message = () => {
               <label>- Air Ceylon International</label>
             </div>
           </div>
-
         </div>
       </Container>
     </div>

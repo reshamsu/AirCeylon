@@ -114,9 +114,7 @@ const Express = () => {
   };
 
   const handleRedirectToCheckout = () => {
-    const selectedProduct = products.find(
-      (p) => p.name === formData.course
-    );
+    const selectedProduct = products.find((p) => p.name === formData.course);
     if (selectedProduct) {
       navigate("/checkout/add-items", { state: { product: selectedProduct } });
     }
@@ -151,7 +149,10 @@ const Express = () => {
                       {item.button}
                     </Button>
                   ) : item.phone ? (
-                    <a href={`tel:${item.phone}`} style={{ textDecoration: "none" }}>
+                    <a
+                      href={`tel:${item.phone}`}
+                      style={{ textDecoration: "none" }}
+                    >
                       <Button variant="contained" className="btn btn-primary">
                         {item.button}
                       </Button>
@@ -188,9 +189,20 @@ const Express = () => {
               products.map((course, i) => (
                 <Button
                   key={i}
-                  onClick={() => setFormData({ ...formData, course: course.name })}
-                  className="btn btn-outline-primary"
-                  variant={formData.course === course.name ? "contained" : "outlined"}
+                  onClick={() =>
+                    setFormData({
+                      ...formData,
+                      course: course.name,
+                    })
+                  }
+                  className={`btn ${
+                    formData.course === course.name
+                      ? "btn-primary"
+                      : "btn-outline-primary"
+                  }`}
+                  variant={
+                    formData.course === course.name ? "contained" : "outlined"
+                  }
                   fullWidth
                   style={{
                     boxShadow: "none",
@@ -212,6 +224,17 @@ const Express = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   margin="normal"
+                  InputLabelProps={{
+                    style: { color: "#a87c47" },
+                  }}
+                  sx={{
+                    "& label.Mui-focused": { color: "#a87c47" },
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": { borderColor: "#a87c47" },
+                      "&:hover fieldset": { borderColor: "#a87c47" },
+                      "&.Mui-focused fieldset": { borderColor: "#a87c47" },
+                    },
+                  }}
                 />
                 <TextField
                   label="Last Name"
@@ -221,6 +244,17 @@ const Express = () => {
                   value={formData.lastName}
                   onChange={handleChange}
                   margin="normal"
+                  InputLabelProps={{
+                    style: { color: "#a87c47" },
+                  }}
+                  sx={{
+                    "& label.Mui-focused": { color: "#a87c47" },
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": { borderColor: "#a87c47" },
+                      "&:hover fieldset": { borderColor: "#a87c47" },
+                      "&.Mui-focused fieldset": { borderColor: "#a87c47" },
+                    },
+                  }}
                 />
                 <TextField
                   label="Gmail Address"
@@ -239,31 +273,58 @@ const Express = () => {
                     "Please use a valid Gmail address"
                   }
                   margin="normal"
+                  InputLabelProps={{
+                    style: { color: "#a87c47" },
+                  }}
+                  sx={{
+                    "& label.Mui-focused": { color: "#a87c47" },
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": { borderColor: "#a87c47" },
+                      "&:hover fieldset": { borderColor: "#a87c47" },
+                      "&.Mui-focused fieldset": { borderColor: "#a87c47" },
+                    },
+                  }}
                 />
-                <input
-                  type="file"
-                  name="document"
-                  accept=".pdf,.jpg,.jpeg,.png"
-                  required
-                  onChange={handleChange}
-                  style={{ marginTop: "1rem" }}
-                />
+                <div style={{ marginTop: "1rem" }}>
+                  <label>
+                    *Attach a ⁠Scanned copy of the Candidate’s NIC / Passport
+                  </label>
+                  <input
+                    type="file"
+                    name="document"
+                    accept=".pdf,.jpg,.jpeg,.png"
+                    required
+                    onChange={handleChange}
+                    style={{
+                      marginTop: ".6rem",
+                      border: "1px solid #d4af37",
+                      padding: "0.5rem",
+                      borderRadius: "4px",
+                      width: "100%",
+                      color: "#333",
+                    }}
+                  />
+                </div>
               </>
             )}
 
             {step === 3 && (
               <Typography>
-                ✅ All information complete. Click “Pay Now” to proceed to checkout.
+                ✅ All information complete. Click “Pay Now” to proceed to
+                checkout.
               </Typography>
             )}
           </DialogContent>
 
           <DialogActions>
-            <Button onClick={handleClose}>Cancel</Button>
+            <Button onClick={handleClose} className="btn btn-light">
+              Cancel
+            </Button>
             {step < 3 ? (
               <Button
                 variant="contained"
                 onClick={handleNext}
+                className="btn btn-primary"
                 disabled={
                   (step === 1 && !formData.course) ||
                   (step === 2 &&
@@ -279,6 +340,7 @@ const Express = () => {
               <Button
                 variant="contained"
                 color="success"
+                className="btn btn-success"
                 onClick={handleRedirectToCheckout}
               >
                 Pay Now

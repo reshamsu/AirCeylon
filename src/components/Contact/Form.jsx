@@ -38,7 +38,7 @@ export default function ContactForm() {
             <div className="card-form">
               <div className="card-text">
                 <h2>
-                  Send us a <span className="gradient-text">Message.</span>
+                  Send us a <span className="gradient-text">Message</span>
                 </h2>
                 <p>
                   We're here to assist you with any inquiries about our
@@ -85,21 +85,23 @@ export default function ContactForm() {
                   <div className="form-group">
                     <label className="gradient-text">Select Service</label>
                     <select className="form-control">
-                      <option>General Inquiries</option>
+                      <option>General Inquiry</option>
                       <option>Book an Appointment</option>
                       <option>Register for a Course</option>
                       <option>VISA Application</option>
+                      <option>Notarization</option>
                       <option>Transition Support</option>
-
                       <option>Other Inquiries</option>
                     </select>
                   </div>
                 </div>
                 <div className="form-group">
-                  <label className="gradient-text">Additional Information</label>
+                  <label className="gradient-text">
+                    Additional Information
+                  </label>
                   <textarea
                     className="form-control"
-                    placeholder="Kindly provide any more information regarding your inquiry in order to better assist you..."
+                    placeholder="Kindly provide any more information regarding your inquiry in order to better assist you…"
                   />
                 </div>
                 <button className="btn btn-primary" type="submit">

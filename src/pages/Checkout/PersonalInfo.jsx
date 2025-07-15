@@ -37,9 +37,9 @@ const PersonalInfo = () => {
         <div className="card">
           <div className="card-section">
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="card-group">
+              {/* <div className="card-group">
                 <h2>
-                  PERSONAL <span>INFO</span>
+                  CANDIDATE <span>INFORMATION</span>
                 </h2>
                 <div className="form-group">
                   <label>
@@ -55,11 +55,11 @@ const PersonalInfo = () => {
                     <p className="error-message">{errors.email.message}</p>
                   )}
                 </div>
-              </div>
+              </div> */}
 
               <div className="card-group">
                 <h2>
-                  SHIPPING <span>ADDRESS</span>
+                  CANDIDATE <span>INFORMATION</span>
                 </h2>
                 <div className="row">
                   <div className="form-group" style={{ marginRight: ".8rem" }}>
@@ -76,7 +76,9 @@ const PersonalInfo = () => {
                       style={{ padding: ".8rem 8%" }}
                     />
                     {errors.firstName && (
-                      <p className="error-message">{errors.firstName.message}</p>
+                      <p className="error-message">
+                        {errors.firstName.message}
+                      </p>
                     )}
                   </div>
                   <div className="form-group">
@@ -99,99 +101,56 @@ const PersonalInfo = () => {
                 </div>
 
                 <div className="form-group">
-                  <label>Company (Optional)</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Company Name"
-                    {...register("company")}
-                  />
-                </div>
-
-                <div className="form-group">
                   <label>
-                    Address<span className="required">*</span>
+                    Phone Number<span className="required">*</span>
                   </label>
                   <input
-                    type="text"
+                    type="tel"
                     className="form-control"
-                    placeholder="Address"
-                    {...register("address", {
-                      required: "Address is required",
+                    placeholder="Your Phone Number"
+                    {...register("phone", {
+                      required: "{Phone} is required",
                     })}
                   />
-                  {errors.address && (
-                    <p className="error-message">{errors.address.message}</p>
+                  {errors.phone && (
+                    <p className="error-message">{errors.phone.message}</p>
                   )}
                 </div>
 
                 <div className="form-group">
                   <label>
-                    City<span className="required">*</span>
+                    Gmail Address<span className="required">*</span>
                   </label>
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="City"
-                    {...register("city", { required: "City is required" })}
+                    placeholder="Your Gmail Address"
+                    {...register("gmail", { required: "Gmail is required" })}
                   />
-                  {errors.city && (
-                    <p className="error-message">{errors.city.message}</p>
+                  {errors.gmail && (
+                    <p className="error-message">{errors.gmail.message}</p>
                   )}
                 </div>
 
                 <div className="form-group">
                   <label>
-                    Country<span className="required">*</span>
+                    Attach file<span className="required">*</span>
                   </label>
                   <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Country"
-                    {...register("country", {
-                      required: "Country is required",
-                    })}
+                    type="file"
+                    name="document"
+                    accept=".pdf,.jpg,.jpeg,.png"
+                    required
+                    // onChange={handleChange}
+                    style={{
+                      marginTop: ".2rem",
+                      border: "1px solid #d4af37",
+                      padding: "0.5rem",
+                      borderRadius: "4px",
+                      width: "100%",
+                      color: "#333",
+                    }}
                   />
-                  {errors.country && (
-                    <p className="error-message">{errors.country.message}</p>
-                  )}
-                </div>
-
-                <div className="row">
-                  <div className="form-group">
-                    <label>
-                      Postal Code<span className="required">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Zip Code"
-                      {...register("postalCode", {
-                        required: "Postal code is required",
-                      })}
-                      style={{ padding: ".8rem 8%" }}
-                    />
-                    {errors.postalCode && (
-                      <p className="error-message">{errors.postalCode.message}</p>
-                    )}
-                  </div>
-                  <div className="form-group" style={{ marginLeft: ".8rem" }}>
-                    <label>
-                      Telephone<span className="required">*</span>
-                    </label>
-                    <input
-                      type="tel"
-                      className="form-control"
-                      placeholder="Phone"
-                      {...register("phone", {
-                        required: "Phone number is required",
-                      })}
-                      style={{ padding: ".8rem 8%" }}
-                    />
-                    {errors.phone && (
-                      <p className="error-message">{errors.phone.message}</p>
-                    )}
-                  </div>
                 </div>
 
                 <div className="button">
@@ -226,7 +185,11 @@ const PersonalInfo = () => {
               </ul>
               <ul className="summary">
                 <li>Course Fee</li>
-                <p>{courseFee === 0 ? "Free" : `LKR ${courseFee.toLocaleString()}`}</p>
+                <p>
+                  {courseFee === 0
+                    ? "Free"
+                    : `LKR ${courseFee.toLocaleString()}`}
+                </p>
               </ul>
               <ul className="final-summary">
                 <strong>Total Price</strong>

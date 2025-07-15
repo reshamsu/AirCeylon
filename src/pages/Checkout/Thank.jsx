@@ -8,12 +8,17 @@ const Payment = () => {
       <Container className="container">
         <div className="card">
           <div className="card-section">
-            <h1>Thank you for making a purchase with <span className="gradient-text">EPT Academy.</span></h1>
+            <h1>
+              Thank you for making a purchase with{" "}
+              <span className="gradient-text">EPT Academy.</span>
+            </h1>
             <p>We hope to see you soon</p>
             <div className="button">
-              <a href="/checkout/no-items" className="text-button">
-                Return to Cart
-              </a>
+              <button className="text-button">
+                <a href="/checkout/no-items" className="text-button">
+                  Return to Cart
+                </a>
+              </button>
             </div>
           </div>
 

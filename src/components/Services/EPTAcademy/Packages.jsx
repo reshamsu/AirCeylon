@@ -15,28 +15,28 @@ const products = [
     name: "Course ZERO (Free)",
     sessions: 20,
     duration: "6 months",
-    price: "0 (Free)",
+    price: 0,
   },
   {
     id: 2,
     name: "Crash Course",
     sessions: 5,
     duration: "Customizable",
-    price: "25,000",
+    price: 25000,
   },
   {
     id: 3,
     name: "Essential Course",
     sessions: 10,
     duration: "Customizable",
-    price: "50,000",
+    price: 50000,
   },
   {
     id: 4,
     name: "Pro Course",
     sessions: 20,
     duration: "Customizable",
-    price: "100,000",
+    price: 100000,
   },
 ];
 

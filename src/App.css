@@ -110,6 +110,19 @@ html {
   width: 100%;
 }
 
+.btn.btn-success {
+  font-size: 16px;
+  font-weight: 660;
+  padding: 0.7rem 1.6rem;
+  color: var(--text-white);
+  background: green;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  border-radius: 14px;
+  box-shadow: none;
+  cursor: pointer;
+  width: 100%;
+}
+
 .btn.btn-outline-primary {
   font-size: 16px;
   font-weight: 660;
@@ -590,6 +603,7 @@ nav.sidenav span svg {
 .landing-brands .container-fluid,
 .landing-testimonials .container-fluid,
 .landing-testimonials2 .container-fluid,
+.about-message .container-fluid,
 .contact-section .container-fluid {
   display: flex;
   align-items: center;
@@ -616,6 +630,7 @@ nav.sidenav span svg {
 .landing-testimonials .container-fluid h1,
 .landing-testimonials2 .container-fluid h1,
 .contact-section .container-fluid h1,
+.about-message .container-fluid h1,
 .about-journey .container-fluid h1 {
   font-size: 2.6rem;
   margin-bottom: 1rem;
@@ -727,10 +742,17 @@ nav.sidenav span svg {
 }
 
 .landing-stats,
-.landing-stats1,
 .landing-stats4 {
   background: var(--dark-blue);
   min-height: 74vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-stats1 {
+  background: var(--dark-blue);
+  min-height: 64vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -838,7 +860,7 @@ nav.sidenav span svg {
 .landing-testimonials .container-lg,
 .landing-testimonials2 .container-lg {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 2rem;
 }
@@ -878,10 +900,10 @@ nav.sidenav span svg {
 }
 
 .landing-stats1 .container-lg .container-md {
-  width: 55%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 0 2rem;
 }
 
@@ -893,6 +915,7 @@ nav.sidenav span svg {
   cursor: pointer;
   padding: 1.8rem 2%;
   border-radius: 14px;
+  gap: 1rem;
 }
 
 .landing-stats .container-lg .card-info {
@@ -904,8 +927,7 @@ nav.sidenav span svg {
 }
 
 .landing-stats1 .container-lg .card {
-  margin: 0.8rem;
-  width: 44%;
+  width: 50%;
   cursor: pointer;
   padding: 1.8rem 0;
   border-radius: 14px;
@@ -944,11 +966,10 @@ nav.sidenav span svg {
 .landing-stats .container-lg .card-body,
 .landing-stats2 .container-lg .card-body {
   display: flex;
-  height: 30vh;
+  height: 26vh;
   text-align: center;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .landing-stats .container-lg .card-group,
@@ -961,7 +982,7 @@ nav.sidenav span svg {
 .landing-stats1 .container-lg .card-group {
   display: flex;
   align-items: center;
-  justify-content: stretch;
+  justify-content: center;
 }
 
 .landing-stats3 .container-lg .card-group {
@@ -2256,13 +2277,21 @@ textarea {
   justify-content: center;
 }
 
+.checkout-section .card button.text-button,
 .checkout-section .card a.text-button {
   font-weight: 600;
+  width: 50%;
+  font-size: 1rem;
+  text-align: start;
+  background: none;
+  margin-right: 1rem;
   color: var(--text-black);
 }
 
+.checkout-section .card button.text-button:hover,
 .checkout-section .card a.text-button:hover {
   color: var(--text-gold-hover);
+  cursor: pointer;
 }
 
 .checkout-section .card a.btn.btn-dark svg {
@@ -2599,12 +2628,14 @@ footer .footer-content .rights a {
 
   .landing-stats1 .container-lg {
     flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .landing-stats .container-lg,
   .landing-stats2 .container-lg,
   .landing-stats4 .container-lg {
     flex-direction: column;
+    align-items: center;
   }
 
   .landing-stats3 .container-lg {
@@ -2616,19 +2647,19 @@ footer .footer-content .rights a {
     display: none;
   }
 
-  .landing-stats1 .container-lg .container-md {
+  /* .landing-stats1 .container-lg .container-md {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 1rem;
     gap: 1rem;
-  }
+  } */
 
   .landing-stats .container-lg .card,
   .landing-stats2 .container-lg .card {
     padding: 1.8rem 8%;
-    width: 94%;
+    width: 96% !important;
   }
 
   .landing-stats1 .container-lg .card {
@@ -2667,7 +2698,7 @@ footer .footer-content .rights a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1.6rem;
+    padding: 1.5rem;
   }
 
   .landing-stats4 .container-lg .card-group {

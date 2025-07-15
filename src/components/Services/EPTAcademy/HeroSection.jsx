@@ -1,6 +1,6 @@
 import { Container } from "@mui/material";
 import React from "react";
-import hero from "../../../assets/ielts2.jpg";
+import hero from "../../../assets/ept-academy.jpeg";
 
 const EPTHero = () => {
   return (

@@ -8,7 +8,7 @@ const Process = () => {
         <div className="container-fluid">
           <label>Affiliations</label>
           <h1>
-            Canadian Issued <span className="gradient-text">Documents</span>
+            Canadian Issued <span className="gradient-text">Documents ONLY</span>
           </h1>
           <p>
             - Here’s a quick glance at the ease and process in getting your
@@ -23,11 +23,11 @@ const Process = () => {
               printouts.
             </p>
             <p>
-              <strong>Step 2:</strong> Shipping to Toronto Canada (my address)
+              <strong>Step 2:</strong> Shipping to Air Ceylon International Office in Toronto - Canada
             </p>
             <p>
-              <strong>Step 3:</strong> Getting the apostille & notarization of
-              the documents/certificates with our partner - Red Seal Notary.
+              <strong>Step 3:</strong> Obtaining the Apostille & Notarization of
+              the documents/certificates.
             </p>
             <p>
               <strong>Step 4:</strong> Verification of Notarization & Apostille
@@ -42,6 +42,7 @@ const Process = () => {
               Sri Lanka.
             </p>
           </div>
+          <h3>View Pricing</h3>
         </div>
       </Container>
     </div>

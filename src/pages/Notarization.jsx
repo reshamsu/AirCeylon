@@ -12,8 +12,8 @@ const Notarization = () => {
     <>
       <HeroSection />
       <Definitions />
-      <ForWhom />
       <Documentation />
+      <ForWhom />
       <Steps />
       <Testimonials />
       <FAQ />

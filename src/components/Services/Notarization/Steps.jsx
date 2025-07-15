@@ -47,7 +47,12 @@ const Procedure = () => {
               textAlign: "start",
             }}
           >
-            <thead style={{ background: "var(--background-gradient-gold)", color: "var(--text-white)" }}>
+            <thead
+              style={{
+                background: "var(--background-gradient-gold)",
+                color: "var(--text-white)",
+              }}
+            >
               <tr>
                 <th>Description</th>
                 <th>Price (CAD)$</th>
@@ -76,10 +81,9 @@ const Procedure = () => {
           </table>
 
           <p style={{ marginTop: "1rem", fontStyle: "italic", color: "#555" }}>
-            * Table prices are pre-tax and subject to 13% (HST) by the Province
-            of Ontario, payable to service providers located in Ontario -
-            Canada, State of Ontario via Air Ceylon International Office in
-            Canada.
+            * Table prices are pre-tax and subject to 13% (HST) by the State of
+            Ontario, payable to service providers located in Ontario - Canada,
+            via Air Ceylon International Office in Canada.
           </p>
         </div>
       </Container>

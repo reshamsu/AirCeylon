@@ -31,7 +31,7 @@ const VisaContact = () => {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Your Name"
+                    placeholder="First name as per Passport"
                   />
                 </div>
                 <div className="form-group">
@@ -39,18 +39,18 @@ const VisaContact = () => {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Your Name"
+                    placeholder="Last name as per Passport"
                   />
                 </div>
               </div>
 
               <div className="row">
                 <div className="form-group">
-                  <label>Email Address</label>
+                  <label>Gmail Address</label>
                   <input
                     type="email"
                     className="form-control"
-                    placeholder="Your Email"
+                    placeholder="Your Gmail Address"
                   />
                 </div>
                 <div className="form-group">
@@ -135,7 +135,7 @@ const VisaContact = () => {
                 </div>
               </div>
               <button className="btn btn-primary">
-                Submit Now 
+                Submit Now
                 {/* <FiSend /> */}
               </button>
             </form>

@@ -109,7 +109,7 @@ const Payment = () => {
                   <h3>Accept Terms & Conditions *</h3>
 
                   <div className="form-group">
-                    <label style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                    <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", margin: "0"  }}>
                       <input
                         type="checkbox"
                         {...register("terms", {
