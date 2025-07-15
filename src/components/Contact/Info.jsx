@@ -41,7 +41,7 @@ const ContactInfo = () => {
         <Container className="container">
           <div className="container-fluid">
             <h1>
-              Get <span className="gradient-text">Connected.</span>
+              Connect <span className="gradient-text"> with Us!</span>
             </h1>
             <p>
               We're here to assist you with any inquires about our solutions
@@ -72,7 +72,7 @@ const ContactInfo = () => {
           </div>
 
           <div className="container-sm">
-            <h2 style={{ textAlign: "center", marginBottom: "1rem" }}>Visit us by appointment</h2>
+            <h2 style={{ textAlign: "center", marginBottom: "1rem" }}>Visit Us by Appointment</h2>
             <Slider />
             <a
               href="https://www.google.com/maps?q=WSPACE+-+252A,+GALLE+ROAD,+COLOMBO+4+(Bambalapitiya),+Western+Province,+Sri+Lanka"

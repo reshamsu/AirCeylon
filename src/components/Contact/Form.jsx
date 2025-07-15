@@ -49,13 +49,23 @@ export default function ContactForm() {
               <form>
                 <div className="row">
                   <div className="form-group">
-                    <label className="gradient-text">Name</label>
+                    <label className="gradient-text">First Name</label>
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Your Name"
+                      placeholder="Your First Name"
                     />
                   </div>
+                  <div className="form-group">
+                    <label className="gradient-text">Last Name</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Your Last Name"
+                    />
+                  </div>
+                </div>
+                <div className="row">
                   <div className="form-group">
                     <label className="gradient-text">Email Address</label>
                     <input
@@ -64,8 +74,6 @@ export default function ContactForm() {
                       placeholder="Your Email"
                     />
                   </div>
-                </div>
-                <div className="row">
                   <div className="form-group">
                     <label className="gradient-text">Phone</label>
                     <input
@@ -75,21 +83,23 @@ export default function ContactForm() {
                     />
                   </div>
                   <div className="form-group">
-                    <label className="gradient-text">
-                      Preferred Support System
-                    </label>
+                    <label className="gradient-text">Select Service</label>
                     <select className="form-control">
-                      <option>Call for Inquiries</option>
+                      <option>General Inquiries</option>
                       <option>Book an Appointment</option>
                       <option>Register for a Course</option>
+                      <option>VISA Application</option>
+                      <option>Transition Support</option>
+
+                      <option>Other Inquiries</option>
                     </select>
                   </div>
                 </div>
                 <div className="form-group">
-                  <label className="gradient-text">Additional Info</label>
+                  <label className="gradient-text">Additional Information</label>
                   <textarea
                     className="form-control"
-                    placeholder="Message here..."
+                    placeholder="Kindly provide any more information regarding your inquiry in order to better assist you..."
                   />
                 </div>
                 <button className="btn btn-primary" type="submit">
