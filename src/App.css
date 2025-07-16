@@ -96,6 +96,12 @@ html {
   contain: layout paint;
 }
 
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /* Button Content  */
 .btn.btn-primary {
   font-size: 16px;

@@ -1,8 +1,59 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container } from "@mui/material";
-import { FiSend } from "react-icons/fi";
 
 const VisaContact = () => {
+  // Form state for each input
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    gmail: "",
+    phone: "",
+    country: "",
+    adults: "",
+    children: "",
+    additionalInfo: "", // optional, so no validation needed here
+  });
+
+  // State to control button disabled/enabled
+  const [isValid, setIsValid] = useState(false);
+
+  // Handle input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  // Validate required fields whenever formData changes
+  useEffect(() => {
+    const {
+      firstName,
+      lastName,
+      gmail,
+      phone,
+      country,
+      adults,
+      children,
+    } = formData;
+
+    // Simple validation: all required fields must be non-empty
+    const allFilled =
+      firstName.trim() !== "" &&
+      lastName.trim() !== "" &&
+      gmail.trim() !== "" &&
+      phone.trim() !== "" &&
+      country.trim() !== "" &&
+      adults.trim() !== "" &&
+      children.trim() !== "";
+
+    // Optionally you can add email format validation here
+    const gmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(gmail);
+
+    setIsValid(allFilled && gmailValid);
+  }, [formData]);
+
   return (
     <div className="visa-contact">
       <Container className="container">
@@ -19,9 +70,7 @@ const VisaContact = () => {
               <h2>
                 VISA <span>Service Form</span>
               </h2>
-              <p>
-                We're here to assist you with any inquires about our solutions
-              </p>
+              <p>We're here to assist you with any inquires about our solutions</p>
             </div>
 
             <form>
@@ -30,16 +79,22 @@ const VisaContact = () => {
                   <label>First Name (Passport)</label>
                   <input
                     type="text"
+                    name="firstName"
                     className="form-control"
                     placeholder="First name as per Passport"
+                    value={formData.firstName}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="form-group">
                   <label>Last Name (Passport)</label>
                   <input
                     type="text"
+                    name="lastName"
                     className="form-control"
                     placeholder="Last name as per Passport"
+                    value={formData.lastName}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
@@ -49,24 +104,35 @@ const VisaContact = () => {
                   <label>Gmail Address</label>
                   <input
                     type="email"
+                    name="gmail"
                     className="form-control"
                     placeholder="Your Gmail Address"
+                    value={formData.gmail}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="form-group">
                   <label>Phone</label>
                   <input
                     type="tel"
+                    name="phone"
                     className="form-control"
                     placeholder="Your Phone Number"
+                    value={formData.phone}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
               <div className="row">
                 <div className="form-group">
                   <label>Choose Country</label>
-                  <select className="form-control">
-                    <option>Select a Country</option>
+                  <select
+                    name="country"
+                    className="form-control"
+                    value={formData.country}
+                    onChange={handleChange}
+                  >
+                    <option value="">Select a Country</option>
                     <option>Azerbaijan</option>
                     <option>Bahrain</option>
                     <option>Bangladesh</option>
@@ -99,10 +165,15 @@ const VisaContact = () => {
                     <option>Vietnam</option>
                   </select>
                 </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">No. of Adults</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Select</option>
+                <div className="form-group">
+                  <label>No. of Adults</label>
+                  <select
+                    name="adults"
+                    className="form-control"
+                    value={formData.adults}
+                    onChange={handleChange}
+                  >
+                    <option value="">Select</option>
                     <option>1 Adult</option>
                     <option>2 Adults</option>
                     <option>3 Adults</option>
@@ -111,11 +182,16 @@ const VisaContact = () => {
                   </select>
                 </div>
 
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">No. of Children</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Select</option>
-                    <option>1 Children</option>
+                <div className="form-group">
+                  <label>No. of Children</label>
+                  <select
+                    name="children"
+                    className="form-control"
+                    value={formData.children}
+                    onChange={handleChange}
+                  >
+                    <option value="">Select</option>
+                    <option>1 Child</option>
                     <option>2 Children</option>
                     <option>3 Children</option>
                     <option>4 Children</option>
@@ -128,15 +204,20 @@ const VisaContact = () => {
                 <div className="form-group">
                   <label>Additional Info</label>
                   <textarea
-                    type="text"
+                    name="additionalInfo"
                     className="form-control"
                     placeholder="Message here..."
+                    value={formData.additionalInfo}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
-              <button className="btn btn-primary">
+              <button
+                className="btn btn-primary"
+                type="submit"
+                disabled={!isValid}
+              >
                 Submit Now
-                {/* <FiSend /> */}
               </button>
             </form>
           </div>

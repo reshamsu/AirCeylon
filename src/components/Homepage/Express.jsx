@@ -58,7 +58,7 @@ const expressOptions = [
     title: "To Set an Appointment For Visit / Service",
     button: "Book Now",
     iconPng: express2,
-    direct: "/contact-us",
+    direct: "/contact-us#appointment",
   },
   {
     title: "To Begin IELTS Training",

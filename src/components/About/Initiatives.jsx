@@ -9,7 +9,7 @@ import officeIcon from "../../assets/office-building.png";
 
 const Initiatives = () => {
   return (
-    <div className="landing-stats3">
+    <div className="landing-stats3" id="initiatives">
       <Container className="container">
         
         <div className="container-fluid">
