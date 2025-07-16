@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "@mui/material";
 import { FaCheck } from "react-icons/fa6";
 import { PiTargetBold } from "react-icons/pi";
@@ -42,6 +42,7 @@ const products = [
 
 const EPTPackages = () => {
   const navigate = useNavigate();
+  const [hoveredButtonId, setHoveredButtonId] = useState(null);
 
   const handleBuyNow = (product) => {
     navigate("/checkout/add-items", { state: { product } });
@@ -67,8 +68,7 @@ const EPTPackages = () => {
                       style={{ width: "40px", marginRight: "1rem" }}
                     />
                   )}
-                  {product.name}{" "}
-                  {product.label ? <span>{product.label}</span> : null}
+                  {product.name}
                 </h3>
               </div>
 
@@ -102,13 +102,22 @@ const EPTPackages = () => {
                   </li>
                 </ul>
                 {product.id === 1 && <label>*Terms & Conditions Apply*</label>}
+
                 <button
+                  onMouseEnter={() => setHoveredButtonId(product.id)}
+                  onMouseLeave={() => setHoveredButtonId(null)}
                   onClick={() => handleBuyNow(product)}
                   className={`btn ${
                     product.id === 1 ? "btn-primary" : "btn-dark"
                   }`}
                 >
-                  LKR {product.price.toLocaleString()} <IoCart />
+                  {hoveredButtonId === product.id ? (
+                    "Select to Register"
+                  ) : (
+                    <>
+                      LKR {product.price.toLocaleString()} <IoCart />
+                    </>
+                  )}
                 </button>
               </div>
             </div>

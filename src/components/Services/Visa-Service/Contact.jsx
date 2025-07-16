@@ -28,15 +28,8 @@ const VisaContact = () => {
 
   // Validate required fields whenever formData changes
   useEffect(() => {
-    const {
-      firstName,
-      lastName,
-      gmail,
-      phone,
-      country,
-      adults,
-      children,
-    } = formData;
+    const { firstName, lastName, gmail, phone, country, adults, children } =
+      formData;
 
     // Simple validation: all required fields must be non-empty
     const allFilled =
@@ -70,7 +63,9 @@ const VisaContact = () => {
               <h2>
                 VISA <span>Service Form</span>
               </h2>
-              <p>We're here to assist you with any inquires about our solutions</p>
+              <p>
+                We're here to assist you with any inquires about our solutions
+              </p>
             </div>
 
             <form>
@@ -206,7 +201,7 @@ const VisaContact = () => {
                   <textarea
                     name="additionalInfo"
                     className="form-control"
-                    placeholder="Message here..."
+                    placeholder="Kindly provide any more information regarding your inquiry in order to better assist you…"
                     value={formData.additionalInfo}
                     onChange={handleChange}
                   />

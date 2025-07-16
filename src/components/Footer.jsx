@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "@mui/material";
 import {
   FaRegCopyright,
@@ -28,6 +28,18 @@ const Footer = () => {
       navigate(path + "#" + sectionId);
     }
   };
+
+  // Scroll to section if hash is present when component mounts
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const sectionId = hash.replace("#", "");
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 200);
+    }
+  }, [location]);
 
   return (
     <footer>
@@ -131,7 +143,7 @@ const Footer = () => {
                       Europe
                     </a>
                   </li>
-                    <li>
+                  <li>
                     <a onClick={() => handleNavigation("/services/visa-service", "east-asia")}>
                       East Asia
                     </a>
@@ -141,7 +153,7 @@ const Footer = () => {
                       Middle-East
                     </a>
                   </li>
-                <li>
+                  <li>
                     <a onClick={() => handleNavigation("/services/visa-service", "south-asia")}>
                       South Asia
                     </a>
@@ -185,9 +197,7 @@ const Footer = () => {
           <div className="col">
             <div className="location">
               <p>
-                <label>Visit us by Appointment:</label> Air Ceylon International
-                - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western Province,
-                Sri Lanka.
+                <label>Visit us by Appointment:</label> Air Ceylon International - 252A, Galle Road, Colombo 4 (Bambalapitiya), Western Province, Sri Lanka.
                 <a
                   href="https://www.google.com/maps?q=Air+Ceylon+International,+252A+Galle+Road,+Colombo+00400,+Sri+Lanka"
                   target="_blank"
@@ -203,19 +213,14 @@ const Footer = () => {
               </label>
               <RxDividerVertical />
               <label>
-                Email Address:{" "}
-                <a href="mailto:info@airceylonint.com">info@airceylonint.com</a>
+                Email Address: <a href="mailto:info@airceylonint.com">info@airceylonint.com</a>
               </label>
             </div>
           </div>
 
-          <div
-            className="rights"
-            style={{ textAlign: "center", marginTop: "1.4rem" }}
-          >
+          <div className="rights" style={{ textAlign: "center", marginTop: "1.4rem" }}>
             <p>
-              Air Ceylon International Private Limited <FaRegCopyright /> 2025.
-              All Rights Reserved. Powered by{" "}
+              Air Ceylon International Private Limited <FaRegCopyright /> 2025. All Rights Reserved. Powered by {" "}
               <a href="https://www.myhive.biz/">myhive</a>
             </p>
           </div>

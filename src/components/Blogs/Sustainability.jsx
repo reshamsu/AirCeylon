@@ -20,7 +20,7 @@ const Sustainability = () => {
       description:
         "Our operations are digital-first to reduce waste. We support eco-conscious partners, remote work, and energy-efficient office culture.",
       icon: ecoIcon,
-      linkTo: "/about-us#green-practices",
+      linkTo: "/about-us#initiatives",
     },
   ];
 
@@ -33,16 +33,16 @@ const Sustainability = () => {
           </h1>
         </div>
 
-        <div className="container-lg" style={{ display: "flex", gap: "2rem", flexWrap: "wrap" }}>
+        <div className="container-lg" style={{ display: "flex", gap: "2rem", margin: "2rem"}}>
           {cards.map((card, index) => (
             <div
               className="card"
               key={index}
-              style={{ flex: "1 1 30%", minWidth: "280px" }}
+              style={{ width: "24%" }}
             >
               <div className="card-body" style={{ height: "fit-content" }}>
                 <div className="card-group" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                  <img src={card.icon} alt={card.title} style={{ width: 40, height: 40 }} />
+                  <img src={card.icon} alt={card.title} />
                   <h3>{card.title}</h3>
                 </div>
                 <div className="card-text">
