@@ -96,8 +96,8 @@ const Gallery = () => {
   };
 
   return (
-    <div className="landing-slider">
-      <Container id="destinations" style={{ padding: "3rem 0" }}>
+    <div className="landing-slider" id="destinations">
+      <Container className="container">
         <div className="container-fluid">
           <label>Destinations</label>
           <h1>
@@ -148,7 +148,7 @@ const Gallery = () => {
                   </a>
                   <p
                     style={{
-                      fontSize: "0.9rem",
+                      fontSize: "bold",
                       color: "#444",
                       fontWeight: "400",
                       lineHeight: "1.5",
@@ -160,7 +160,7 @@ const Gallery = () => {
                   <label
                     style={{
                       fontSize: ".9rem",
-                      fontWeight: "600",
+                      fontWeight: "400",
                       color: "var(--text-gold-hover)",
                     }}
                   >

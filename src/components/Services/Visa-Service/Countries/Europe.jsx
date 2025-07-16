@@ -130,7 +130,7 @@ const Gallery = () => {
                   </a>
                   <p
                     style={{
-                      fontSize: "0.9rem",
+                      fontSize: ".9rem",
                       color: "#444",
                       fontWeight: "400",
                       lineHeight: "1.5",

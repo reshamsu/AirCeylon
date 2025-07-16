@@ -2593,7 +2593,7 @@ footer .footer-content .rights a {
   }
 
   .slide-card {
-    margin: 0 2rem !important;
+    margin: 0 1rem !important;
   }
 
   .landing-slider .container-fluid,
@@ -2678,11 +2678,13 @@ footer .footer-content .rights a {
   .landing-stats3 .container-lg .card {
     padding: 1.6rem 8%;
     width: 96%;
+    margin: .4rem;
   }
 
   .landing-stats4 .container-lg .card {
     padding: 0rem 8%;
     width: 96%;
+    margin: .4rem;
   }
 
   .landing-brands .container-lg .card {
@@ -2849,7 +2851,8 @@ footer .footer-content .rights a {
 
   .landing-testimonials .container-lg .card,
   .landing-testimonials2 .container-lg .card {
-    width: 90%;
+    width: 96%;
+    margin: .4rem;
     height: auto;
   }
 
@@ -3155,7 +3158,8 @@ footer .footer-content .rights a {
 
   .about-goal .container .container-fluid,
   .about-message .container .container-fluid {
-    padding: 0 2rem;
+    padding: 1rem;
+    text-align: center;
   }
 
   .about-goal .container-fluid .company {
