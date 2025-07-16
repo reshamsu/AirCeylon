@@ -85,6 +85,7 @@ export default function ContactForm() {
                   <div className="form-group">
                     <label className="gradient-text">Select Service</label>
                     <select className="form-control">
+                      <option>Select a Service</option>
                       <option>General Inquiry</option>
                       <option>Book an Appointment</option>
                       <option>Register for a Course</option>

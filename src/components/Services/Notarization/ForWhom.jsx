@@ -26,7 +26,7 @@ const VisaWelcome = () => {
     <div className="landing-stats" style={{ padding: "3rem 0", background: "#f9f9f9" }}>
       <Container maxWidth="lg">
         <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-          <h1>
+          <h1 style={{ marginBottom: "1rem" }}>
             Who is <span className="gradient-text">it for?</span>
           </h1>
           <h4>The key to notarize your documents starts here.</h4>

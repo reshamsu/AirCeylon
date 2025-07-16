@@ -31,11 +31,9 @@ const Procedure = () => {
   return (
     <div className="landing-welcome">
       <Container className="container">
-        <div className="container-fluid">
-          <label>Procedure</label>
-          <h1>
-            Service <span className="gradient-text"> Pricing Breakdown</span>
-          </h1>
+        <div className="container-fluid" style={{ marginBottom: "1rem" }}>
+          <label>Breakdown</label>
+          <h1>Price & Procedure</h1>
         </div>
         <div className="container-lg">
           <table
@@ -55,7 +53,7 @@ const Procedure = () => {
             >
               <tr>
                 <th>Description</th>
-                <th>Price (CAD)$</th>
+                <th style={{ textAlign: "center" }}>Price (CAD)$</th>
               </tr>
             </thead>
             <tbody>
@@ -68,12 +66,23 @@ const Procedure = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    <td colSpan={2}> {item.step}</td>
+                    <td colSpan={2}>{item.step}</td>
                   </tr>
                 ) : (
-                  <tr key={`desc-${index}`}>
+                  <tr
+                    key={`desc-${index}`}
+                    style={{
+                      fontWeight: item.description.startsWith("*")
+                        ? "bold"
+                        : "normal",
+                    }}
+                  >
                     <td>{item.description}</td>
-                    <td>${item.price.toFixed(2)}</td>
+                    <td style={{ textAlign: "center" }}>
+                      {item.description.startsWith("*")
+                        ? `$${Number(item.price).toFixed(2)}`
+                        : `$${Number(item.price).toFixed(2)}`}
+                    </td>
                   </tr>
                 )
               )}

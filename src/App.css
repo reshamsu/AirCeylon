@@ -604,6 +604,7 @@ nav.sidenav span svg {
 .landing-testimonials .container-fluid,
 .landing-testimonials2 .container-fluid,
 .about-message .container-fluid,
+.landing-process .container-fluid,
 .contact-section .container-fluid {
   display: flex;
   align-items: center;
@@ -784,8 +785,7 @@ nav.sidenav span svg {
   justify-content: center;
 }
 
-.landing-express .container-fluid,
-.landing-process .container-fluid {
+.landing-express .container-fluid {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;

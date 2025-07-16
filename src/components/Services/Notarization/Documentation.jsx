@@ -16,7 +16,8 @@ const Process = () => {
             Verified.
           </p>
 
-          <div className="text-group">
+          <div className="text-group" style={{ padding: "2rem" }}>
+            <h2 style={{ marginBottom: "1.4rem", color: "#444" }}>Steps to Notarize your documents:</h2>
             <p>
               <strong>Step 1:</strong> Gathering the original
               documents/certificates with one copy each and passport copy
@@ -42,7 +43,7 @@ const Process = () => {
               Sri Lanka.
             </p>
           </div>
-          <h3>View Pricing</h3>
+          <a href="/services/notarization" className="btn btn-primary" style={{ width: "fit-content"}}>View Pricing</a>
         </div>
       </Container>
     </div>
