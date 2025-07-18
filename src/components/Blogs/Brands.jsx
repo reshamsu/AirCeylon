@@ -8,6 +8,7 @@ import tashaLogo from "../../assets/tasha.jpg";
 import wspaceLogo from "../../assets/Wspace.png";
 import ieltsLogo from "../../assets/ielts.jpg";
 import redSealLogo from "../../assets/redsealnotary.webp";
+import gcslLogo from "../../assets/GCSL.jpg";
 
 const brandLogos = [
   { image: myHiveLogo, name: "myHive" },
@@ -17,6 +18,7 @@ const brandLogos = [
   { image: tashaLogo, name: "Tasha" },
   { image: ieltsLogo, name: "IELTS" },
   { image: redSealLogo, name: "Red Seal Notary" },
+   { image: gcslLogo, name: "GCSL" },
 ];
 
 const Brands = () => {

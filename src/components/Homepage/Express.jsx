@@ -285,6 +285,35 @@ const Express = () => {
                     },
                   }}
                 />
+                 <TextField
+                  label="Phone Number"
+                  name="phone"
+                  fullWidth
+                  required
+                  type="tel"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  error={
+                    formData.phone && !formData.phone.endsWith("@gmail.com")
+                  }
+                  helperText={
+                    formData.phone &&
+                    !formData.phone.endsWith("@gmail.com") &&
+                    "Please use a valid Phone Number"
+                  }
+                  margin="normal"
+                  InputLabelProps={{
+                    style: { color: "#a87c47" },
+                  }}
+                  sx={{
+                    "& label.Mui-focused": { color: "#a87c47" },
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": { borderColor: "#a87c47" },
+                      "&:hover fieldset": { borderColor: "#a87c47" },
+                      "&.Mui-focused fieldset": { borderColor: "#a87c47" },
+                    },
+                  }}
+                />
                 <div style={{ marginTop: "1rem" }}>
                   <label>
                     *Attach a ⁠Scanned copy of the Candidate’s NIC / Passport
