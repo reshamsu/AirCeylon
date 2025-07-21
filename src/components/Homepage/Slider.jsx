@@ -20,7 +20,7 @@ const attractions = [
     location: "China",
     description:
       "Walk along one of the world’s greatest wonders — the Great Wall winds through ancient landscapes and tells tales of dynasties past.",
-    info: "Beijing, China",
+    info: "China",
   },
   {
     img: germany,
@@ -28,7 +28,7 @@ const attractions = [
     location: "Germany",
     description:
       "A skyline of innovation meets Old World charm — Frankfurt blends financial power with cultural richness and historic streets.",
-    info: "Frankfurt, Germany",
+    info: "Germany",
   },
   {
     img: maldives,
@@ -36,7 +36,7 @@ const attractions = [
     location: "Maldives",
     description:
       "Turquoise lagoons, over-water villas, and serene sunsets — the Maldives invites you to a paradise of pure escape and luxury.",
-    info: "Male, Maldives",
+    info: "Maldives",
   },
   {
     img: spain,
@@ -44,7 +44,7 @@ const attractions = [
     location: "Spain",
     description:
       "From flamenco rhythms to regal boulevards — Madrid pulses with art, flavor, and the warmth of Spanish spirit.",
-    info: "Madrid, Spain",
+    info: "Spain",
   },
   {
     img: canada,
@@ -52,7 +52,7 @@ const attractions = [
     location: "Canada",
     description:
       "Toronto is a multicultural mosaic — where skyscrapers meet the shores of Lake Ontario and every street tells a global story.",
-    info: "Toronto, Canada",
+    info: "Canada",
   },
   {
     img: singapore,
@@ -60,7 +60,7 @@ const attractions = [
     location: "Singapore",
     description:
       "A futuristic skyline meets lush green sanctuaries — explore Singapore’s seamless blend of innovation, culture, and cuisine.",
-    info: "Marina Bay, Singapore",
+    info: "Singapore",
   },
 ];
 
@@ -160,7 +160,7 @@ const Gallery = () => {
                   <label
                     style={{
                       fontSize: ".9rem",
-                      fontWeight: "400",
+                      fontWeight: "bold",
                       color: "var(--text-gold-hover)",
                     }}
                   >

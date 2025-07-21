@@ -9,6 +9,7 @@ const PersonalInfo = () => {
   const product = location.state?.product;
 
   const REGISTRATION_FEE = 10000;
+  const REFUNDABLE_DEPOSIT = product?.name === "Course ZERO (Free)" ? 100000 : 0;
 
   const {
     register,
@@ -25,10 +26,18 @@ const PersonalInfo = () => {
   if (!product) return null;
 
   const courseFee = Number(product.price) || 0;
-  const totalPrice = REGISTRATION_FEE + courseFee;
+  const totalPrice = REGISTRATION_FEE + courseFee + REFUNDABLE_DEPOSIT;
 
   const onSubmit = (data) => {
-    navigate("/checkout/payment", { state: { product, customerInfo: data } });
+    navigate("/checkout/payment", {
+      state: {
+        product: {
+          ...product,
+          refundableDeposit: REFUNDABLE_DEPOSIT,
+        },
+        customerInfo: data,
+      },
+    });
   };
 
   return (
@@ -37,26 +46,6 @@ const PersonalInfo = () => {
         <div className="card">
           <div className="card-section">
             <form onSubmit={handleSubmit(onSubmit)}>
-              {/* <div className="card-group">
-                <h2>
-                  CANDIDATE <span>INFORMATION</span>
-                </h2>
-                <div className="form-group">
-                  <label>
-                    Email<span className="required">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    placeholder="Email Address"
-                    {...register("email", { required: "Email is required" })}
-                  />
-                  {errors.email && (
-                    <p className="error-message">{errors.email.message}</p>
-                  )}
-                </div>
-              </div> */}
-
               <div className="card-group">
                 <h2>
                   CANDIDATE <span>INFORMATION</span>
@@ -141,7 +130,6 @@ const PersonalInfo = () => {
                     name="document"
                     accept=".pdf,.jpg,.jpeg,.png"
                     required
-                    // onChange={handleChange}
                     style={{
                       marginTop: ".2rem",
                       border: "1px solid #d4af37",
@@ -191,6 +179,12 @@ const PersonalInfo = () => {
                     : `LKR ${courseFee.toLocaleString()}`}
                 </p>
               </ul>
+              {REFUNDABLE_DEPOSIT > 0 && (
+                <ul className="summary">
+                  <li>Refundable Deposit</li>
+                  <p>LKR {REFUNDABLE_DEPOSIT.toLocaleString()}</p>
+                </ul>
+              )}
               <ul className="final-summary">
                 <strong>Total Price</strong>
                 <strong>LKR {totalPrice.toLocaleString()}</strong>

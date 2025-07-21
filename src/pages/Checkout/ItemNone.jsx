@@ -22,7 +22,7 @@ const Checkout = () => {
               <h4>Summary</h4>
               <ul className="summary">
                 <li>Registration Fee</li>
-                <li>LKR 10,000</li>
+                <li>LKR 0</li>
               </ul>
               <ul className="summary">
                 <li>Course Fee</li>

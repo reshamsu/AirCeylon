@@ -16,28 +16,28 @@ const attractions = [
     title: "Accommodation",
     description:
       "Experience comfort, convenience, and quality living with our range of modern, fully-equipped accommodations tailored to your needs.",
-    info: "Ontario, Canada",
+    info: "Toronto City & Greater Toronto Area (GTA)",
   },
   {
     img: careers,
     title: "Careers",
     description:
       "Unlock your potential and build a rewarding future with diverse career opportunities in a dynamic and supportive environment.",
-    info: "Ontario, Canada",
+    info: "Toronto City & Greater Toronto Area (GTA)",
   },
   {
     img: community,
     title: "Community",
     description:
       "Connect, engage, and grow in a vibrant community where people from all walks of life come together with shared values and purpose.",
-    info: "Ontario, Canada",
+    info: "Toronto City & Greater Toronto Area (GTA)",
   },
   {
     img: lifestyle,
     title: "Lifestyle Management",
     description:
       "Enhance your everyday living with personalized support and holistic services that help you balance wellness, work, and life with ease.",
-    info: "Ontario, Canada",
+    info: "Toronto City & Greater Toronto Area (GTA)",
   },
 ];
 
@@ -76,8 +76,8 @@ const Gallery = () => {
     <div className="landing-slider">
       <Container className="container">
         <div className="container-fluid">
-          <label>Canada</label>
-          <h1>Toronto</h1>
+          <label>Ontario</label>
+          <h1>Canada</h1>
         </div>
 
         <Slider {...settings}>

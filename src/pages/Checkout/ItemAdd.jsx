@@ -7,17 +7,30 @@ const Checkout = () => {
   const product = location.state?.product;
 
   const REGISTRATION_FEE = 10000;
+  const REFUNDABLE_DEPOSIT = 100000;
 
   if (!product) {
     navigate("/checkout/no-items");
     return null;
   }
 
-  const courseFee = Number(product.price) || 0; // Ensure numeric
-  const total = REGISTRATION_FEE + courseFee;
+  const courseFee = Number(product.price) || 0;
+
+  const isCourseZero = product.name === "Course ZERO (Free)";
+  const refundableDeposit = isCourseZero ? REFUNDABLE_DEPOSIT : 0;
+
+  const subtotal = REGISTRATION_FEE + courseFee + refundableDeposit;
+  const total = subtotal; // If needed, you can add tax or discount here later
 
   const handleCheckout = () => {
-    navigate("/checkout/personal-info", { state: { product } });
+    navigate("/checkout/personal-info", {
+      state: {
+        product: {
+          ...product,
+          refundableDeposit: isCourseZero ? REFUNDABLE_DEPOSIT : 0,
+        },
+      },
+    });
   };
 
   return (
@@ -47,9 +60,17 @@ const Checkout = () => {
                 <li>Course Fee</li>
                 <li>{courseFee === 0 ? "Free" : `LKR ${courseFee.toLocaleString()}`}</li>
               </ul>
+
+              {isCourseZero && (
+                <ul className="summary">
+                  <li>Refundable Deposit</li>
+                  <li>LKR {REFUNDABLE_DEPOSIT.toLocaleString()}</li>
+                </ul>
+              )}
+
               <ul className="final-summary">
                 <strong>Subtotal</strong>
-                <strong>LKR {total.toLocaleString()}</strong>
+                <strong>LKR {subtotal.toLocaleString()}</strong>
               </ul>
               <ul className="final-summary">
                 <strong>Total Price</strong>

@@ -11,7 +11,9 @@ const Payment = () => {
 
   const REGISTRATION_FEE = 10000;
   const courseFee = Number(productInfo?.price) || 0;
-  const totalPrice = REGISTRATION_FEE + courseFee;
+  const isCourseZero = productInfo?.name?.toLowerCase().includes("course zero");
+  const REFUNDABLE_DEPOSIT = isCourseZero ? 100000 : 0;
+  const totalPrice = REGISTRATION_FEE + courseFee + REFUNDABLE_DEPOSIT;
 
   const {
     register,
@@ -31,7 +33,7 @@ const Payment = () => {
         <div className="card">
           <div className="card-section">
             <div className="card-group">
-              <h2>Payment Information</h2>
+              <h2>PAYMENT INFORMATION</h2>
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-group">
                   <label>Credit/Debit Card</label>
@@ -109,7 +111,7 @@ const Payment = () => {
                   <h3>Accept Terms & Conditions *</h3>
 
                   <div className="form-group">
-                    <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", margin: "0"  }}>
+                    <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", margin: "0" }}>
                       <input
                         type="checkbox"
                         {...register("terms", {
@@ -190,6 +192,12 @@ const Payment = () => {
                 <li>Course Fee</li>
                 <p>{courseFee === 0 ? "Free" : `LKR ${courseFee.toLocaleString()}`}</p>
               </ul>
+              {REFUNDABLE_DEPOSIT > 0 && (
+                <ul className="summary">
+                  <li>Refundable Deposit</li>
+                  <p>LKR {REFUNDABLE_DEPOSIT.toLocaleString()}</p>
+                </ul>
+              )}
               <ul className="final-summary">
                 <strong>Total Price</strong>
                 <strong>LKR {totalPrice.toLocaleString()}</strong>

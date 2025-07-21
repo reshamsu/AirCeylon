@@ -17,7 +17,7 @@ const attractions = [
     location: "Singapore",
     description:
       "Famous for its futuristic skyline and lush gardens, Marina Bay offers a vibrant blend of innovation, culture, and coastal beauty.",
-    info: "Marina Bay, Singapore",
+    info: "Singapore",
   },
   {
     img: indonesia,
@@ -25,7 +25,7 @@ const attractions = [
     location: "Indonesia",
     description:
       "Bali’s tropical charm, spiritual temples, and stunning beaches make it a dream destination for relaxation and adventure.",
-    info: "Bali, Indonesia",
+    info: "Indonesia",
   },
   {
     img: vietnam,
@@ -33,7 +33,7 @@ const attractions = [
     location: "Vietnam",
     description:
       "A surreal seascape of emerald waters and limestone islands — Ha Long Bay is a natural wonder steeped in legend.",
-    info: "Ha Long Bay, Vietnam",
+    info: "Vietnam",
   },
 ];
 
@@ -133,7 +133,7 @@ const Gallery = () => {
                   <label
                     style={{
                       fontSize: "0.9rem",
-                      fontWeight: "600",
+                      fontWeight: "bold",
                       color: "var(--text-gold-hover)",
                     }}
                   >

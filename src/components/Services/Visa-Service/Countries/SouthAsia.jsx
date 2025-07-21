@@ -133,7 +133,7 @@ const Gallery = () => {
                   <label
                     style={{
                       fontSize: "0.9rem",
-                      fontWeight: "600",
+                      fontWeight: "bold",
                       color: "var(--dark-blue)",
                     }}
                   >

@@ -17,7 +17,7 @@ const attractions = [
     location: "Kuwait",
     description:
       "A blend of modernity and tradition — discover Kuwait City's coastal skyline, souks, and stunning cultural institutions.",
-    info: "Kuwait City, Kuwait",
+    info: "Kuwait",
   },
   {
     img: dubai,
@@ -25,7 +25,7 @@ const attractions = [
     location: "UAE",
     description:
       "Futuristic skyscrapers, luxury shopping, and desert adventures — Dubai is a global hub of innovation and opulence.",
-    info: "Dubai, UAE",
+    info: "United Arab Emirates",
   },
   {
     img: petra,
@@ -33,7 +33,7 @@ const attractions = [
     location: "Jordan",
     description:
       "Step into a lost city carved from rose-red stone — Petra is Jordan’s most breathtaking archaeological wonder.",
-    info: "Petra, Jordan",
+    info: "Jordan",
   },
 ];
 
@@ -80,7 +80,10 @@ const Gallery = () => {
 
         <Slider {...settings}>
           {attractions.map((item, index) => (
-            <div key={index} style={{ padding: "0 10px", boxSizing: "border-box" }}>
+            <div
+              key={index}
+              style={{ padding: "0 10px", boxSizing: "border-box" }}
+            >
               <div
                 className="slide-card"
                 style={{
@@ -130,7 +133,7 @@ const Gallery = () => {
                   <label
                     style={{
                       fontSize: "0.9rem",
-                      fontWeight: "600",
+                      fontWeight: "bold",
                       color: "var(--text-gold-hover)",
                     }}
                   >

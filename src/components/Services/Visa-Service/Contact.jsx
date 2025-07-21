@@ -6,7 +6,7 @@ const VisaContact = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    gmail: "",
+    email: "",
     phone: "",
     country: "",
     adults: "",
@@ -28,23 +28,23 @@ const VisaContact = () => {
 
   // Validate required fields whenever formData changes
   useEffect(() => {
-    const { firstName, lastName, gmail, phone, country, adults, children } =
+    const { firstName, lastName, email, phone, country, adults, children } =
       formData;
 
     // Simple validation: all required fields must be non-empty
     const allFilled =
       firstName.trim() !== "" &&
       lastName.trim() !== "" &&
-      gmail.trim() !== "" &&
+      email.trim() !== "" &&
       phone.trim() !== "" &&
       country.trim() !== "" &&
       adults.trim() !== "" &&
       children.trim() !== "";
 
     // Optionally you can add email format validation here
-    const gmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(gmail);
+    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-    setIsValid(allFilled && gmailValid);
+    setIsValid(allFilled && emailValid);
   }, [formData]);
 
   return (
@@ -96,13 +96,13 @@ const VisaContact = () => {
 
               <div className="row">
                 <div className="form-group">
-                  <label>Gmail Address</label>
+                  <label>Email Address</label>
                   <input
                     type="email"
-                    name="gmail"
+                    name="email"
                     className="form-control"
-                    placeholder="Your Gmail Address"
-                    value={formData.gmail}
+                    placeholder="Your Email Address"
+                    value={formData.email}
                     onChange={handleChange}
                   />
                 </div>

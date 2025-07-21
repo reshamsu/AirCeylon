@@ -3,12 +3,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import officeDesk from "../../assets/office-desk.jpeg";
 import officeCounter from "../../assets/office-counter.jpeg";
+import officeDesk from "../../assets/office-desk.jpeg";
 import meetingRoom from "../../assets/meeting_room.jpg";
 import interview from "../../assets/interview.jpg";
 
-const images = [officeDesk, officeCounter, meetingRoom, interview];
+const images = [officeCounter, officeDesk, meetingRoom, interview];
 
 const ImageSlider = () => {
   const settings = {

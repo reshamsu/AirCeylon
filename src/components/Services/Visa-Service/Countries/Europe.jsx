@@ -18,7 +18,7 @@ const attractions = [
     location: "Turkiye",
     description:
       "Where East meets West — explore Istanbul’s majestic mosques, bustling bazaars, and centuries of layered history.",
-    info: "Istanbul, Turkiye",
+    info: "Turkiye",
   },
   {
     img: georgia,
@@ -26,7 +26,7 @@ const attractions = [
     location: "Georgia",
     description:
       "A charming blend of old and new — Tbilisi offers cobbled streets, wine culture, and scenic hilltop views.",
-    info: "Tbilisi, Georgia",
+    info: "Georgia",
   },
   {
     img: azerbaijan,
@@ -34,7 +34,7 @@ const attractions = [
     location: "Azerbaijan",
     description:
       "Modern architecture meets Caspian Sea breeze — discover Baku’s Flame Towers and its rich Silk Road history.",
-    info: "Baku, Azerbaijan",
+    info: "Azerbaijan",
   },
   {
     img: belarus,
@@ -42,7 +42,7 @@ const attractions = [
     location: "Belarus",
     description:
       "Wide avenues, Soviet-era architecture, and green parks — Minsk reveals an unexpected side of Eastern Europe.",
-    info: "Minsk, Belarus",
+    info: "Belarus",
   },
 ];
 
@@ -142,7 +142,7 @@ const Gallery = () => {
                   <label
                     style={{
                       fontSize: "0.9rem",
-                      fontWeight: "600",
+                      fontWeight: "bold",
                       color: "var(--text-gold-hover)",
                     }}
                   >

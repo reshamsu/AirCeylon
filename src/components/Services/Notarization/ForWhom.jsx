@@ -29,7 +29,6 @@ const VisaWelcome = () => {
           <h1 style={{ marginBottom: "1rem" }}>
             Who is <span className="gradient-text">it for?</span>
           </h1>
-          <h4>The key to notarize your documents starts here.</h4>
         </div>
 
         <div

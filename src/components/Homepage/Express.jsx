@@ -177,11 +177,30 @@ const Express = () => {
         {/* Dialog Steps */}
         <Dialog open={open} onClose={handleClose} fullWidth maxWidth="sm">
           <DialogTitle>
-            {step === 1
-              ? "Select a Course"
-              : step === 2
-              ? "Candidate Registration"
-              : "Proceed to Payment"}
+            {step === 1 ? (
+              <>
+                <Typography
+                  variant="h5"
+                  sx={{ fontWeight: "bold", color: "#a87c47" }}
+                >
+                  EPT Academy
+                </Typography>
+                <Typography variant="subtitle1">
+                  Select an IELTS Course
+                </Typography>
+              </>
+            ) : step === 2 ? (
+              <>
+                <Typography variant="h5" sx={{ fontWeight: "bold", color: "#a87c47" }}>
+                  EPT Academy Registration
+                </Typography>
+                <Typography variant="subtitle1">
+                  Candidate Registration
+                </Typography>
+              </>
+            ) : (
+              "Proceed to Payment"
+            )}
           </DialogTitle>
 
           <DialogContent>
@@ -285,7 +304,7 @@ const Express = () => {
                     },
                   }}
                 />
-                 <TextField
+                <TextField
                   label="Phone Number"
                   name="phone"
                   fullWidth
